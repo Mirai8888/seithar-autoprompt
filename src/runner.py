@@ -91,6 +91,41 @@ def run(config_path="config.yaml"):
     print(f"[autoprompt] Report: {diff_path}")
     print(f"[autoprompt] JSON:   {json_path}")
 
+    # Push to git and clean old output (keep last 7 days)
+    _push_and_clean(config["output_dir"])
+
+
+def _push_and_clean(output_dir, keep_days=7):
+    """Commit output, push to git, delete files older than keep_days."""
+    import subprocess
+    import glob
+    from datetime import datetime, timedelta
+
+    repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    try:
+        subprocess.run(["git", "add", "-A"], cwd=repo_root, capture_output=True, timeout=30)
+        subprocess.run(
+            ["git", "commit", "-m", f"[autoprompt] daily run {datetime.now().strftime('%Y-%m-%d')}"],
+            cwd=repo_root, capture_output=True, timeout=30
+        )
+        result = subprocess.run(
+            ["git", "push", "origin", "master"],
+            cwd=repo_root, capture_output=True, timeout=60
+        )
+        if result.returncode == 0:
+            print("[autoprompt] Pushed to git")
+        else:
+            print(f"[autoprompt] Push failed: {result.stderr.decode()[:200]}")
+    except Exception as e:
+        print(f"[autoprompt] Git error: {e}")
+
+    # Clean old output
+    cutoff = datetime.now().timestamp() - (keep_days * 86400)
+    for f in glob.glob(os.path.join(output_dir, "*")):
+        if os.path.getmtime(f) < cutoff:
+            os.remove(f)
+            print(f"[autoprompt] Cleaned: {os.path.basename(f)}")
+
 
 if __name__ == "__main__":
     os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
