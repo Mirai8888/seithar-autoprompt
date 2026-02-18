@@ -1,0 +1,481 @@
+{
+  "run_at": "2026-02-18T05:04:57.596124+00:00",
+  "papers_found": 28,
+  "suggestions_generated": 25,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.15368v1",
+      "title": "GMAIL: Generative Modality Alignment for generated Image Learning",
+      "summary": "arXiv:2602.15368v1 Announce Type: cross \nAbstract: Generative models have made it possible to synthesize highly realistic images, potentially providing an abundant data source for training machine learning models. Despite the advantages of these synthesizable data sources, the indiscriminate use of generated images as real images for training can even cause mode collapse due to modality discrepancies between real and synthetic domains. In this paper, we propose a novel framework for discriminati",
+      "link": "https://arxiv.org/abs/2602.15368",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.279357+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15338v1",
+      "title": "Discovering Implicit Large Language Model Alignment Objectives",
+      "summary": "arXiv:2602.15338v1 Announce Type: cross \nAbstract: Large language model (LLM) alignment relies on complex reward signals that often obscure the specific behaviors being incentivized, creating critical risks of misalignment and reward hacking. Existing interpretation methods typically rely on pre-defined rubrics, risking the omission of \"unknown unknowns\", or fail to identify objectives that comprehensively cover and are causal to the model behavior. To address these limitations, we introduce Obj",
+      "link": "https://arxiv.org/abs/2602.15338",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196157+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.02348v4",
+      "title": "mini-vec2vec: Scaling Universal Geometry Alignment with Linear Transformations",
+      "summary": "arXiv:2510.02348v4 Announce Type: replace \nAbstract: We build upon vec2vec, a procedure designed to align text embedding spaces without parallel data. vec2vec finds a near-perfect alignment, but it is expensive and unstable. We present mini-vec2vec, a simple and efficient alternative that requires substantially lower computational cost and is highly robust. Moreover, the learned mapping is a linear transformation. Our method consists of three main stages: a tentative matching of pseudo-parallel ",
+      "link": "https://arxiv.org/abs/2510.02348",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196495+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15676v1",
+      "title": "Relative Geometry of Neural Forecasters: Linking Accuracy and Alignment in Learned Latent Geometry",
+      "summary": "arXiv:2602.15676v1 Announce Type: cross \nAbstract: Neural networks can accurately forecast complex dynamical systems, yet how they internally represent underlying latent geometry remains poorly understood. We study neural forecasters through the lens of representational alignment, introducing anchor-based, geometry-agnostic relative embeddings that remove rotational and scaling ambiguities in latent spaces. Applying this framework across seven canonical dynamical systems - ranging from periodic ",
+      "link": "https://arxiv.org/abs/2602.15676",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.279713+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15799v1",
+      "title": "The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety",
+      "summary": "arXiv:2602.15799v1 Announce Type: cross \nAbstract: Fine-tuning aligned language models on benign tasks unpredictably degrades safety guardrails, even when training data contains no harmful content and developers have no adversarial intent. We show that the prevailing explanation, that fine-tuning updates should be orthogonal to safety-critical directions in high-dimensional parameter space, offers false reassurance: we show this orthogonality is structurally unstable and collapses under the dyna",
+      "link": "https://arxiv.org/abs/2602.15799",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.279981+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.00565v2",
+      "title": "Toward Safer Diffusion Language Models: Discovery and Mitigation of Priming Vulnerability",
+      "summary": "arXiv:2510.00565v2 Announce Type: replace \nAbstract: Diffusion language models (DLMs) generate tokens in parallel through iterative denoising, which can reduce latency and enable bidirectional conditioning. However, the safety risks posed by jailbreak attacks that exploit this inference mechanism are not well understood. In this paper, we reveal that DLMs have a critical vulnerability stemming from their iterative denoising process and propose a countermeasure. Specifically, our investigation sh",
+      "link": "https://arxiv.org/abs/2510.00565",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+jailbreak",
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.280233+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15671v1",
+      "title": "Revisiting Backdoor Threat in Federated Instruction Tuning from a Signal Aggregation Perspective",
+      "summary": "arXiv:2602.15671v1 Announce Type: new \nAbstract: Federated learning security research has predominantly focused on backdoor threats from a minority of malicious clients that intentionally corrupt model updates. This paper challenges this paradigm by investigating a more pervasive and insidious threat: \\textit{backdoor vulnerabilities from low-concentration poisoned data distributed across the datasets of benign clients.} This scenario is increasingly common in federated instruction tuning for la",
+      "link": "https://arxiv.org/abs/2602.15671",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+instruction tuning"
+      ],
+      "fetched_at": "2026-02-18T05:04:54.509864+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15778v1",
+      "title": "*-PLUIE: Personalisable metric with Llm Used for Improved Evaluation",
+      "summary": "arXiv:2602.15778v1 Announce Type: new \nAbstract: Evaluating the quality of automatically generated text often relies on LLM-as-a-judge (LLM-judge) methods. While effective, these approaches are computationally expensive and require post-processing. To address these limitations, we build upon ParaPLUIE, a perplexity-based LLM-judge metric that estimates confidence over ``Yes/No'' answers without generating text. We introduce *-PLUIE, task specific prompting variants of ParaPLUIE and evaluate thei",
+      "link": "https://arxiv.org/abs/2602.15778",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+alignment",
+        "persona"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.195979+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.03269v4",
+      "title": "General Exploratory Bonus for Optimistic Exploration in RLHF",
+      "summary": "arXiv:2510.03269v4 Announce Type: replace-cross \nAbstract: Optimistic exploration is central to improving sample efficiency in reinforcement learning with human feedback, yet existing exploratory bonus methods to incentivize exploration often fail to realize optimism. We provide a theoretical analysis showing that current formulations, under KL or $\\alpha$-divergence regularization, unintentionally bias exploration toward high-probability regions of the reference model, thereby reinforcing conse",
+      "link": "https://arxiv.org/abs/2510.03269",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196794+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.02649v2",
+      "title": "From Prompts to Protection: Large Language Model-Enabled In-Context Learning for Smart Public Safety UAV",
+      "summary": "arXiv:2506.02649v2 Announce Type: replace \nAbstract: A public safety Uncrewed Aerial Vehicle (UAV) enhances situational awareness during emergency response. Its agility, mobility optimization, and ability to establish Line-of-Sight (LoS) communication make it increasingly important for managing emergencies such as disaster response, search and rescue, and wildfire monitoring. Although Deep Reinforcement Learning (DRL) has been used to optimize UAV navigation and control, its high training comple",
+      "link": "https://arxiv.org/abs/2506.02649",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+jailbreak",
+        "in-context learning"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.280076+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.12415v4",
+      "title": "Orthogonalized Policy Optimization:Decoupling Sampling Geometry from Optimization Geometry in RLHF",
+      "summary": "arXiv:2601.12415v4 Announce Type: replace-cross \nAbstract: We present Orthogonalized Policy Optimization (OPO), a unified theoretical account of large language model alignment grounded in a work-dissipation principle. The policy update is characterized as a constrained proximal response that maximizes external work induced by an alpha-escort sampling field, while paying an intrinsic dissipation cost given by a quadratic fluctuation energy in chi-square ratio geometry. This single variational pri",
+      "link": "https://arxiv.org/abs/2601.12415",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.281153+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.22211v3",
+      "title": "LogiPart: Local Large Language Models for Data Exploration at Scale with Logical Partitioning",
+      "summary": "arXiv:2509.22211v3 Announce Type: replace \nAbstract: The discovery of deep, steerable taxonomies in large text corpora is currently restricted by a trade-off between the surface-level efficiency of topic models and the prohibitive, non-scalable assignment costs of LLM-integrated frameworks. We introduce \\textbf{LogiPart}, a scalable, hypothesis-first framework for building interpretable hierarchical partitions that decouples hierarchy growth from expensive full-corpus LLM conditioning. LogiPart ",
+      "link": "https://arxiv.org/abs/2509.22211",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196482+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15382v1",
+      "title": "The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems",
+      "summary": "arXiv:2602.15382v1 Announce Type: new \nAbstract: Multi-Agent Systems (MAS) powered by Large Language Models have unlocked advanced collaborative reasoning, yet they remain shackled by the inefficiency of discrete text communication, which imposes significant runtime overhead and information quantization loss. While latent state transfer offers a high-bandwidth alternative, existing approaches either assume homogeneous sender-receiver architectures or rely on pair-specific learned translators, li",
+      "link": "https://arxiv.org/abs/2602.15382",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.195570+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15763v1",
+      "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+      "summary": "arXiv:2602.15763v1 Announce Type: cross \nAbstract: We present GLM-5, a next-generation foundation model designed to transition the paradigm of vibe coding to agentic engineering. Building upon the agentic, reasoning, and coding (ARC) capabilities of its predecessor, GLM-5 adopts DSA to significantly reduce training and inference costs while maintaining long-context fidelity. To advance model alignment and autonomy, we implement a new asynchronous reinforcement learning infrastructure that drasti",
+      "link": "https://arxiv.org/abs/2602.15763",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196235+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.13147v3",
+      "title": "What if Deception Cannot be Detected? A Cross-Linguistic Study on the Limits of Deception Detection from Text",
+      "summary": "arXiv:2505.13147v3 Announce Type: replace \nAbstract: Can deception be detected solely from written text? Cues of deceptive communication are inherently subtle, even more so in text-only communication. Yet, prior studies have reported considerable success in automatic deception detection. We hypothesize that such findings are largely driven by artifacts introduced during data collection and do not generalize beyond specific datasets. We revisit this assumption by introducing a belief-based decept",
+      "link": "https://arxiv.org/abs/2505.13147",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196408+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.11104v2",
+      "title": "CLARITY: Contextual Linguistic Adaptation and Accent Retrieval for Dual-Bias Mitigation in Text-to-Speech Generation",
+      "summary": "arXiv:2511.11104v2 Announce Type: replace-cross \nAbstract: Instruction-guided text-to-speech (TTS) research has reached a maturity level where excellent speech generation quality is possible on demand, yet two coupled biases persist in reducing perceived quality: accent bias, where models default towards dominant phonetic patterns, and linguistic bias, a misalignment in dialect-specific lexical or cultural information. These biases are interdependent and authentic accent generation requires both",
+      "link": "https://arxiv.org/abs/2511.11104",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:51.196849+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15531v1",
+      "title": "GenAI-LA: Generative AI and Learning Analytics Workshop (LAK 2026), April 27--May 1, 2026, Bergen, Norway",
+      "summary": "arXiv:2602.15531v1 Announce Type: new \nAbstract: This work introduces EduEVAL-DB, a dataset based on teacher roles designed to support the evaluation and training of automatic pedagogical evaluators and AI tutors for instructional explanations. The dataset comprises 854 explanations corresponding to 139 questions from a curated subset of the ScienceQA benchmark, spanning science, language, and social science across K-12 grade levels. For each question, one human-teacher explanation is provided a",
+      "link": "https://arxiv.org/abs/2602.15531",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+prompt engineering"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.278311+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15645v1",
+      "title": "CARE Drive A Framework for Evaluating Reason-Responsiveness of Vision Language Models in Automated Driving",
+      "summary": "arXiv:2602.15645v1 Announce Type: new \nAbstract: Foundation models, including vision language models, are increasingly used in automated driving to interpret scenes, recommend actions, and generate natural language explanations. However, existing evaluation methods primarily assess outcome based performance, such as safety and trajectory accuracy, without determining whether model decisions reflect human relevant considerations. As a result, it remains unclear whether explanations produced by su",
+      "link": "https://arxiv.org/abs/2602.15645",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.278413+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15785v1",
+      "title": "This human study did not involve human subjects: Validating LLM simulations as behavioral evidence",
+      "summary": "arXiv:2602.15785v1 Announce Type: new \nAbstract: A growing literature uses large language models (LLMs) as synthetic participants to generate cost-effective and nearly instantaneous responses in social science experiments. However, there is limited guidance on when such simulations support valid inference about human behavior. We contrast two strategies for obtaining valid estimates of causal effects and clarify the assumptions under which each is suitable for exploratory versus confirmatory res",
+      "link": "https://arxiv.org/abs/2602.15785",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+prompt engineering"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.278477+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15037v1",
+      "title": "CircuChain: Disentangling Competence and Compliance in LLM Circuit Analysis",
+      "summary": "arXiv:2602.15037v1 Announce Type: cross \nAbstract: As large language models (LLMs) advance toward expert-level performance in engineering domains, reliable reasoning under user-specified constraints becomes critical. In circuit analysis, for example, a numerically correct solution is insufficient if it violates established methodological conventions such as mesh directionality or polarity assignments, errors that can propagate in safety-critical systems. Yet it remains unclear whether frontier m",
+      "link": "https://arxiv.org/abs/2602.15037",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+alignment"
+      ],
+      "fetched_at": "2026-02-18T05:04:53.278583+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "GMAIL: Generative Modality Alignment for generated Image Learning",
+      "paper_link": "https://arxiv.org/abs/2602.15368",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'GMAIL: Generative Modality Alignment for generated Image Lea' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Discovering Implicit Large Language Model Alignment Objectives",
+      "paper_link": "https://arxiv.org/abs/2602.15338",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Discovering Implicit Large Language Model Alignment Objectiv' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "mini-vec2vec: Scaling Universal Geometry Alignment with Linear Transformations",
+      "paper_link": "https://arxiv.org/abs/2510.02348",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'mini-vec2vec: Scaling Universal Geometry Alignment with Line' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Relative Geometry of Neural Forecasters: Linking Accuracy and Alignment in Learn",
+      "paper_link": "https://arxiv.org/abs/2602.15676",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Relative Geometry of Neural Forecasters: Linking Accuracy an' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety",
+      "paper_link": "https://arxiv.org/abs/2602.15799",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Geometry of Alignment Collapse: When Fine-Tuning Breaks ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Toward Safer Diffusion Language Models: Discovery and Mitigation of Priming Vuln",
+      "paper_link": "https://arxiv.org/abs/2510.00565",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Toward Safer Diffusion Language Models: Discovery and Mitiga' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Revisiting Backdoor Threat in Federated Instruction Tuning from a Signal Aggrega",
+      "paper_link": "https://arxiv.org/abs/2602.15671",
+      "paper_score": 6,
+      "type": "instruction_optimization",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Revisiting Backdoor Threat in Federated Instruction Tuning f' improves instruction tuning methods. Evaluate instruction structure in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "*-PLUIE: Personalisable metric with Llm Used for Improved Evaluation",
+      "paper_link": "https://arxiv.org/abs/2602.15778",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper '*-PLUIE: Personalisable metric with Llm Used for Improved Ev' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "General Exploratory Bonus for Optimistic Exploration in RLHF",
+      "paper_link": "https://arxiv.org/abs/2510.03269",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'General Exploratory Bonus for Optimistic Exploration in RLHF' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Orthogonalized Policy Optimization:Decoupling Sampling Geometry from Optimizatio",
+      "paper_link": "https://arxiv.org/abs/2601.12415",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Orthogonalized Policy Optimization:Decoupling Sampling Geome' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "LogiPart: Local Large Language Models for Data Exploration at Scale with Logical",
+      "paper_link": "https://arxiv.org/abs/2509.22211",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'LogiPart: Local Large Language Models for Data Exploration a' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Sys",
+      "paper_link": "https://arxiv.org/abs/2602.15382",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Vision Wormhole: Latent-Space Communication in Heterogen' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "GLM-5: from Vibe Coding to Agentic Engineering",
+      "paper_link": "https://arxiv.org/abs/2602.15763",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'GLM-5: from Vibe Coding to Agentic Engineering' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "What if Deception Cannot be Detected? A Cross-Linguistic Study on the Limits of ",
+      "paper_link": "https://arxiv.org/abs/2505.13147",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'What if Deception Cannot be Detected? A Cross-Linguistic Stu' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "CLARITY: Contextual Linguistic Adaptation and Accent Retrieval for Dual-Bias Mit",
+      "paper_link": "https://arxiv.org/abs/2511.11104",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'CLARITY: Contextual Linguistic Adaptation and Accent Retriev' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "CARE Drive A Framework for Evaluating Reason-Responsiveness of Vision Language M",
+      "paper_link": "https://arxiv.org/abs/2602.15645",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'CARE Drive A Framework for Evaluating Reason-Responsiveness ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "CircuChain: Disentangling Competence and Compliance in LLM Circuit Analysis",
+      "paper_link": "https://arxiv.org/abs/2602.15037",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'CircuChain: Disentangling Competence and Compliance in LLM C' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "On Surprising Effectiveness of Masking Updates in Adaptive Optimizers",
+      "paper_link": "https://arxiv.org/abs/2602.15322",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'On Surprising Effectiveness of Masking Updates in Adaptive O' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Improving MLLMs in Embodied Exploration and Question Answering with Human-Inspir",
+      "paper_link": "https://arxiv.org/abs/2602.15513",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Improving MLLMs in Embodied Exploration and Question Answeri' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The geometry of online conversations and the causal antecedents of conflictual d",
+      "paper_link": "https://arxiv.org/abs/2602.15600",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The geometry of online conversations and the causal antecede' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MRC-GAT: A Meta-Relational Copula-Based Graph Attention Network for Interpretabl",
+      "paper_link": "https://arxiv.org/abs/2602.15740",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MRC-GAT: A Meta-Relational Copula-Based Graph Attention Netw' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MMS-VPR: Multimodal Street-Level Visual Place Recognition Dataset and Benchmark",
+      "paper_link": "https://arxiv.org/abs/2505.12254",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MMS-VPR: Multimodal Street-Level Visual Place Recognition Da' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MARS-Sep: Multimodal-Aligned Reinforced Sound Separation",
+      "paper_link": "https://arxiv.org/abs/2510.10509",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MARS-Sep: Multimodal-Aligned Reinforced Sound Separation' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Cross-Modal Purification and Fusion for Small-Object RGB-D Transmission-Line Def",
+      "paper_link": "https://arxiv.org/abs/2602.01696",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Cross-Modal Purification and Fusion for Small-Object RGB-D T' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MARLIN: Multi-Agent Reinforcement Learning with Murmuration Intelligence and LLM",
+      "paper_link": "https://arxiv.org/abs/2509.25034",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MARLIN: Multi-Agent Reinforcement Learning with Murmuration ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    }
+  ]
+}

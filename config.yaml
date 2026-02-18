@@ -1,0 +1,46 @@
+# seithar-autoprompt configuration
+feeds:
+  - name: "cs.CL"
+    url: "https://export.arxiv.org/rss/cs.CL"
+  - name: "cs.AI"
+    url: "https://export.arxiv.org/rss/cs.AI"
+  - name: "cs.CR"
+    url: "https://export.arxiv.org/rss/cs.CR"
+  - name: "cs.MA"
+    url: "https://export.arxiv.org/rss/cs.MA"
+
+keywords:
+  primary:
+    - "prompt engineering"
+    - "system prompt"
+    - "jailbreak"
+    - "prompt injection"
+    - "instruction tuning"
+    - "alignment"
+    - "adversarial attack"
+    - "red teaming"
+  secondary:
+    - "in-context learning"
+    - "chain of thought"
+    - "few-shot"
+    - "zero-shot"
+    - "RLHF"
+    - "constitutional AI"
+    - "persona"
+    - "role-playing"
+    - "memetic"
+    - "cognitive security"
+    - "influence operation"
+    - "propaganda detection"
+    - "narrative"
+    - "disinformation"
+
+scoring:
+  primary_weight: 3
+  secondary_weight: 1
+  title_multiplier: 2
+  min_score: 3
+
+prompts_dir: "../"
+output_dir: "./output"
+state_file: "./state/seen.json"
