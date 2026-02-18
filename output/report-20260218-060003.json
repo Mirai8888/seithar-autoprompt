@@ -1,0 +1,77 @@
+{
+  "run_at": "2026-02-18T06:00:03.105308+00:00",
+  "papers_found": 3,
+  "suggestions_generated": 0,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.15432v1",
+      "title": "From Earthquake Solidarity to Educational Equity: Conceptualizing a Sustainable, Volunteer-Driven P2P Learning Ecosystem at Scale",
+      "summary": "arXiv:2602.15432v1 Announce Type: new \nAbstract: This study examines the evolution of a grassroots, volunteer-driven peer-to-peer (P2P) educational initiative from an emergency response to the 2023 T\\\"urkiye earthquake into a sustainable ecosystem that operated for over two years and supported 300+ middle-school learners with 40+ volunteer tutors. Employing an interpretive case study approach, we triangulated data from participant observation, focus groups, questionnaires, and collaborative visi",
+      "link": "https://arxiv.org/abs/2602.15432",
+      "feed": "cs.CY",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "persona"
+      ],
+      "fetched_at": "2026-02-18T05:59:27.472522+00:00",
+      "llm_analysis": {
+        "relevance": "low",
+        "summary": "The study details the evolution of a volunteer-driven P2P educational ecosystem post-disaster, focusing on sustainability and scalability without addressing adversarial vulnerabilities or cognitive manipulation techniques.",
+        "attack_surface": "This paper does not address adversarial vulnerabilities in human decision-making, AI/LLM systems, or cognitive manipulation techniques directly.",
+        "sct_codes": [],
+        "defense_implications": "The findings do not provide direct insights into improving cognitive/AI defense mechanisms.",
+        "action_items": []
+      }
+    },
+    {
+      "id": "oai:arXiv.org:2511.15768v2",
+      "title": "Navigating the Ethical and Societal Impacts of Generative AI in Higher Computing Education",
+      "summary": "arXiv:2511.15768v2 Announce Type: replace \nAbstract: Generative AI (GenAI) presents societal and ethical challenges related to equity, academic integrity, bias, and data provenance. In this paper, we outline the goals, methodology and deliverables of their collaborative research, considering the ethical and societal impacts of GenAI in higher computing education. A systematic literature review that addresses a wide set of issues and topics covering the rapidly emerging technology of GenAI from t",
+      "link": "https://arxiv.org/abs/2511.15768",
+      "feed": "cs.CY",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-02-18T05:59:27.472723+00:00",
+      "llm_analysis": {
+        "relevance": "medium",
+        "summary": "The paper discusses the ethical and societal impacts of Generative AI (GenAI) in higher computing education, focusing on issues like equity, academic integrity, bias, and data provenance.",
+        "attack_surface": "While the paper does not directly address adversarial vulnerabilities or attacks, it highlights potential risks that could be exploited through cognitive manipulation techniques such as biased information dissemination.",
+        "sct_codes": [
+          "SCT-023",
+          "SCT-045"
+        ],
+        "defense_implications": "Findings can inform the development of more robust ethical guidelines and educational programs to mitigate bias and misinformation, thereby enhancing both human and AI resilience against cognitive manipulation attacks.",
+        "action_items": [
+          "Update curriculum modules to include case studies on biased data in GenAI systems.",
+          "Develop training materials that teach students about recognizing and mitigating the effects of adversarial content."
+        ]
+      }
+    },
+    {
+      "id": "oai:arXiv.org:2602.13154v3",
+      "title": "Peaceful Anarcho-Accelerationism: Decentralized Full Automation for a Society of Universal Care",
+      "summary": "arXiv:2602.13154v3 Announce Type: replace \nAbstract: Foundational results in machine learning -- the universal approximation theorem and deep reinforcement learning convergence -- imply that the vast majority of instrumental labor can be progressively automated. As this process accelerates, the critical question becomes one of governance: who controls the machines, and toward what ends? This paper introduces anarcho-accelerationism, a sociotechnical framework in which full automation is decentra",
+      "link": "https://arxiv.org/abs/2602.13154",
+      "feed": "cs.CY",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T05:59:27.472766+00:00",
+      "llm_analysis": {
+        "relevance": "low",
+        "summary": "The paper discusses anarcho-accelerationism as a framework for decentralized automation but does not directly address adversarial vulnerabilities, AI attacks, or cognitive manipulation techniques.",
+        "attack_surface": "Does not explicitly discuss any vulnerability or attack vector related to adversarial techniques.",
+        "sct_codes": [],
+        "defense_implications": "The paper's focus on governance and decentralization could indirectly inform defense strategies by highlighting the importance of robust governance structures in AI systems, but this is not a direct application.",
+        "action_items": [
+          "Review decentralized governance models for potential insights into resilient AI system design."
+        ]
+      }
+    }
+  ],
+  "suggestions": []
+}
