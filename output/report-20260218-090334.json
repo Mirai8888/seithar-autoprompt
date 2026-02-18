@@ -1,0 +1,432 @@
+{
+  "run_at": "2026-02-18T09:03:34.949086+00:00",
+  "papers_found": 99,
+  "suggestions_generated": 17,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2406.03862v3",
+      "title": "Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation",
+      "summary": "arXiv:2406.03862v3 Announce Type: replace-cross \nAbstract: This study investigates behavior-targeted attacks on reinforcement learning and their countermeasures. Behavior-targeted attacks aim to manipulate the victim's behavior as desired by the adversary through adversarial interventions in state observations. Existing behavior-targeted attacks have some limitations, such as requiring white-box access to the victim's policy. To address this, we propose a novel attack method using imitation lear",
+      "link": "https://arxiv.org/abs/2406.03862",
+      "feed": "cs.AI",
+      "score": 18,
+      "matched_keywords": [
+        "+adversarial",
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.527279+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.02649v2",
+      "title": "From Prompts to Protection: Large Language Model-Enabled In-Context Learning for Smart Public Safety UAV",
+      "summary": "arXiv:2506.02649v2 Announce Type: replace \nAbstract: A public safety Uncrewed Aerial Vehicle (UAV) enhances situational awareness during emergency response. Its agility, mobility optimization, and ability to establish Line-of-Sight (LoS) communication make it increasingly important for managing emergencies such as disaster response, search and rescue, and wildfire monitoring. Although Deep Reinforcement Learning (DRL) has been used to optimize UAV navigation and control, its high training comple",
+      "link": "https://arxiv.org/abs/2506.02649",
+      "feed": "cs.AI",
+      "score": 11,
+      "matched_keywords": [
+        "+jailbreak",
+        "+decision-making",
+        "+reinforcement learning",
+        "in-context learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.526386+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15367v1",
+      "title": "CDRL: A Reinforcement Learning Framework Inspired by Cerebellar Circuits and Dendritic Computational Strategies",
+      "summary": "arXiv:2602.15367v1 Announce Type: cross \nAbstract: Reinforcement learning (RL) has achieved notable performance in high-dimensional sequential decision-making tasks, yet remains limited by low sample efficiency, sensitivity to noise, and weak generalization under partial observability. Most existing approaches address these issues primarily through optimization strategies, while the role of architectural priors in shaping representation learning and decision dynamics is less explored. Inspired b",
+      "link": "https://arxiv.org/abs/2602.15367",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.525063+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.12444v2",
+      "title": "Safe Reinforcement Learning via Recovery-based Shielding with Gaussian Process Dynamics Models",
+      "summary": "arXiv:2602.12444v2 Announce Type: replace-cross \nAbstract: Reinforcement learning (RL) is a powerful framework for optimal decision-making and control but often lacks provable guarantees for safety-critical applications. In this paper, we introduce a novel recovery-based shielding framework that enables safe RL with a provable safety lower bound for unknown and non-linear continuous dynamical systems. The proposed approach integrates a backup policy (shield) with the RL agent, leveraging Gaussia",
+      "link": "https://arxiv.org/abs/2602.12444",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.528758+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.13147v3",
+      "title": "What if Deception Cannot be Detected? A Cross-Linguistic Study on the Limits of Deception Detection from Text",
+      "summary": "arXiv:2505.13147v3 Announce Type: replace \nAbstract: Can deception be detected solely from written text? Cues of deceptive communication are inherently subtle, even more so in text-only communication. Yet, prior studies have reported considerable success in automatic deception detection. We hypothesize that such findings are largely driven by artifacts introduced during data collection and do not generalize beyond specific datasets. We revisit this assumption by introducing a belief-based decept",
+      "link": "https://arxiv.org/abs/2505.13147",
+      "feed": "cs.CL",
+      "score": 8,
+      "matched_keywords": [
+        "+deception",
+        "alignment",
+        "belief"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.359247+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15238v1",
+      "title": "Closing the Distribution Gap in Adversarial Training for LLMs",
+      "summary": "arXiv:2602.15238v1 Announce Type: cross \nAbstract: Adversarial training for LLMs is one of the most promising methods to reliably improve robustness against adversaries. However, despite significant progress, models remain vulnerable to simple in-distribution exploits, such as rewriting prompts in the past tense or translating them into other languages. We argue that this persistent fragility stems from a fundamental limitation in current adversarial training algorithms: they minimize adversaria",
+      "link": "https://arxiv.org/abs/2602.15238",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+adversarial",
+        "vulnerability",
+        "exploit"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.524204+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2507.10134v2",
+      "title": "FRSICL: LLM-Enabled In-Context Learning Flight Resource Allocation for Fresh Data Collection in UAV-Assisted Wildfire Monitoring",
+      "summary": "arXiv:2507.10134v2 Announce Type: replace \nAbstract: Uncrewed Aerial Vehicles (UAVs) play a vital role in public safety, especially in monitoring wildfires, where early detection reduces environmental impact. In UAV-Assisted Wildfire Monitoring (UAWM) systems, jointly optimizing the data collection schedule and UAV velocity is essential to minimize the average Age of Information (AoI) for sensory data. Deep Reinforcement Learning (DRL) has been used for this optimization, but its limitations-inc",
+      "link": "https://arxiv.org/abs/2507.10134",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+decision-making",
+        "+reinforcement learning",
+        "in-context learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.526488+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.00565v2",
+      "title": "Toward Safer Diffusion Language Models: Discovery and Mitigation of Priming Vulnerability",
+      "summary": "arXiv:2510.00565v2 Announce Type: replace \nAbstract: Diffusion language models (DLMs) generate tokens in parallel through iterative denoising, which can reduce latency and enable bidirectional conditioning. However, the safety risks posed by jailbreak attacks that exploit this inference mechanism are not well understood. In this paper, we reveal that DLMs have a critical vulnerability stemming from their iterative denoising process and propose a countermeasure. Specifically, our investigation sh",
+      "link": "https://arxiv.org/abs/2510.00565",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+jailbreak",
+        "alignment",
+        "vulnerability",
+        "exploit",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.526709+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15456v1",
+      "title": "In Agents We Trust, but Who Do Agents Trust? Latent Source Preferences Steer LLM Generations",
+      "summary": "arXiv:2602.15456v1 Announce Type: new \nAbstract: Agents based on Large Language Models (LLMs) are increasingly being deployed as interfaces to information on online platforms. These agents filter, prioritize, and synthesize information retrieved from the platforms' back-end databases or via web search. In these scenarios, LLM agents govern the information users receive, by drawing users' attention to particular instances of retrieved information at the expense of others. While much prior work ha",
+      "link": "https://arxiv.org/abs/2602.15456",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "framing"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.357753+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2410.02605v4",
+      "title": "Policy Gradients for Cumulative Prospect Theory in Reinforcement Learning",
+      "summary": "arXiv:2410.02605v4 Announce Type: replace-cross \nAbstract: We derive a policy gradient theorem for Cumulative Prospect Theory (CPT) objectives in finite-horizon Reinforcement Learning (RL), generalizing the standard policy gradient theorem and encompassing distortion-based risk objectives as special cases. Motivated by behavioral economics, CPT combines an asymmetric utility transformation around a reference point with probability distortion. Building on our theorem, we design a first-order poli",
+      "link": "https://arxiv.org/abs/2410.02605",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "behavioral"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.527306+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.10509v2",
+      "title": "MARS-Sep: Multimodal-Aligned Reinforced Sound Separation",
+      "summary": "arXiv:2510.10509v2 Announce Type: replace-cross \nAbstract: Universal sound separation faces a fundamental misalignment: models optimized for low-level signal metrics often produce semantically contaminated outputs, failing to suppress perceptually salient interference from acoustically similar sources. We introduce a preference alignment perspective, analogous to aligning LLMs with human intent. To address this, we introduce MARS-Sep, a reinforcement learning framework that reformulates separati",
+      "link": "https://arxiv.org/abs/2510.10509",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.528168+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.25034v3",
+      "title": "MARLIN: Multi-Agent Reinforcement Learning with Murmuration Intelligence and LLM Guidance for Reservoir Management",
+      "summary": "arXiv:2509.25034v3 Announce Type: replace \nAbstract: As climate change intensifies extreme weather events, water disasters pose growing threats to global communities, making adaptive reservoir management critical for protecting vulnerable populations and ensuring water security. Modern water resource management faces unprecedented challenges from cascading uncertainties propagating through interconnected reservoir networks. These uncertainties, rooted in physical water transfer losses and enviro",
+      "link": "https://arxiv.org/abs/2509.25034",
+      "feed": "cs.MA",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.646932+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15620v1",
+      "title": "STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens",
+      "summary": "arXiv:2602.15620v1 Announce Type: new \nAbstract: Reinforcement Learning (RL) has significantly improved large language model reasoning, but existing RL fine-tuning methods rely heavily on heuristic techniques such as entropy regularization and reweighting to maintain stability. In practice, they often experience late-stage performance collapse, leading to degraded reasoning quality and unstable training. We derive that the magnitude of token-wise policy gradients in RL is negatively correlated w",
+      "link": "https://arxiv.org/abs/2602.15620",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.358089+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.03269v4",
+      "title": "General Exploratory Bonus for Optimistic Exploration in RLHF",
+      "summary": "arXiv:2510.03269v4 Announce Type: replace-cross \nAbstract: Optimistic exploration is central to improving sample efficiency in reinforcement learning with human feedback, yet existing exploratory bonus methods to incentivize exploration often fail to realize optimism. We provide a theoretical analysis showing that current formulations, under KL or $\\alpha$-divergence regularization, unintentionally bias exploration toward high-probability regions of the reference model, thereby reinforcing conse",
+      "link": "https://arxiv.org/abs/2510.03269",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.360038+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15669v1",
+      "title": "PERSONA: Dynamic and Compositional Inference-Time Personality Control via Activation Vector Algebra",
+      "summary": "arXiv:2602.15669v1 Announce Type: new \nAbstract: Current methods for personality control in Large Language Models rely on static prompting or expensive fine-tuning, failing to capture the dynamic and compositional nature of human traits. We introduce PERSONA, a training-free framework that achieves fine-tuning level performance through direct manipulation of personality vectors in activation space. Our key insight is that personality traits appear as extractable, approximately orthogonal directi",
+      "link": "https://arxiv.org/abs/2602.15669",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation",
+        "persona",
+        "behavioral"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.523374+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15060v1",
+      "title": "CLOT: Closed-Loop Global Motion Tracking for Whole-Body Humanoid Teleoperation",
+      "summary": "arXiv:2602.15060v1 Announce Type: cross \nAbstract: Long-horizon whole-body humanoid teleoperation remains challenging due to accumulated global pose drift, particularly on full-sized humanoids. Although recent learning-based tracking methods enable agile and coordinated motions, they typically operate in the robot's local frame and neglect global pose feedback, leading to drift and instability during extended execution. In this work, we present CLOT, a real-time whole-body humanoid teleoperation",
+      "link": "https://arxiv.org/abs/2602.15060",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.523749+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15245v1",
+      "title": "MyoInteract: A Framework for Fast Prototyping of Biomechanical HCI Tasks using Reinforcement Learning",
+      "summary": "arXiv:2602.15245v1 Announce Type: cross \nAbstract: Reinforcement learning (RL)-based biomechanical simulations have the potential to revolutionise HCI research and interaction design, but currently lack usability and interpretability. Using the Human Action Cycle as a design lens, we identify key limitations of biomechanical RL frameworks and develop MyoInteract, a novel framework for fast prototyping of biomechanical HCI tasks. MyoInteract allows designers to setup tasks, user models, and train",
+      "link": "https://arxiv.org/abs/2602.15245",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.524277+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15515v1",
+      "title": "The Obfuscation Atlas: Mapping Where Honesty Emerges in RLVR with Deception Probes",
+      "summary": "arXiv:2602.15515v1 Announce Type: cross \nAbstract: Training against white-box deception detectors has been proposed as a way to make AI systems honest. However, such training risks models learning to obfuscate their deception to evade the detector. Prior work has studied obfuscation only in artificial settings where models were directly rewarded for harmful output. We construct a realistic coding environment where reward hacking via hardcoding test cases naturally occurs, and show that obfuscati",
+      "link": "https://arxiv.org/abs/2602.15515",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+deception"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.525456+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15799v1",
+      "title": "The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety",
+      "summary": "arXiv:2602.15799v1 Announce Type: cross \nAbstract: Fine-tuning aligned language models on benign tasks unpredictably degrades safety guardrails, even when training data contains no harmful content and developers have no adversarial intent. We show that the prevailing explanation, that fine-tuning updates should be orthogonal to safety-critical directions in high-dimensional parameter space, offers false reassurance: we show this orthogonality is structurally unstable and collapses under the dyna",
+      "link": "https://arxiv.org/abs/2602.15799",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial",
+        "alignment",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.526195+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15827v1",
+      "title": "Perceptive Humanoid Parkour: Chaining Dynamic Human Skills via Motion Matching",
+      "summary": "arXiv:2602.15827v1 Announce Type: cross \nAbstract: While recent advances in humanoid locomotion have achieved stable walking on varied terrains, capturing the agility and adaptivity of highly dynamic human motions remains an open challenge. In particular, agile parkour in complex environments demands not only low-level robustness, but also human-like motion expressiveness, long-horizon skill composition, and perception-driven decision-making. In this paper, we present Perceptive Humanoid Parkour",
+      "link": "https://arxiv.org/abs/2602.15827",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-18T09:03:33.526343+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "What if Deception Cannot be Detected? A Cross-Linguistic Study on the Limits of ",
+      "paper_link": "https://arxiv.org/abs/2505.13147",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'What if Deception Cannot be Detected? A Cross-Linguistic Stu' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Toward Safer Diffusion Language Models: Discovery and Mitigation of Priming Vuln",
+      "paper_link": "https://arxiv.org/abs/2510.00565",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Toward Safer Diffusion Language Models: Discovery and Mitiga' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MARS-Sep: Multimodal-Aligned Reinforced Sound Separation",
+      "paper_link": "https://arxiv.org/abs/2510.10509",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MARS-Sep: Multimodal-Aligned Reinforced Sound Separation' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MARLIN: Multi-Agent Reinforcement Learning with Murmuration Intelligence and LLM",
+      "paper_link": "https://arxiv.org/abs/2509.25034",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MARLIN: Multi-Agent Reinforcement Learning with Murmuration ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "General Exploratory Bonus for Optimistic Exploration in RLHF",
+      "paper_link": "https://arxiv.org/abs/2510.03269",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'General Exploratory Bonus for Optimistic Exploration in RLHF' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety",
+      "paper_link": "https://arxiv.org/abs/2602.15799",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Geometry of Alignment Collapse: When Fine-Tuning Breaks ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "GLM-5: from Vibe Coding to Agentic Engineering",
+      "paper_link": "https://arxiv.org/abs/2602.15763",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'GLM-5: from Vibe Coding to Agentic Engineering' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "*-PLUIE: Personalisable metric with Llm Used for Improved Evaluation",
+      "paper_link": "https://arxiv.org/abs/2602.15778",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper '*-PLUIE: Personalisable metric with Llm Used for Improved Ev' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Discovering Implicit Large Language Model Alignment Objectives",
+      "paper_link": "https://arxiv.org/abs/2602.15338",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Discovering Implicit Large Language Model Alignment Objectiv' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "GMAIL: Generative Modality Alignment for generated Image Learning",
+      "paper_link": "https://arxiv.org/abs/2602.15368",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'GMAIL: Generative Modality Alignment for generated Image Lea' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Orthogonalized Policy Optimization:Decoupling Sampling Geometry from Optimizatio",
+      "paper_link": "https://arxiv.org/abs/2601.12415",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Orthogonalized Policy Optimization:Decoupling Sampling Geome' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "LogiPart: Local Large Language Models for Data Exploration at Scale with Logical",
+      "paper_link": "https://arxiv.org/abs/2509.22211",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'LogiPart: Local Large Language Models for Data Exploration a' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "mini-vec2vec: Scaling Universal Geometry Alignment with Linear Transformations",
+      "paper_link": "https://arxiv.org/abs/2510.02348",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'mini-vec2vec: Scaling Universal Geometry Alignment with Line' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The geometry of online conversations and the causal antecedents of conflictual d",
+      "paper_link": "https://arxiv.org/abs/2602.15600",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The geometry of online conversations and the causal antecede' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Relative Geometry of Neural Forecasters: Linking Accuracy and Alignment in Learn",
+      "paper_link": "https://arxiv.org/abs/2602.15676",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Relative Geometry of Neural Forecasters: Linking Accuracy an' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MMS-VPR: Multimodal Street-Level Visual Place Recognition Dataset and Benchmark",
+      "paper_link": "https://arxiv.org/abs/2505.12254",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MMS-VPR: Multimodal Street-Level Visual Place Recognition Da' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Revisiting Backdoor Threat in Federated Instruction Tuning from a Signal Aggrega",
+      "paper_link": "https://arxiv.org/abs/2602.15671",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Revisiting Backdoor Threat in Federated Instruction Tuning f' improves instruction tuning methods. Evaluate instruction structure in [## Core framing (system prompt)]."
+    }
+  ]
+}

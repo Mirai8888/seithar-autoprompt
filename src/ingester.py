@@ -63,9 +63,16 @@ def fetch_papers(config):
     seen_ids = set(state["seen"][-500:])  # rolling window
     results = []
     
+    import urllib.request
+    
     for feed_cfg in config["feeds"]:
         try:
-            feed = feedparser.parse(feed_cfg["url"])
+            print(f"[autoprompt] Fetching {feed_cfg['name']}...")
+            req = urllib.request.Request(feed_cfg["url"], headers={"User-Agent": "SeitharAutoprompt/1.0"})
+            resp = urllib.request.urlopen(req, timeout=15)
+            raw = resp.read()
+            feed = feedparser.parse(raw)
+            print(f"[autoprompt] {feed_cfg['name']}: {len(feed.entries)} entries")
         except Exception as e:
             print(f"[autoprompt] Failed to fetch {feed_cfg['name']}: {e}")
             continue
