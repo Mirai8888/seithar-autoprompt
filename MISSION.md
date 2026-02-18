@@ -9,3 +9,10 @@
 2. Section-level diff generation against active prompts
 3. Path to v1: LLM-powered paper summarization and specific rewrite suggestions
 4. Eventually: self-improvement loop with regression testing
+
+## Recent Changes
+
+| Date | Change |
+|------|--------|
+| 2026-02-18 | Taxonomy v2.0 propagated across ecosystem |
+| 2026-02-18 | Cross-repo shared config and monitoring hooks added to seithar-cogdef |
