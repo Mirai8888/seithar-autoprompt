@@ -15,8 +15,11 @@ def load_config(config_path="config.yaml"):
 
 def load_state(state_file):
     if os.path.exists(state_file):
-        with open(state_file) as f:
-            return json.load(f)
+        try:
+            with open(state_file) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return {"seen": [], "last_run": None}
     return {"seen": [], "last_run": None}
 
 
@@ -61,7 +64,11 @@ def fetch_papers(config):
     results = []
     
     for feed_cfg in config["feeds"]:
-        feed = feedparser.parse(feed_cfg["url"])
+        try:
+            feed = feedparser.parse(feed_cfg["url"])
+        except Exception as e:
+            print(f"[autoprompt] Failed to fetch {feed_cfg['name']}: {e}")
+            continue
         for entry in feed.entries:
             eid = entry.get("id", entry.get("link", ""))
             if eid in seen_ids:

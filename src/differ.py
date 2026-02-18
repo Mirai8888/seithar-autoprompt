@@ -20,8 +20,11 @@ def find_prompt_files(prompts_dir):
 
 def extract_sections(filepath):
     """Extract headed sections from a prompt file."""
-    with open(filepath) as f:
-        content = f.read()
+    try:
+        with open(filepath, encoding="utf-8", errors="replace") as f:
+            content = f.read()
+    except OSError:
+        return []
     
     sections = []
     current_header = "PREAMBLE"
