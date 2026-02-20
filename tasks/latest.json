@@ -1,0 +1,42 @@
+[
+  {
+    "type": "scanner_review",
+    "prompt": "Review 'DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift in LLMs' (https://arxiv.org/abs/2602.16935). Extract any new attack patterns or evasion techniques described. For each, write a 2-sentence description and suggest whether it maps to an existing SCT code or warrants a new taxonomy entry. Output as JSON array of [{pattern, description, sct_mapping, new_code_needed}].",
+    "priority": 9,
+    "source_paper": "DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift in LLMs",
+    "score": 10,
+    "link": "https://arxiv.org/abs/2602.16935"
+  },
+  {
+    "type": "research_note",
+    "prompt": "Write a 400-word Seithar research note analyzing 'Jolt Atlas: Verifiable Inference via Lookup Arguments in Zero Knowledge' (arxiv: https://arxiv.org/abs/2602.17452) through the lens of cognitive warfare. Focus on: how does this map to adversarial manipulation of human or AI decision-making? What defensive applications exist? What offensive applications? Be specific and technical. No em dashes. No marketing language. Clinical voice. Output as markdown with title and one-paragraph abstract.",
+    "priority": 8,
+    "source_paper": "Jolt Atlas: Verifiable Inference via Lookup Arguments in Zero Knowledge",
+    "score": 7,
+    "link": "https://arxiv.org/abs/2602.17452"
+  },
+  {
+    "type": "research_note",
+    "prompt": "Write a 400-word Seithar research note analyzing 'Automating Agent Hijacking via Structural Template Injection' (arxiv: https://arxiv.org/abs/2602.16958) through the lens of cognitive warfare. Focus on: how does this map to adversarial manipulation of human or AI decision-making? What defensive applications exist? What offensive applications? Be specific and technical. No em dashes. No marketing language. Clinical voice. Output as markdown with title and one-paragraph abstract.",
+    "priority": 8,
+    "source_paper": "Automating Agent Hijacking via Structural Template Injection",
+    "score": 6,
+    "link": "https://arxiv.org/abs/2602.16958"
+  },
+  {
+    "type": "research_note",
+    "prompt": "Analyze 'Deep Reinforcement Learning for Optimal Portfolio Allocation: A Comparative Study with Mean-Variance Optimization' (https://arxiv.org/abs/2602.17098) for applications to behavioral modeling and substrate manipulation. How could the RL approach described be adapted to model or influence human decision sequences? Connect to Dezfouli et al. 2020 if applicable. 300 words, clinical.",
+    "priority": 6,
+    "source_paper": "Deep Reinforcement Learning for Optimal Portfolio Allocation: A Comparative Study with Mean-Variance Optimization",
+    "score": 6,
+    "link": "https://arxiv.org/abs/2602.17098"
+  },
+  {
+    "type": "research_note",
+    "prompt": "Analyze 'Strict Subgoal Execution: Reliable Long-Horizon Planning in Hierarchical Reinforcement Learning' (https://arxiv.org/abs/2506.21039) for applications to behavioral modeling and substrate manipulation. How could the RL approach described be adapted to model or influence human decision sequences? Connect to Dezfouli et al. 2020 if applicable. 300 words, clinical.",
+    "priority": 6,
+    "source_paper": "Strict Subgoal Execution: Reliable Long-Horizon Planning in Hierarchical Reinforcement Learning",
+    "score": 6,
+    "link": "https://arxiv.org/abs/2506.21039"
+  }
+]
