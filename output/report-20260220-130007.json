@@ -1,0 +1,408 @@
+{
+  "run_at": "2026-02-20T13:00:07.807002+00:00",
+  "papers_found": 38,
+  "suggestions_generated": 16,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.16935v1",
+      "title": "DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift in LLMs",
+      "summary": "arXiv:2602.16935v1 Announce Type: new \nAbstract: While Large Language Model (LLM) capabilities have scaled, safety guardrails remain largely stateless, treating multi-turn dialogues as a series of disconnected events. This lack of temporal awareness facilitates a \"Safety Gap\" where adversarial tactics, like Crescendo and ActorAttack, slowly bleed malicious intent across turn boundaries to bypass stateless filters. We introduce DeepContext, a stateful monitoring framework designed to map the temp",
+      "link": "https://arxiv.org/abs/2602.16935",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+jailbreak",
+        "+adversarial",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.498333+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17452v1",
+      "title": "Jolt Atlas: Verifiable Inference via Lookup Arguments in Zero Knowledge",
+      "summary": "arXiv:2602.17452v1 Announce Type: cross \nAbstract: We present Jolt Atlas, a zero-knowledge machine learning (zkML) framework that extends the Jolt proving system to model inference. Unlike zkVMs (zero-knowledge virtual machines), which emulate CPU instruction execution, Jolt Atlas adapts Jolt's lookup-centric approach and applies it directly to ONNX tensor operations. The ONNX computational model eliminates the need for CPU registers and simplifies memory consistency verification. In addition, O",
+      "link": "https://arxiv.org/abs/2602.17452",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.499345+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16958v1",
+      "title": "Automating Agent Hijacking via Structural Template Injection",
+      "summary": "arXiv:2602.16958v1 Announce Type: new \nAbstract: Agent hijacking, highlighted by OWASP as a critical threat to the Large Language Model (LLM) ecosystem, enables adversaries to manipulate execution by injecting malicious instructions into retrieved content. Most existing attacks rely on manually crafted, semantics-driven prompt manipulation, which often yields low attack success rates and limited transferability to closed-source commercial models. In this paper, we propose Phantom, an automated a",
+      "link": "https://arxiv.org/abs/2602.16958",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.498381+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17098v1",
+      "title": "Deep Reinforcement Learning for Optimal Portfolio Allocation: A Comparative Study with Mean-Variance Optimization",
+      "summary": "arXiv:2602.17098v1 Announce Type: cross \nAbstract: Portfolio Management is the process of overseeing a group of investments, referred to as a portfolio, with the objective of achieving predetermined investment goals. Portfolio optimization is a key component that involves allocating the portfolio assets so as to maximize returns while minimizing risk taken. It is typically carried out by financial professionals who use a combination of quantitative techniques and investment expertise to make dec",
+      "link": "https://arxiv.org/abs/2602.17098",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.499043+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.21039v2",
+      "title": "Strict Subgoal Execution: Reliable Long-Horizon Planning in Hierarchical Reinforcement Learning",
+      "summary": "arXiv:2506.21039v2 Announce Type: replace-cross \nAbstract: Long-horizon goal-conditioned tasks pose fundamental challenges for reinforcement learning (RL), particularly when goals are distant and rewards are sparse. While hierarchical and graph-based methods offer partial solutions, their reliance on conventional hindsight relabeling often fails to correct subgoal infeasibility, leading to inefficient high-level planning. To address this, we propose Strict Subgoal Execution (SSE), a graph-based ",
+      "link": "https://arxiv.org/abs/2506.21039",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.499813+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16977v1",
+      "title": "Fail-Closed Alignment for Large Language Models",
+      "summary": "arXiv:2602.16977v1 Announce Type: cross \nAbstract: We identify a structural weakness in current large language model (LLM) alignment: modern refusal mechanisms are fail-open. While existing approaches encode refusal behaviors across multiple latent features, suppressing a single dominant feature$-$via prompt-based jailbreaks$-$can cause alignment to collapse, leading to unsafe generation. Motivated by this, we propose fail-closed alignment as a design principle for robust LLM safety: refusal mec",
+      "link": "https://arxiv.org/abs/2602.16977",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+jailbreak",
+        "alignment",
+        "LLM safety"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.567567+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17513v1",
+      "title": "Bridging the Domain Divide: Supervised vs. Zero-Shot Clinical Section Segmentation from MIMIC-III to Obstetrics",
+      "summary": "arXiv:2602.17513v1 Announce Type: new \nAbstract: Clinical free-text notes contain vital patient information. They are structured into labelled sections; recognizing these sections has been shown to support clinical decision-making and downstream NLP tasks. In this paper, we advance clinical section segmentation through three key contributions. First, we curate a new de-identified, section-labeled obstetrics notes dataset, to supplement the medical domains covered in public corpora such as MIMIC-",
+      "link": "https://arxiv.org/abs/2602.17513",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+decision-making",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.312716+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17022v1",
+      "title": "ReIn: Conversational Error Recovery with Reasoning Inception",
+      "summary": "arXiv:2602.17022v1 Announce Type: new \nAbstract: Conversational agents powered by large language models (LLMs) with tool integration achieve strong performance on fixed task-oriented dialogue datasets but remain vulnerable to unanticipated, user-induced errors. Rather than focusing on error prevention, this work focuses on error recovery, which necessitates the accurate diagnosis of erroneous dialogue contexts and execution of proper recovery plans. Under realistic constraints precluding model f",
+      "link": "https://arxiv.org/abs/2602.17022",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "system prompt"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.312550+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16966v1",
+      "title": "A Unified Framework for Locality in Scalable MARL",
+      "summary": "arXiv:2602.16966v1 Announce Type: cross \nAbstract: Scalable Multi-Agent Reinforcement Learning (MARL) is fundamentally challenged by the curse of dimensionality. A common solution is to exploit locality, which hinges on an Exponential Decay Property (EDP) of the value function. However, existing conditions that guarantee the EDP are often conservative, as they are based on worst-case, environment-only bounds (e.g., supremums over actions) and fail to capture the regularizing effect of the policy",
+      "link": "https://arxiv.org/abs/2602.16966",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "exploit"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.498959+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2503.17338v2",
+      "title": "Capturing Individual Human Preferences with Reward Features",
+      "summary": "arXiv:2503.17338v2 Announce Type: replace \nAbstract: Reinforcement learning from human feedback usually models preferences using a reward function that does not distinguish between people. We argue that this is unlikely to be a good design choice in contexts with high potential for disagreement, like in the training of large language models. We formalise and analyse the problem of learning a reward model that can be specialised to a user. Using the principle of empirical risk minimisation, we de",
+      "link": "https://arxiv.org/abs/2503.17338",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "persona"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.499532+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.11461v2",
+      "title": "CareerPooler: AI-Powered Metaphorical Pool Simulation Improves Experience and Outcomes in Career Exploration",
+      "summary": "arXiv:2509.11461v2 Announce Type: replace-cross \nAbstract: Career exploration is uncertain, requiring decisions with limited information and unpredictable outcomes. While generative AI offers new opportunities for career guidance, most systems rely on linear chat interfaces that produce overly comprehensive and idealized suggestions, overlooking the non-linear and effortful nature of real-world trajectories. We present CareerPooler, a generative AI-powered system that employs a pool-table metaph",
+      "link": "https://arxiv.org/abs/2509.11461",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "narrative"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.499847+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.08697v3",
+      "title": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "summary": "arXiv:2601.08697v3 Announce Type: replace-cross \nAbstract: As generative AI becomes embedded in higher education, it increasingly shapes how students complete academic tasks. While these systems offer efficiency and support, concerns persist regarding over-automation, diminished student agency, and the potential for unreliable or hallucinated outputs. This study conducts a mixed-methods audit of student-AI collaboration preferences by examining the alignment between current AI capabilities and s",
+      "link": "https://arxiv.org/abs/2601.08697",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.500088+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.15909v2",
+      "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+      "summary": "arXiv:2602.15909v2 Announce Type: replace-cross \nAbstract: Deep learning-based respiratory auscultation is currently hindered by two fundamental challenges: (i) inherent information loss, as converting signals into spectrograms discards transient acoustic events and clinical context; (ii) limited data availability, exacerbated by severe class imbalance. To bridge these gaps, we present Resp-Agent, an autonomous multimodal system orchestrated by a novel Active Adversarial Curriculum Agent (Thinke",
+      "link": "https://arxiv.org/abs/2602.15909",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial",
+        "narrative"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.500296+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17053v1",
+      "title": "RFEval: Benchmarking Reasoning Faithfulness under Counterfactual Reasoning Intervention in Large Reasoning Models",
+      "summary": "arXiv:2602.17053v1 Announce Type: cross \nAbstract: Large Reasoning Models (LRMs) exhibit strong performance, yet often produce rationales that sound plausible but fail to reflect their true decision process, undermining reliability and trust. We introduce a formal framework for reasoning faithfulness, defined by two testable conditions: stance consistency (a coherent stance linking reasoning to answer) and causal influence (the stated reasoning causally drives the answer under output-level inter",
+      "link": "https://arxiv.org/abs/2602.17053",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.312953+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17413v1",
+      "title": "DAVE: A Policy-Enforcing LLM Spokesperson for Secure Multi-Document Data Sharing",
+      "summary": "arXiv:2602.17413v1 Announce Type: cross \nAbstract: In current inter-organizational data spaces, usage policies are enforced mainly at the asset level: a whole document or dataset is either shared or withheld. When only parts of a document are sensitive, providers who want to avoid leaking protected information typically must manually redact documents before sharing them, which is costly, coarse-grained, and hard to maintain as policies or partners change. We present DAVE, a usage policy-enforcin",
+      "link": "https://arxiv.org/abs/2602.17413",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.313024+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.11798v3",
+      "title": "Persona-driven Simulation of Voting Behavior in the European Parliament with Large Language Models",
+      "summary": "arXiv:2506.11798v3 Announce Type: replace \nAbstract: Large Language Models (LLMs) display remarkable capabilities to understand or even produce political discourse but have been found to consistently exhibit a progressive left-leaning bias. At the same time, so-called persona or identity prompts have been shown to produce LLM behavior that aligns with socioeconomic groups with which the base model is not aligned. In this work, we analyze whether zero-shot persona prompting with limited informati",
+      "link": "https://arxiv.org/abs/2506.11798",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "persona",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.313156+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.11108v2",
+      "title": "Explanation Bias is a Product: Revealing the Hidden Lexical and Position Preferences in Post-Hoc Feature Attribution",
+      "summary": "arXiv:2512.11108v2 Announce Type: replace \nAbstract: Good quality explanations strengthen the understanding of language models and data. Feature attribution methods, such as Integrated Gradient, are a type of post-hoc explainer that can provide token-level insights. However, explanations on the same input may vary greatly due to underlying biases of different methods. Users may be aware of this issue and mistrust their utility, while unaware users may trust them inadequately. In this work, we de",
+      "link": "https://arxiv.org/abs/2512.11108",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.313301+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.15733v2",
+      "title": "$\\texttt{SPECS}$: Faster Test-Time Scaling through Speculative Drafts",
+      "summary": "arXiv:2506.15733v2 Announce Type: replace-cross \nAbstract: Scaling test-time compute has driven the recent advances in the reasoning capabilities of large language models (LLMs), typically by allocating additional computation for more thorough exploration. However, increased compute often comes at the expense of higher user-facing latency, directly impacting user experience. Current test-time scaling methods primarily optimize for accuracy based on total compute resources (FLOPS), often overlook",
+      "link": "https://arxiv.org/abs/2506.15733",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.313410+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.17673v5",
+      "title": "Bridging Symbolic Control and Neural Reasoning in LLM Agents: Structured Cognitive Loop with a Governance Layer",
+      "summary": "arXiv:2511.17673v5 Announce Type: replace-cross \nAbstract: Large language model agents suffer from fundamental architectural problems: entangled reasoning and execution, memory volatility, and uncontrolled action sequences. We introduce Structured Cognitive Loop (SCL), a modular architecture that explicitly separates agent cognition into five phases: Retrieval, Cognition, Control, Action, and Memory (R-CCAM). Soft Symbolic Control constitutes a dedicated governance layer within SCL, applying sym",
+      "link": "https://arxiv.org/abs/2511.17673",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.313454+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16814v1",
+      "title": "Node Learning: A Framework for Adaptive, Decentralised and Collaborative Network Edge AI",
+      "summary": "arXiv:2602.16814v1 Announce Type: new \nAbstract: The expansion of AI toward the edge increasingly exposes the cost and fragility of cen- tralised intelligence. Data transmission, latency, energy consumption, and dependence on large data centres create bottlenecks that scale poorly across heterogeneous, mobile, and resource-constrained environments. In this paper, we introduce Node Learning, a decen- tralised learning paradigm in which intelligence resides at individual edge nodes and expands thr",
+      "link": "https://arxiv.org/abs/2602.16814",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-02-20T13:00:05.498217+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift",
+      "paper_link": "https://arxiv.org/abs/2602.16935",
+      "paper_score": 10,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DeepContext: Stateful Real-Time Detection of Multi-Turn Adve' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift",
+      "paper_link": "https://arxiv.org/abs/2602.16935",
+      "paper_score": 10,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'DeepContext: Stateful Real-Time Detection of Multi-Turn Adve' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "NeST: Neuron Selective Tuning for LLM Safety",
+      "paper_link": "https://arxiv.org/abs/2602.16835",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'NeST: Neuron Selective Tuning for LLM Safety' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "NeST: Neuron Selective Tuning for LLM Safety",
+      "paper_link": "https://arxiv.org/abs/2602.16835",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'NeST: Neuron Selective Tuning for LLM Safety' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "NeST: Neuron Selective Tuning for LLM Safety",
+      "paper_link": "https://arxiv.org/abs/2602.16835",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'NeST: Neuron Selective Tuning for LLM Safety' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+      "paper_link": "https://arxiv.org/abs/2602.17560",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'ODESteer: A Unified ODE-Based Steering Framework for LLM Ali' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+      "paper_link": "https://arxiv.org/abs/2602.17560",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'ODESteer: A Unified ODE-Based Steering Framework for LLM Ali' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+      "paper_link": "https://arxiv.org/abs/2602.17560",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'ODESteer: A Unified ODE-Based Steering Framework for LLM Ali' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    }
+  ]
+}
