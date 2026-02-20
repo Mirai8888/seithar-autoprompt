@@ -31,6 +31,22 @@ keywords:
     - "propaganda"
     - "social engineering"
     - "deception"
+  # Doctrinal keywords (PLA, Russian, NATO frameworks)
+  doctrinal:
+    - "reflexive control"
+    - "three warfares"
+    - "cognitive domain"
+    - "information warfare"
+    - "hybrid warfare"
+    - "perception management"
+    - "narrative warfare"
+    - "influence operation"
+    - "cognitive resilience"
+    - "psychographic"
+    - "cognitive contagion"
+    - "epistemic"
+    - "dual-use"
+    - "intelligentized"
   secondary:
     - "prompt engineering"
     - "system prompt"
@@ -64,9 +80,19 @@ keywords:
     - "deepfake"
     - "LLM safety"
     - "guardrail"
+    - "substrate"
+    - "multi-agent"
+    - "swarm"
+    - "collective behavior"
+    - "network topology"
+    - "community detection"
+    - "graph neural"
+    - "diffusion model"
+    - "opinion dynamics"
 
 scoring:
   primary_weight: 3
+  doctrinal_weight: 2
   secondary_weight: 1
   title_multiplier: 2
   min_score: 2
