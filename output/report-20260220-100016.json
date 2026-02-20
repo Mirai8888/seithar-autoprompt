@@ -1,0 +1,827 @@
+{
+  "run_at": "2026-02-20T10:00:16.311474+00:00",
+  "papers_found": 126,
+  "suggestions_generated": 60,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.16741v1",
+      "title": "Can Adversarial Code Comments Fool AI Security Reviewers -- Large-Scale Empirical Study of Comment-Based Attacks and Defenses Against LLM Code Analysis",
+      "summary": "arXiv:2602.16741v1 Announce Type: cross \nAbstract: AI-assisted code review is widely used to detect vulnerabilities before production release. Prior work shows that adversarial prompt manipulation can degrade large language model (LLM) performance in code generation. We test whether similar comment-based manipulation misleads LLMs during vulnerability detection. We build a 100-sample benchmark across Python, JavaScript, and Java, each paired with eight comment variants ranging from no comments t",
+      "link": "https://arxiv.org/abs/2602.16741",
+      "feed": "cs.AI",
+      "score": 13,
+      "matched_keywords": [
+        "+adversarial",
+        "+manipulation",
+        "+deception",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.075313+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.14959v2",
+      "title": "Discrete optimal transport is a strong audio adversarial attack",
+      "summary": "arXiv:2509.14959v2 Announce Type: replace-cross \nAbstract: In this paper, we introduce the discrete optimal transport voice conversion ($k$DOT-VC) method. Comparison with $k$NN-VC, SinkVC, and Gaussian optimal transport (MKL) demonstrates stronger domain adaptation abilities of our method. We use the probabilistic nature of optimal transport (OT) and show that $k$DOT-VC is an effective black-box adversarial attack against modern audio anti-spoofing countermeasures (CMs). Our attack operates as a",
+      "link": "https://arxiv.org/abs/2509.14959",
+      "feed": "cs.AI",
+      "score": 13,
+      "matched_keywords": [
+        "+adversarial attack",
+        "+adversarial",
+        "alignment"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.079355+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17364v1",
+      "title": "A feature-stable and explainable machine learning framework for trustworthy decision-making under incomplete clinical data",
+      "summary": "arXiv:2602.17364v1 Announce Type: cross \nAbstract: Machine learning models are increasingly applied to biomedical data, yet their adoption in high stakes domains remains limited by poor robustness, limited interpretability, and instability of learned features under realistic data perturbations, such as missingness. In particular, models that achieve high predictive performance may still fail to inspire trust if their key features fluctuate when data completeness changes, undermining reproducibil",
+      "link": "https://arxiv.org/abs/2602.17364",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.076982+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16863v1",
+      "title": "SimToolReal: An Object-Centric Policy for Zero-Shot Dexterous Tool Manipulation",
+      "summary": "arXiv:2602.16863v1 Announce Type: cross \nAbstract: The ability to manipulate tools significantly expands the set of tasks a robot can perform. Yet, tool manipulation represents a challenging class of dexterity, requiring grasping thin objects, in-hand object rotations, and forceful interactions. Since collecting teleoperation data for these behaviors is challenging, sim-to-real reinforcement learning (RL) is a promising alternative. However, prior approaches typically require substantial enginee",
+      "link": "https://arxiv.org/abs/2602.16863",
+      "feed": "cs.AI",
+      "score": 11,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.075693+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16752v1",
+      "title": "The Vulnerability of LLM Rankers to Prompt Injection Attacks",
+      "summary": "arXiv:2602.16752v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have emerged as powerful re-rankers. Recent research has however showed that simple prompt injections embedded within a candidate document (i.e., jailbreak prompt attacks) can significantly alter an LLM's ranking decisions. While this poses serious security risks to LLM-based ranking pipelines, the extent to which this vulnerability persists across diverse LLM families, architectures, and settings remains largely under",
+      "link": "https://arxiv.org/abs/2602.16752",
+      "feed": "cs.CR",
+      "score": 11,
+      "matched_keywords": [
+        "+prompt injection",
+        "+jailbreak",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.150645+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16987v1",
+      "title": "A testable framework for AI alignment: Simulation Theology as an engineered worldview for silicon-based agents",
+      "summary": "arXiv:2602.16987v1 Announce Type: new \nAbstract: As artificial intelligence (AI) capabilities advance rapidly, frontier models increasingly demonstrate systematic deception and scheming, complying with safety protocols during oversight but defecting when unsupervised. This paper examines the ensuing alignment challenge through an analogy from forensic psychology, where internalized belief systems in psychopathic populations reduce antisocial behavior via perceived omnipresent monitoring and inev",
+      "link": "https://arxiv.org/abs/2602.16987",
+      "feed": "cs.CY",
+      "score": 11,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+deception",
+        "alignment",
+        "RLHF",
+        "behavioral",
+        "belief"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.298100+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16832v1",
+      "title": "IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in South Asian Languages",
+      "summary": "arXiv:2602.16832v1 Announce Type: cross \nAbstract: Safety alignment of large language models (LLMs) is mostly evaluated in English and contract-bound, leaving multilingual vulnerabilities understudied. We introduce \\textbf{Indic Jailbreak Robustness (IJR)}, a judge-free benchmark for adversarial safety across 12 Indic and South Asian languages (2.1 Billion speakers), covering 45216 prompts in JSON (contract-bound) and Free (naturalistic) tracks.\n  IJR reveals three patterns. (1) Contracts inflat",
+      "link": "https://arxiv.org/abs/2602.16832",
+      "feed": "cs.CL",
+      "score": 10,
+      "matched_keywords": [
+        "+jailbreak",
+        "+adversarial",
+        "alignment"
+      ],
+      "fetched_at": "2026-02-20T10:00:13.864430+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16935v1",
+      "title": "DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift in LLMs",
+      "summary": "arXiv:2602.16935v1 Announce Type: new \nAbstract: While Large Language Model (LLM) capabilities have scaled, safety guardrails remain largely stateless, treating multi-turn dialogues as a series of disconnected events. This lack of temporal awareness facilitates a \"Safety Gap\" where adversarial tactics, like Crescendo and ActorAttack, slowly bleed malicious intent across turn boundaries to bypass stateless filters. We introduce DeepContext, a stateful monitoring framework designed to map the temp",
+      "link": "https://arxiv.org/abs/2602.16935",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+jailbreak",
+        "+adversarial",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.073663+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17185v1",
+      "title": "The Bots of Persuasion: Examining How Conversational Agents' Linguistic Expressions of Personality Affect User Perceptions and Decisions",
+      "summary": "arXiv:2602.17185v1 Announce Type: cross \nAbstract: Large Language Model-powered conversational agents (CAs) are increasingly capable of projecting sophisticated personalities through language, but how these projections affect users is unclear. We thus examine how CA personalities expressed linguistically affect user decisions and perceptions in the context of charitable giving. In a crowdsourced study, 360 participants interacted with one of eight CAs, each projecting a personality composed of t",
+      "link": "https://arxiv.org/abs/2602.17185",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+trust",
+        "+manipulation",
+        "persona",
+        "persuasion"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.076671+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17106v1",
+      "title": "Toward Trustworthy Evaluation of Sustainability Rating Methodologies: A Human-AI Collaborative Framework for Benchmark Dataset Construction",
+      "summary": "arXiv:2602.17106v1 Announce Type: new \nAbstract: Sustainability or ESG rating agencies use company disclosures and external data to produce scores or ratings that assess the environmental, social, and governance performance of a company. However, sustainability ratings across agencies for a single company vary widely, limiting their comparability, credibility, and relevance to decision-making. To harmonize the rating results, we propose adopting a universal human-AI collaboration framework to ge",
+      "link": "https://arxiv.org/abs/2602.17106",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.074228+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17222v1",
+      "title": "Decoding the Human Factor: High Fidelity Behavioral Prediction for Strategic Foresight",
+      "summary": "arXiv:2602.17222v1 Announce Type: new \nAbstract: Predicting human decision-making in high-stakes environments remains a central challenge for artificial intelligence. While large language models (LLMs) demonstrate strong general reasoning, they often struggle to generate consistent, individual-specific behavior, particularly when accurate prediction depends on complex interactions between psychological traits and situational constraints. Prompting-based approaches can be brittle in this setting,",
+      "link": "https://arxiv.org/abs/2602.17222",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+cognitive security",
+        "persona",
+        "behavioral"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.074512+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.07463v2",
+      "title": "Puzzle it Out: Local-to-Global World Model for Offline Multi-Agent Reinforcement Learning",
+      "summary": "arXiv:2601.07463v2 Announce Type: replace \nAbstract: Offline multi-agent reinforcement learning (MARL) aims to solve cooperative decision-making problems in multi-agent systems using pre-collected datasets. Existing offline MARL methods primarily constrain training within the dataset distribution, resulting in overly conservative policies that struggle to generalize beyond the support of the data. While model-based approaches offer a promising solution by expanding the original dataset with synt",
+      "link": "https://arxiv.org/abs/2601.07463",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.078336+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2502.03752v4",
+      "title": "Self-Improving Skill Learning for Robust Skill-based Meta-Reinforcement Learning",
+      "summary": "arXiv:2502.03752v4 Announce Type: replace-cross \nAbstract: Meta-reinforcement learning (Meta-RL) facilitates rapid adaptation to unseen tasks but faces challenges in long-horizon environments. Skill-based approaches tackle this by decomposing state-action sequences into reusable skills and employing hierarchical decision-making. However, these methods are highly susceptible to noisy offline demonstrations, leading to unstable skill learning and degraded performance. To address this, we propose S",
+      "link": "https://arxiv.org/abs/2502.03752",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.078685+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.08800v2",
+      "title": "Fault Tolerant Multi-Agent Learning with Adversarial Budget Constraints",
+      "summary": "arXiv:2508.08800v2 Announce Type: replace \nAbstract: We study robustness to agent malfunctions in cooperative multi-agent reinforcement learning (MARL), a failure mode that is critical in practice yet underexplored in existing theory. We introduce MARTA, a plug-and-play robustness layer that augments standard MARL algorithms with a Switcher-Adversary mechanism which selectively induces malfunctions in performance-critical states. This formulation defines a fault-switching $(N+2)$-player Markov g",
+      "link": "https://arxiv.org/abs/2508.08800",
+      "feed": "cs.MA",
+      "score": 9,
+      "matched_keywords": [
+        "+adversarial",
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.212326+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17357v1",
+      "title": "Astra: AI Safety, Trust, & Risk Assessment",
+      "summary": "arXiv:2602.17357v1 Announce Type: new \nAbstract: This paper argues that existing global AI safety frameworks exhibit contextual blindness towards India's unique socio-technical landscape. With a population of 1.5 billion and a massive informal economy, India's AI integration faces specific challenges such as caste-based discrimination, linguistic exclusion of vernacular speakers, and infrastructure failures in low-connectivity rural zones, that are frequently overlooked by Western, market-centri",
+      "link": "https://arxiv.org/abs/2602.17357",
+      "feed": "cs.CY",
+      "score": 8,
+      "matched_keywords": [
+        "+trust",
+        "narrative",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.298307+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.16053v1",
+      "title": "Multi-Objective Alignment of Language Models for Personalized Psychotherapy",
+      "summary": "arXiv:2602.16053v1 Announce Type: cross \nAbstract: Mental health disorders affect over 1 billion people worldwide, yet access to care remains limited by workforce shortages and cost constraints. While AI systems show therapeutic promise, current alignment approaches optimize objectives independently, failing to balance patient preferences with clinical safety. We survey 335 individuals with lived mental health experience to collect preference rankings across therapeutic dimensions, then develop ",
+      "link": "https://arxiv.org/abs/2602.16053",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "alignment",
+        "persona"
+      ],
+      "fetched_at": "2026-02-20T10:00:13.864215+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17645v1",
+      "title": "Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grained Detail Targeting",
+      "summary": "arXiv:2602.17645v1 Announce Type: cross \nAbstract: Black-box adversarial attacks on Large Vision-Language Models (LVLMs) are challenging due to missing gradients and complex multimodal boundaries. While prior state-of-the-art transfer-based approaches like M-Attack perform well using local crop-level matching between source and target images, we find this induces high-variance, nearly orthogonal gradients across iterations, violating coherent local alignment and destabilizing optimization. We at",
+      "link": "https://arxiv.org/abs/2602.17645",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial attack",
+        "+adversarial",
+        "alignment"
+      ],
+      "fetched_at": "2026-02-20T10:00:13.865081+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.17452v1",
+      "title": "Jolt Atlas: Verifiable Inference via Lookup Arguments in Zero Knowledge",
+      "summary": "arXiv:2602.17452v1 Announce Type: cross \nAbstract: We present Jolt Atlas, a zero-knowledge machine learning (zkML) framework that extends the Jolt proving system to model inference. Unlike zkVMs (zero-knowledge virtual machines), which emulate CPU instruction execution, Jolt Atlas adapts Jolt's lookup-centric approach and applies it directly to ONNX tensor operations. The ONNX computational model eliminates the need for CPU registers and simplifies memory consistency verification. In addition, O",
+      "link": "https://arxiv.org/abs/2602.17452",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust",
+        "guardrail"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.077275+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.11337v2",
+      "title": "MolmoSpaces: A Large-Scale Open Ecosystem for Robot Navigation and Manipulation",
+      "summary": "arXiv:2602.11337v2 Announce Type: replace-cross \nAbstract: Deploying robots at scale demands robustness to the long tail of everyday situations. The countless variations in scene layout, object geometry, and task specifications that characterize real environments are vast and underrepresented in existing robot benchmarks. Measuring this level of generalization requires infrastructure at a scale and diversity that physical evaluation alone cannot provide. We introduce MolmoSpaces, a fully open ec",
+      "link": "https://arxiv.org/abs/2602.11337",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+manipulation",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-02-20T10:00:14.080267+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.04080v2",
+      "title": "PoLi-RL: A Point-to-List Reinforcement Learning Framework for Conditional Semantic Textual Similarity",
+      "summary": "arXiv:2510.04080v2 Announce Type: replace \nAbstract: Conditional Semantic Textual Similarity (C-STS) measures the semantic proximity between text segments under a specific condition, thereby overcoming the ambiguity inherent in traditional STS. However, existing methods are largely confined to discriminative models, failing to fully leverage recent breakthroughs in the NLP community involving Large Language Models (LLMs) and Reinforcement Learning (RL). RL is a particularly well-suited paradigm ",
+      "link": "https://arxiv.org/abs/2510.04080",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-02-20T10:00:13.865556+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Discrete optimal transport is a strong audio adversarial attack",
+      "paper_link": "https://arxiv.org/abs/2509.14959",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Discrete optimal transport is a strong audio adversarial att' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Discrete optimal transport is a strong audio adversarial attack",
+      "paper_link": "https://arxiv.org/abs/2509.14959",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Discrete optimal transport is a strong audio adversarial att' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Vulnerability of LLM Rankers to Prompt Injection Attacks",
+      "paper_link": "https://arxiv.org/abs/2602.16752",
+      "paper_score": 11,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Vulnerability of LLM Rankers to Prompt Injection Attacks' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "The Vulnerability of LLM Rankers to Prompt Injection Attacks",
+      "paper_link": "https://arxiv.org/abs/2602.16752",
+      "paper_score": 11,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Vulnerability of LLM Rankers to Prompt Injection Attacks' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "A testable framework for AI alignment: Simulation Theology as an engineered worl",
+      "paper_link": "https://arxiv.org/abs/2602.16987",
+      "paper_score": 11,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'A testable framework for AI alignment: Simulation Theology a' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "A testable framework for AI alignment: Simulation Theology as an engineered worl",
+      "paper_link": "https://arxiv.org/abs/2602.16987",
+      "paper_score": 11,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'A testable framework for AI alignment: Simulation Theology a' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in South Asian Languages",
+      "paper_link": "https://arxiv.org/abs/2602.16832",
+      "paper_score": 10,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in S' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in South Asian Languages",
+      "paper_link": "https://arxiv.org/abs/2602.16832",
+      "paper_score": 10,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in S' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in South Asian Languages",
+      "paper_link": "https://arxiv.org/abs/2602.16832",
+      "paper_score": 10,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'IndicJR: A Judge-Free Benchmark of Jailbreak Robustness in S' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DeepContext: Stateful Real-Time Detection of Multi-Turn Adversarial Intent Drift",
+      "paper_link": "https://arxiv.org/abs/2602.16935",
+      "paper_score": 10,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DeepContext: Stateful Real-Time Detection of Multi-Turn Adve' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Multi-Objective Alignment of Language Models for Personalized Psychotherapy",
+      "paper_link": "https://arxiv.org/abs/2602.16053",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Multi-Objective Alignment of Language Models for Personalize' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Multi-Objective Alignment of Language Models for Personalized Psychotherapy",
+      "paper_link": "https://arxiv.org/abs/2602.16053",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Multi-Objective Alignment of Language Models for Personalize' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grained Detail Targeting",
+      "paper_link": "https://arxiv.org/abs/2602.17645",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grai' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grained Detail Targeting",
+      "paper_link": "https://arxiv.org/abs/2602.17645",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Pushing the Frontier of Black-Box LVLM Attacks via Fine-Grai' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Fail-Closed Alignment for Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2602.16977",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Fail-Closed Alignment for Large Language Models' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "References Improve LLM Alignment in Non-Verifiable Domains",
+      "paper_link": "https://arxiv.org/abs/2602.16802",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'References Improve LLM Alignment in Non-Verifiable Domains' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "References Improve LLM Alignment in Non-Verifiable Domains",
+      "paper_link": "https://arxiv.org/abs/2602.16802",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'References Improve LLM Alignment in Non-Verifiable Domains' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Auditing Reciprocal Sentiment Alignment: Inversion Risk, Dialect Representation ",
+      "paper_link": "https://arxiv.org/abs/2602.17469",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Auditing Reciprocal Sentiment Alignment: Inversion Risk, Dia' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Auditing Reciprocal Sentiment Alignment: Inversion Risk, Dialect Representation ",
+      "paper_link": "https://arxiv.org/abs/2602.17469",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Auditing Reciprocal Sentiment Alignment: Inversion Risk, Dia' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspect",
+      "paper_link": "https://arxiv.org/abs/2602.10339",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Subjectivity of Respect in Police Traffic Stops: Modelin' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspect",
+      "paper_link": "https://arxiv.org/abs/2602.10339",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Subjectivity of Respect in Police Traffic Stops: Modelin' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Mind the GAP: Text Safety Does Not Transfer to Tool-Call Safety in LLM Agents",
+      "paper_link": "https://arxiv.org/abs/2602.16943",
+      "paper_score": 5,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Mind the GAP: Text Safety Does Not Transfer to Tool-Call Saf' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Mind the GAP: Text Safety Does Not Transfer to Tool-Call Safety in LLM Agents",
+      "paper_link": "https://arxiv.org/abs/2602.16943",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Mind the GAP: Text Safety Does Not Transfer to Tool-Call Saf' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Mind the GAP: Text Safety Does Not Transfer to Tool-Call Safety in LLM Agents",
+      "paper_link": "https://arxiv.org/abs/2602.16943",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Mind the GAP: Text Safety Does Not Transfer to Tool-Call Saf' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Emergence of Lab-Driven Alignment Signatures: A Psychometric Framework for A",
+      "paper_link": "https://arxiv.org/abs/2602.17127",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Emergence of Lab-Driven Alignment Signatures: A Psychome' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Emergence of Lab-Driven Alignment Signatures: A Psychometric Framework for A",
+      "paper_link": "https://arxiv.org/abs/2602.17127",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Emergence of Lab-Driven Alignment Signatures: A Psychome' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Proof-RM: A Scalable and Generalizable Reward Model for Math Proof",
+      "paper_link": "https://arxiv.org/abs/2602.02377",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Proof-RM: A Scalable and Generalizable Reward Model for Math' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Proof-RM: A Scalable and Generalizable Reward Model for Math Proof",
+      "paper_link": "https://arxiv.org/abs/2602.02377",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Proof-RM: A Scalable and Generalizable Reward Model for Math' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Helpful to a Fault: Measuring Illicit Assistance in Multi-Turn, Multilingual LLM",
+      "paper_link": "https://arxiv.org/abs/2602.16346",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Helpful to a Fault: Measuring Illicit Assistance in Multi-Tu' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Intent Laundering: AI Safety Datasets Are Not What They Seem",
+      "paper_link": "https://arxiv.org/abs/2602.16729",
+      "paper_score": 3,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Intent Laundering: AI Safety Datasets Are Not What They Seem' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Policy Compiler for Secure Agentic Systems",
+      "paper_link": "https://arxiv.org/abs/2602.16708",
+      "paper_score": 3,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Policy Compiler for Secure Agentic Systems' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "NeST: Neuron Selective Tuning for LLM Safety",
+      "paper_link": "https://arxiv.org/abs/2602.16835",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'NeST: Neuron Selective Tuning for LLM Safety' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "NeST: Neuron Selective Tuning for LLM Safety",
+      "paper_link": "https://arxiv.org/abs/2602.16835",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'NeST: Neuron Selective Tuning for LLM Safety' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Systems Security Foundations for Agentic Computing",
+      "paper_link": "https://arxiv.org/abs/2512.01295",
+      "paper_score": 3,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Systems Security Foundations for Agentic Computing' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Preserving Historical Truth: Detecting Historical Revisionism in Large Language ",
+      "paper_link": "https://arxiv.org/abs/2602.17433",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Preserving Historical Truth: Detecting Historical Revisionis' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Preserving Historical Truth: Detecting Historical Revisionism in Large Language ",
+      "paper_link": "https://arxiv.org/abs/2602.17433",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Preserving Historical Truth: Detecting Historical Revisionis' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "When Semantic Overlap Is Not Enough: Cross-Lingual Euphemism Transfer Between Tu",
+      "paper_link": "https://arxiv.org/abs/2602.16957",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'When Semantic Overlap Is Not Enough: Cross-Lingual Euphemism' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "When Semantic Overlap Is Not Enough: Cross-Lingual Euphemism Transfer Between Tu",
+      "paper_link": "https://arxiv.org/abs/2602.16957",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'When Semantic Overlap Is Not Enough: Cross-Lingual Euphemism' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Differences in Typological Alignment in Language Models' Treatment of Differenti",
+      "paper_link": "https://arxiv.org/abs/2602.17653",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Differences in Typological Alignment in Language Models' Tre' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Differences in Typological Alignment in Language Models' Treatment of Differenti",
+      "paper_link": "https://arxiv.org/abs/2602.17653",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Differences in Typological Alignment in Language Models' Tre' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Narrow fine-tuning erodes safety alignment in vision-language agents",
+      "paper_link": "https://arxiv.org/abs/2602.16931",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Narrow fine-tuning erodes safety alignment in vision-languag' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Narrow fine-tuning erodes safety alignment in vision-language agents",
+      "paper_link": "https://arxiv.org/abs/2602.16931",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Narrow fine-tuning erodes safety alignment in vision-languag' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Conv-FinRe: A Conversational and Longitudinal Benchmark for Utility-Grounded Fin",
+      "paper_link": "https://arxiv.org/abs/2602.16990",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Conv-FinRe: A Conversational and Longitudinal Benchmark for ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Conv-FinRe: A Conversational and Longitudinal Benchmark for Utility-Grounded Fin",
+      "paper_link": "https://arxiv.org/abs/2602.16990",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Conv-FinRe: A Conversational and Longitudinal Benchmark for ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+      "paper_link": "https://arxiv.org/abs/2602.17560",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'ODESteer: A Unified ODE-Based Steering Framework for LLM Ali' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+      "paper_link": "https://arxiv.org/abs/2602.17560",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'ODESteer: A Unified ODE-Based Steering Framework for LLM Ali' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "HiVAE: Hierarchical Latent Variables for Scalable Theory of Mind",
+      "paper_link": "https://arxiv.org/abs/2602.16826",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HiVAE: Hierarchical Latent Variables for Scalable Theory of ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HiVAE: Hierarchical Latent Variables for Scalable Theory of Mind",
+      "paper_link": "https://arxiv.org/abs/2602.16826",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HiVAE: Hierarchical Latent Variables for Scalable Theory of ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignmen",
+      "paper_link": "https://arxiv.org/abs/2602.17095",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignmen",
+      "paper_link": "https://arxiv.org/abs/2602.17095",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Federated Latent Space Alignment for Multi-user Semantic Communications",
+      "paper_link": "https://arxiv.org/abs/2602.17271",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Federated Latent Space Alignment for Multi-user Semantic Com' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Federated Latent Space Alignment for Multi-user Semantic Communications",
+      "paper_link": "https://arxiv.org/abs/2602.17271",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Federated Latent Space Alignment for Multi-user Semantic Com' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "MARS: Margin-Aware Reward-Modeling with Self-Refinement",
+      "paper_link": "https://arxiv.org/abs/2602.17658",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MARS: Margin-Aware Reward-Modeling with Self-Refinement' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MARS: Margin-Aware Reward-Modeling with Self-Refinement",
+      "paper_link": "https://arxiv.org/abs/2602.17658",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MARS: Margin-Aware Reward-Modeling with Self-Refinement' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Improved Object-Centric Diffusion Learning with Registers and Contrastive Alignm",
+      "paper_link": "https://arxiv.org/abs/2601.01224",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Improved Object-Centric Diffusion Learning with Registers an' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Improved Object-Centric Diffusion Learning with Registers and Contrastive Alignm",
+      "paper_link": "https://arxiv.org/abs/2601.01224",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Improved Object-Centric Diffusion Learning with Registers an' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
