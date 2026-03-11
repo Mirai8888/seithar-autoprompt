@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.ingester import load_config, fetch_papers
 from src.differ import find_prompt_files, generate_suggestions
 from src.summarizer import batch_summarize
+from src.directives import build_directives_message, write_directives_payload, write_notification_status
 
 
 def run(config_path="config.yaml"):
@@ -91,8 +92,30 @@ def run(config_path="config.yaml"):
     print(f"[autoprompt] Report: {diff_path}")
     print(f"[autoprompt] JSON:   {json_path}")
 
+    notifications = config.get("notifications", {})
+    directives_message = build_directives_message(
+        report,
+        diff_path=diff_path,
+        json_path=json_path,
+        site_url=notifications.get("site_dataset_url", "https://seithar.com/papers.json"),
+    )
+    directives_payload_path = write_directives_payload(config["output_dir"], timestamp, directives_message)
+    directives_status_path = write_notification_status(
+        config["output_dir"],
+        timestamp,
+        directives_payload_path,
+        sent=False,
+        verified=False,
+        detail="Discord delivery not executed by repo-local autoprompt runner. External verified delivery required.",
+    )
+    print(f"[autoprompt] Directives payload: {directives_payload_path}")
+    print(f"[autoprompt] Directives status:  {directives_status_path}")
+
     # Push to git and clean old output (keep last 7 days)
     _push_and_clean(config["output_dir"])
+
+    if notifications.get("require_verified_external_delivery", False):
+        raise SystemExit("[autoprompt] Incomplete run: external Discord delivery to #directives was not verified")
 
 
 def _push_and_clean(output_dir, keep_days=7):
