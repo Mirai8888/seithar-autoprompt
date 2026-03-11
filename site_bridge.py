@@ -16,7 +16,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 SITE_JSON = Path.home() / "seithar-site" / "2026ARG" / "papers.json"
@@ -40,9 +40,15 @@ def extract_arxiv_id(link: str) -> str:
     return m.group(1) if m else ""
 
 
-def format_date() -> str:
-    now = datetime.now()
-    return f"{ROMAN_MONTHS[now.month]} {MONTH_NAMES[now.month]}, {now.year}"
+def format_date(value: str | None = None) -> str:
+    if value:
+        try:
+            dt = datetime.fromisoformat(value.replace('Z', '+00:00'))
+        except ValueError:
+            dt = datetime.now(timezone.utc)
+    else:
+        dt = datetime.now(timezone.utc)
+    return f"{ROMAN_MONTHS[dt.month]} {MONTH_NAMES[dt.month]}, {dt.year}"
 
 
 def paper_to_site_entry(paper: dict) -> dict:
@@ -50,6 +56,9 @@ def paper_to_site_entry(paper: dict) -> dict:
     title = paper.get("title", "Untitled")
     keywords = paper.get("matched_keywords", [])
     score = paper.get("score", 0)
+    fetched_at = paper.get("fetched_at")
+    summary = (paper.get("summary") or "").strip()
+    feed = paper.get("feed", "unknown")
 
     # Build tags from matched keywords (clean up +/- prefixes)
     tags = []
@@ -59,29 +68,42 @@ def paper_to_site_entry(paper: dict) -> dict:
             tags.append(tag)
 
     # Generate annotation from title and keywords
-    annotation = f"Scored {score} on autoprompt scan. Keywords: {', '.join(kw.lstrip('+-') for kw in keywords[:4])}."
+    annotation = f"Scored {score} on autoprompt scan from {feed}. Keywords: {', '.join(kw.lstrip('+-') for kw in keywords[:4])}."
 
-    # Build article body — placeholder that invites the reader
+    context_focus = 'Shield defensive architecture' if any('trust' in k or 'safety' in k or 'alignment' in k for k in keywords) else 'Sword operational methodology'
+    short_summary = summary.split('Abstract:')[-1].strip() if 'Abstract:' in summary else summary
+    short_summary = short_summary[:420].rstrip()
+    if short_summary and not short_summary.endswith('.'):
+        short_summary += '…'
+
     body = [
-        f"This paper enters the scanner at score {score}, flagged on {len(keywords)} keyword matches across the Seithar taxonomy. "
-        f"The primary signals — <em>{', '.join(kw.lstrip('+-') for kw in keywords[:3])}</em> — place it at the intersection of offensive and defensive research.",
-        f"Full analysis pending integration with the context engine. The matched keywords suggest relevance to "
-        f"{'Shield defensive architecture' if any('trust' in k or 'safety' in k or 'alignment' in k for k in keywords) else 'Sword operational methodology'} "
-        f"and the broader question of how autonomous systems maintain coherence under adversarial pressure.",
-        f"<strong>Scanner note:</strong> this entry was generated automatically by the Seithar autoprompt daemon. "
-        f"Papers above score 10 are flagged for manual review and deep-dive analysis."
+        f"This paper entered the scanner via <em>{feed}</em> at score {score}, flagged on {len(keywords)} keyword matches across the Seithar taxonomy. The primary signals — <em>{', '.join(kw.lstrip('+-') for kw in keywords[:3])}</em> — place it at the intersection of offensive and defensive research.",
+        f"<strong>Abstract context:</strong> {short_summary or 'No abstract context available in the source artifact.'}",
+        f"The matched keywords suggest relevance to {context_focus} and the broader question of how autonomous systems maintain coherence under adversarial pressure. Source trace: <a href=\"{paper.get('link', '')}\">{paper.get('link', '')}</a>.",
+        f"<strong>Scanner note:</strong> this entry was generated automatically by the Seithar autoprompt daemon. Papers above score 10 are flagged for manual review and deep-dive analysis."
     ]
 
     return {
         "id": arxiv_id,
         "score": score,
         "title": title,
-        "date": format_date(),
+        "date": format_date(fetched_at),
         "tags": tags,
         "annotation": annotation,
+        "source": {
+            "feed": feed,
+            "link": paper.get("link", ""),
+            "fetched_at": fetched_at,
+        },
         "article": {
-            "deck": f"{title} — autoprompt-detected research with {len(keywords)} keyword matches across the Seithar scanning taxonomy",
-            "body": body
+            "deck": f"{title} — {feed} scan hit with {len(keywords)} keyword matches across the Seithar scanning taxonomy",
+            "body": body,
+            "summary": short_summary,
+            "context": {
+                "feed": feed,
+                "matched_keywords": [kw.lstrip('+-') for kw in keywords],
+                "context_focus": context_focus,
+            }
         }
     }
 
