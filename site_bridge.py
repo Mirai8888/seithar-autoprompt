@@ -72,9 +72,6 @@ def paper_to_site_entry(paper: dict) -> dict:
 
     context_focus = 'Shield defensive architecture' if any('trust' in k or 'safety' in k or 'alignment' in k for k in keywords) else 'Sword operational methodology'
     short_summary = summary.split('Abstract:')[-1].strip() if 'Abstract:' in summary else summary
-    short_summary = short_summary[:420].rstrip()
-    if short_summary and not short_summary.endswith('.'):
-        short_summary += '…'
 
     body = [
         f"This paper entered the scanner via <em>{feed}</em> at score {score}, flagged on {len(keywords)} keyword matches across the Seithar taxonomy. The primary signals — <em>{', '.join(kw.lstrip('+-') for kw in keywords[:3])}</em> — place it at the intersection of offensive and defensive research.",
