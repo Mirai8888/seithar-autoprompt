@@ -48,7 +48,7 @@ def format_date(value: str | None = None) -> str:
             dt = datetime.now(timezone.utc)
     else:
         dt = datetime.now(timezone.utc)
-    return f"{ROMAN_MONTHS[dt.month]} {MONTH_NAMES[dt.month]}, {dt.year}"
+    return f"{ROMAN_MONTHS[dt.day]} {MONTH_NAMES[dt.month]}, {dt.year}"
 
 
 def paper_to_site_entry(paper: dict) -> dict:
