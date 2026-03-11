@@ -67,14 +67,16 @@ def paper_to_site_entry(paper: dict) -> dict:
         if tag and tag not in tags:
             tags.append(tag)
 
+    display_score = min(round(score / 2), 10)
+
     # Generate annotation from title and keywords
-    annotation = f"Scored {score} on autoprompt scan from {feed}. Keywords: {', '.join(kw.lstrip('+-') for kw in keywords[:4])}."
+    annotation = f"Scored {display_score}/10 on autoprompt scan from {feed}. Keywords: {', '.join(kw.lstrip('+-') for kw in keywords[:4])}."
 
     context_focus = 'Shield defensive architecture' if any('trust' in k or 'safety' in k or 'alignment' in k for k in keywords) else 'Sword operational methodology'
     short_summary = summary.split('Abstract:')[-1].strip() if 'Abstract:' in summary else summary
 
     body = [
-        f"This paper entered the scanner via <em>{feed}</em> at score {score}, flagged on {len(keywords)} keyword matches across the Seithar taxonomy. The primary signals — <em>{', '.join(kw.lstrip('+-') for kw in keywords[:3])}</em> — place it at the intersection of offensive and defensive research.",
+        f"This paper entered the scanner via <em>{feed}</em> at score {display_score}/10, flagged on {len(keywords)} keyword matches across the Seithar taxonomy. The primary signals — <em>{', '.join(kw.lstrip('+-') for kw in keywords[:3])}</em> — place it at the intersection of offensive and defensive research.",
         f"<strong>Abstract context:</strong> {short_summary or 'No abstract context available in the source artifact.'}",
         f"The matched keywords suggest relevance to {context_focus} and the broader question of how autonomous systems maintain coherence under adversarial pressure. Source trace: <a href=\"{paper.get('link', '')}\">{paper.get('link', '')}</a>.",
         f"<strong>Scanner note:</strong> this entry was generated automatically by the Seithar autoprompt daemon. Papers above score 10 are flagged for manual review and deep-dive analysis."
