@@ -86,7 +86,7 @@ def fetch_papers(config):
                 results.append({
                     "id": eid,
                     "title": entry.get("title", "").strip(),
-                    "summary": entry.get("summary", "").strip()[:800],
+                    "summary": entry.get("summary", "").strip(),
                     "link": entry.get("link", ""),
                     "feed": feed_cfg["name"],
                     "score": score,
