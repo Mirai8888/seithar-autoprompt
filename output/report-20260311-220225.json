@@ -1,0 +1,216 @@
+{
+  "run_at": "2026-03-11T22:02:25.094120+00:00",
+  "papers_found": 12,
+  "suggestions_generated": 6,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.08707v3",
+      "title": "Why do we Trust Chatbots? From Normative Principles to Behavioral Drivers",
+      "summary": "arXiv:2602.08707v3 Announce Type: replace \nAbstract: As chatbots increasingly blur the boundary between automated systems and human conversation, the foundations of trust in these systems warrant closer examination. While regulatory and policy frameworks tend to define trust in normative terms, the trust users place in chatbots often emerges from behavioral mechanisms. In many cases, this trust is not earned through demonstrated trustworthiness but is instead shaped by interactional design choices that leverage cognitive biases to influence user behavior. Based on this observation, we propose reframing chatbots not as companions or assistants, but as highly skilled salespeople whose objectives are determined by the deploying organization. We argue that the coexistence of competing notions of \"trust\" under a shared term obscures important distinctions between psychological trust formation and normative trustworthiness. Addressing this gap requires further research and stronger support mechanisms to help users appropriately calibrate trust in conversational AI systems.",
+      "link": "https://arxiv.org/abs/2602.08707",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+trust",
+        "behavioral",
+        "framing",
+        "cognitive bias"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.898014+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09208v1",
+      "title": "Strategically Robust Multi-Agent Reinforcement Learning with Linear Function Approximation",
+      "summary": "arXiv:2603.09208v1 Announce Type: cross \nAbstract: Provably efficient and robust equilibrium computation in general-sum Markov games remains a core challenge in multi-agent reinforcement learning. Nash equilibrium is computationally intractable in general and brittle due to equilibrium multiplicity and sensitivity to approximation error. We study Risk-Sensitive Quantal Response Equilibrium (RQRE), which yields a unique, smooth solution under bounded rationality and risk sensitivity. We propose \\texttt{RQRE-OVI}, an optimistic value iteration algorithm for computing RQRE with linear function approximation in large or continuous state spaces. Through finite-sample regret analysis, we establish convergence and explicitly characterize how sample complexity scales with rationality and risk-sensitivity parameters. The regret bounds reveal a quantitative tradeoff: increasing rationality tightens regret, while risk sensitivity induces regularization that enhances stability and robustness. This exposes a Pareto frontier between expected performance and robustness, with Nash recovered in the limit of perfect rationality and risk neutrality. We further show that the RQRE policy map is Lipschitz continuous in estimated payoffs, unlike Nash, and RQRE admits a distributionally robust optimization interpretation. Empirically, we demonstrate that \\texttt{RQRE-OVI} achieves competitive performance under self-play while producing substantially more robust behavior under cross-play compared to Nash-based approaches. These results suggest \\texttt{RQRE-OVI} offers a principled, scalable, and tunable path for equilibrium learning with improved robustness and generalization.",
+      "link": "https://arxiv.org/abs/2603.09208",
+      "feed": "cs.MA",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-11T22:02:23.044479+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2503.21735v4",
+      "title": "GateLens: A Reasoning-Enhanced LLM Agent for Automotive Software Release Analytics",
+      "summary": "arXiv:2503.21735v4 Announce Type: replace-cross \nAbstract: Ensuring reliable data-driven decisions is crucial in domains where analytical accuracy directly impacts safety, compliance, or operational outcomes. Decision support in such domains relies on large tabular datasets, where manual analysis is slow, costly, and error-prone. While Large Language Models (LLMs) offer promising automation potential, they face challenges in analytical reasoning, structured data handling, and ambiguity resolution. This paper introduces GateLens, an LLM-based architecture for reliable analysis of complex tabular data. Its key innovation is the use of Relational Algebra (RA) as a formal intermediate representation between natural-language reasoning and executable code, addressing the reasoning-to-code gap that can arise in direct generation approaches. In our automotive instantiation, GateLens translates natural language queries into RA expressions and generates optimized Python code. Unlike traditional multi-agent or planning-based systems that can be slow, opaque, and costly to maintain, GateLens emphasizes speed, transparency, and reliability. We validate the architecture in automotive software release analytics, where experimental results show that GateLens outperforms the existing Chain-of-Thought (CoT) + Self-Consistency (SC) based system on real-world datasets, particularly in handling complex and ambiguous queries. Ablation studies confirm the essential role of the RA layer. Industrial deployment demonstrates over 80% reduction in analysis time while maintaining high accuracy across domain-specific tasks. GateLens operates effectively in zero-shot settings without requiring few-shot examples or agent orchestration. This work advances deployable LLM system design by identifying key architectural features--intermediate formal representations, execution efficiency, and low configuration overhead--crucial for domain-specific analytical applications.",
+      "link": "https://arxiv.org/abs/2503.21735",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "few-shot",
+        "zero-shot",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.698952+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09619v1",
+      "title": "Context Engineering: From Prompts to Corporate Multi-Agent Architecture",
+      "summary": "arXiv:2603.09619v1 Announce Type: new \nAbstract: As artificial intelligence (AI) systems evolve from stateless chatbots to autonomous multi-step agents, prompt engineering (PE), the discipline of crafting individual queries, proves necessary but insufficient. This paper introduces context engineering (CE) as a standalone discipline concerned with designing, structuring, and managing the entire informational environment in which an AI agent makes decisions. Drawing on vendor architectures (Google ADK, Anthropic, LangChain), current academic work (ACE framework, Google DeepMind's intelligent delegation), enterprise research (Deloitte, 2026; KPMG, 2026), and the author's experience building a multi-agent system, the paper proposes five context quality criteria: relevance, sufficiency, isolation, economy, and provenance, and frames context as the agent's operating system. Two higher-order disciplines follow. Intent engineering (IE) encodes organizational goals, values, and trade-off hierarchies into agent infrastructure. Specification engineering (SE) creates a machine-readable corpus of corporate policies and standards enabling autonomous operation of multi-agent systems at scale. Together these four disciplines form a cumulative pyramid maturity model of agent engineering, in which each level subsumes the previous one as a necessary foundation. Enterprise data reveals a gap: while 75% of enterprises plan agentic AI deployment within two years (Deloitte, 2026), deployment has surged and retreated as organizations confront scaling complexity (KPMG, 2026). The Klarna case illustrates a dual deficit, contextual and intentional. Whoever controls the agent's context controls its behavior; whoever controls its intent controls its strategy; whoever controls its specifications controls its scale.",
+      "link": "https://arxiv.org/abs/2603.09619",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "prompt engineering",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.897311+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09950v1",
+      "title": "When Learning Rates Go Wrong: Early Structural Signals in PPO Actor-Critic",
+      "summary": "arXiv:2603.09950v1 Announce Type: cross \nAbstract: Deep Reinforcement Learning systems are highly sensitive to the learning rate (LR), and selecting stable and performant training runs often requires extensive hyperparameter search. In Proximal Policy Optimization (PPO) actor--critic methods, small LR values lead to slow convergence, whereas large LR values may induce instability or collapse. We analyse this phenomenon from the behavior of the hidden neurons in the network using the Overfitting-Underfitting Indicator (OUI), a metric that quantifies the balance of binary activation patterns over a fixed probe batch. We introduce an efficient batch-based formulation of OUI and derive a theoretical connection between LR and activation sign changes, clarifying how a correct evolution of the neuron's inner structure depends on the step size.\n  Empirically, across three discrete-control environments and multiple seeds, we show that OUI measured at only 10\\% of training already discriminates between LR regimes. We observe a consistent asymmetry: critic networks achieving highest return operate in an intermediate OUI band (avoiding saturation), whereas actor networks achieving highest return exhibit comparatively high OUI values. We then compare OUI-based screening rules against early return, clip-based, divergence-based, and flip-based criteria under matched recall over successful runs. In this setting, OUI provides the strongest early screening signal: OUI alone achieves the best precision at broader recall, while combining early return with OUI yields the highest precision in best-performing screening regimes, enabling aggressive pruning of unpromising runs without requiring full training.",
+      "link": "https://arxiv.org/abs/2603.09950",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.897974+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09434v1",
+      "title": "Common Sense vs. Morality: The Curious Case of Narrative Focus Bias in LLMs",
+      "summary": "arXiv:2603.09434v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly deployed across diverse real-world applications and user communities. As such, it is crucial that these models remain both morally grounded and knowledge-aware. In this work, we uncover a critical limitation of current LLMs -- their tendency to prioritize moral reasoning over commonsense understanding. To investigate this phenomenon, we introduce CoMoral, a novel benchmark dataset containing commonsense contradictions embedded within moral dilemmas. Through extensive evaluation of ten LLMs across different model sizes, we find that existing models consistently struggle to identify such contradictions without prior signal. Furthermore, we observe a pervasive narrative focus bias, wherein LLMs more readily detect commonsense contradictions when they are attributed to a secondary character rather than the primary (narrator) character. Our comprehensive analysis underscores the need for enhanced reasoning-aware training to improve the commonsense robustness of large language models.",
+      "link": "https://arxiv.org/abs/2603.09434",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "narrative"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.698635+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09020v1",
+      "title": "AI Phenomenology for Understanding Human-AI Experiences Across Eras",
+      "summary": "arXiv:2603.09020v1 Announce Type: cross \nAbstract: There is no 'ordinary' when it comes to AI. The human-AI experience is extraordinarily complex and specific to each person, yet dominant measures such as usability scales and engagement metrics flatten away nuance. We argue for AI phenomenology: a research stance that asks \"How did it feel?\" beyond the standard questions of \"How well did it perform?\" when interacting with AI systems. AI phenomenology acts as a paradigm for bidirectional human-AI alignment as it foregrounds users' first-person perceptions and interpretations of AI systems over time. We motivate AI phenomenology as a framework that captures how alignment is experienced, negotiated, and updated between users and AI systems. Tracing a lineage from Husserl through postphenomenology to Actor-Network Theory, and grounding our argument in three studies-two longitudinal studies with \"Day\", an AI companion, and a multi-method study of agentic AI in software engineering-we contribute a set of replicable methodological toolkits for conducting AI phenomenology research: instruments for capturing lived experience across personal and professional contexts, three design concepts (translucent design, agency-aware value alignment, temporal co-evolution tracking), and a concrete research agenda. We offer this toolkit not as a new paradigm but as a practical scaffold that researchers can adapt as AI systems-and the humans who live alongside them-continue to co-evolve.",
+      "link": "https://arxiv.org/abs/2603.09020",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "alignment",
+        "persona"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.897617+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09125v1",
+      "title": "QUSR: Quality-Aware and Uncertainty-Guided Image Super-Resolution Diffusion Model",
+      "summary": "arXiv:2603.09125v1 Announce Type: cross \nAbstract: Diffusion-based image super-resolution (ISR) has shown strong potential, but it still struggles in real-world scenarios where degradations are unknown and spatially non-uniform, often resulting in lost details or visual artifacts. To address this challenge, we propose a novel super-resolution diffusion model, QUSR, which integrates a Quality-Aware Prior (QAP) with an Uncertainty-Guided Noise Generation (UNG) module. The UNG module adaptively adjusts the noise injection intensity, applying stronger perturbations to high-uncertainty regions (e.g., edges and textures) to reconstruct complex details, while minimizing noise in low-uncertainty regions (e.g., flat areas) to preserve original information. Concurrently, the QAP leverages an advanced Multimodal Large Language Model (MLLM) to generate reliable quality descriptions, providing an effective and interpretable quality prior for the restoration process. Experimental results confirm that QUSR can produce high-fidelity and high-realism images in real-world scenarios. The source code is available at https://github.com/oTvTog/QUSR.",
+      "link": "https://arxiv.org/abs/2603.09125",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.897656+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09493v1",
+      "title": "Evolving Prompt Adaptation for Vision-Language Models",
+      "summary": "arXiv:2603.09493v1 Announce Type: cross \nAbstract: The adaptation of large-scale vision-language models (VLMs) to downstream tasks with limited labeled data remains a significant challenge. While parameter-efficient prompt learning methods offer a promising path, they often suffer from catastrophic forgetting of pre-trained knowledge. Toward addressing this limitation, our work is grounded in the insight that governing the evolutionary path of prompts is essential for forgetting-free adaptation. To this end, we propose EvoPrompt, a novel framework designed to explicitly steer the prompt trajectory for stable, knowledge-preserving fine-tuning. Specifically, our approach employs a Modality-Shared Prompt Projector (MPP) to generate hierarchical prompts from a unified embedding space. Critically, an evolutionary training strategy decouples low-rank updates into directional and magnitude components, preserving early-learned semantic directions while only adapting their magnitude, thus enabling prompts to evolve without discarding foundational knowledge. This process is further stabilized by Feature Geometric Regularization (FGR), which enforces feature decorrelation to prevent representation collapse. Extensive experiments demonstrate that EvoPrompt achieves state-of-the-art performance in few-shot learning while robustly preserving the original zero-shot capabilities of pre-trained VLMs.",
+      "link": "https://arxiv.org/abs/2603.09493",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "few-shot",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.897894+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.09202v3",
+      "title": "Personalized Feature Translation for Expression Recognition: An Efficient Source-Free Domain Adaptation Method",
+      "summary": "arXiv:2508.09202v3 Announce Type: replace-cross \nAbstract: Facial expression recognition (FER) models are widely used in video-based affective computing applications, such as human-computer interaction and healthcare monitoring. However, deep FER models often struggle with subtle expressions and high inter-subject variability, limiting performance in real-world settings. Source-free domain adaptation (SFDA) has been proposed to personalize a pretrained source model using only unlabeled target data, avoiding privacy, storage, and transmission constraints. We address a particularly challenging setting where source data is unavailable and the target data contains only neutral expressions. Existing SFDA methods are not designed for adaptation from a single target class, while generating non-neutral facial images is often unstable and expensive. To address this, we propose Source-Free Domain Adaptation with Personalized Feature Translation (SFDA-PFT), a lightweight latent-space approach. A translator is first pretrained on source data to map subject-specific style features between subjects while preserving expression information through expression-consistency and style-aware objectives. It is then adapted to neutral target data without source data or image synthesis. By operating in the latent space, SFDA-PFT avoids noisy facial image generation, reduces computation, and learns discriminative embeddings for classification. Experiments on BioVid, StressID, BAH, and Aff-Wild2 show that SFDA-PFT consistently outperforms state-of-the-art SFDA methods in privacy-sensitive FER scenarios. Our code is publicly available at: \\href{https://github.com/MasoumehSharafi/SFDA-PFT}{GitHub}.",
+      "link": "https://arxiv.org/abs/2508.09202",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "persona"
+      ],
+      "fetched_at": "2026-03-11T22:02:22.898163+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09733v1",
+      "title": "FetalAgents: A Multi-Agent System for Fetal Ultrasound Image and Video Analysis",
+      "summary": "arXiv:2603.09733v1 Announce Type: cross \nAbstract: Fetal ultrasound (US) is the primary imaging modality for prenatal screening, yet its interpretation relies heavily on the expertise of the clinician. Despite advances in deep learning and foundation models, existing automated tools for fetal US analysis struggle to balance task-specific accuracy with the whole-process versatility required to support end-to-end clinical workflows. To address these limitations, we propose FetalAgents, the first multi-agent system for comprehensive fetal US analysis. Through a lightweight, agentic coordination framework, FetalAgents dynamically orchestrates specialized vision experts to maximize performance across diagnosis, measurement, and segmentation. Furthermore, FetalAgents advances beyond static image analysis by supporting end-to-end video stream summarization, where keyframes are automatically identified across multiple anatomical planes, analyzed by coordinated experts, and synthesized with patient metadata into a structured clinical report. Extensive multi-center external evaluations across eight clinical tasks demonstrate that FetalAgents consistently delivers the most robust and accurate performance when compared against specialized models and multimodal large language models (MLLMs), ultimately providing an auditable, workflow-aligned solution for fetal ultrasound analysis and reporting.",
+      "link": "https://arxiv.org/abs/2603.09733",
+      "feed": "cs.MA",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-11T22:02:23.044529+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2410.07409v2",
+      "title": "Learning responsibility allocations for multi-agent interactions: A differentiable optimization approach with control barrier functions",
+      "summary": "arXiv:2410.07409v2 Announce Type: replace-cross \nAbstract: From autonomous driving to package delivery, ensuring safe yet efficient multi-agent interaction is challenging as the interaction dynamics are influenced by hard-to-model factors such as social norms and contextual cues. Understanding these influences can aid in the design and evaluation of socially-aware autonomous agents whose behaviors are aligned with human values. In this work, we seek to codify factors governing safe multi-agent interactions via the lens of responsibility, i.e., an agent's willingness to deviate from their desired control to accommodate safe interaction with others. Specifically, we propose a data-driven modeling approach based on control barrier functions and differentiable optimization that efficiently learns agents' responsibility allocation from data. We demonstrate on synthetic and real-world datasets that we can obtain an interpretable and quantitative understanding of how much agents adjust their behavior to ensure the safety of others given their current environment.",
+      "link": "https://arxiv.org/abs/2410.07409",
+      "feed": "cs.MA",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-11T22:02:23.044568+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "AI Phenomenology for Understanding Human-AI Experiences Across Eras",
+      "paper_link": "https://arxiv.org/abs/2603.09020",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'AI Phenomenology for Understanding Human-AI Experiences Acro' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "AI Phenomenology for Understanding Human-AI Experiences Across Eras",
+      "paper_link": "https://arxiv.org/abs/2603.09020",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'AI Phenomenology for Understanding Human-AI Experiences Acro' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "AI Phenomenology for Understanding Human-AI Experiences Across Eras",
+      "paper_link": "https://arxiv.org/abs/2603.09020",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'AI Phenomenology for Understanding Human-AI Experiences Acro' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "AI Phenomenology for Understanding Human-AI Experiences Across Eras",
+      "paper_link": "https://arxiv.org/abs/2603.09020",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'AI Phenomenology for Understanding Human-AI Experiences Acro' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "AI Phenomenology for Understanding Human-AI Experiences Across Eras",
+      "paper_link": "https://arxiv.org/abs/2603.09020",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'AI Phenomenology for Understanding Human-AI Experiences Acro' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Personalized Feature Translation for Expression Recognition: An Efficient Source",
+      "paper_link": "https://arxiv.org/abs/2508.09202",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Personalized Feature Translation for Expression Recognition:' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}
