@@ -7,6 +7,7 @@ from pathlib import Path
 
 # add parent to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, str(Path.home() / "seithar-platform"))
 from src.ingester import load_config, fetch_papers
 from src.differ import find_prompt_files, generate_suggestions
 from src.summarizer import batch_summarize

@@ -1,0 +1,412 @@
+{
+  "run_at": "2026-03-11T19:18:00.535807+00:00",
+  "papers_found": 18,
+  "suggestions_generated": 20,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2308.07847v3",
+      "title": "Robustness Over Time: Understanding Adversarial Examples' Effectiveness on Longitudinal Versions of Large Language Models",
+      "summary": "arXiv:2308.07847v3 Announce Type: replace \nAbstract: Large Language Models (LLMs) undergo continuous updates to improve user experience. However, prior research on the security and safety implications of LLMs has primarily focused on their specific versions, overlooking the impact of successive LLM updates. This prompts the need for a holistic understanding of the risks in these different versions of LLMs. To fill this gap, in this paper, we conduct a longitudinal study to examine the adversarial robustness -- specifically misclassification, jailbreak, and hallucination -- of three prominent LLM families: GPT, Llama, and Qwen. Our study reveals that LLM updates do not consistently improve adversarial robustness as expected. For instance, a later version of GPT-3.5 degrades regarding misclassification and hallucination despite its improved resilience against jailbreaks. GPT-4 and GPT-4o demonstrate (incrementally) higher robustness overall. Larger Llama and Qwen models do not uniformly exhibit improved robustness across all three aspects studied. In addition, larger model sizes do not necessarily yield improved robustness. Minor updates lacking substantial robustness improvements can exacerbate existing issues rather than resolve them. We hope our study can offer valuable insights into navigating model updates and informed decisions in model development and usage.",
+      "link": "https://arxiv.org/abs/2308.07847",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+jailbreak",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.857713+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09160v1",
+      "title": "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning",
+      "summary": "arXiv:2603.09160v1 Announce Type: cross \nAbstract: Dense image captioning is critical for cross-modal alignment in vision-language pretraining and text-to-image generation, but scaling expert-quality annotations is prohibitively expensive. While synthetic captioning via strong vision-language models (VLMs) is a practical alternative, supervised distillation often yields limited output diversity and weak generalization. Reinforcement learning (RL) could overcome these limitations, but its successes have so far been concentrated in verifiable domains that rely on deterministic checkers -- a luxury not available in open-ended captioning. We address this bottleneck with RubiCap, a novel RL framework that derives fine-grained, sample-specific reward signals from LLM-written rubrics. RubiCap first assembles a diverse committee of candidate captions, then employs an LLM rubric writer to extract consensus strengths and diagnose deficiencies in the current policy. These insights are converted into explicit evaluation criteria, enabling an LLM judge to decompose holistic quality assessment and replace coarse scalar rewards with structured, multi-faceted evaluations. Across extensive benchmarks, RubiCap achieves the highest win rates on CapArena, outperforming supervised distillation, prior RL methods, human-expert annotations, and GPT-4V-augmented outputs. On CaptionQA, it demonstrates superior word efficiency: our 7B model matches Qwen2.5-VL-32B-Instruct, and our 3B model surpasses its 7B counterpart. Remarkably, using the compact RubiCap-3B as a captioner produces stronger pretrained VLMs than those trained on captions from proprietary models.",
+      "link": "https://arxiv.org/abs/2603.09160",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.756935+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.11790v4",
+      "title": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "summary": "arXiv:2505.11790v4 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) are trained with safety alignment to prevent generating malicious content. Although some attacks have highlighted vulnerabilities in these safety-aligned LLMs, they typically have limitations, such as necessitating access to the model weights or the generation process. Since proprietary models through API-calling do not grant users such permissions, these attacks find it challenging to compromise them. In this paper, we propose Jailbreaking Using LLM Introspection (JULI), which jailbreaks LLMs by manipulating the token log probabilities, using a tiny plug-in block, BiasNet. JULI relies solely on the knowledge of the target LLM's predicted token log probabilities. It can effectively jailbreak API-calling LLMs under a black-box setting and knowing only top-$5$ token log probabilities. Our approach demonstrates superior effectiveness, outperforming existing state-of-the-art (SOTA) approaches across multiple metrics.",
+      "link": "https://arxiv.org/abs/2505.11790",
+      "feed": "cs.CR",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.857806+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09030v1",
+      "title": "PlayWorld: Learning Robot World Models from Autonomous Play",
+      "summary": "arXiv:2603.09030v1 Announce Type: cross \nAbstract: Action-conditioned video models offer a promising path to building general-purpose robot simulators that can improve directly from data. Yet, despite training on large-scale robot datasets, current state-of-the-art video models still struggle to predict physically consistent robot-object interactions that are crucial in robotic manipulation. To close this gap, we present PlayWorld, a simple, scalable, and fully autonomous pipeline for training high-fidelity video world simulators from interaction experience. In contrast to prior approaches that rely on success-biased human demonstrations, PlayWorld is the first system capable of learning entirely from unsupervised robot self-play, enabling naturally scalable data collection while capturing complex, long-tailed physical interactions essential for modeling realistic object dynamics. Experiments across diverse manipulation tasks show that PlayWorld generates high-quality, physically consistent predictions for contact-rich interactions that are not captured by world models trained on human-collected data.We further demonstrate the versatility of PlayWorld in enabling fine-grained failure prediction and policy evaluation, with up to 40% improvements over human-collected data. Finally, we demonstrate how PlayWorld enables reinforcement learning in the world model, improving policy performance by 65% in success rates when deployed in the real world.",
+      "link": "https://arxiv.org/abs/2603.09030",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.756802+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.25268v2",
+      "title": "SynHLMA:Synthesizing Hand Language Manipulation for Articulated Object with Discrete Human Object Interaction Representation",
+      "summary": "arXiv:2510.25268v2 Announce Type: replace-cross \nAbstract: Generating hand grasps with language instructions is a widely studied topic that benefits from embodied AI and VR/AR applications. While transferring into hand articulatied object interaction (HAOI), the hand grasps synthesis requires not only object functionality but also long-term manipulation sequence along the object deformation. This paper proposes a novel HAOI sequence generation framework SynHLMA, to synthesize hand language manipulation for articulated objects. Given a complete point cloud of an articulated object, we utilize a discrete HAOI representation to model each hand object interaction frame. Along with the natural language embeddings, the representations are trained by an HAOI manipulation language model to align the grasping process with its language description in a shared representation space. A joint-aware loss is employed to ensure hand grasps follow the dynamic variations of articulated object joints. In this way, our SynHLMA achieves three typical hand manipulation tasks for articulated objects of HAOI generation, HAOI prediction and HAOI interpolation. We evaluate SynHLMA on our built HAOI-lang dataset and experimental results demonstrate the superior hand grasp sequence generation performance comparing with state-of-the-art. We also show a robotics grasp application that enables dexterous grasps execution from imitation learning using the manipulation sequence provided by our SynHLMA. Our codes and datasets will be made publicly available.",
+      "link": "https://arxiv.org/abs/2510.25268",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757535+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.20601v3",
+      "title": "CLEAR-Mamba:Towards Accurate, Adaptive and Trustworthy Multi-Sequence Ophthalmic Angiography Classification",
+      "summary": "arXiv:2601.20601v3 Announce Type: replace-cross \nAbstract: Medical image classification is a core task in computer-aided diagnosis (CAD), playing a pivotal role in early disease detection, treatment planning, and patient prognosis assessment. In ophthalmic practice, fluorescein fundus angiography (FFA) and indocyanine green angiography (ICGA) provide hemodynamic and lesion-structural information that conventional fundus photography cannot capture. However, due to the single-modality nature, subtle lesion patterns, and significant inter-device variability, existing methods still face limitations in generalization and high-confidence prediction. To address these challenges, we propose CLEAR-Mamba, an enhanced framework built upon MedMamba with optimizations in both architecture and training strategy. Architecturally, we introduce HaC, a hypernetwork-based adaptive conditioning layer that dynamically generates parameters according to input feature distributions, thereby improving cross-domain adaptability. From a training perspective, we develop RaP, a reliability-aware prediction scheme built upon evidential uncertainty learning, which encourages the model to emphasize low-confidence samples and improves overall stability and reliability. We further construct a large-scale ophthalmic angiography dataset covering both FFA and ICGA modalities, comprising multiple retinal disease categories for model training and evaluation. Experimental results demonstrate that CLEAR-Mamba consistently outperforms multiple baseline models, including the original MedMamba, across various metrics-showing particular advantages in multi-disease classification and reliability-aware prediction. This study provides an effective solution that balances generalizability and reliability for modality-specific medical image classification tasks. Our project can be accessed at https://github.com/ZJU4HealthCare/CLEAR-Mamba.",
+      "link": "https://arxiv.org/abs/2601.20601",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757594+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.05630v4",
+      "title": "Rewards as Labels: Revisiting RLVR from a Classification Perspective",
+      "summary": "arXiv:2602.05630v4 Announce Type: replace-cross \nAbstract: Reinforcement Learning with Verifiable Rewards has recently advanced the capabilities of Large Language Models in complex reasoning tasks by providing explicit rule-based supervision. Among RLVR methods, GRPO and its variants have achieved strong empirical performance. Despite their success, we identify that they suffer from Gradient Misassignment in Positives and Gradient Domination in Negatives, which lead to inefficient and suboptimal policy updates. To address these issues, we propose Rewards as Labels (REAL), a novel framework that revisits verifiable rewards as categorical labels rather than scalar weights, thereby reformulating policy optimization as a classification problem. Building on this, we further introduce anchor logits to enhance policy learning. Our analysis reveals that REAL induces a monotonic and bounded gradient weighting, enabling balanced gradient allocation across rollouts and effectively mitigating the identified mismatches. Extensive experiments on mathematical reasoning benchmarks show that REAL improves training stability and consistently outperforms GRPO and strong variants such as DAPO. On the 1.5B model, REAL improves average Pass@1 over DAPO by 6.7%. These gains further scale to 7B model, REAL continues to outperform DAPO and GSPO by 6.2% and 1.7%, respectively. Notably, even with a vanilla binary cross-entropy, REAL remains stable and exceeds DAPO by 4.5% on average.",
+      "link": "https://arxiv.org/abs/2602.05630",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.510209+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09706v1",
+      "title": "OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences",
+      "summary": "arXiv:2603.09706v1 Announce Type: new \nAbstract: While safety alignment for Multimodal Large Language Models (MLLMs) has gained significant attention, current paradigms primarily target malicious intent or situational violations. We propose shifting the safety frontier toward consequence-driven safety, a paradigm essential for the robust deployment of autonomous and embodied agents. To formalize this shift, we introduce OOD-MMSafe, a benchmark comprising 455 curated query-image pairs designed to evaluate a model's ability to identify latent hazards within context-dependent causal chains. Our analysis reveals a pervasive causal blindness among frontier models, with the highest 67.5% failure rate in high-capacity closed-source models, and identifies a preference ceiling where static alignment yields format-centric failures rather than improved safety reasoning as model capacity grows. To address these bottlenecks, we develop the Consequence-Aware Safety Policy Optimization (CASPO) framework, which integrates the model's intrinsic reasoning as a dynamic reference for token-level self-distillation rewards. Experimental results demonstrate that CASPO significantly enhances consequence projection, reducing the failure ratio of risk identification to 7.3% for Qwen2.5-VL-7B and 5.7% for Qwen3-VL-4B while maintaining overall effectiveness.",
+      "link": "https://arxiv.org/abs/2603.09706",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "LLM safety"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.756444+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.08900v1",
+      "title": "A New Modeling to Feature Selection Based on the Fuzzy Rough Set Theory in Normal and Optimistic States on Hybrid Information Systems",
+      "summary": "arXiv:2603.08900v1 Announce Type: cross \nAbstract: Considering the high volume, wide variety, and rapid speed of data generation, investigating feature selection methods for big data presents various applications and advantages. By removing irrelevant and redundant features, feature selection reduces data dimensions, thereby facilitating optimal decision-making within decision systems. One of the key tools for feature selection in hybrid information systems is fuzzy rough set theory. However, this theory faces two significant challenges: First, obtaining fuzzy equivalence relations through intersection operations in high-dimensional spaces can be both time-consuming and memory-intensive. Additionally, this method may produce noisy data, complicating the feature selection process. The purpose and innovation of this paper are to address these issues. We proposed a new feature selection model that calculates the combined distance between objects and subsequently used this information to derive the fuzzy equivalence relation. Rather than directly solving the feature selection problem, this approach reformulates it into an optimization problem that can be tackled using appropriate meta-heuristic algorithms. We have named this new approach FSbuHD. The FSbuHD model operates in two modes - normal and optimistic - based on the selection of one of the two introduced fuzzy equivalence relations. The model is then tested on standard datasets from the UCI repository and compared with other algorithms. The results of this research demonstrate that FSbuHD is one of the most efficient and effective methods for feature selection when compared to previous methods and algorithms.",
+      "link": "https://arxiv.org/abs/2603.08900",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.756664+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09415v1",
+      "title": "From Flow to One Step: Real-Time Multi-Modal Trajectory Policies via Implicit Maximum Likelihood Estimation-based Distribution Distillation",
+      "summary": "arXiv:2603.09415v1 Announce Type: cross \nAbstract: Generative policies based on diffusion and flow matching achieve strong performance in robotic manipulation by modeling multi-modal human demonstrations. However, their reliance on iterative Ordinary Differential Equation (ODE) integration introduces substantial latency, limiting high-frequency closed-loop control. Recent single-step acceleration methods alleviate this overhead but often exhibit distributional collapse, producing averaged trajectories that fail to execute coherent manipulation strategies. We propose a framework that distills a Conditional Flow Matching (CFM) expert into a fast single-step student via Implicit Maximum Likelihood Estimation (IMLE). A bi-directional Chamfer distance provides a set-level objective that promotes both mode coverage and fidelity, enabling preservation of the teacher multi-modal action distribution in a single forward pass. A unified perception encoder further integrates multi-view RGB, depth, point clouds, and proprioception into a geometry-aware representation. The resulting high-frequency control supports real-time receding-horizon re-planning and improved robustness under dynamic disturbances.",
+      "link": "https://arxiv.org/abs/2603.09415",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757053+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.10729v2",
+      "title": "EgoCross: Benchmarking Multimodal Large Language Models for Cross-Domain Egocentric Video Question Answering",
+      "summary": "arXiv:2508.10729v2 Announce Type: replace-cross \nAbstract: Recent advances in Multimodal Large Language Models (MLLMs) have significantly pushed the frontier of egocentric video question answering (EgocentricQA). However, existing benchmarks and studies are mainly limited to common daily activities such as cooking and cleaning. In contrast, real-world deployment inevitably encounters domain shifts, where target domains differ substantially in both visual style and semantic content. To bridge this gap, we introduce \\textbf{EgoCross}, a comprehensive benchmark designed to evaluate the cross-domain generalization of MLLMs in EgocentricQA. EgoCross covers four diverse and challenging domains, including surgery, industry, extreme sports, and animal perspective, representing realistic and high-impact application scenarios. It comprises approximately 1,000 QA pairs across 798 video clips, spanning four key QA tasks: prediction, recognition, localization, and counting. Each QA pair provides both OpenQA and CloseQA formats to support fine-grained evaluation. Extensive experiments show that most existing MLLMs, whether general-purpose or egocentric-specialized, struggle to generalize to domains beyond daily life, highlighting the limitations of current models. Furthermore, we conduct several pilot studies, e.g., fine-tuning and reinforcement learning, to explore potential improvements. We hope EgoCross and our accompanying analysis will serve as a foundation for advancing domain-adaptive, robust egocentric video understanding.",
+      "link": "https://arxiv.org/abs/2508.10729",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757452+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.00045v2",
+      "title": "Breaking the Factorization Barrier in Diffusion Language Models",
+      "summary": "arXiv:2603.00045v2 Announce Type: replace-cross \nAbstract: Diffusion language models theoretically allow for efficient parallel generation but are practically hindered by the \"factorization barrier\": the assumption that simultaneously predicted tokens are independent. This limitation forces a trade-off: models must either sacrifice speed by resolving dependencies sequentially or suffer from incoherence due to factorization. We argue that this barrier arises not from limited backbone expressivity, but from a structural misspecification: models are restricted to fully factorized outputs because explicitly parameterizing a joint distribution would require the Transformer to output a prohibitively large number of parameters. We propose Coupled Discrete Diffusion (CoDD), a hybrid framework that breaks this barrier by replacing the fully-factorized output distribution with a lightweight, tractable probabilistic inference layer. This formulation yields a distribution family that is significantly more expressive than standard factorized priors, enabling the modeling of complex joint dependencies, yet remains compact enough to avoid the prohibitive parameter explosion associated with full joint modeling. Empirically, CoDD seamlessly enhances diverse diffusion language model architectures with negligible overhead, matching the reasoning performance of computationally intensive Reinforcement Learning baselines at a fraction of the training cost. Furthermore, it prevents performance collapse in few-step generation, enabling high-quality outputs at significantly reduced latencies. Code available at: https://github.com/liuanji/CoDD",
+      "link": "https://arxiv.org/abs/2603.00045",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757644+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09434v1",
+      "title": "Common Sense vs. Morality: The Curious Case of Narrative Focus Bias in LLMs",
+      "summary": "arXiv:2603.09434v1 Announce Type: new \nAbstract: Large Language Models (LLMs) are increasingly deployed across diverse real-world applications and user communities. As such, it is crucial that these models remain both morally grounded and knowledge-aware. In this work, we uncover a critical limitation of current LLMs -- their tendency to prioritize moral reasoning over commonsense understanding. To investigate this phenomenon, we introduce CoMoral, a novel benchmark dataset containing commonsense contradictions embedded within moral dilemmas. Through extensive evaluation of ten LLMs across different model sizes, we find that existing models consistently struggle to identify such contradictions without prior signal. Furthermore, we observe a pervasive narrative focus bias, wherein LLMs more readily detect commonsense contradictions when they are attributed to a secondary character rather than the primary (narrator) character. Our comprehensive analysis underscores the need for enhanced reasoning-aware training to improve the commonsense robustness of large language models.",
+      "link": "https://arxiv.org/abs/2603.09434",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "narrative"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.509609+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.08715v1",
+      "title": "VeriInteresting: An Empirical Study of Model Prompt Interactions in Verilog Code Generation",
+      "summary": "arXiv:2603.08715v1 Announce Type: cross \nAbstract: Rapid advances in language models (LMs) have created new opportunities for automated code generation while complicating trade-offs between model characteristics and prompt design choices. In this work, we provide an empirical map of recent trends in LMs for Verilog code generation, focusing on interactions among model reasoning, specialization, and prompt engineering strategies. We evaluate a diverse set of small and large LMs, including general-purpose, reasoning, and domain-specific variants. Our experiments use a controlled factorial design spanning benchmark prompts, structured outputs, prompt rewriting, chain-of-thought reasoning, in-context learning, and evolutionary prompt optimization via Genetic-Pareto. Across two Verilog benchmarks, we identify patterns in how model classes respond to structured prompts and optimization, and we document which trends generalize across LMs and benchmarks versus those that are specific to particular model-prompt combinations.",
+      "link": "https://arxiv.org/abs/2603.08715",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "prompt engineering",
+        "in-context learning"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.509873+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.05488v2",
+      "title": "Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought",
+      "summary": "arXiv:2603.05488v2 Announce Type: replace \nAbstract: We provide evidence of performative chain-of-thought (CoT) in reasoning models, where a model becomes strongly confident in its final answer, but continues generating tokens without revealing its internal belief. Our analysis compares activation probing, early forced answering, and a CoT monitor across two large models (DeepSeek-R1 671B & GPT-OSS 120B) and find task difficulty-specific differences: The model's final answer is decodable from activations far earlier in CoT than a monitor is able to say, especially for easy recall-based MMLU questions. We contrast this with genuine reasoning in difficult multihop GPQA-Diamond questions. Despite this, inflection points (e.g., backtracking, 'aha' moments) occur almost exclusively in responses where probes show large belief shifts, suggesting these behaviors track genuine uncertainty rather than learned \"reasoning theater.\" Finally, probe-guided early exit reduces tokens by up to 80% on MMLU and 30% on GPQA-Diamond with similar accuracy, positioning attention probing as an efficient tool for detecting performative reasoning and enabling adaptive computation.",
+      "link": "https://arxiv.org/abs/2603.05488",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "belief"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.510109+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09888v1",
+      "title": "LCA: Local Classifier Alignment for Continual Learning",
+      "summary": "arXiv:2603.09888v1 Announce Type: new \nAbstract: A fundamental requirement for intelligent systems is the ability to learn continuously under changing environments. However, models trained in this regime often suffer from catastrophic forgetting. Leveraging pre-trained models has recently emerged as a promising solution, since their generalized feature extractors enable faster and more robust adaptation. While some earlier works mitigate forgetting by fine-tuning only on the first task, this approach quickly deteriorates as the number of tasks grows and the data distributions diverge. More recent research instead seeks to consolidate task knowledge into a unified backbone, or adapting the backbone as new tasks arrive. However, such approaches may create a (potential) \\textit{mismatch} between task-specific classifiers and the adapted backbone. To address this issue, we propose a novel \\textit{Local Classifier Alignment} (LCA) loss to better align the classifier with backbone. Theoretically, we show that this LCA loss can enable the classifier to not only generalize well for all observed tasks, but also improve robustness. Furthermore, we develop a complete solution for continual learning, following the model merging approach and using LCA. Extensive experiments on several standard benchmarks demonstrate that our method often achieves leading performance, sometimes surpasses the state-of-the-art methods with a large margin.",
+      "link": "https://arxiv.org/abs/2603.09888",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "alignment"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.756533+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09493v1",
+      "title": "Evolving Prompt Adaptation for Vision-Language Models",
+      "summary": "arXiv:2603.09493v1 Announce Type: cross \nAbstract: The adaptation of large-scale vision-language models (VLMs) to downstream tasks with limited labeled data remains a significant challenge. While parameter-efficient prompt learning methods offer a promising path, they often suffer from catastrophic forgetting of pre-trained knowledge. Toward addressing this limitation, our work is grounded in the insight that governing the evolutionary path of prompts is essential for forgetting-free adaptation. To this end, we propose EvoPrompt, a novel framework designed to explicitly steer the prompt trajectory for stable, knowledge-preserving fine-tuning. Specifically, our approach employs a Modality-Shared Prompt Projector (MPP) to generate hierarchical prompts from a unified embedding space. Critically, an evolutionary training strategy decouples low-rank updates into directional and magnitude components, preserving early-learned semantic directions while only adapting their magnitude, thus enabling prompts to evolve without discarding foundational knowledge. This process is further stabilized by Feature Geometric Regularization (FGR), which enforces feature decorrelation to prevent representation collapse. Extensive experiments demonstrate that EvoPrompt achieves state-of-the-art performance in few-shot learning while robustly preserving the original zero-shot capabilities of pre-trained VLMs.",
+      "link": "https://arxiv.org/abs/2603.09493",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "few-shot",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757186+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.02154v2",
+      "title": "Boltzmann-based Exploration for Robust Decentralized Multi-Agent Planning (Extended Version)",
+      "summary": "arXiv:2603.02154v2 Announce Type: replace-cross \nAbstract: Decentralized Monte Carlo Tree Search (Dec-MCTS) is widely used for cooperative multi-agent planning but struggles in sparse or skewed reward environments. We introduce Coordinated Boltzmann MCTS (CB-MCTS), which replaces deterministic UCT with a stochastic Boltzmann policy and a decaying entropy bonus for sustained yet focused exploration. While Boltzmann exploration has been studied in single-agent MCTS, applying it in multi-agent systems poses unique challenges. CB-MCTS is the first to address this. We analyze CB-MCTS in the simple-regret setting and show in simulations that it outperforms Dec-MCTS in deceptive scenarios and remains competitive on standard benchmarks, providing a robust solution for multi-agent planning.",
+      "link": "https://arxiv.org/abs/2603.02154",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-11T19:17:56.757672+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Robustness Over Time: Understanding Adversarial Examples' Effectiveness on Longi",
+      "paper_link": "https://arxiv.org/abs/2308.07847",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Robustness Over Time: Understanding Adversarial Examples' Ef' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Robustness Over Time: Understanding Adversarial Examples' Effectiveness on Longi",
+      "paper_link": "https://arxiv.org/abs/2308.07847",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Robustness Over Time: Understanding Adversarial Examples' Ef' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning",
+      "paper_link": "https://arxiv.org/abs/2603.09160",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'RubiCap: Rubric-Guided Reinforcement Learning for Dense Imag' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning",
+      "paper_link": "https://arxiv.org/abs/2603.09160",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'RubiCap: Rubric-Guided Reinforcement Learning for Dense Imag' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning",
+      "paper_link": "https://arxiv.org/abs/2603.09160",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'RubiCap: Rubric-Guided Reinforcement Learning for Dense Imag' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning",
+      "paper_link": "https://arxiv.org/abs/2603.09160",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'RubiCap: Rubric-Guided Reinforcement Learning for Dense Imag' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "paper_link": "https://arxiv.org/abs/2505.11790",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'JULI: Jailbreak Large Language Models by Self-Introspection' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "paper_link": "https://arxiv.org/abs/2505.11790",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'JULI: Jailbreak Large Language Models by Self-Introspection' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "paper_link": "https://arxiv.org/abs/2505.11790",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'JULI: Jailbreak Large Language Models by Self-Introspection' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "paper_link": "https://arxiv.org/abs/2505.11790",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'JULI: Jailbreak Large Language Models by Self-Introspection' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "paper_link": "https://arxiv.org/abs/2505.11790",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'JULI: Jailbreak Large Language Models by Self-Introspection' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "JULI: Jailbreak Large Language Models by Self-Introspection",
+      "paper_link": "https://arxiv.org/abs/2505.11790",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'JULI: Jailbreak Large Language Models by Self-Introspection' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences",
+      "paper_link": "https://arxiv.org/abs/2603.09706",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hid' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences",
+      "paper_link": "https://arxiv.org/abs/2603.09706",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hid' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences",
+      "paper_link": "https://arxiv.org/abs/2603.09706",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hid' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hidden Consequences",
+      "paper_link": "https://arxiv.org/abs/2603.09706",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'OOD-MMSafe: Advancing MLLM Safety from Harmful Intent to Hid' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "LCA: Local Classifier Alignment for Continual Learning",
+      "paper_link": "https://arxiv.org/abs/2603.09888",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'LCA: Local Classifier Alignment for Continual Learning' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "LCA: Local Classifier Alignment for Continual Learning",
+      "paper_link": "https://arxiv.org/abs/2603.09888",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LCA: Local Classifier Alignment for Continual Learning' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "LCA: Local Classifier Alignment for Continual Learning",
+      "paper_link": "https://arxiv.org/abs/2603.09888",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'LCA: Local Classifier Alignment for Continual Learning' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "LCA: Local Classifier Alignment for Continual Learning",
+      "paper_link": "https://arxiv.org/abs/2603.09888",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'LCA: Local Classifier Alignment for Continual Learning' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
