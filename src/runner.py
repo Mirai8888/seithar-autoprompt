@@ -11,6 +11,44 @@ from src.ingester import load_config, fetch_papers
 from src.differ import find_prompt_files, generate_suggestions
 from src.summarizer import batch_summarize
 from src.directives import build_directives_message, write_directives_payload, write_notification_status
+from engine.knowledge.taxonomy_store import TaxonomyStore
+
+
+def push_to_taxonomy_store(artifact_path: str):
+    with open(artifact_path, "r", encoding="utf-8") as f:
+        artifact = json.load(f)
+
+    store = TaxonomyStore()
+
+    entries = []
+    if isinstance(artifact, dict):
+        for key in ("suggestions", "papers", "entries", "taxonomy_candidates", "sct_updates"):
+            value = artifact.get(key)
+            if isinstance(value, list):
+                entries.extend(value)
+    elif isinstance(artifact, list):
+        entries = artifact
+
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+
+        if entry.get("new_sct_candidate") or entry.get("candidate_type") == "new_sct":
+            code = entry["code"]
+            name = entry["name"]
+            description = entry["description"]
+            parameters = entry.get("parameters", {})
+            countermeasures = entry.get("countermeasures", [])
+            store.add_sct(code, name, description, parameters, countermeasures)
+
+        elif entry.get("sct_update") or entry.get("candidate_type") == "update_sct":
+            code = entry["code"]
+            fields = {
+                field: entry[field]
+                for field in ("name", "description", "parameters", "countermeasures")
+                if field in entry
+            }
+            store.update_sct(code, **fields)
 
 
 def run(config_path="config.yaml"):
