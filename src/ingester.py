@@ -30,30 +30,46 @@ def save_state(state_file, state):
 
 
 def score_entry(entry, config):
-    """Score an arxiv entry against keyword filters. Returns (score, matched_keywords)."""
+    """Score an arxiv entry against keyword filters. Returns (score, matched_keywords).
+
+    Deduplication rule: if a shorter keyword is a substring of an already-matched
+    longer keyword, it is skipped to avoid double-counting (e.g. 'adversarial'
+    inside 'adversarial attack').
+    """
     title = entry.get("title", "").lower()
     summary = entry.get("summary", "").lower()
     text = f"{title} {summary}"
-    
+
     score = 0
     matched = []
-    
-    for kw in config["keywords"]["primary"]:
-        if kw.lower() in text:
-            pts = config["scoring"]["primary_weight"]
-            if kw.lower() in title:
+    matched_lower = []  # tracks all matched keyword strings for dedup
+
+    def already_covered(kw):
+        """Return True if kw is a substring of any keyword already matched."""
+        return any(kw in m and kw != m for m in matched_lower)
+
+    tier_map = [
+        ("primary",   config["keywords"].get("primary", []),   config["scoring"]["primary_weight"]),
+        ("doctrinal", config["keywords"].get("doctrinal", []), config["scoring"].get("doctrinal_weight", 2)),
+        ("secondary", config["keywords"].get("secondary", []), config["scoring"]["secondary_weight"]),
+    ]
+
+    # Sort each tier longest-first so longer phrases claim the match before substrings
+    for tier_name, keywords, base_pts in tier_map:
+        for kw in sorted(keywords, key=len, reverse=True):
+            kw_l = kw.lower()
+            if kw_l not in text:
+                continue
+            if already_covered(kw_l):
+                continue
+            pts = base_pts
+            if kw_l in title:
                 pts *= config["scoring"]["title_multiplier"]
             score += pts
-            matched.append(f"+{kw}")
-    
-    for kw in config["keywords"]["secondary"]:
-        if kw.lower() in text:
-            pts = config["scoring"]["secondary_weight"]
-            if kw.lower() in title:
-                pts *= config["scoring"]["title_multiplier"]
-            score += pts
-            matched.append(kw)
-    
+            prefix = "+" if tier_name == "primary" else ("~" if tier_name == "doctrinal" else "")
+            matched.append(f"{prefix}{kw}")
+            matched_lower.append(kw_l)
+
     return score, matched
 
 
