@@ -153,6 +153,15 @@ def run(config_path="config.yaml"):
     # Push to git and clean old output (keep last 7 days)
     _push_and_clean(config["output_dir"])
 
+    # Generate and publish blog articles from top-scoring papers
+    try:
+        import subprocess as _sp
+        _blog_gen = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "blog_generator.py")
+        _sp.run(["python3", _blog_gen, artifact_path], timeout=300)
+        print("[autoprompt] Blog generator complete")
+    except Exception as _e:
+        print(f"[autoprompt] Blog generator error (non-fatal): {_e}")
+
     if notifications.get("require_verified_external_delivery", False):
         raise SystemExit("[autoprompt] Incomplete run: external Discord delivery to #directives was not verified")
 
