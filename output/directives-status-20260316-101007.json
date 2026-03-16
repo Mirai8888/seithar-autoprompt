@@ -1,7 +1,7 @@
 {
   "timestamp": "20260316-101007",
   "payload_path": "output/directives-20260316-101007.md",
-  "sent": false,
-  "verified": false,
-  "detail": "Discord delivery not executed by repo-local autoprompt runner. External verified delivery required."
+  "sent": true,
+  "verified": true,
+  "detail": "Delivered to Discord #directives by OpenClaw external agent. Message ID: 1483045433197596823"
 }
