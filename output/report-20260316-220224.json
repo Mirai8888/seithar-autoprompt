@@ -1,0 +1,390 @@
+{
+  "run_at": "2026-03-16T22:02:24.572408+00:00",
+  "papers_found": 14,
+  "suggestions_generated": 22,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2506.00819v2",
+      "title": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework for Autonomous Driving",
+      "summary": "arXiv:2506.00819v2 Announce Type: replace-cross \nAbstract: End-to-end autonomous driving systems map sensor data directly to control commands, but remain opaque, lack interpretability, and offer no formal safety guarantees. While recent vision-language-guided reinforcement learning (RL) methods introduce semantic feedback, they often rely on static prompts and fixed objectives, limiting adaptability to dynamic driving scenes. We present DriveMind, a unified semantic reward framework that integrates: (i) a contrastive Vision-Language Model (VLM) encoder for stepwise semantic anchoring; (ii) a novelty-triggered VLM encoder-decoder, fine-tuned via chain-of-thought (CoT) distillation, for dynamic prompt generation upon semantic drift; (iii) a hierarchical safety module enforcing kinematic constraints (e.g., speed, lane centering, stability); and (iv) a compact predictive world model to reward alignment with anticipated ideal states. DriveMind achieves 19.4 +/- 2.3 km/h average speed, 0.98 +/- 0.03 route completion, and near-zero collisions in CARLA Town 2, outperforming baselines by over 4% in success rate. Its semantic reward generalizes zero-shot to real dash-cam data with minimal distributional shift, demonstrating robust cross-domain alignment and potential for real-world deployment.",
+      "link": "https://arxiv.org/abs/2506.00819",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment",
+        "zero-shot",
+        "anchoring"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.354915+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12681v1",
+      "title": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "summary": "arXiv:2603.12681v1 Announce Type: new \nAbstract: We introduce Colluding LoRA (CoLoRA), an attack in which each adapter appears benign and plausibly functional in isolation, yet their linear composition consistently compromises safety. Unlike attacks that depend on specific input triggers or prompt patterns, CoLoRA is a composition-triggered broad refusal suppression: once a particular set of adapters is loaded, the model undergoes effective alignment degradation, complying with harmful requests without requiring adversarial prompts or suffixes. This attack exploits the combinatorial blindness of current defense systems, where exhaustively scanning all compositions is computationally intractable. Across several open-weight LLMs, CoLoRA achieves benign behavior individually yet high attack success rate after composition, indicating that securing modular LLM supply-chains requires moving beyond single-module verification toward composition-aware defenses.",
+      "link": "https://arxiv.org/abs/2603.12681",
+      "feed": "cs.CR",
+      "score": 8,
+      "matched_keywords": [
+        "+adversarial",
+        "LLM safety",
+        "alignment",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.431318+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2308.08705v5",
+      "title": "Partially Observable Multi-Agent Reinforcement Learning with Information Sharing",
+      "summary": "arXiv:2308.08705v5 Announce Type: replace-cross \nAbstract: We study provable multi-agent reinforcement learning (RL) in the general framework of partially observable stochastic games (POSGs). To circumvent the known hardness results and the use of computationally intractable oracles, we advocate leveraging the potential \\emph{information-sharing} among agents, a common practice in empirical multi-agent RL, and a standard model for multi-agent control systems with communication. We first establish several computational complexity results to justify the necessity of information-sharing, as well as the observability assumption that has enabled quasi-polynomial time and sample single-agent RL with partial observations, for tractably solving POSGs. Inspired by the inefficiency of planning in the ground-truth model, we then propose to further \\emph{approximate} the shared common information to construct an approximate model of the POSG, in which an approximate \\emph{equilibrium} (of the original POSG) can be found in quasi-polynomial-time, under the aforementioned assumptions. Furthermore, we develop a partially observable multi-agent RL algorithm whose time and sample complexities are \\emph{both} quasi-polynomial. Finally, beyond equilibrium learning, we extend our algorithmic framework to finding the \\emph{team-optimal solution} in cooperative POSGs, i.e., decentralized partially observable Markov decision processes, a more challenging goal. We establish concrete computational and sample complexities under several structural assumptions of the model. We hope our study could open up the possibilities of leveraging and even designing different \\emph{information structures}, a well-studied notion in control theory, for developing both sample- and computation-efficient partially observable multi-agent RL.",
+      "link": "https://arxiv.org/abs/2308.08705",
+      "feed": "cs.MA",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.483324+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.17188v2",
+      "title": "Towards AI Search Paradigm",
+      "summary": "arXiv:2506.17188v2 Announce Type: replace \nAbstract: In this paper, we introduce the AI Search Paradigm, a comprehensive blueprint for next-generation search systems capable of emulating human information processing and decision-making. The paradigm employs a modular architecture of four LLM-powered agents (Master, Planner, Executor and Writer) that dynamically adapt to the full spectrum of information needs, from simple factual queries to complex multi-stage reasoning tasks. These agents collaborate dynamically through coordinated workflows to evaluate query complexity, decompose problems into executable plans, and orchestrate tool usage, task execution, and content synthesis. We systematically present key methodologies for realizing this paradigm, including task planning and tool integration, execution strategies, aligned and robust retrieval-augmented generation, and efficient LLM inference, spanning both algorithmic techniques and infrastructure-level optimizations. By providing an in-depth guide to these foundational components, this work aims to inform the development of trustworthy, adaptive, and scalable AI search systems.",
+      "link": "https://arxiv.org/abs/2506.17188",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.207273+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.05474v5",
+      "title": "LLM-driven Multimodal Recommendation",
+      "summary": "arXiv:2602.05474v5 Announce Type: replace-cross \nAbstract: As a paradigm that delves into the deep seated drivers of user behavior, motivation-based recommendation systems have emerged as a prominent research direction in the field of personalized information retrieval. Unlike traditional approaches that primarily rely on surface level interaction signals, these systems aim to uncover the intrinsic psychological factors that shape users' decision-making processes and content preferences. By modeling motivation, recommender systems can better interpret not only what users choose, but why they make such choices, thereby enhancing both the interpretability and the persuasive power of recommendations. However, existing studies often simplify motivation as a latent variable learned implicitly from behavioral data, which limits their ability to capture the semantic richness inherent in user motivations. In particular, heterogeneous information such as review texts which often carry explicit motivational cues remains underexplored in current motivation modeling frameworks. Extensive experiments conducted on three real world datasets demonstrate the effectiveness of the proposed LMMRec framework.",
+      "link": "https://arxiv.org/abs/2602.05474",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+decision-making",
+        "behavioral",
+        "persona"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.355079+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.15418v2",
+      "title": "Guided Policy Optimization under Partial Observability",
+      "summary": "arXiv:2505.15418v2 Announce Type: replace-cross \nAbstract: Reinforcement Learning (RL) in partially observable environments poses significant challenges due to the complexity of learning under uncertainty. While additional information, such as that available in simulations, can enhance training, effectively leveraging it remains an open problem. To address this, we introduce Guided Policy Optimization (GPO), a framework that co-trains a guider and a learner. The guider takes advantage of privileged information while ensuring alignment with the learner's policy that is primarily trained via imitation learning. We theoretically demonstrate that this learning scheme achieves optimality comparable to direct RL, thereby overcoming key limitations inherent in existing approaches. Empirical evaluations show strong performance of GPO across various tasks, including continuous control with partial observability and noise, and memory-based challenges, significantly outperforming existing methods.",
+      "link": "https://arxiv.org/abs/2505.15418",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.354856+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.06703v3",
+      "title": "On the (In)Security of Loading Machine Learning Models",
+      "summary": "arXiv:2509.06703v3 Announce Type: replace \nAbstract: The rise of model sharing through frameworks and dedicated hubs makes Machine Learning significantly more accessible. Despite its benefits, loading shared models exposes users to underexplored security risks, while security awareness remains limited among both practitioners and developers. To enable a more security-conscious approach in Machine Learning model sharing, in this paper, we evaluate the security posture of frameworks and hubs, assess whether security-oriented mechanisms offer real protection, and survey how users perceive the security narratives surrounding model sharing. Our evaluation shows that most frameworks and hubs address security risks partially at best, often by shifting responsibility to the user. More concerningly, our analysis of frameworks advertising security-oriented settings and complete model sharing uncovered multiple 0-day vulnerabilities enabling arbitrary code execution. Through this analysis, we show that, despite the recent narrative, securely loading Machine Learning models is far from being a solved problem and cannot be guaranteed by the file format used for sharing. Our survey shows that the security narrative leads users to consider security-oriented settings as trustworthy, despite the weaknesses shown in this work. From this, we derive suggestions to strengthen the security of model-sharing ecosystems.",
+      "link": "https://arxiv.org/abs/2509.06703",
+      "feed": "cs.CR",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "narrative"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.431506+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12826v1",
+      "title": "Rethinking Multiple-Choice Questions for RLVR: Unlocking Potential via Distractor Design",
+      "summary": "arXiv:2603.12826v1 Announce Type: new \nAbstract: Reinforcement Learning with Verifiable Rewards (RLVR) significantly enhances the reasoning capabilities of Large Language Models. When applied to RLVR, Multiple-Choice Questions (MCQs) offer a scalable source of verifiable data but risk inducing reward hacking, where models shortcut reasoning via random guessing or simple elimination. Current approaches often mitigate this by converting MCQs to open-ended formats, thereby discarding the contrastive signal provided by expert-designed distractors. In this work, we systematically investigate the impact of option design on RLVR. Our analysis highlights two primary insights: (1) Mismatches in option counts between training and testing degrade performance. (2) Strong distractors effectively mitigate random guessing, enabling effective RLVR training even with 2-way questions. Motivated by these findings, we propose Iterative Distractor Curation (IDC), a framework that actively constructs high-quality distractors to block elimination shortcuts and promote deep reasoning. Experiments on various benchmarks demonstrate that our method effectively enhances distractor quality and yields significant gains in RLVR training compared to the original data.",
+      "link": "https://arxiv.org/abs/2603.12826",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.206980+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2410.10862v3",
+      "title": "Superficial Safety Alignment Hypothesis",
+      "summary": "arXiv:2410.10862v3 Announce Type: replace \nAbstract: As large language models (LLMs) are overwhelmingly more and more integrated into various applications, ensuring they generate safe responses is a pressing need. Previous studies on alignment have largely focused on general instruction-following but have often overlooked the distinct properties of safety alignment, such as the brittleness of safety mechanisms. To bridge the gap, we propose the Superficial Safety Alignment Hypothesis (SSAH), which posits that safety alignment teaches an otherwise unsafe model to choose the correct reasoning direction-fulfill or refuse users' requests-interpreted as an implicit binary classification task. Through SSAH, we hypothesize that only a few essential components can establish safety guardrails in LLMs. We successfully identify four types of attribute-critical components: Safety Critical Unit (SCU), Utility Critical Unit (UCU), Complex Unit (CU), and Redundant Unit (RU). Our findings show that freezing certain safety-critical components during fine-tuning allows the model to retain its safety attributes while adapting to new tasks. Similarly, we show that leveraging redundant units in the pre-trained model as an \"alignment budget\" can effectively minimize the alignment tax while achieving the alignment goal. All considered, this paper concludes that the atomic functional unit for safety in LLMs is at the neuron level and underscores that safety alignment should not be complicated. We have code implementation and other information on the project website: https://ssa-h.github.io/.",
+      "link": "https://arxiv.org/abs/2410.10862",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "guardrail"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.207215+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.19973v3",
+      "title": "A Tutorial on Cognitive Biases in Agentic AI-Driven 6G Autonomous Networks",
+      "summary": "arXiv:2510.19973v3 Announce Type: replace-cross \nAbstract: The path to higher network autonomy in 6G lies beyond the mere optimization of key performance indicators (KPIs). While KPIs have enabled automation gains under TM Forum Levels 1--3, they remain numerical abstractions that act only as proxies for the real essence of communication networks: seamless connectivity, fairness, adaptability, and resilience. True autonomy requires perceiving and reasoning over the network environment as it is. Such progress can be achieved through \\emph{agentic AI}, where large language model (LLM)-powered agents perceive multimodal telemetry, reason with memory, negotiate across domains, and act via APIs to achieve multi-objective goals. However, deploying such agents introduces the challenge of cognitive biases inherited from human design, which can distort reasoning, negotiation, tool use, and actuation. Between neuroscience and AI, this paper provides a tutorial on a selection of well-known biases, including their taxonomy, definition, mathematical formulation, emergence in telecom systems and the commonly impacted agentic components. The tutorial also presents various mitigation strategies tailored to each type of bias. The article finally provides two practical use-cases, which tackle the emergence, impact and mitigation gain of some famous biases in 6G inter-slice and cross-domain management. In particular, anchor randomization, temporal decay and inflection bonus techniques are introduced to specifically address anchoring, temporal and confirmation biases. This avoids that agents stick to the initial high resource allocation proposal or decisions that are recent and/or confirming a prior hypothesis. By grounding decisions in a richer and fairer set of past experiences, the quality and bravery of the agentic agreements in the second use-case, for instance, are leading to $\\times 5$ lower latency and around $40\\%$ higher energy saving.",
+      "link": "https://arxiv.org/abs/2510.19973",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "cognitive bias",
+        "anchoring"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.355026+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.13014v1",
+      "title": "FraudFox: Adaptable Fraud Detection in the Real World",
+      "summary": "arXiv:2603.13014v1 Announce Type: new \nAbstract: The proposed method (FraudFox) provides solutions to adversarial attacks in a resource constrained environment. We focus on questions like the following: How suspicious is `Smith', trying to buy \\$500 shoes, on Monday 3am? How to merge the risk scores, from a handful of risk-assessment modules (`oracles') in an adversarial environment? More importantly, given historical data (orders, prices, and what-happened afterwards), and business goals/restrictions, which transactions, like the `Smith' transaction above, which ones should we `pass', versus send to human investigators? The business restrictions could be: `at most $x$ investigations are feasible', or `at most \\$$y$ lost due to fraud'. These are the two research problems we focus on, in this work. One approach to address the first problem (`oracle-weighting'), is by using Extended Kalman Filters with dynamic importance weights, to automatically and continuously update our weights for each 'oracle'. For the second problem, we show how to derive an optimal decision surface, and how to compute the Pareto optimal set, to allow what-if questions. An important consideration is adaptation: Fraudsters will change their behavior, according to our past decisions; thus, we need to adapt accordingly. The resulting system, \\method, is scalable, adaptable to changing fraudster behavior, effective, and already in \\textbf{production} at Amazon. FraudFox augments a fraud prevention sub-system and has led to significant performance gains.",
+      "link": "https://arxiv.org/abs/2603.13014",
+      "feed": "cs.CR",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial attack"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.431380+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.13201v1",
+      "title": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "summary": "arXiv:2603.13201v1 Announce Type: new \nAbstract: Instruction Tuning (IT) has been proven to be an effective approach to unlock the powerful capabilities of large language models (LLMs). Recent studies indicate that excessive IT data can degrade LLMs performance, while carefully selecting a small subset of high-quality IT data can significantly enhance their capabilities. Therefore, identifying the most efficient subset data from the IT dataset to effectively develop either specific or general abilities in LLMs has become a critical challenge. To address this, we propose a novel and efficient framework called NAIT. NAIT evaluates the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. Specifically, NAIT captures neuron activation patterns from in-domain datasets of target domain capabilities to construct reusable and transferable neuron activation features. It then evaluates and selects optimal samples based on the similarity between candidate samples and the expected activation features of the target capabilities. Experimental results show that training on the 10\\% Alpaca-GPT4 IT data subset selected by NAIT consistently outperforms methods that rely on external advanced models or uncertainty-based features across various tasks. Our findings also reveal the transferability of neuron activation features across different capabilities of LLMs. In particular, IT data with more logical reasoning and programmatic features possesses strong general transferability, enabling models to develop stronger capabilities across multiple tasks, while a stable core subset of data is sufficient to consistently activate fundamental model capabilities and universally improve performance across diverse tasks.",
+      "link": "https://arxiv.org/abs/2603.13201",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "instruction tuning"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.207112+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.06688v2",
+      "title": "Narrative Weaver: Towards Controllable Long-Range Visual Consistency with Multi-Modal Conditioning",
+      "summary": "arXiv:2603.06688v2 Announce Type: replace-cross \nAbstract: We present \"Narrative Weaver\", a novel framework that addresses a fundamental challenge in generative AI: achieving multi-modal controllable, long-range, and consistent visual content generation. While existing models excel at generating high-fidelity short-form visual content, they struggle to maintain narrative coherence and visual consistency across extended sequences - a critical limitation for real-world applications such as filmmaking and e-commerce advertising. Narrative Weaver introduces the first holistic solution that seamlessly integrates three essential capabilities: fine-grained control, automatic narrative planning, and long-range coherence. Our architecture combines a Multimodal Large Language Model (MLLM) for high-level narrative planning with a novel fine-grained control module featuring a dynamic Memory Bank that prevents visual drift. To enable practical deployment, we develop a progressive, multi-stage training strategy that efficiently leverages existing pre-trained models, achieving state-of-the-art performance even with limited training data. Recognizing the absence of suitable evaluation benchmarks, we construct and release the E-commerce Advertising Video Storyboard Dataset (EAVSD) - the first comprehensive dataset for this task, containing over 330K high-quality images with rich narrative annotations. Through extensive experiments across three distinct scenarios (controllable multi-scene generation, autonomous storytelling, and e-commerce advertising), we demonstrate our method's superiority while opening new possibilities for AI-driven content creation.",
+      "link": "https://arxiv.org/abs/2603.06688",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "narrative"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.355143+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12614v1",
+      "title": "ChainFuzzer: Greybox Fuzzing for Workflow-Level Multi-Tool Vulnerabilities in LLM Agents",
+      "summary": "arXiv:2603.12614v1 Announce Type: cross \nAbstract: Tool-augmented LLM agents increasingly rely on multi-step, multi-tool workflows to complete real tasks. This design expands the attack surface, because data produced by one tool can be persisted and later reused as input to another tool, enabling exploitable source-to-sink dataflows that only emerge through tool composition. We study this risk as multi-tool vulnerabilities in LLM agents, and show that existing discovery efforts focused on single-tool or single-hop testing miss these long-horizon behaviors and provide limited debugging value. We present ChainFuzzer, a greybox framework for discovering and reproducing multi-tool vulnerabilities with auditable evidence. ChainFuzzer (i) identifies high-impact operations with strict source-to-sink dataflow evidence and extracts plausible upstream candidate tool chains based on cross-tool dependencies, (ii) uses Trace-guided Prompt Solving (TPS) to synthesize stable prompts that reliably drive the agent to execute target chains, and (iii) performs guardrail-aware fuzzing to reproduce vulnerabilities under LLM guardrails via payload mutation and sink-specific oracles. We evaluate ChainFuzzer on 20 popular open-source LLM agent apps (998 tools). ChainFuzzer extracts 2,388 candidate tool chains and synthesizes 2,213 stable prompts, confirming 365 unique, reproducible vulnerabilities across 19/20 apps (302 require multi-tool execution). Component evaluation shows tool-chain extraction achieves 96.49% edge precision and 91.50% strict chain precision; TPS increases chain reachability from 27.05% to 95.45%; guardrail-aware fuzzing boosts payload-level trigger rate from 18.20% to 88.60%. Overall, ChainFuzzer achieves 3.02 vulnerabilities per 1M tokens, providing a practical foundation for testing and hardening real-world multi-tool agent systems.",
+      "link": "https://arxiv.org/abs/2603.12614",
+      "feed": "cs.CR",
+      "score": 2,
+      "matched_keywords": [
+        "guardrail",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-16T22:02:21.431448+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "LLM-driven Multimodal Recommendation",
+      "paper_link": "https://arxiv.org/abs/2602.05474",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LLM-driven Multimodal Recommendation' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "SOUL.md",
+      "target_section": "## Core Doctrine",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Core Doctrine]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "AGENTS.md",
+      "target_section": "## Task Routing",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Task Routing]."
+    }
+  ]
+}
