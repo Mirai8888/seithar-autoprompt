@@ -157,7 +157,7 @@ def run(config_path="config.yaml"):
     try:
         import subprocess as _sp
         _blog_gen = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "blog_generator.py")
-        _sp.run(["python3", _blog_gen, artifact_path], timeout=300)
+        _sp.run(["python3", _blog_gen, json_path], timeout=300)
         print("[autoprompt] Blog generator complete")
     except Exception as _e:
         print(f"[autoprompt] Blog generator error (non-fatal): {_e}")
