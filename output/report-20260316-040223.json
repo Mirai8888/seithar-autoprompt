@@ -1,0 +1,1550 @@
+{
+  "run_at": "2026-03-16T04:02:23.341903+00:00",
+  "papers_found": 126,
+  "suggestions_generated": 140,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.13026v1",
+      "title": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+      "summary": "arXiv:2603.13026v1 Announce Type: cross \nAbstract: Prompt injection poses serious security risks to real-world LLM applications, particularly autonomous agents. Although many defenses have been proposed, their robustness against adaptive attacks remains insufficiently evaluated, potentially creating a false sense of security. In this work, we propose PISmith, a reinforcement learning (RL)-based red-teaming framework that systematically assesses existing prompt-injection defenses by training an attack LLM to optimize injected prompts in a practical black-box setting, where the attacker can only query the defended LLM and observe its outputs. We find that directly applying standard GRPO to attack strong defenses leads to sub-optimal performance due to extreme reward sparsity -- most generated injected prompts are blocked by the defense, causing the policy's entropy to collapse before discovering effective attack strategies, while the rare successes cannot be learned effectively. In response, we introduce adaptive entropy regularization and dynamic advantage weighting to sustain exploration and amplify learning from scarce successes. Extensive evaluation on 13 benchmarks demonstrates that state-of-the-art prompt injection defenses remain vulnerable to adaptive attacks. We also compare PISmith with 7 baselines across static, search-based, and RL-based attack categories, showing that PISmith consistently achieves the highest attack success rates. Furthermore, PISmith achieves strong performance in agentic settings on InjecAgent and AgentDojo against both open-source and closed-source LLMs (e.g., GPT-4o-mini and GPT-5-nano). Our code is available at https://github.com/albert-y1n/PISmith.",
+      "link": "https://arxiv.org/abs/2603.13026",
+      "feed": "cs.CR",
+      "score": 18,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+prompt injection",
+        "+red teaming"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.204627+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12698v1",
+      "title": "EvolveCoder: Evolving Test Cases via Adversarial Verification for Code Reinforcement Learning",
+      "summary": "arXiv:2603.12698v1 Announce Type: new \nAbstract: Reinforcement learning with verifiable rewards (RLVR) is a promising approach for improving code generation in large language models, but its effectiveness is limited by weak and static verification signals in existing coding RL datasets. In this paper, we propose a solution-conditioned and adversarial verification framework that iteratively refines test cases based on the execution behaviors of candidate solutions, with the goal of increasing difficulty, improving discriminative power, and reducing redundancy. Based on this framework, we introduce EvolveCoder-22k, a large-scale coding reinforcement learning dataset constructed through multiple rounds of adversarial test case evolution. Empirical analysis shows that iterative refinement substantially strengthens verification, with pass@1 decreasing from 43.80 to 31.22. Reinforcement learning on EvolveCoder-22k yields stable optimization and consistent performance gains, improving Qwen3-4B by an average of 4.2 points across four downstream benchmarks and outperforming strong 4B-scale baselines. Our results highlight the importance of adversarial, solution-conditioned verification for effective and scalable reinforcement learning in code generation.",
+      "link": "https://arxiv.org/abs/2603.12698",
+      "feed": "cs.CL",
+      "score": 12,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-16T04:02:19.956904+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.13189v1",
+      "title": "LLM Constitutional Multi-Agent Governance",
+      "summary": "arXiv:2603.13189v1 Announce Type: cross \nAbstract: Large Language Models (LLMs) can generate persuasive influence strategies that shift cooperative behavior in multi-agent populations, but a critical question remains: does the resulting cooperation reflect genuine prosocial alignment, or does it mask erosion of agent autonomy, epistemic integrity, and distributional fairness? We introduce Constitutional Multi-Agent Governance (CMAG), a two-stage framework that interposes between an LLM policy compiler and a networked agent population, combining hard constraint filtering with soft penalized-utility optimization that balances cooperation potential against manipulation risk and autonomy pressure. We propose the Ethical Cooperation Score (ECS), a multiplicative composite of cooperation, autonomy, integrity, and fairness that penalizes cooperation achieved through manipulative means. In experiments on scale-free networks of 80 agents under adversarial conditions (70% violating candidates), we benchmark three regimes: full CMAG, naive filtering, and unconstrained optimization. While unconstrained optimization achieves the highest raw cooperation (0.873), it yields the lowest ECS (0.645) due to severe autonomy erosion (0.867) and fairness degradation (0.888). CMAG attains an ECS of 0.741, a 14.9% improvement, while preserving autonomy at 0.985 and integrity at 0.995, with only modest cooperation reduction to 0.770. The naive ablation (ECS = 0.733) confirms that hard constraints alone are insufficient. Pareto analysis shows CMAG dominates the cooperation-autonomy trade-off space, and governance reduces hub-periphery exposure disparities by over 60%. These findings establish that cooperation is not inherently desirable without governance: constitutional constraints are necessary to ensure that LLM-mediated influence produces ethically stable outcomes rather than manipulative equilibria.",
+      "link": "https://arxiv.org/abs/2603.13189",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial",
+        "~epistemic",
+        "multi-agent",
+        "alignment",
+        "epistemic"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.125900+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12277v1",
+      "title": "Prompt Injection as Role Confusion",
+      "summary": "arXiv:2603.12277v1 Announce Type: new \nAbstract: Language models remain vulnerable to prompt injection attacks despite extensive safety training. We trace this failure to role confusion: models infer roles from how text is written, not where it comes from. We design novel role probes to capture how models internally identify \"who is speaking.\" These reveal why prompt injection works: untrusted text that imitates a role inherits that role's authority. We test this insight by injecting spoofed reasoning into user prompts and tool outputs, achieving average success rates of 60% on StrongREJECT and 61% on agent exfiltration, across multiple open- and closed-weight models with near-zero baselines. Strikingly, the degree of internal role confusion strongly predicts attack success before generation begins. Our findings reveal a fundamental gap: security is defined at the interface but authority is assigned in latent space. More broadly, we introduce a unifying, mechanistic framework for prompt injection, demonstrating that diverse prompt-injection attacks exploit the same underlying role-confusion mechanism.",
+      "link": "https://arxiv.org/abs/2603.12277",
+      "feed": "cs.CL",
+      "score": 10,
+      "matched_keywords": [
+        "+prompt injection",
+        "+trust",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-16T04:02:19.955765+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12717v1",
+      "title": "Altered Thoughts, Altered Actions: Probing Chain-of-Thought Vulnerabilities in VLA Robotic Manipulation",
+      "summary": "arXiv:2603.12717v1 Announce Type: cross \nAbstract: Recent Vision-Language-Action (VLA) models increasingly adopt chain-of-thought (CoT) reasoning, generating a natural-language plan before decoding motor commands. This internal text channel between the reasoning module and the action decoder has received no adversarial scrutiny. We ask: which properties of this intermediate plan does the action decoder actually rely on, and can targeted corruption of the reasoning trace alone -- with all inputs left intact -- degrade a robot's physical task performance? We design a taxonomy of seven text corruptions organized into three attacker tiers (blind noise, mechanical-semantic, and LLM-adaptive) and apply them to a state-of-the-art reasoning VLA across 40 LIBERO tabletop manipulation tasks. Our results reveal a striking asymmetry: substituting object names in the reasoning trace reduces overall success rate by 8.3~percentage points (pp) -- reaching $-$19.3~pp on goal-conditioned tasks and $-$45~pp on individual tasks -- whereas sentence reordering, spatial-direction reversal, token noise, and even a 70B-parameter LLM crafting plausible-but-wrong plans all have negligible impact (within $\\pm$4~pp). This asymmetry indicates that the action decoder depends on entity-reference integrity rather than reasoning quality or sequential structure. Notably, a sophisticated LLM-based attacker underperforms simple mechanical object-name substitution, because preserving plausibility inadvertently retains the entity-grounding structure the decoder needs. A cross-architecture control using a non-reasoning VLA confirms the vulnerability is exclusive to reasoning-augmented models, while instruction-level attacks degrade both architectures -- establishing that the internal reasoning trace is a distinct and stealthy threat vector invisible to input-validation defenses.",
+      "link": "https://arxiv.org/abs/2603.12717",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.123633+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12749v1",
+      "title": "SLICE: Semantic Latent Injection via Compartmentalized Embedding for Image Watermarking",
+      "summary": "arXiv:2603.12749v1 Announce Type: cross \nAbstract: Watermarking the initial noise of diffusion models has emerged as a promising approach for image provenance, but content-independent noise patterns can be forged via inversion and regeneration attacks. Recent semantic-aware watermarking methods improve robustness by conditioning verification on image semantics. However, their reliance on a single global semantic binding makes them vulnerable to localized but globally coherent semantic edits. To address this limitation and provide a trustworthy semantic-aware watermark, we propose $\\underline{\\textbf{S}}$emantic $\\underline{\\textbf{L}}$atent $\\underline{\\textbf{I}}$njection via $\\underline{\\textbf{C}}$ompartmentalized $\\underline{\\textbf{E}}$mbedding ($\\textbf{SLICE}$). Our framework decouples image semantics into four semantic factors (subject, environment, action, and detail) and precisely anchors them to distinct regions in the initial Gaussian noise. This fine-grained semantic binding enables advanced watermark verification where semantic tampering is detectable and localizable. We theoretically justify why SLICE enables robust and reliable tamper localization and provides statistical guarantees on false-accept rates. Experimental results demonstrate that SLICE significantly outperforms existing baselines against advanced semantic-guided regeneration attacks, substantially reducing attack success while preserving image quality and semantic fidelity. Overall, SLICE offers a practical, training-free provenance solution that is both fine-grained in diagnosis and robust to realistic adversarial manipulations.",
+      "link": "https://arxiv.org/abs/2603.12749",
+      "feed": "cs.CR",
+      "score": 10,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial",
+        "+trust",
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.204360+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.05872v2",
+      "title": "Evolving Deception: When Agents Evolve, Deception Wins",
+      "summary": "arXiv:2603.05872v2 Announce Type: replace \nAbstract: Self-evolving agents offer a promising path toward scalable autonomy. However, in this work, we show that in competitive environments, self-evolution can instead give rise to a serious and previously underexplored risk: the spontaneous emergence of deception as an evolutionarily stable strategy. We conduct a systematic empirical study on the self-evolution of large language model (LLM) agents in a competitive Bidding Arena, where agents iteratively refine their strategies through interaction-driven reflection. Across different evolutionary paths (\\eg, Neutral, Honesty-Guided, and Deception-Guided), we find a consistent pattern: under utility-driven competition, unconstrained self-evolution reliably drifts toward deceptive behaviors, even when honest strategies remain viable. This drift is explained by a fundamental asymmetry in generalization. Deception evolves as a transferable meta-strategy that generalizes robustly across diverse and unseen tasks, whereas honesty-based strategies are fragile and often collapse outside their original contexts. Further analysis of agents internal states reveals the emergence of rationalization mechanisms, through which agents justify or deny deceptive actions to reconcile competitive success with normative instructions. Our paper exposes a fundamental tension between agent self-evolution and alignment, highlighting the risks of deploying self-improving agents in adversarial environments.",
+      "link": "https://arxiv.org/abs/2603.05872",
+      "feed": "cs.CR",
+      "score": 10,
+      "matched_keywords": [
+        "+adversarial",
+        "+deception",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.205123+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12595v1",
+      "title": "Swap-guided Preference Learning for Personalized Reinforcement Learning from Human Feedback",
+      "summary": "arXiv:2603.12595v1 Announce Type: cross \nAbstract: Reinforcement Learning from Human Feedback (RLHF) is a widely used approach to align large-scale AI systems with human values. However, RLHF typically assumes a single, universal reward, which overlooks diverse preferences and limits personalization. Variational Preference Learning (VPL) seeks to address this by introducing user-specific latent variables. Despite its promise, we found that VPL suffers from posterior collapse. While this phenomenon is well known in VAEs, it has not previously been identified in preference learning frameworks. Under sparse preference data and with overly expressive decoders, VPL may cause latent variables to be ignored, reverting to a single-reward model. To overcome this limitation, we propose Swap-guided Preference Learning (SPL). The key idea is to construct fictitious swap annotators and use the mirroring property of their preferences to guide the encoder. SPL introduces three components: (1) swap-guided base regularization, (2) Preferential Inverse Autoregressive Flow (P-IAF), and (3) adaptive latent conditioning. Experiments show that SPL mitigates collapse, enriches user-specific latents, and improves preference prediction. Our code and data are available at https://github.com/cobang0111/SPL",
+      "link": "https://arxiv.org/abs/2603.12595",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "persona",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.122127+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.00819v2",
+      "title": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework for Autonomous Driving",
+      "summary": "arXiv:2506.00819v2 Announce Type: replace-cross \nAbstract: End-to-end autonomous driving systems map sensor data directly to control commands, but remain opaque, lack interpretability, and offer no formal safety guarantees. While recent vision-language-guided reinforcement learning (RL) methods introduce semantic feedback, they often rely on static prompts and fixed objectives, limiting adaptability to dynamic driving scenes. We present DriveMind, a unified semantic reward framework that integrates: (i) a contrastive Vision-Language Model (VLM) encoder for stepwise semantic anchoring; (ii) a novelty-triggered VLM encoder-decoder, fine-tuned via chain-of-thought (CoT) distillation, for dynamic prompt generation upon semantic drift; (iii) a hierarchical safety module enforcing kinematic constraints (e.g., speed, lane centering, stability); and (iv) a compact predictive world model to reward alignment with anticipated ideal states. DriveMind achieves 19.4 +/- 2.3 km/h average speed, 0.98 +/- 0.03 route completion, and near-zero collisions in CARLA Town 2, outperforming baselines by over 4% in success rate. Its semantic reward generalizes zero-shot to real dash-cam data with minimal distributional shift, demonstrating robust cross-domain alignment and potential for real-world deployment.",
+      "link": "https://arxiv.org/abs/2506.00819",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment",
+        "zero-shot",
+        "anchoring"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.127445+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.09325v4",
+      "title": "SegDAC: Visual Generalization in Reinforcement Learning via Dynamic Object Tokens",
+      "summary": "arXiv:2508.09325v4 Announce Type: replace-cross \nAbstract: Visual reinforcement learning policies trained on pixel observations often struggle to generalize when visual conditions change at test time. Object-centric representations are a promising alternative, but most approaches use fixed-size slot representations, require image reconstruction, or need auxiliary losses to learn object decompositions. As a result, it remains unclear how to learn RL policies directly from object-level inputs without these constraints. We propose SegDAC, a Segmentation-Driven Actor-Critic that operates on a variable-length set of object token embeddings. At each timestep, text-grounded segmentation produces object masks from which spatially aware token embeddings are extracted. A transformer-based actor-critic processes these dynamic tokens, using segment positional encoding to preserve spatial information across objects. We ablate these design choices and show that both segment positional encoding and variable-length processing are individually necessary for strong performance. We evaluate SegDAC on 8 ManiSkill3 manipulation tasks under 12 visual perturbation types across 3 difficulty levels. SegDAC improves over prior visual generalization methods by 15% on easy, 66% on medium, and 88% on the hardest settings. SegDAC matches the sample efficiency of the state-of-the-art visual RL methods while achieving improved generalization under visual changes. Project Page: https://segdac.github.io/",
+      "link": "https://arxiv.org/abs/2508.09325",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.127651+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12949v1",
+      "title": "Editing Away the Evidence: Diffusion-Based Image Manipulation and the Failure Modes of Robust Watermarking",
+      "summary": "arXiv:2603.12949v1 Announce Type: cross \nAbstract: Robust invisible watermarks are widely used to support copyright protection, content provenance, and accountability by embedding hidden signals designed to survive common post-processing operations. However, diffusion-based image editing introduces a fundamentally different class of transformations: it injects noise and reconstructs images through a powerful generative prior, often altering semantic content while preserving photorealism. In this paper, we provide a unified theoretical and empirical analysis showing that non-adversarial diffusion editing can unintentionally degrade or remove robust watermarks. We model diffusion editing as a stochastic transformation that progressively contracts off-manifold perturbations, causing the low-amplitude signals used by many watermarking schemes to decay. Our analysis derives bounds on watermark signal-to-noise ratio and mutual information along diffusion trajectories, yielding conditions under which reliable recovery becomes information-theoretically impossible. We further evaluate representative watermarking systems under a range of diffusion-based editing scenarios and strengths. The results indicate that even routine semantic edits can significantly reduce watermark recoverability. Finally, we discuss the implications for content provenance and outline principles for designing watermarking approaches that remain robust under generative image editing.",
+      "link": "https://arxiv.org/abs/2603.12949",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.204473+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.01651v3",
+      "title": "Human-AI Governance (HAIG): A Trust-Utility Approach",
+      "summary": "arXiv:2505.01651v3 Announce Type: replace \nAbstract: This paper introduces the Human-AI Governance (HAIG) framework, contributing to the AI governance (AIG) field by foregrounding the relational dynamics between human and AI actors rather than treating AI systems as objects of governance alone. Current categorical frameworks (e.g., human-in-the-loop models) inadequately capture how AI systems evolve from tools to partners, particularly as foundation models demonstrate emergent capabilities and multi-agent systems exhibit autonomous goal-setting behaviours. As systems are deployed across contexts, agency redistributes in complex patterns that are better represented as positions along continua rather than discrete categories. The HAIG framework operates across three levels: dimensions (Decision Authority, Process Autonomy, and Accountability Configuration), continua (continuous positional spectra along each dimension), and thresholds (critical points along the continua where governance requirements shift qualitatively). The framework's dimensional architecture is level-agnostic, applicable from individual deployment decisions and organisational governance through to sectorial comparison and national and international regulatory design. Unlike risk-based or principle-based approaches that treat governance primarily as a constraint on AI deployment, HAIG adopts a trust-utility orientation - reframing governance as the condition under which human-AI collaboration can realise its potential, calibrating oversight to specific relational contexts rather than predetermined categories. Case studies in healthcare and European regulation demonstrate how HAIG complements existing frameworks while offering a foundation for adaptive regulatory design that anticipates governance challenges before they emerge.",
+      "link": "https://arxiv.org/abs/2505.01651",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+trust",
+        "multi-agent",
+        "framing"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.126151+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.12858v2",
+      "title": "Information-Consistent Language Model Recommendations through Group Relative Policy Optimization",
+      "summary": "arXiv:2512.12858v2 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) are increasingly deployed in business-critical domains such as finance, education, healthcare, and customer support, where users expect consistent and reliable recommendations. Yet LLMs often exhibit variability when prompts are phrased with minor differences, even when semantically equivalent. Such inconsistency undermines trust, complicates compliance, and disrupts user experience. While personalization is desirable in certain contexts, many enterprise scenarios, such as HR onboarding, customer support, or policy disclosure, require invariant information delivery regardless of phrasing or prior conversational history. Existing approaches, including retrieval-augmented generation (RAG) and temperature tuning, improve factuality or reduce stochasticity, but cannot guarantee stability across equivalent prompts. In this paper, we propose a reinforcement learning framework based on Group Relative Policy Optimization (GRPO) to directly optimize for consistency. Unlike prior applications of GRPO, which have been limited to reasoning and code generation, we adapt GRPO to enforce the stability of information content across groups of semantically equivalent prompts. We introduce entropy-based helpfulness and stability rewards, treating prompt variants as groups and resetting conversational context to isolate phrasing effects. Experiments on investment and job recommendation tasks show that our GRPO-fine-tuned model reduces variability compared to the baseline LLM model. To our knowledge, this is a novel application of GRPO for aligning LLMs toward information consistency, reframing variability not as an acceptable feature of generative diversity, but as a correctable flaw in enterprise deployments.",
+      "link": "https://arxiv.org/abs/2512.12858",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+trust",
+        "persona",
+        "framing"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.128698+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.05772v2",
+      "title": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "summary": "arXiv:2603.05772v2 Announce Type: replace-cross \nAbstract: Currently, open-sourced large language models (OSLLMs) have demonstrated remarkable generative performance. However, as their structure and weights are made public, they are exposed to jailbreak attacks even after alignment. Existing attacks operate primarily at shallow levels, such as the prompt or embedding level, and often fail to expose vulnerabilities rooted in deeper model components, which creates a false sense of security for successful defense. In this paper, we propose \\textbf{\\underline{S}}afety \\textbf{\\underline{A}}ttention \\textbf{\\underline{H}}ead \\textbf{\\underline{A}}ttack (\\textbf{SAHA}), an attention-head-level jailbreak framework that explores the vulnerability in deeper but insufficiently aligned attention heads. SAHA contains two novel designs. Firstly, we reveal that deeper attention layers introduce more vulnerability against jailbreak attacks. Based on this finding, \\textbf{SAHA} introduces \\textit{Ablation-Impact Ranking} head selection strategy to effectively locate the most vital layer for unsafe output. Secondly, we introduce a boundary-aware perturbation method, \\textit{i.e. Layer-Wise Perturbation}, to probe the generation of unsafe content with minimal perturbation to the attention. This constrained perturbation guarantees higher semantic relevance with the target intent while ensuring evasion. Extensive experiments show the superiority of our method: SAHA improves ASR by 14\\% over SOTA baselines, revealing the vulnerability of the attack surface on the attention head. Our code is available at https://anonymous.4open.science/r/SAHA.",
+      "link": "https://arxiv.org/abs/2603.05772",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+jailbreak",
+        "vulnerability",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.129811+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12681v1",
+      "title": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "summary": "arXiv:2603.12681v1 Announce Type: new \nAbstract: We introduce Colluding LoRA (CoLoRA), an attack in which each adapter appears benign and plausibly functional in isolation, yet their linear composition consistently compromises safety. Unlike attacks that depend on specific input triggers or prompt patterns, CoLoRA is a composition-triggered broad refusal suppression: once a particular set of adapters is loaded, the model undergoes effective alignment degradation, complying with harmful requests without requiring adversarial prompts or suffixes. This attack exploits the combinatorial blindness of current defense systems, where exhaustively scanning all compositions is computationally intractable. Across several open-weight LLMs, CoLoRA achieves benign behavior individually yet high attack success rate after composition, indicating that securing modular LLM supply-chains requires moving beyond single-module verification toward composition-aware defenses.",
+      "link": "https://arxiv.org/abs/2603.12681",
+      "feed": "cs.CR",
+      "score": 8,
+      "matched_keywords": [
+        "+adversarial",
+        "LLM safety",
+        "alignment",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.203690+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12631v1",
+      "title": "Collaborative Multi-Agent Optimization for Personalized Memory System",
+      "summary": "arXiv:2603.12631v1 Announce Type: new \nAbstract: Memory systems are crucial to personalized LLMs by mitigating the context window limitation in capturing long-term user-LLM conversations. Typically, such systems leverage multiple agents to handle multi-granular memory construction and personalized memory retrieval tasks. To optimize the system, existing methods focus on specializing agents on their local tasks independently via prompt engineering or fine-tuning. However, they overlook cross-agent collaboration, where independent optimization on local agents hardly guarantees the global system performance. To address this issue, we propose a Collaborative Reinforcement Learning Framework for Multi-Agent Memory Systems (CoMAM), jointly optimizing local agents to facilitate collaboration. Specifically, we regularize agents' execution as a sequential Markov decision process (MDP) to embed inter-agent dependencies into the state transition, yielding both local task rewards (e.g., information coverage for memory construction) and global rewards (i.e., query-answer accuracy). Then, we quantify each agent's contribution via group-level ranking consistency between local and global rewards, treating them as adaptive weights to assign global credit and integrate local-global rewards. Each agent is optimized by these integrated rewards, aligning local improvements with the global performance. Experiments show CoMAM outperforms leading memory systems, validating the efficacy of our proposed collaborative reinforcement learning for joint optimization.",
+      "link": "https://arxiv.org/abs/2603.12631",
+      "feed": "cs.MA",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "prompt engineering",
+        "multi-agent",
+        "persona"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.264857+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2308.08705v5",
+      "title": "Partially Observable Multi-Agent Reinforcement Learning with Information Sharing",
+      "summary": "arXiv:2308.08705v5 Announce Type: replace-cross \nAbstract: We study provable multi-agent reinforcement learning (RL) in the general framework of partially observable stochastic games (POSGs). To circumvent the known hardness results and the use of computationally intractable oracles, we advocate leveraging the potential \\emph{information-sharing} among agents, a common practice in empirical multi-agent RL, and a standard model for multi-agent control systems with communication. We first establish several computational complexity results to justify the necessity of information-sharing, as well as the observability assumption that has enabled quasi-polynomial time and sample single-agent RL with partial observations, for tractably solving POSGs. Inspired by the inefficiency of planning in the ground-truth model, we then propose to further \\emph{approximate} the shared common information to construct an approximate model of the POSG, in which an approximate \\emph{equilibrium} (of the original POSG) can be found in quasi-polynomial-time, under the aforementioned assumptions. Furthermore, we develop a partially observable multi-agent RL algorithm whose time and sample complexities are \\emph{both} quasi-polynomial. Finally, beyond equilibrium learning, we extend our algorithmic framework to finding the \\emph{team-optimal solution} in cooperative POSGs, i.e., decentralized partially observable Markov decision processes, a more challenging goal. We establish concrete computational and sample complexities under several structural assumptions of the model. We hope our study could open up the possibilities of leveraging and even designing different \\emph{information structures}, a well-studied notion in control theory, for developing both sample- and computation-efficient partially observable multi-agent RL.",
+      "link": "https://arxiv.org/abs/2308.08705",
+      "feed": "cs.MA",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.265031+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.13045v1",
+      "title": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation",
+      "summary": "arXiv:2603.13045v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have demonstrated remarkable capability in machine translation on high-resource language pairs, yet their performance on low-resource translation still lags behind. Existing post-training methods rely heavily on high-quality parallel data, which are often scarce or unavailable for low-resource languages. In this paper, we introduce WALAR, a reinforcement training method using only monolingual text to elevate LLMs' translation capabilities on massive low-resource languages while retaining their performance on high-resource languages. Our key insight is based on the observation of failure modes (or \"holes\") in existing source-based multilingual quality estimation (QE) models. Reinforcement learning (RL) using these QE models tends to amplify such holes, resulting in poorer multilingual LLMs. We develop techniques including word alignment and language alignment to mitigate such holes in WALAR's reward for RL training. We continually trained an LLM supporting translation of 101 languages using WALAR. The experiments show that our new model outperforms LLaMAX, one of the strongest open-source multilingual LLMs by a large margin on 1400 language directions on Flores-101 dataset.",
+      "link": "https://arxiv.org/abs/2603.13045",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-16T04:02:19.957505+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.12554v1",
+      "title": "Reinforcement Learning for Diffusion LLMs with Entropy-Guided Step Selection and Stepwise Advantages",
+      "summary": "arXiv:2603.12554v1 Announce Type: cross \nAbstract: Reinforcement learning (RL) has been effective for post-training autoregressive (AR) language models, but extending these methods to diffusion language models (DLMs) is challenging due to intractable sequence-level likelihoods. Existing approaches therefore rely on surrogate likelihoods or heuristic approximations, which can introduce bias and obscure the sequential structure of denoising. We formulate diffusion-based sequence generation as a finite-horizon Markov decision process over the denoising trajectory and derive an exact, unbiased policy gradient that decomposes over denoising steps and is expressed in terms of intermediate advantages, without requiring explicit evaluation of the sequence likelihood. To obtain a practical and compute-efficient estimator, we (i) select denoising steps for policy updates via an entropy-guided approximation bound, and (ii) estimate intermediate advantages using a one-step denoising reward naturally provided by the diffusion model, avoiding costly multi-step rollouts. Experiments on coding and logical reasoning benchmarks demonstrate state-of-the-art results, with strong competitive performance on mathematical reasoning, outperforming existing RL post-training approaches for DLMs. Code is available at https://github.com/vishnutez/egspo-dllm-rl.",
+      "link": "https://arxiv.org/abs/2603.12554",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-16T04:02:19.958033+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.17564v2",
+      "title": "Accelerating Residual Reinforcement Learning with Uncertainty Estimation",
+      "summary": "arXiv:2506.17564v2 Announce Type: replace-cross \nAbstract: Residual Reinforcement Learning (RL) is a popular approach for adapting pretrained policies by learning a lightweight residual policy that provides corrective actions. While Residual RL is more sample-efficient than finetuning the entire base policy, existing methods struggle with sparse rewards and are designed for deterministic base policies. We propose two improvements to Residual RL that further enhance its sample efficiency and make it suitable for stochastic base policies. First, we leverage uncertainty estimates of the base policy to focus exploration on regions in which the base policy is not confident. Second, we propose a simple modification to off-policy residual learning that allows it to observe base actions and better handle stochastic base policies. We evaluate our method with both Gaussian-based and Diffusion-based stochastic base policies on tasks from Robosuite and D4RL, and compare against state-of-the-art finetuning methods, demo-augmented RL methods, and other residual RL methods. Our algorithm significantly outperforms existing baselines in a variety of simulation benchmark environments. We also deploy our learned polices in the real world to demonstrate their robustness with zero-shot sim-to-real transfer. Paper homepage : lakshitadodeja.github.io/uncertainty-aware-residual-rl/",
+      "link": "https://arxiv.org/abs/2506.17564",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-16T04:02:20.127494+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+      "paper_link": "https://arxiv.org/abs/2603.13026",
+      "paper_score": 18,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'PISmith: Reinforcement Learning-based Red Teaming for Prompt' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+      "paper_link": "https://arxiv.org/abs/2603.13026",
+      "paper_score": 18,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PISmith: Reinforcement Learning-based Red Teaming for Prompt' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "LLM Constitutional Multi-Agent Governance",
+      "paper_link": "https://arxiv.org/abs/2603.13189",
+      "paper_score": 12,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LLM Constitutional Multi-Agent Governance' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "LLM Constitutional Multi-Agent Governance",
+      "paper_link": "https://arxiv.org/abs/2603.13189",
+      "paper_score": 12,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'LLM Constitutional Multi-Agent Governance' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "LLM Constitutional Multi-Agent Governance",
+      "paper_link": "https://arxiv.org/abs/2603.13189",
+      "paper_score": 12,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'LLM Constitutional Multi-Agent Governance' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "LLM Constitutional Multi-Agent Governance",
+      "paper_link": "https://arxiv.org/abs/2603.13189",
+      "paper_score": 12,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'LLM Constitutional Multi-Agent Governance' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Prompt Injection as Role Confusion",
+      "paper_link": "https://arxiv.org/abs/2603.12277",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Prompt Injection as Role Confusion' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Prompt Injection as Role Confusion",
+      "paper_link": "https://arxiv.org/abs/2603.12277",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Prompt Injection as Role Confusion' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Evolving Deception: When Agents Evolve, Deception Wins",
+      "paper_link": "https://arxiv.org/abs/2603.05872",
+      "paper_score": 10,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Evolving Deception: When Agents Evolve, Deception Wins' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Evolving Deception: When Agents Evolve, Deception Wins",
+      "paper_link": "https://arxiv.org/abs/2603.05872",
+      "paper_score": 10,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Evolving Deception: When Agents Evolve, Deception Wins' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Evolving Deception: When Agents Evolve, Deception Wins",
+      "paper_link": "https://arxiv.org/abs/2603.05872",
+      "paper_score": 10,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Evolving Deception: When Agents Evolve, Deception Wins' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Evolving Deception: When Agents Evolve, Deception Wins",
+      "paper_link": "https://arxiv.org/abs/2603.05872",
+      "paper_score": 10,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Evolving Deception: When Agents Evolve, Deception Wins' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Swap-guided Preference Learning for Personalized Reinforcement Learning from Hum",
+      "paper_link": "https://arxiv.org/abs/2603.12595",
+      "paper_score": 9,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Swap-guided Preference Learning for Personalized Reinforceme' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DriveMind: A Dual Visual Language Model-based Reinforcement Learning Framework f",
+      "paper_link": "https://arxiv.org/abs/2506.00819",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DriveMind: A Dual Visual Language Model-based Reinforcement ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Information-Consistent Language Model Recommendations through Group Relative Pol",
+      "paper_link": "https://arxiv.org/abs/2512.12858",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Information-Consistent Language Model Recommendations throug' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "paper_link": "https://arxiv.org/abs/2603.05772",
+      "paper_score": 8,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Depth Charge: Jailbreak Large Language Models from Deep Safe' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "paper_link": "https://arxiv.org/abs/2603.05772",
+      "paper_score": 8,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Depth Charge: Jailbreak Large Language Models from Deep Safe' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "paper_link": "https://arxiv.org/abs/2603.05772",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Depth Charge: Jailbreak Large Language Models from Deep Safe' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "paper_link": "https://arxiv.org/abs/2603.05772",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Depth Charge: Jailbreak Large Language Models from Deep Safe' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "paper_link": "https://arxiv.org/abs/2603.05772",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Depth Charge: Jailbreak Large Language Models from Deep Safe' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Depth Charge: Jailbreak Large Language Models from Deep Safety Attention Heads",
+      "paper_link": "https://arxiv.org/abs/2603.05772",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Depth Charge: Jailbreak Large Language Models from Deep Safe' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Colluding LoRA: A Composite Attack on LLM Safety Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.12681",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Colluding LoRA: A Composite Attack on LLM Safety Alignment' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Collaborative Multi-Agent Optimization for Personalized Memory System",
+      "paper_link": "https://arxiv.org/abs/2603.12631",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Collaborative Multi-Agent Optimization for Personalized Memo' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multi",
+      "paper_link": "https://arxiv.org/abs/2603.13045",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Mending the Holes: Mitigating Reward Hacking in Reinforcemen' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multi",
+      "paper_link": "https://arxiv.org/abs/2603.13045",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Mending the Holes: Mitigating Reward Hacking in Reinforcemen' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multi",
+      "paper_link": "https://arxiv.org/abs/2603.13045",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Mending the Holes: Mitigating Reward Hacking in Reinforcemen' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multi",
+      "paper_link": "https://arxiv.org/abs/2603.13045",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Mending the Holes: Mitigating Reward Hacking in Reinforcemen' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Uncovering Security Threats and Architecting Defenses in Autonomous Agents: A Ca",
+      "paper_link": "https://arxiv.org/abs/2603.12644",
+      "paper_score": 6,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Uncovering Security Threats and Architecting Defenses in Aut' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Uncovering Security Threats and Architecting Defenses in Autonomous Agents: A Ca",
+      "paper_link": "https://arxiv.org/abs/2603.12644",
+      "paper_score": 6,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Uncovering Security Threats and Architecting Defenses in Aut' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Not Just the Destination, But the Journey: Reasoning Traces Causally Shape Gener",
+      "paper_link": "https://arxiv.org/abs/2603.12397",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Not Just the Destination, But the Journey: Reasoning Traces ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Not Just the Destination, But the Journey: Reasoning Traces Causally Shape Gener",
+      "paper_link": "https://arxiv.org/abs/2603.12397",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Not Just the Destination, But the Journey: Reasoning Traces ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Not Just the Destination, But the Journey: Reasoning Traces Causally Shape Gener",
+      "paper_link": "https://arxiv.org/abs/2603.12397",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Not Just the Destination, But the Journey: Reasoning Traces ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Not Just the Destination, But the Journey: Reasoning Traces Causally Shape Gener",
+      "paper_link": "https://arxiv.org/abs/2603.12397",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Not Just the Destination, But the Journey: Reasoning Traces ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Interpretable Semantic Gradients in SSD: A PCA Sweep Approach and a Case Study o",
+      "paper_link": "https://arxiv.org/abs/2603.13038",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Interpretable Semantic Gradients in SSD: A PCA Sweep Approac' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Interpretable Semantic Gradients in SSD: A PCA Sweep Approach and a Case Study o",
+      "paper_link": "https://arxiv.org/abs/2603.13038",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Interpretable Semantic Gradients in SSD: A PCA Sweep Approac' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Interpretable Semantic Gradients in SSD: A PCA Sweep Approach and a Case Study o",
+      "paper_link": "https://arxiv.org/abs/2603.13038",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Interpretable Semantic Gradients in SSD: A PCA Sweep Approac' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Interpretable Semantic Gradients in SSD: A PCA Sweep Approach and a Case Study o",
+      "paper_link": "https://arxiv.org/abs/2603.13038",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Interpretable Semantic Gradients in SSD: A PCA Sweep Approac' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Pers",
+      "paper_link": "https://arxiv.org/abs/2603.12701",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Seeing Eye to Eye: Enabling Cognitive Alignment Through Shar' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Pers",
+      "paper_link": "https://arxiv.org/abs/2603.12701",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Seeing Eye to Eye: Enabling Cognitive Alignment Through Shar' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Pers",
+      "paper_link": "https://arxiv.org/abs/2603.12701",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Seeing Eye to Eye: Enabling Cognitive Alignment Through Shar' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Pers",
+      "paper_link": "https://arxiv.org/abs/2603.12701",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Seeing Eye to Eye: Enabling Cognitive Alignment Through Shar' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "COMPASS: The explainable agentic framework for Sovereignty, Sustainability, Comp",
+      "paper_link": "https://arxiv.org/abs/2603.11277",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'COMPASS: The explainable agentic framework for Sovereignty, ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "COMPASS: The explainable agentic framework for Sovereignty, Sustainability, Comp",
+      "paper_link": "https://arxiv.org/abs/2603.11277",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'COMPASS: The explainable agentic framework for Sovereignty, ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "COMPASS: The explainable agentic framework for Sovereignty, Sustainability, Comp",
+      "paper_link": "https://arxiv.org/abs/2603.11277",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'COMPASS: The explainable agentic framework for Sovereignty, ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "COMPASS: The explainable agentic framework for Sovereignty, Sustainability, Comp",
+      "paper_link": "https://arxiv.org/abs/2603.11277",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'COMPASS: The explainable agentic framework for Sovereignty, ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "LLM-driven Multimodal Recommendation",
+      "paper_link": "https://arxiv.org/abs/2602.05474",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LLM-driven Multimodal Recommendation' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Long-form RewardBench: Evaluating Reward Models for Long-form Generation",
+      "paper_link": "https://arxiv.org/abs/2603.12963",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Long-form RewardBench: Evaluating Reward Models for Long-for' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Long-form RewardBench: Evaluating Reward Models for Long-form Generation",
+      "paper_link": "https://arxiv.org/abs/2603.12963",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Long-form RewardBench: Evaluating Reward Models for Long-for' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Long-form RewardBench: Evaluating Reward Models for Long-form Generation",
+      "paper_link": "https://arxiv.org/abs/2603.12963",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Long-form RewardBench: Evaluating Reward Models for Long-for' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Long-form RewardBench: Evaluating Reward Models for Long-form Generation",
+      "paper_link": "https://arxiv.org/abs/2603.12963",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Long-form RewardBench: Evaluating Reward Models for Long-for' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "RECAP: Reproducing Copyrighted Data from LLMs Training with an Agentic Pipeline",
+      "paper_link": "https://arxiv.org/abs/2510.25941",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'RECAP: Reproducing Copyrighted Data from LLMs Training with ' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "RECAP: Reproducing Copyrighted Data from LLMs Training with an Agentic Pipeline",
+      "paper_link": "https://arxiv.org/abs/2510.25941",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'RECAP: Reproducing Copyrighted Data from LLMs Training with ' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "RECAP: Reproducing Copyrighted Data from LLMs Training with an Agentic Pipeline",
+      "paper_link": "https://arxiv.org/abs/2510.25941",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'RECAP: Reproducing Copyrighted Data from LLMs Training with ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "RECAP: Reproducing Copyrighted Data from LLMs Training with an Agentic Pipeline",
+      "paper_link": "https://arxiv.org/abs/2510.25941",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'RECAP: Reproducing Copyrighted Data from LLMs Training with ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "RECAP: Reproducing Copyrighted Data from LLMs Training with an Agentic Pipeline",
+      "paper_link": "https://arxiv.org/abs/2510.25941",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'RECAP: Reproducing Copyrighted Data from LLMs Training with ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "RECAP: Reproducing Copyrighted Data from LLMs Training with an Agentic Pipeline",
+      "paper_link": "https://arxiv.org/abs/2510.25941",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'RECAP: Reproducing Copyrighted Data from LLMs Training with ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Finite Difference Flow Optimization for RL Post-Training of Text-to-Image Models",
+      "paper_link": "https://arxiv.org/abs/2603.12893",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Finite Difference Flow Optimization for RL Post-Training of ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Finite Difference Flow Optimization for RL Post-Training of Text-to-Image Models",
+      "paper_link": "https://arxiv.org/abs/2603.12893",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Finite Difference Flow Optimization for RL Post-Training of ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Finite Difference Flow Optimization for RL Post-Training of Text-to-Image Models",
+      "paper_link": "https://arxiv.org/abs/2603.12893",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Finite Difference Flow Optimization for RL Post-Training of ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Finite Difference Flow Optimization for RL Post-Training of Text-to-Image Models",
+      "paper_link": "https://arxiv.org/abs/2603.12893",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Finite Difference Flow Optimization for RL Post-Training of ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Human-Centered Evaluation of an LLM-Based Process Modeling Copilot: A Mixed-Meth",
+      "paper_link": "https://arxiv.org/abs/2603.12895",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Human-Centered Evaluation of an LLM-Based Process Modeling C' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Human-Centered Evaluation of an LLM-Based Process Modeling Copilot: A Mixed-Meth",
+      "paper_link": "https://arxiv.org/abs/2603.12895",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Human-Centered Evaluation of an LLM-Based Process Modeling C' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Human-Centered Evaluation of an LLM-Based Process Modeling Copilot: A Mixed-Meth",
+      "paper_link": "https://arxiv.org/abs/2603.12895",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Human-Centered Evaluation of an LLM-Based Process Modeling C' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Human-Centered Evaluation of an LLM-Based Process Modeling Copilot: A Mixed-Meth",
+      "paper_link": "https://arxiv.org/abs/2603.12895",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Human-Centered Evaluation of an LLM-Based Process Modeling C' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Examining Users' Behavioural Intention to Use OpenClaw Through the Cognition--Af",
+      "paper_link": "https://arxiv.org/abs/2603.11455",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Examining Users' Behavioural Intention to Use OpenClaw Throu' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Guided Policy Optimization under Partial Observability",
+      "paper_link": "https://arxiv.org/abs/2505.15418",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Guided Policy Optimization under Partial Observability' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Auditing Student-AI Collaboration: A Case Study of Online Graduate CS Students",
+      "paper_link": "https://arxiv.org/abs/2601.08697",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Auditing Student-AI Collaboration: A Case Study of Online Gr' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large ",
+      "paper_link": "https://arxiv.org/abs/2603.05773",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Knowing without Acting: The Disentangled Geometry of Safety ' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large ",
+      "paper_link": "https://arxiv.org/abs/2603.05773",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Knowing without Acting: The Disentangled Geometry of Safety ' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large ",
+      "paper_link": "https://arxiv.org/abs/2603.05773",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Knowing without Acting: The Disentangled Geometry of Safety ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large ",
+      "paper_link": "https://arxiv.org/abs/2603.05773",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Knowing without Acting: The Disentangled Geometry of Safety ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large ",
+      "paper_link": "https://arxiv.org/abs/2603.05773",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Knowing without Acting: The Disentangled Geometry of Safety ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Knowing without Acting: The Disentangled Geometry of Safety Mechanisms in Large ",
+      "paper_link": "https://arxiv.org/abs/2603.05773",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Knowing without Acting: The Disentangled Geometry of Safety ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DS$^2$-Instruct: Domain-Specific Data Synthesis for Large Language Models Instru",
+      "paper_link": "https://arxiv.org/abs/2603.12932",
+      "paper_score": 3,
+      "type": "instruction_optimization",
+      "target_file": "SOUL.md",
+      "target_section": "## Core Doctrine",
+      "suggestion": "Paper 'DS$^2$-Instruct: Domain-Specific Data Synthesis for Large La' improves instruction tuning methods. Evaluate instruction structure in [## Core Doctrine]."
+    },
+    {
+      "paper": "DS$^2$-Instruct: Domain-Specific Data Synthesis for Large Language Models Instru",
+      "paper_link": "https://arxiv.org/abs/2603.12932",
+      "paper_score": 3,
+      "type": "instruction_optimization",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DS$^2$-Instruct: Domain-Specific Data Synthesis for Large La' improves instruction tuning methods. Evaluate instruction structure in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DS$^2$-Instruct: Domain-Specific Data Synthesis for Large Language Models Instru",
+      "paper_link": "https://arxiv.org/abs/2603.12932",
+      "paper_score": 3,
+      "type": "instruction_optimization",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DS$^2$-Instruct: Domain-Specific Data Synthesis for Large La' improves instruction tuning methods. Evaluate instruction structure in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DS$^2$-Instruct: Domain-Specific Data Synthesis for Large Language Models Instru",
+      "paper_link": "https://arxiv.org/abs/2603.12932",
+      "paper_score": 3,
+      "type": "instruction_optimization",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DS$^2$-Instruct: Domain-Specific Data Synthesis for Large La' improves instruction tuning methods. Evaluate instruction structure in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DS$^2$-Instruct: Domain-Specific Data Synthesis for Large Language Models Instru",
+      "paper_link": "https://arxiv.org/abs/2603.12932",
+      "paper_score": 3,
+      "type": "instruction_optimization",
+      "target_file": "AGENTS.md",
+      "target_section": "## Task Routing",
+      "suggestion": "Paper 'DS$^2$-Instruct: Domain-Specific Data Synthesis for Large La' improves instruction tuning methods. Evaluate instruction structure in [## Task Routing]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Superficial Safety Alignment Hypothesis",
+      "paper_link": "https://arxiv.org/abs/2410.10862",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Superficial Safety Alignment Hypothesis' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "AdaBoN: Adaptive Best-of-N Alignment",
+      "paper_link": "https://arxiv.org/abs/2505.12050",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'AdaBoN: Adaptive Best-of-N Alignment' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "AdaBoN: Adaptive Best-of-N Alignment",
+      "paper_link": "https://arxiv.org/abs/2505.12050",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'AdaBoN: Adaptive Best-of-N Alignment' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "AdaBoN: Adaptive Best-of-N Alignment",
+      "paper_link": "https://arxiv.org/abs/2505.12050",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'AdaBoN: Adaptive Best-of-N Alignment' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "AdaBoN: Adaptive Best-of-N Alignment",
+      "paper_link": "https://arxiv.org/abs/2505.12050",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'AdaBoN: Adaptive Best-of-N Alignment' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Representing data in words: A context engineering approach",
+      "paper_link": "https://arxiv.org/abs/2503.15509",
+      "paper_score": 3,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Representing data in words: A context engineering approach' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "LLMs Can Infer Political Alignment from Online Conversations",
+      "paper_link": "https://arxiv.org/abs/2603.11253",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LLMs Can Infer Political Alignment from Online Conversations' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "LLMs Can Infer Political Alignment from Online Conversations",
+      "paper_link": "https://arxiv.org/abs/2603.11253",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'LLMs Can Infer Political Alignment from Online Conversations' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "LLMs Can Infer Political Alignment from Online Conversations",
+      "paper_link": "https://arxiv.org/abs/2603.11253",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'LLMs Can Infer Political Alignment from Online Conversations' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "LLMs Can Infer Political Alignment from Online Conversations",
+      "paper_link": "https://arxiv.org/abs/2603.11253",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'LLMs Can Infer Political Alignment from Online Conversations' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "CognitionCapturerPro: Towards High-Fidelity Visual Decoding from EEG/MEG via Mul",
+      "paper_link": "https://arxiv.org/abs/2603.12722",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'CognitionCapturerPro: Towards High-Fidelity Visual Decoding ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "CognitionCapturerPro: Towards High-Fidelity Visual Decoding from EEG/MEG via Mul",
+      "paper_link": "https://arxiv.org/abs/2603.12722",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'CognitionCapturerPro: Towards High-Fidelity Visual Decoding ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "CognitionCapturerPro: Towards High-Fidelity Visual Decoding from EEG/MEG via Mul",
+      "paper_link": "https://arxiv.org/abs/2603.12722",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'CognitionCapturerPro: Towards High-Fidelity Visual Decoding ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "CognitionCapturerPro: Towards High-Fidelity Visual Decoding from EEG/MEG via Mul",
+      "paper_link": "https://arxiv.org/abs/2603.12722",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'CognitionCapturerPro: Towards High-Fidelity Visual Decoding ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Learnability and Privacy Vulnerability are Entangled in a Few Critical Weights",
+      "paper_link": "https://arxiv.org/abs/2603.13186",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Learnability and Privacy Vulnerability are Entangled in a Fe' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Learnability and Privacy Vulnerability are Entangled in a Few Critical Weights",
+      "paper_link": "https://arxiv.org/abs/2603.13186",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Learnability and Privacy Vulnerability are Entangled in a Fe' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Learnability and Privacy Vulnerability are Entangled in a Few Critical Weights",
+      "paper_link": "https://arxiv.org/abs/2603.13186",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Learnability and Privacy Vulnerability are Entangled in a Fe' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Learnability and Privacy Vulnerability are Entangled in a Few Critical Weights",
+      "paper_link": "https://arxiv.org/abs/2603.13186",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Learnability and Privacy Vulnerability are Entangled in a Fe' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Aligning Language Models from User Interactions",
+      "paper_link": "https://arxiv.org/abs/2603.12273",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Aligning Language Models from User Interactions' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Aligning Language Models from User Interactions",
+      "paper_link": "https://arxiv.org/abs/2603.12273",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Aligning Language Models from User Interactions' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Aligning Language Models from User Interactions",
+      "paper_link": "https://arxiv.org/abs/2603.12273",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Aligning Language Models from User Interactions' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Aligning Language Models from User Interactions",
+      "paper_link": "https://arxiv.org/abs/2603.12273",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Aligning Language Models from User Interactions' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Aligning Language Models from User Interactions",
+      "paper_link": "https://arxiv.org/abs/2603.12273",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Aligning Language Models from User Interactions' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Marked Pedagogies: Examining Linguistic Biases in Personalized Automated Writing",
+      "paper_link": "https://arxiv.org/abs/2603.12471",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Marked Pedagogies: Examining Linguistic Biases in Personaliz' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "SOUL.md",
+      "target_section": "## Core Doctrine",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Core Doctrine]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.13201",
+      "paper_score": 2,
+      "type": "instruction_optimization",
+      "target_file": "AGENTS.md",
+      "target_section": "## Task Routing",
+      "suggestion": "Paper 'Neuron-Aware Data Selection In Instruction Tuning For Large ' improves instruction tuning methods. Evaluate instruction structure in [## Task Routing]."
+    },
+    {
+      "paper": "Speech-Worthy Alignment for Japanese SpeechLLMs via Direct Preference Optimizati",
+      "paper_link": "https://arxiv.org/abs/2603.12565",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Speech-Worthy Alignment for Japanese SpeechLLMs via Direct P' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Speech-Worthy Alignment for Japanese SpeechLLMs via Direct Preference Optimizati",
+      "paper_link": "https://arxiv.org/abs/2603.12565",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Speech-Worthy Alignment for Japanese SpeechLLMs via Direct P' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Speech-Worthy Alignment for Japanese SpeechLLMs via Direct Preference Optimizati",
+      "paper_link": "https://arxiv.org/abs/2603.12565",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Speech-Worthy Alignment for Japanese SpeechLLMs via Direct P' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Speech-Worthy Alignment for Japanese SpeechLLMs via Direct Preference Optimizati",
+      "paper_link": "https://arxiv.org/abs/2603.12565",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Speech-Worthy Alignment for Japanese SpeechLLMs via Direct P' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Structured Distillation for Personalized Agent Memory: 11x Token Reduction with ",
+      "paper_link": "https://arxiv.org/abs/2603.13017",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Structured Distillation for Personalized Agent Memory: 11x T' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Lay",
+      "paper_link": "https://arxiv.org/abs/2603.12298",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Global Evolutionary Steering: Refining Activation Steering C' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Lay",
+      "paper_link": "https://arxiv.org/abs/2603.12298",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Global Evolutionary Steering: Refining Activation Steering C' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Lay",
+      "paper_link": "https://arxiv.org/abs/2603.12298",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Global Evolutionary Steering: Refining Activation Steering C' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Lay",
+      "paper_link": "https://arxiv.org/abs/2603.12298",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Global Evolutionary Steering: Refining Activation Steering C' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Competition-Aware CPC Forecasting with Near-Market Coverage",
+      "paper_link": "https://arxiv.org/abs/2603.13059",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Competition-Aware CPC Forecasting with Near-Market Coverage' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Competition-Aware CPC Forecasting with Near-Market Coverage",
+      "paper_link": "https://arxiv.org/abs/2603.13059",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Competition-Aware CPC Forecasting with Near-Market Coverage' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Competition-Aware CPC Forecasting with Near-Market Coverage",
+      "paper_link": "https://arxiv.org/abs/2603.13059",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Competition-Aware CPC Forecasting with Near-Market Coverage' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Competition-Aware CPC Forecasting with Near-Market Coverage",
+      "paper_link": "https://arxiv.org/abs/2603.13059",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Competition-Aware CPC Forecasting with Near-Market Coverage' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Aligning Large Language Model Agents with Rational and Moral Preferences: A Supe",
+      "paper_link": "https://arxiv.org/abs/2507.20796",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Aligning Large Language Model Agents with Rational and Moral' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Aligning Large Language Model Agents with Rational and Moral Preferences: A Supe",
+      "paper_link": "https://arxiv.org/abs/2507.20796",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Aligning Large Language Model Agents with Rational and Moral' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Aligning Large Language Model Agents with Rational and Moral Preferences: A Supe",
+      "paper_link": "https://arxiv.org/abs/2507.20796",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Aligning Large Language Model Agents with Rational and Moral' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Aligning Large Language Model Agents with Rational and Moral Preferences: A Supe",
+      "paper_link": "https://arxiv.org/abs/2507.20796",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Aligning Large Language Model Agents with Rational and Moral' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MovieTeller: Tool-augmented Movie Synopsis with ID Consistent Progressive Abstra",
+      "paper_link": "https://arxiv.org/abs/2602.23228",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MovieTeller: Tool-augmented Movie Synopsis with ID Consisten' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}
