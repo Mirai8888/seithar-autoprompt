@@ -97,6 +97,10 @@ scoring:
   title_multiplier: 2
   min_score: 2
 
+# alphaXiv semantic search feed
+alphaxiv:
+  enabled: true
+
 llm:
   provider: "ollama"
   model: "qwen2.5:7b"

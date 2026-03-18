@@ -111,11 +111,23 @@ def fetch_papers(config):
                 })
             seen_ids.add(eid)
     
+    # alphaXiv semantic search feed
+    if config.get("alphaxiv", {}).get("enabled", False):
+        try:
+            from src.alphaxiv_feed import fetch_semantic_papers
+            axiv_results = fetch_semantic_papers(config, seen_ids)
+            for r in axiv_results:
+                results.append(r)
+                seen_ids.add(r["id"])
+            print(f"[autoprompt] alphaXiv: {len(axiv_results)} semantic papers")
+        except Exception as e:
+            print(f"[autoprompt] alphaXiv feed failed: {e}")
+
     # update state
     state["seen"] = list(seen_ids)
     state["last_run"] = datetime.now(timezone.utc).isoformat()
     save_state(config["state_file"], state)
-    
+
     results.sort(key=lambda x: x["score"], reverse=True)
     return results
 
