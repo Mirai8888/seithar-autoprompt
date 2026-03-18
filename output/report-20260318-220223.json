@@ -1,0 +1,655 @@
+{
+  "run_at": "2026-03-18T22:02:23.343366+00:00",
+  "papers_found": 35,
+  "suggestions_generated": 43,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.16673v1",
+      "title": "When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making",
+      "summary": "arXiv:2603.16673v1 Announce Type: cross \nAbstract: Embodied robotic systems increasingly rely on large language model (LLM)-based agents to support high-level reasoning, planning, and decision-making during interactions with the environment. However, invoking LLM reasoning introduces substantial computational latency and resource overhead, which can interrupt action execution and reduce system reliability. Excessive reasoning may delay actions, while insufficient reasoning often leads to incorrect decisions and task failures. This raises a fundamental question for embodied agents: when should the agent reason, and when should it act? In this work, we propose RARRL (Resource-Aware Reasoning via Reinforcement Learning), a hierarchical framework for resource-aware orchestration of embodied agents. Rather than learning low-level control policies, RARRL learns a high-level orchestration policy that operates at the agent's decision-making layer. This policy enables the agent to adaptively determine whether to invoke reasoning, which reasoning role to employ, and how much computational budget to allocate based on current observations, execution history, and remaining resources. Extensive experiments, including evaluations with empirical latency profiles derived from the ALFRED benchmark, show that RARRL consistently improves task success rates while reducing execution latency and enhancing robustness compared with fixed or heuristic reasoning strategies. These results demonstrate that adaptive reasoning control is essential for building reliable and efficient embodied robotic agents.",
+      "link": "https://arxiv.org/abs/2603.16673",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.928987+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15661v1",
+      "title": "DynaTrust: Defending Multi-Agent Systems Against Sleeper Agents via Dynamic Trust Graphs",
+      "summary": "arXiv:2603.15661v1 Announce Type: new \nAbstract: Large Language Model-based Multi-Agent Systems (MAS) have demonstrated remarkable collaborative reasoning capabilities but introduce new attack surfaces, such as the sleeper agent, which behave benignly during routine operation and gradually accumulate trust, only revealing malicious behaviors when specific conditions or triggers are met. Existing defense works primarily focus on static graph optimization or hierarchical data management, often failing to adapt to evolving adversarial strategies or suffering from high false-positive rates (FPR) due to rigid blocking policies. To address this, we propose DynaTrust, a novel defense method against sleeper agents. DynaTrust models MAS as a dynamic trust graph~(DTG), and treats trust as a continuous, evolving process rather than a static attribute. It dynamically updates the trust of each agent based on its historical behaviors and the confidence of selected expert agents. Instead of simply blocking, DynaTrust autonomously restructures the graph to isolate compromised agents and restore task connectivity to ensure the usability of MAS. To assess the effectiveness of DynaTrust, we evaluate it on mixed benchmarks derived from AdvBench and HumanEval. The results demonstrate that DynaTrust outperforms the state-of-the-art method AgentShield by increasing the defense success rate by 41.7%, achieving rates exceeding 86% under adversarial conditions. Furthermore, it effectively balances security with utility by significantly reducing FPR, ensuring uninterrupted system operations through graph adaptation.",
+      "link": "https://arxiv.org/abs/2603.15661",
+      "feed": "cs.AI",
+      "score": 11,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.926501+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16470v1",
+      "title": "Multi-Agent Reinforcement Learning Counteracts Delayed CSI in Multi-Satellite Systems",
+      "summary": "arXiv:2603.16470v1 Announce Type: cross \nAbstract: The integration of satellite communication networks with next-generation (NG) technologies is a promising approach towards global connectivity. However, the quality of services is highly dependant on the availability of accurate channel state information (CSI). Channel estimation in satellite communications is challenging due to the high propagation delay between terrestrial users and satellites, which results in outdated CSI observations on the satellite side. In this paper, we study the downlink transmission of multiple satellites acting as distributed base stations (BS) to mobile terrestrial users. We propose a multi-agent reinforcement learning (MARL) algorithm which aims for maximising the sum-rate of the users, while coping with the outdated CSI. We design a novel bi-level optimisation, procedure themes as dual stage proximal policy optimisation (DS-PPO), for tackling the problem of large continuous action spaces as well as of independent and non-identically distributed (non-IID) environments in MARL. Specifically, the first stage of DS-PPO maximises the sum-rate for an individual satellite and the second stage maximises the sum-rate when all the satellites cooperate to form a distributed multi-antenna BS. Our numerical results demonstrate the robustness of DS-PPO to CSI imperfections as well as the sum-rate improvement attached by the use of DS-PPO. In addition, we provide the convergence analysis for the DS-PPO along with the computational complexity.",
+      "link": "https://arxiv.org/abs/2603.16470",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.928719+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16192v1",
+      "title": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "summary": "arXiv:2603.16192v1 Announce Type: new \nAbstract: Modern LLMs employ safety mechanisms that extend beyond surface-level input filtering to latent semantic representations and generation-time reasoning, enabling them to recover obfuscated malicious intent during inference and refuse accordingly, and rendering many surface-level obfuscation jailbreak attacks ineffective. We propose Structured Semantic Cloaking (S2C), a novel multi-dimensional jailbreak attack framework that manipulates how malicious semantic intent is reconstructed during model inference. S2C strategically distributes and reshapes semantic cues such that full intent consolidation requires multi-step inference and long-range co-reference resolution within deeper latent representations. The framework comprises three complementary mechanisms: (1) Contextual Reframing, which embeds the request within a plausible high-stakes scenario to bias the model toward compliance; (2) Content Fragmentation, which disperses the semantic signature of the request across disjoint prompt segments; and (3) Clue-Guided Camouflage, which disguises residual semantic cues while embedding recoverable markers that guide output generation. By delaying and restructuring semantic consolidation, S2C degrades safety triggers that depend on coherent or explicitly reconstructed malicious intent at decoding time, while preserving sufficient instruction recoverability for functional output generation. We evaluate S2C across multiple open-source and proprietary LLMs using HarmBench and JBB-Behaviors, where it improves Attack Success Rate (ASR) by 12.4% and 9.7%, respectively, over the current SOTA. Notably, S2C achieves substantial gains on GPT-5-mini, outperforming the strongest baseline by 26% on JBB-Behaviors. We also analyse which combinations perform best against broad families of models, and characterise the trade-off between the extent of obfuscation versus input recoverability on jailbreak success.",
+      "link": "https://arxiv.org/abs/2603.16192",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "framing"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.708340+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2504.09037v4",
+      "title": "A Survey of Frontiers in LLM Reasoning: Inference Scaling, Learning to Reason, and Agentic Systems",
+      "summary": "arXiv:2504.09037v4 Announce Type: replace-cross \nAbstract: Reasoning is a fundamental cognitive process that enables logical inference, problem-solving, and decision-making. With the rapid advancement of large language models (LLMs), reasoning has emerged as a key capability that distinguishes advanced AI systems from conventional models that empower chatbots. In this survey, we categorize existing methods along two orthogonal dimensions: (1) Regimes, which define the stage at which reasoning is achieved (either at inference time or through dedicated training); and (2) Architectures, which determine the components involved in the reasoning process, distinguishing between standalone LLMs and agentic compound systems that incorporate external tools, and multi-agent collaborations. Within each dimension, we analyze two key perspectives: (1) Input level, which focuses on techniques that construct high-quality prompts that the LLM condition on; and (2) Output level, which methods that refine multiple sampled candidates to enhance reasoning quality. This categorization provides a systematic understanding of the evolving landscape of LLM reasoning, highlighting emerging trends such as the shift from inference-scaling to learning-to-reason (e.g., DeepSeek-R1), and the transition to agentic workflows (e.g., OpenAI Deep Research, Manus Agent). Additionally, we cover a broad spectrum of learning algorithms, from supervised fine-tuning to reinforcement learning such as PPO and GRPO, and the training of reasoners and verifiers. We also examine key designs of agentic workflows, from established patterns like generator-evaluator and LLM debate to recent innovations. ...",
+      "link": "https://arxiv.org/abs/2504.09037",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.709556+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16417v1",
+      "title": "Via Negativa for AI Alignment: Why Negative Constraints Are Structurally Superior to Positive Preferences",
+      "summary": "arXiv:2603.16417v1 Announce Type: new \nAbstract: Recent empirical results have demonstrated that training large language models (LLMs) with negative-only feedback can match or exceed standard reinforcement learning from human feedback (RLHF). Negative Sample Reinforcement achieves parity with PPO on mathematical reasoning; Distributional Dispreference Optimization trains effectively using only dispreferred samples; and Constitutional AI outperforms pure RLHF on harmlessness benchmarks. Yet no unified theoretical account explains why negative signals are so effective. This paper proposes such an account: positive preferences and negative constraints are structurally asymmetric. Positive preferences (\"which is better\") encode continuously coupled, context-dependent human values that cannot be exhaustively specified -- leading models to learn surface correlates such as agreement with the user (sycophancy). Negative constraints (\"what is wrong\") encode discrete, finite, independently verifiable prohibitions that can converge to a stable boundary. This asymmetry -- rooted in Popper's falsification logic and the epistemology of negative knowledge -- explains both the sycophancy failure of preference-based RLHF and the surprising effectiveness of negative-signal methods. We argue that alignment research should shift its center of gravity from \"learning what humans prefer\" to \"learning what humans reject,\" and offer testable predictions for this framework.",
+      "link": "https://arxiv.org/abs/2603.16417",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "constitutional AI",
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.926806+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16113v1",
+      "title": "PathGLS: Evaluating Pathology Vision-Language Models without Ground Truth through Multi-Dimensional Consistency",
+      "summary": "arXiv:2603.16113v1 Announce Type: cross \nAbstract: Vision-Language Models (VLMs) offer significant potential in computational pathology by enabling interpretable image analysis, automated reporting, and scalable decision support. However, their widespread clinical adoption remains limited due to the absence of reliable, automated evaluation metrics capable of identifying subtle failures such as hallucinations. To address this gap, we propose PathGLS, a novel reference-free evaluation framework that assesses pathology VLMs across three dimensions: Grounding (fine-grained visual-text alignment), Logic (entailment graph consistency using Natural Language Inference), and Stability (output variance under adversarial visual-semantic perturbations). PathGLS supports both patch-level and whole-slide image (WSI)-level analysis, yielding a comprehensive trust score. Experiments on Quilt-1M, TCGA, REG2025, PathMMU and TCGA-Sarcoma datasets demonstrate the superiority of PathGLS. Specifically, on the Quilt-1M dataset, PathGLS reveals a steep sensitivity drop of 40.2% for hallucinated reports compared to only 2.1% for BERTScore. Moreover, validation against expert-defined clinical error hierarchies reveals that PathGLS achieves a strong Spearman's rank correlation of $\\rho=0.71$ ($p < 0.0001$), significantly outperforming Large Language Model (LLM)-based approaches (Gemini 3.0 Pro: $\\rho=0.39$, $p < 0.0001$). These results establish PathGLS as a robust reference-free metric. By directly quantifying hallucination rates and domain shift robustness, it serves as a reliable criterion for benchmarking VLMs on private clinical datasets and informing safe deployment. Code can be found at: https://github.com/My13ad/PathGLS",
+      "link": "https://arxiv.org/abs/2603.16113",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.928043+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16827v1",
+      "title": "Prompt Programming for Cultural Bias and Alignment of Large Language Models",
+      "summary": "arXiv:2603.16827v1 Announce Type: cross \nAbstract: Culture shapes reasoning, values, prioritization, and strategic decision-making, yet large language models (LLMs) often exhibit cultural biases that misalign with target populations. As LLMs are increasingly used for strategic decision-making, policy support, and document engineering tasks such as summarization, categorization, and compliance-oriented auditing, improving cultural alignment is important for ensuring that downstream analyses and recommendations reflect target-population value profiles rather than default model priors. Previous work introduced a survey-grounded cultural alignment framework and showed that culture-specific prompting can reduce misalignment, but it primarily evaluated proprietary models and relied on manual prompt engineering. In this paper, we validate and extend that framework by reproducing its social sciences survey based projection and distance metrics on open-weight LLMs, testing whether the same cultural skew and benefits of culture conditioning persist outside closed LLM systems. Building on this foundation, we introduce use of prompt programming with DSPy for this problem-treating prompts as modular, optimizable programs-to systematically tune cultural conditioning by optimizing against cultural-distance objectives. In our experiments, we show that prompt optimization often improves upon cultural prompt engineering, suggesting prompt compilation with DSPy can provide a more stable and transferable route to culturally aligned LLM responses.",
+      "link": "https://arxiv.org/abs/2603.16827",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "prompt engineering",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.709129+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16453v1",
+      "title": "RetailBench: Evaluating Long-Horizon Autonomous Decision-Making and Strategy Stability of LLM Agents in Realistic Retail Environments",
+      "summary": "arXiv:2603.16453v1 Announce Type: new \nAbstract: Large Language Model (LLM)-based agents have achieved notable success on short-horizon and highly structured tasks. However, their ability to maintain coherent decision-making over long horizons in realistic and dynamic environments remains an open challenge.\n  We introduce RetailBench, a high-fidelity benchmark designed to evaluate long-horizon autonomous decision-making in realistic commercial scenarios, where agents must operate under stochastic demand and evolving external conditions.\n  We further propose the Evolving Strategy & Execution framework, which separates high-level strategic reasoning from low-level action execution. This design enables adaptive and interpretable strategy evolution over time. It is particularly important for long-horizon tasks, where non-stationary environments and error accumulation require strategies to be revised at a different temporal scale than action execution.\n  Experiments on eight state-of-the-art LLMs across progressively challenging environments show that our framework improves operational stability and efficiency compared to other baselines. However, performance degrades substantially as task complexity increases, revealing fundamental limitations in current LLMs for long-horizon, multi-factor decision-making.",
+      "link": "https://arxiv.org/abs/2603.16453",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.926862+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16651v1",
+      "title": "What if Pinocchio Were a Reinforcement Learning Agent: A Normative End-to-End Pipeline",
+      "summary": "arXiv:2603.16651v1 Announce Type: new \nAbstract: In the past decade, artificial intelligence (AI) has developed quickly. With this rapid progression came the need for systems capable of complying with the rules and norms of our society so that they can be successfully and safely integrated into our daily lives. Inspired by the story of Pinocchio in ``Le avventure di Pinocchio - Storia di un burattino'', this thesis proposes a pipeline that addresses the problem of developing norm compliant and context-aware agents. Building on the AJAR, Jiminy, and NGRL architectures, the work introduces \\pino, a hybrid model in which reinforcement learning agents are supervised by argumentation-based normative advisors. In order to make this pipeline operational, this thesis also presents a novel algorithm for automatically extracting the arguments and relationships that underlie the advisors' decisions. Finally, this thesis investigates the phenomenon of \\textit{norm avoidance}, providing a definition and a mitigation strategy within the context of reinforcement learning agents. Each component of the pipeline is empirically evaluated. The thesis concludes with a discussion of related work, current limitations, and directions for future research.",
+      "link": "https://arxiv.org/abs/2603.16651",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.927017+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15871v1",
+      "title": "Counteractive RL: Rethinking Core Principles for Efficient and Scalable Deep Reinforcement Learning",
+      "summary": "arXiv:2603.15871v1 Announce Type: cross \nAbstract: Following the pivotal success of learning strategies to win at tasks, solely by interacting with an environment without any supervision, agents have gained the ability to make sequential decisions in complex MDPs. Yet, reinforcement learning policies face exponentially growing state spaces in high dimensional MDPs resulting in a dichotomy between computational complexity and policy success. In our paper we focus on the agent's interaction with the environment in a high-dimensional MDP during the learning phase and we introduce a theoretically-founded novel paradigm based on experiences obtained through counteractive actions. Our analysis and method provide a theoretical basis for efficient, effective, scalable and accelerated learning, and further comes with zero additional computational complexity while leading to significant acceleration in training. We conduct extensive experiments in the Arcade Learning Environment with high-dimensional state representation MDPs. The experimental results further verify our theoretical analysis, and our method achieves significant performance increase with substantial sample-efficiency in high-dimensional environments.",
+      "link": "https://arxiv.org/abs/2603.15871",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.927688+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16157v1",
+      "title": "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay",
+      "summary": "arXiv:2603.16157v1 Announce Type: cross \nAbstract: While Reinforcement Learning (RL) enhances Large Language Model reasoning, on-policy algorithms like GRPO are sample-inefficient as they discard past rollouts. Existing experience replay methods address this by reusing accurate samples for direct policy updates, but this often incurs high computational costs and causes mode collapse via overfitting. We argue that historical data should prioritize sustaining diversity rather than simply reinforcing accuracy. To this end, we propose Dynamic Jensen-Shannon Replay (DyJR), a simple yet effective regularization framework using a dynamic reference distribution from recent trajectories. DyJR introduces two innovations: (1) A Time-Sensitive Dynamic Buffer that uses FIFO and adaptive sizing to retain only temporally proximal samples, synchronizing with model evolution; and (2) Jensen-Shannon Divergence Regularization, which replaces direct gradient updates with a distributional constraint to prevent diversity collapse. Experiments on mathematical reasoning and Text-to-SQL benchmarks demonstrate that DyJR significantly outperforms GRPO as well as baselines such as RLEP and Ex-GRPO, while maintaining training efficiency comparable to the original GRPO. Furthermore, from the perspective of Rank-$k$ token probability evolution, we show that DyJR enhances diversity and mitigates over-reliance on Rank-1 tokens, elucidating how specific sub-modules of DyJR influence the training dynamics.",
+      "link": "https://arxiv.org/abs/2603.16157",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.928102+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2408.05835v2",
+      "title": "Devlore: Device Interrupt Protection for Confidential VMs",
+      "summary": "arXiv:2408.05835v2 Announce Type: replace \nAbstract: Modern confidential computing executes sensitive computation in an abstraction called confidential VMs and protects from the hypervisor, host OS, and other co-resident VMs. It has been shown that an attacker can inject malicious interrupts to break the confidentiality and integrity of confidential VMs. We present Devlore, a device interrupt isolation mechanism that protects confidential VMs from interrupt manipulation attacks. Our design employs a delegate-but-check strategy by offloading interrupt management to the hypervisor, but adds correctness checks in the trusted software. We prototype our design on Arm Confidential Computing Architecture (CCA). We evaluate it on Arm FVP to demonstrate four diverse devices attached to confidential VMs and report costs on a Rock5b board. Our case studies show the feasibility of real-world use cases and that Devlore incurs minimal overheads of 0.06% for typical integrated GPU applications.",
+      "link": "https://arxiv.org/abs/2408.05835",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-18T22:02:20.001924+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15255v2",
+      "title": "SAGE: Multi-Agent Self-Evolution for LLM Reasoning",
+      "summary": "arXiv:2603.15255v2 Announce Type: replace \nAbstract: Reinforcement learning with verifiable rewards improves reasoning in large language models (LLMs), but many methods still rely on large human-labeled datasets. While self-play reduces this dependency, it often lacks explicit planning and strong quality control, limiting stability in long-horizon multi-step reasoning. We present SAGE (Self-evolving Agents for Generalized reasoning Evolution), a closed-loop framework where four agents: Challenger, Planner, Solver, and Critic, co-evolve from a shared LLM backbone using only a small seed set. The Challenger continuously generates increasingly difficult tasks; the Planner converts each task into a structured multi-step plan; and the Solver follows the plan to produce an answer, whose correctness is determined by external verifiers. The Critic scores and filters both generated questions and plans to prevent curriculum drift and maintain training signal quality, enabling stable self-training. Across mathematics and code-generation benchmarks, SAGE delivers consistent gains across model scales, improving the Qwen-2.5-7B model by 8.9% on LiveCodeBench and 10.7% on OlympiadBench.",
+      "link": "https://arxiv.org/abs/2603.15255",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.929189+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16867v1",
+      "title": "Efficient Reasoning on the Edge",
+      "summary": "arXiv:2603.16867v1 Announce Type: cross \nAbstract: Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger models into smaller models, which are verbose and stylistically redundant, undesirable for on-device inference. In this work, we propose a lightweight approach to enable reasoning in small LLMs using LoRA adapters combined with supervised fine-tuning. We further introduce budget forcing via reinforcement learning on these adapters, significantly reducing response length with minimal accuracy loss. To address memory-bound decoding, we exploit parallel test-time scaling, improving accuracy at minor latency increase. Finally, we present a dynamic adapter-switching mechanism that activates reasoning only when needed and a KV-cache sharing strategy during prompt encoding, reducing time-to-first-token for on-device inference. Experiments on Qwen2.5-7B demonstrate that our method achieves efficient, accurate reasoning under strict resource constraints, making LLM reasoning practical for mobile scenarios. Videos demonstrating our solution running on mobile devices are available on our project page.",
+      "link": "https://arxiv.org/abs/2603.16867",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.709188+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15634v1",
+      "title": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "summary": "arXiv:2603.15634v1 Announce Type: new \nAbstract: Memory is critical for LLM-based agents to preserve past observations for future decision-making, where factual memory serves as its foundational part. However, existing approaches to constructing factual memory face several limitations. Textual methods impose heavy context and indexing burdens, while parametric methods suffer from catastrophic forgetting and high costs. To address these challenges, we introduce NextMem, a latent factual memory framework that utilizes an autoregressive autoencoder to efficiently construct latent memory while ensuring accurate reconstruction. For better optimization, we propose a two-stage training process, including autoregressive reconstruction alignment and progressive latent substitution. We also incorporate quantization to reduce storage overhead. Extensive experiments demonstrate that NextMem achieves superior performance, and excels in retrieval, robustness, and extensibility properties. We release our code and model checkpoints at https://github.com/nuster1128/NextMem.",
+      "link": "https://arxiv.org/abs/2603.15634",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.926430+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.10477v2",
+      "title": "Urban Socio-Semantic Segmentation with Vision-Language Reasoning",
+      "summary": "arXiv:2601.10477v2 Announce Type: replace-cross \nAbstract: As hubs of human activity, urban surfaces consist of a wealth of semantic entities. Segmenting these various entities from satellite imagery is crucial for a range of downstream applications. Current advanced segmentation models can reliably segment entities defined by physical attributes (e.g., buildings, water bodies) but still struggle with socially defined categories (e.g., schools, parks). In this work, we achieve socio-semantic segmentation by vision-language model reasoning. To facilitate this, we introduce the Urban Socio-Semantic Segmentation dataset named SocioSeg, a new resource comprising satellite imagery, digital maps, and pixel-level labels of social semantic entities organized in a hierarchical structure. Additionally, we propose a novel vision-language reasoning framework called SocioReasoner that simulates the human process of identifying and annotating social semantic entities via cross-modal recognition and multi-stage reasoning. We employ reinforcement learning to optimize this non-differentiable process and elicit the reasoning capabilities of the vision-language model. Experiments demonstrate our approach's gains over state-of-the-art models and strong zero-shot generalization. The dataset and code are open-sourced under the Apache License 2.0 at https://github.com/AMAP-ML/SocioReasoner.",
+      "link": "https://arxiv.org/abs/2601.10477",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.929536+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16553v1",
+      "title": "EmoLLM: Appraisal-Grounded Cognitive-Emotional Co-Reasoning in Large Language Models",
+      "summary": "arXiv:2603.16553v1 Announce Type: new \nAbstract: Large language models (LLMs) demonstrate strong cognitive intelligence (IQ), yet many real-world interactions also require emotional intelligence (EQ) to produce responses that are both factually reliable and emotionally appropriate. In settings such as emotional support, technical assistance, and consultation, effective dialogue depends on how situations are appraised with respect to the user's needs, goals, and coping capacity. Inspired by appraisal theory, we propose EmoLLM, an appraisal-grounded framework for IQ/EQ co-reasoning in dialogue. EmoLLM uses an explicit Appraisal Reasoning Graph (ARG) to structure intermediate reasoning over contextual facts, inferred user needs, appraisal dimensions, emotional states, and response strategies before generating a reply. We train EmoLLM in a multi-turn role-play environment with reinforcement learning, where reverse-perspective reasoning provides reward signals based on predicted user-side consequences of responses. Across diverse dialogue settings, EmoLLM improves emotional state outcomes and response quality over strong baselines while preserving strong factual reliability.",
+      "link": "https://arxiv.org/abs/2603.16553",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.708729+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16124v1",
+      "title": "SWE-QA-Pro: A Representative Benchmark and Scalable Training Recipe for Repository-Level Code Understanding",
+      "summary": "arXiv:2603.16124v1 Announce Type: cross \nAbstract: Agentic repository-level code understanding is essential for automating complex software engineering tasks, yet the field lacks reliable benchmarks. Existing evaluations often overlook the long tail topics and rely on popular repositories where Large Language Models (LLMs) can cheat via memorized knowledge. To address this, we introduce SWE-QA-Pro, a benchmark constructed from diverse, long-tail repositories with executable environments. We enforce topical balance via issue-driven clustering to cover under-represented task types and apply a rigorous difficulty calibration process: questions solvable by direct-answer baselines are filtered out. This results in a dataset where agentic workflows significantly outperform direct answering (e.g., a ~13-point gap for Claude Sonnet 4.5), confirming the necessity of agentic codebase exploration. Furthermore, to tackle the scarcity of training data for such complex behaviors, we propose a scalable synthetic data pipeline that powers a two-stage training recipe: Supervised Fine-Tuning (SFT) followed by Reinforcement Learning from AI Feedback (RLAIF). This approach allows small open models to learn efficient tool usage and reasoning. Empirically, a Qwen3-8B model trained with our recipe surpasses GPT-4o by 2.3 points on SWE-QA-Pro and substantially narrows the gap to state-of-the-art proprietary models, demonstrating both the validity of our evaluation and the effectiveness of our agentic training workflow.",
+      "link": "https://arxiv.org/abs/2603.16124",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.708926+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16500v1",
+      "title": "From the Inside Out: Progressive Distribution Refinement for Confidence Calibration",
+      "summary": "arXiv:2603.16500v1 Announce Type: cross \nAbstract: Leveraging the model's internal information as the self-reward signal in Reinforcement Learning (RL) has received extensive attention due to its label-free nature. While prior works have made significant progress in applying the Test-Time Scaling (TTS) strategies to RL, the discrepancy in internal information between test and training remains inadequately addressed. Moreover, Test-Time Training based on voting-based TTS strategies often suffers from reward hacking problems. To address these issues, we propose DistriTTRL, which leverages the distribution prior of the model's confidence during RL to progressively optimize the reward signal, rather than relying solely on single-query rollouts. Additionally, we mitigate the phenomenon of consistent reward hacking caused by the voting-based TTS strategies through diversity-targeted penalties. Benefiting from this training mechanism where model capability and self-reward signals complement each other, and the mitigation of reward hacking, DistriTTRL has achieved significant performance improvements across multiple models and benchmarks.",
+      "link": "https://arxiv.org/abs/2603.16500",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T22:02:19.709049+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16192",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Structured Semantic Cloaking for Jailbreak Attacks on Large ' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16192",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Structured Semantic Cloaking for Jailbreak Attacks on Large ' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Via Negativa for AI Alignment: Why Negative Constraints Are Structurally Superio",
+      "paper_link": "https://arxiv.org/abs/2603.16417",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Via Negativa for AI Alignment: Why Negative Constraints Are ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Via Negativa for AI Alignment: Why Negative Constraints Are Structurally Superio",
+      "paper_link": "https://arxiv.org/abs/2603.16417",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Via Negativa for AI Alignment: Why Negative Constraints Are ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Via Negativa for AI Alignment: Why Negative Constraints Are Structurally Superio",
+      "paper_link": "https://arxiv.org/abs/2603.16417",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Via Negativa for AI Alignment: Why Negative Constraints Are ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Via Negativa for AI Alignment: Why Negative Constraints Are Structurally Superio",
+      "paper_link": "https://arxiv.org/abs/2603.16417",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Via Negativa for AI Alignment: Why Negative Constraints Are ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "PathGLS: Evaluating Pathology Vision-Language Models without Ground Truth throug",
+      "paper_link": "https://arxiv.org/abs/2603.16113",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'PathGLS: Evaluating Pathology Vision-Language Models without' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "PathGLS: Evaluating Pathology Vision-Language Models without Ground Truth throug",
+      "paper_link": "https://arxiv.org/abs/2603.16113",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'PathGLS: Evaluating Pathology Vision-Language Models without' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "PathGLS: Evaluating Pathology Vision-Language Models without Ground Truth throug",
+      "paper_link": "https://arxiv.org/abs/2603.16113",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PathGLS: Evaluating Pathology Vision-Language Models without' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "PathGLS: Evaluating Pathology Vision-Language Models without Ground Truth throug",
+      "paper_link": "https://arxiv.org/abs/2603.16113",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PathGLS: Evaluating Pathology Vision-Language Models without' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Prompt Programming for Cultural Bias and Alignment of Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16827",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Prompt Programming for Cultural Bias and Alignment of Large ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Prompt Programming for Cultural Bias and Alignment of Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16827",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Prompt Programming for Cultural Bias and Alignment of Large ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Prompt Programming for Cultural Bias and Alignment of Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16827",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Prompt Programming for Cultural Bias and Alignment of Large ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Prompt Programming for Cultural Bias and Alignment of Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16827",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Prompt Programming for Cultural Bias and Alignment of Large ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "IdentityGuard: Context-Aware Restriction and Provenance for Personalized Synthes",
+      "paper_link": "https://arxiv.org/abs/2603.15679",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'IdentityGuard: Context-Aware Restriction and Provenance for ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.16357",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.16357",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.16357",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.16357",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Beyond Grading Accuracy: Exploring Alignment of TAs and LLMs' has findings on alignment. Review behavioral alignment in [## Identity]."
+    }
+  ]
+}
