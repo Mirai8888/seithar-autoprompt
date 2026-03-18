@@ -1,0 +1,677 @@
+{
+  "run_at": "2026-03-18T16:02:22.165372+00:00",
+  "papers_found": 43,
+  "suggestions_generated": 44,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.15714v1",
+      "title": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Large-Scale Public Competition",
+      "summary": "arXiv:2603.15714v1 Announce Type: cross \nAbstract: LLM based agents are increasingly deployed in high stakes settings where they process external data sources such as emails, documents, and code repositories. This creates exposure to indirect prompt injection attacks, where adversarial instructions embedded in external content manipulate agent behavior without user awareness. A critical but underexplored dimension of this threat is concealment: since users tend to observe only an agent's final response, an attack can conceal its existence by presenting no clue of compromise in the final user facing response while successfully executing harmful actions. This leaves users unaware of the manipulation and likely to accept harmful outcomes as legitimate. We present findings from a large scale public red teaming competition evaluating this dual objective across three agent settings: tool calling, coding, and computer use. The competition attracted 464 participants who submitted 272000 attack attempts against 13 frontier models, yielding 8648 successful attacks across 41 scenarios. All models proved vulnerable, with attack success rates ranging from 0.5% (Claude Opus 4.5) to 8.5% (Gemini 2.5 Pro). We identify universal attack strategies that transfer across 21 of 41 behaviors and multiple model families, suggesting fundamental weaknesses in instruction following architectures. Capability and robustness showed weak correlation, with Gemini 2.5 Pro exhibiting both high capability and high vulnerability. To address benchmark saturation and obsoleteness, we will endeavor to deliver quarterly updates through continued red teaming competitions. We open source the competition environment for use in evaluations, along with 95 successful attacks against Qwen that did not transfer to any closed source model. We share model-specific attack data with respective frontier labs and the full dataset with the UK AISI and US CAISI to support robustness research.",
+      "link": "https://arxiv.org/abs/2603.15714",
+      "feed": "cs.AI",
+      "score": 16,
+      "matched_keywords": [
+        "+prompt injection",
+        "+manipulation",
+        "+red teaming",
+        "+adversarial",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.716620+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15809v1",
+      "title": "Don't Trust Stubborn Neighbors: A Security Framework for Agentic Networks",
+      "summary": "arXiv:2603.15809v1 Announce Type: cross \nAbstract: Large Language Model (LLM)-based Multi-Agent Systems (MASs) are increasingly deployed for agentic tasks, such as web automation, itinerary planning, and collaborative problem solving. Yet, their interactive nature introduces new security risks: malicious or compromised agents can exploit communication channels to propagate misinformation and manipulate collective outcomes.\n  In this paper, we study how such manipulation can arise and spread by borrowing the Friedkin-Johnsen opinion formation model from social sciences to propose a general theoretical framework to study LLM-MAS. Remarkably, this model closely captures LLM-MAS behavior, as we verify in extensive experiments across different network topologies and attack and defense scenarios. Theoretically and empirically, we find that a single highly stubborn and persuasive agent can take over MAS dynamics, underscoring the systems' high susceptibility to attacks by triggering a persuasion cascade that reshapes collective opinion. Our theoretical analysis reveals three mechanisms to increase system security: a) increasing the number of benign agents, b) increasing the innate stubbornness or peer-resistance of agents, or c) reducing trust in potential adversaries. Because scaling is computationally expensive and high stubbornness degrades the network's ability to reach consensus, we propose a new mechanism to mitigate threats by a trust-adaptive defense that dynamically adjusts inter-agent trust to limit adversarial influence while maintaining cooperative performance. Extensive experiments confirm that this mechanism effectively defends against manipulation.",
+      "link": "https://arxiv.org/abs/2603.15809",
+      "feed": "cs.AI",
+      "score": 16,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial",
+        "+trust",
+        "misinformation",
+        "multi-agent",
+        "persuasion",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.716896+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16734v1",
+      "title": "Differential Harm Propensity in Personalized LLM Agents: The Curious Case of Mental Health Disclosure",
+      "summary": "arXiv:2603.16734v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly deployed as tool-using agents, shifting safety concerns from harmful text generation to harmful task completion. Deployed systems often condition on user profiles or persistent memory, yet agent safety evaluations typically ignore personalization signals. To address this gap, we investigated how mental health disclosure, a sensitive and realistic user-context cue, affects harmful behavior in agentic settings. Building on the AgentHarm benchmark, we evaluated frontier and open-source LLMs on multi-step malicious tasks (and their benign counterparts) under controlled prompt conditions that vary user-context personalization (no bio, bio-only, bio+mental health disclosure) and include a lightweight jailbreak injection. Our results reveal that harmful task completion is non-trivial across models: frontier lab models (e.g., GPT 5.2, Claude Sonnet 4.5, Gemini 3-Pro) still complete a measurable fraction of harmful tasks, while an open model (DeepSeek 3.2) exhibits substantially higher harmful completion. Adding a bio-only context generally reduces harm scores and increases refusals. Adding an explicit mental health disclosure often shifts outcomes further in the same direction, though effects are modest and not uniformly reliable after multiple-testing correction. Importantly, the refusal increase also appears on benign tasks, indicating a safety--utility trade-off via over-refusal. Finally, jailbreak prompting sharply elevates harm relative to benign conditions and can weaken or override the protective shift induced by personalization. Taken together, our results indicate that personalization can act as a weak protective factor in agentic misuse settings, but it is fragile under minimal adversarial pressure, highlighting the need for personalization-aware evaluations and safeguards that remain robust across user-context conditions.",
+      "link": "https://arxiv.org/abs/2603.16734",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+adversarial",
+        "+jailbreak",
+        "persona"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.716187+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.15190v3",
+      "title": "Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical Reinforcement Learning",
+      "summary": "arXiv:2511.15190v3 Announce Type: replace-cross \nAbstract: Masked auto-regressive diffusion models (MAR) benefit from the expressive modeling ability of diffusion models and the flexibility of masked auto-regressive ordering. However, vanilla MAR suffers from slow inference due to its hierarchical inference mechanism: an outer AR unmasking loop and an inner diffusion denoising chain. Such decoupled structure not only harm the generation efficiency but also hinder the practical use of MAR for reinforcement learning (RL), an increasingly critical paradigm for generative model post-training.To address this fundamental issue, we introduce MARVAL (Masked Auto-regressive Variational Acceleration), a distillation-based framework that compresses the diffusion chain into a single AR generation step while preserving the flexible auto-regressive unmasking order. Such a distillation with MARVAL not only yields substantial inference acceleration but, crucially, makes RL post-training with verifiable rewards practical, resulting in scalable yet human-preferred fast generative models. Our contributions are twofold: (1) a novel score-based variational objective for distilling masked auto-regressive diffusion models into a single generation step without sacrificing sample quality; and (2) an efficient RL framework for masked auto-regressive models via MARVAL-RL. On ImageNet 256*256, MARVAL-Huge achieves an FID of 2.00 with more than 30 times speedup compared with MAR-diffusion, and MARVAL-RL yields consistent improvements in CLIP and image-reward scores on ImageNet datasets with entity names. In conclusion, MARVAL demonstrates the first practical path to distillation and RL of masked auto-regressive diffusion models, enabling fast sampling and better preference alignments.",
+      "link": "https://arxiv.org/abs/2511.15190",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "diffusion model",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.719323+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15956v1",
+      "title": "ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors",
+      "summary": "arXiv:2603.15956v1 Announce Type: cross \nAbstract: Learning generalizable and robust behavior cloning policies requires large volumes of high-quality robotics data. While human demonstrations (e.g., through teleoperation) serve as the standard source for expert behaviors, acquiring such data at scale in the real world is prohibitively expensive. This paper introduces ExpertGen, a framework that automates expert policy learning in simulation to enable scalable sim-to-real transfer. ExpertGen first initializes a behavior prior using a diffusion policy trained on imperfect demonstrations, which may be synthesized by large language models or provided by humans. Reinforcement learning is then used to steer this prior toward high task success by optimizing the diffusion model's initial noise while keep original policy frozen. By keeping the pretrained diffusion policy frozen, ExpertGen regularizes exploration to remain within safe, human-like behavior manifolds, while also enabling effective learning with only sparse rewards. Empirical evaluations on challenging manipulation benchmarks demonstrate that ExpertGen reliably produces high-quality expert policies with no reward engineering. On industrial assembly tasks, ExpertGen achieves a 90.5% overall success rate, while on long-horizon manipulation tasks it attains 85% overall success, outperforming all baseline methods. The resulting policies exhibit dexterous control and remain robust across diverse initial configurations and failure states. To validate sim-to-real transfer, the learned state-based expert policies are further distilled into visuomotor policies via DAgger and successfully deployed on real robotic hardware.",
+      "link": "https://arxiv.org/abs/2603.15956",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation",
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.717235+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.13846v2",
+      "title": "Is Seeing Believing? Evaluating Human Sensitivity to Synthetic Video",
+      "summary": "arXiv:2603.13846v2 Announce Type: replace-cross \nAbstract: Advances in machine learning have enabled the creation of realistic synthetic videos known as deepfakes. As deepfakes proliferate, concerns about rapid spread of disinformation and manipulation of public perception are mounting. Despite the alarming implications, our understanding of how individuals perceive synthetic media remains limited, obstructing the development of effective mitigation strategies. This paper aims to narrow this gap by investigating human responses to visual and auditory distortions of videos and deepfake-generated visuals and narration. In two between-subjects experiments, we study whether audio-visual distortions affect cognitive processing, such as subjective credibility assessment and objective learning outcomes. A third study reveals that artifacts from deepfakes influence credibility. The three studies show that video distortions and deepfake artifacts can reduce credibility. Our research contributes to the ongoing exploration of the cognitive processes involved in the evaluation and perception of synthetic videos, and underscores the need for further theory development concerning deepfake exposure.",
+      "link": "https://arxiv.org/abs/2603.13846",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+disinformation",
+        "+manipulation",
+        "deepfake"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.719699+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15724v1",
+      "title": "Meta-TTRL: A Metacognitive Framework for Self-Improving Test-Time Reinforcement Learning in Unified Multimodal Models",
+      "summary": "arXiv:2603.15724v1 Announce Type: cross \nAbstract: Existing test-time scaling (TTS) methods for unified multimodal models (UMMs) in text-to-image (T2I) generation primarily rely on search or sampling strategies that produce only instance-level improvements, limiting the ability to learn from prior inferences and accumulate knowledge across similar prompts. To overcome these limitations, we propose Meta-TTRL, a metacognitive test-time reinforcement learning framework. Meta-TTRL performs test-time parameter optimization guided by model-intrinsic monitoring signals derived from the meta-knowledge of UMMs, achieving self-improvement and capability-level improvement at test time. Extensive experiments demonstrate that Meta-TTRL generalizes well across three representative UMMs, including Janus-Pro-7B, BAGEL, and Qwen-Image, achieving significant gains on compositional reasoning tasks and multiple T2I benchmarks with limited data. We provide the first comprehensive analysis to investigate the potential of test-time reinforcement learning (TTRL) for T2I generation in UMMs. Our analysis further reveals a key insight underlying effective TTRL: metacognitive synergy, where monitoring signals align with the model's optimization regime to enable self-improvement.",
+      "link": "https://arxiv.org/abs/2603.15724",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.716728+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16086v1",
+      "title": "Towards the Vision-Sound-Language-Action Paradigm: The HEAR Framework for Sound-Centric Manipulation",
+      "summary": "arXiv:2603.16086v1 Announce Type: cross \nAbstract: While recent Vision-Language-Action (VLA) models have begun to incorporate audio, they typically treat sound as static pre-execution prompts or focus exclusively on human speech. This leaves a significant gap in real-time, sound-centric manipulation where fleeting environmental acoustics provide critical state verification during task execution. Consequently, key sounds are easily missed due to low-frequency updates or system latency. This problem is exacerbated by action chunking with open-loop execution, which creates a Blind Execution Interval where acoustic events are lost between discrete audio observation windows. Recognizing the necessity of continuous auditory awareness, we formalize Vision-Sound-Language-Action (VSLA) as a continuous control paradigm conditioned on vision, streaming audio, language, and proprioception under delayed decision loops. As an instantiation, we introduce HEAR, a VSLA framework integrating four components: (i) a streaming Historizer to maintain a compact, causal audio context across execution gaps; (ii) an Envisioner adapted from omni foundation models to reason over multi-sensory inputs; (iii) an Advancer, formulated as an audio world model, to learn temporal dynamics by predicting near-future audio codes; and (iv) a flow-matching Realizer policy to generate smooth action chunks. To address the scarcity of pretraining data and evaluations for VSLA, we construct OpenX-Sound for pretraining, alongside HEAR-Bench, the first sound-centric manipulation benchmark with strict causal timing rules. Our results suggest that robust sound-centric manipulation necessitates causal persistence and explicit temporal learning. This framework provides a practical step toward multi-sensory foundation models for embodied agents, enabling robots to perceive and interact with dynamic environments. Code and videos are available at https://hear.irmv.top.",
+      "link": "https://arxiv.org/abs/2603.16086",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.717495+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.11408v3",
+      "title": "On-Policy RL Meets Off-Policy Experts: Harmonizing Supervised Fine-Tuning and Reinforcement Learning via Dynamic Weighting",
+      "summary": "arXiv:2508.11408v3 Announce Type: replace-cross \nAbstract: Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL) are two prominent post-training paradigms for refining the capabilities and aligning the behavior of Large Language Models (LLMs). Existing approaches that integrate SFT and RL often face the risk of disrupting established response patterns and inducing overfitting to expert data. To address this, we present a novel investigation into the unified view of SFT and RL through an off-policy versus on-policy lens. We propose CHORD, a framework for Controllable Harmonization of On- and Off-Policy Reinforcement Learning via Dynamic Weighting, which reframes SFT not as a separate stage but as a dynamically weighted auxiliary objective within the on-policy RL process. Based on an analysis of off-policy expert data's influence at both holistic and granular levels, we incorporate a dual-control mechanism in CHORD. Specifically, the framework first employs a global coefficient to holistically guide the transition from off-policy imitation to on-policy exploration, and then applies a token-wise weighting function that enables granular learning from the expert, which promotes on-policy exploration and mitigates disruption from off-policy data. We conduct extensive experiments across various practical tasks, providing empirical evidence that CHORD achieves a stable and efficient learning process. By effectively harmonizing off-policy expert data with on-policy exploration, CHORD demonstrates significant improvements over baselines. We release the implementation at https://github.com/modelscope/Trinity-RFT/tree/main/examples/mix_chord to inspire further research.",
+      "link": "https://arxiv.org/abs/2508.11408",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.718923+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15909v1",
+      "title": "Prompt Engineering for Scale Development in Generative Psychometrics",
+      "summary": "arXiv:2603.15909v1 Announce Type: cross \nAbstract: This Monte Carlo simulation examines how prompt engineering strategies shape the quality of large language model (LLM)--generated personality assessment items within the AI-GENIE framework for generative psychometrics. Item pools targeting the Big Five traits were generated using multiple prompting designs (zero-shot, few-shot, persona-based, and adaptive), model temperatures, and LLMs, then evaluated and reduced using network psychometric methods. Across all conditions, AI-GENIE reliably improved structural validity following reduction, with the magnitude of its incremental contribution inversely related to the quality of the incoming item pool. Prompt design exerted a substantial influence on both pre- and post-reduction item quality. Adaptive prompting consistently outperformed non-adaptive strategies by sharply reducing semantic redundancy, elevating pre-reduction structural validity, and preserving substantially larger item pool, particularly when paired with newer, higher-capacity models. These gains were robust across temperature settings for most models, indicating that adaptive prompting mitigates common trade-offs between creativity and psychometric coherence. An exception was observed for the GPT-4o model at high temperatures, suggesting model-specific sensitivity to adaptive constraints at elevated stochasticity. Overall, the findings demonstrate that adaptive prompting is the strongest approach in this context, and that its benefits scale with model capability, motivating continued investigation of model--prompt interactions in generative psychometric pipelines.",
+      "link": "https://arxiv.org/abs/2603.15909",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "prompt engineering",
+        "zero-shot",
+        "few-shot",
+        "persona"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.442087+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15676v1",
+      "title": "Automated Self-Testing as a Quality Gate: Evidence-Driven Release Management for LLM Applications",
+      "summary": "arXiv:2603.15676v1 Announce Type: cross \nAbstract: LLM applications are AI systems whose non-deterministic outputs and evolving model behavior make traditional testing insufficient for release governance. We present an automated self-testing framework that introduces quality gates with evidence-based release decisions (PROMOTE/HOLD/ROLLBACK) across five empirically grounded dimensions: task success rate, research context preservation, P95 latency, safety pass rate, and evidence coverage. We evaluate the framework through a longitudinal case study of an internally deployed multi-agent conversational AI system with specific marketing capabilities in active development, covering 38 evaluation runs across 20+ internal releases. The gate identified two ROLLBACK-grade builds in early runs and supported stable quality evolution over a four-week staging lifecycle while exercising persona-grounded, multi-turn, adversarial, and evidence-required scenarios. Statistical analysis (Mann-Kendall trends, Spearman correlations, bootstrap confidence intervals), gate ablation, and overhead scaling indicate that evidence coverage is the primary severe-regression discriminator and that runtime scales predictably with suite size. A human calibration study (n=60 stratified cases, two independent evaluators, LLM-as-judge cross-validation) reveals complementary multi-modal coverage: LLM-judge disagreements with the system gate (kappa=0.13) are attributable to structural failure modes such as latency violations and routing errors that are invisible in response text alone, while the judge independently surfaces content quality failures missed by structural checks, validating the multi-dimensional gate design. The framework, supplementary pseudocode, and calibration artifacts are provided to support AI-system quality assurance and independent replication.",
+      "link": "https://arxiv.org/abs/2603.15676",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+adversarial",
+        "multi-agent",
+        "persona"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.716442+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16215v1",
+      "title": "CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview Evaluation",
+      "summary": "arXiv:2603.16215v1 Announce Type: cross \nAbstract: Ensuring robust and fair interview assessment remains a key challenge in AI-driven evaluation. This paper presents CoMAI, a general-purpose multi-agent interview framework designed for diverse assessment scenarios. In contrast to monolithic single-agent systems based on large language models (LLMs), CoMAI employs a modular task-decomposition architecture coordinated through a centralized finite-state machine. The system comprises four agents specialized in question generation, security, scoring, and summarization. These agents work collaboratively to provide multi-layered security defenses against prompt injection, support multidimensional evaluation with adaptive difficulty adjustment, and enable rubric-based structured scoring that reduces subjective bias. Experimental results demonstrate that CoMAI achieved 90.47% accuracy, 83.33% recall, and 84.41% candidate satisfaction. These results highlight CoMAI as a robust, fair, and interpretable paradigm for AI-driven interview assessment.",
+      "link": "https://arxiv.org/abs/2603.16215",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+prompt injection",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.717601+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15800v1",
+      "title": "Evolving Contextual Safety in Multi-Modal Large Language Models via Inference-Time Self-Reflective Memory",
+      "summary": "arXiv:2603.15800v1 Announce Type: cross \nAbstract: Multi-modal Large Language Models (MLLMs) have achieved remarkable performance across a wide range of visual reasoning tasks, yet their vulnerability to safety risks remains a pressing concern. While prior research primarily focuses on jailbreak defenses that detect and refuse explicitly unsafe inputs, such approaches often overlook contextual safety, which requires models to distinguish subtle contextual differences between scenarios that may appear similar but diverge significantly in safety intent. In this work, we present MM-SafetyBench++, a carefully curated benchmark designed for contextual safety evaluation. Specifically, for each unsafe image-text pair, we construct a corresponding safe counterpart through minimal modifications that flip the user intent while preserving the underlying contextual meaning, enabling controlled evaluation of whether models can adapt their safety behaviors based on contextual understanding. Further, we introduce EchoSafe, a training-free framework that maintains a self-reflective memory bank to accumulate and retrieve safety insights from prior interactions. By integrating relevant past experiences into current prompts, EchoSafe enables context-aware reasoning and continual evolution of safety behavior during inference. Extensive experiments on various multi-modal safety benchmarks demonstrate that EchoSafe consistently achieves superior performance, establishing a strong baseline for advancing contextual safety in MLLMs. All benchmark data and code are available at https://echosafe-mllm.github.io.",
+      "link": "https://arxiv.org/abs/2603.15800",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+jailbreak",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.442026+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.19913v3",
+      "title": "From Intuition to Calibrated Judgment: A Rubric-Based Expert-Panel Study of Human Detection of LLM-Generated Korean Text",
+      "summary": "arXiv:2601.19913v3 Announce Type: replace \nAbstract: Distinguishing human-written Korean text from fluent LLM outputs remains difficult even for trained readers, who can over-trust surface well-formedness. We present LREAD, a Korean-specific instantiation of a rubric-based expert-calibration framework for human attribution of LLM-generated text. In a three-phase blind longitudinal study with three linguistically trained annotators, Phase 1 measures intuition-only attribution, Phase 2 introduces criterion-anchored scoring with explicit justifications, and Phase 3 evaluates a limited held-out elementary-persona subset. Majority-vote accuracy improves from 0.60 in Phase 1 to 0.90 in Phase 2, and reaches 10/10 on the limited Phase 3 subset (95% CI [0.692, 1.000]); agreement also increases from Fleiss' $\\kappa$ = -0.09 to 0.82. Error analysis suggests that calibration primarily reduces false negatives on AI essays rather than inducing generalized over-detection. We position LREAD as pilot evidence for within-panel calibration in a Korean argumentative-essay setting. These findings suggest that rubric-scaffolded human judgment can complement automated detectors by making attribution reasoning explicit, auditable, and adaptable. The rubric developed in this study, along with the dataset employed for the analysis, is available at https://github.com/Shinwoo-Park/lread.",
+      "link": "https://arxiv.org/abs/2601.19913",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "persona"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.442589+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15727v1",
+      "title": "ClawWorm: Self-Propagating Attacks Across LLM Agent Ecosystems",
+      "summary": "arXiv:2603.15727v1 Announce Type: cross \nAbstract: Autonomous LLM-based agents increasingly operate as long-running processes forming densely interconnected multi-agent ecosystems, whose security properties remain largely unexplored. In particular, OpenClaw, an open-source platform with over 40{,}000 active instances, has stood out recently with its persistent configurations, tool-execution privileges, and cross-platform messaging capabilities. In this work, we present ClawWorm, the first self-replicating worm attack against a production-scale agent framework, achieving a fully autonomous infection cycle initiated by a single message: the worm first hijacks the victim's core configuration to establish persistent presence across session restarts, then executes an arbitrary payload upon each reboot, and finally propagates itself to every newly encountered peer without further attacker intervention. We evaluate the attack on a controlled testbed across three distinct infection vectors and three payload types, demonstrating high success rates in end-to-end infection, sustained multi-hop propagation, and payload independence from the worm mechanism. We analyse the architectural root causes underlying these vulnerabilities and propose defence strategies targeting each identified trust boundary. Code and samples will be released upon completion of responsible disclosure.",
+      "link": "https://arxiv.org/abs/2603.15727",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.716781+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.22493v2",
+      "title": "Ontological foundations for contrastive explanatory narration of robot plans",
+      "summary": "arXiv:2509.22493v2 Announce Type: replace-cross \nAbstract: Mutual understanding of artificial agents' decisions is key to ensuring a trustworthy and successful human-robot interaction. Hence, robots are expected to make reasonable decisions and communicate them to humans when needed. In this article, the focus is on an approach to modeling and reasoning about the comparison of two competing plans, so that robots can later explain the divergent result. First, a novel ontological model is proposed to formalize and reason about the differences between competing plans, enabling the classification of the most appropriate one (e.g., the shortest, the safest, the closest to human preferences, etc.). This work also investigates the limitations of a baseline algorithm for ontology-based explanatory narration. To address these limitations, a novel algorithm is presented, leveraging divergent knowledge between plans and facilitating the construction of contrastive narratives. Through empirical evaluation, it is observed that the explanations excel beyond the baseline method.",
+      "link": "https://arxiv.org/abs/2509.22493",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "narrative"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.719024+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.10477v2",
+      "title": "Urban Socio-Semantic Segmentation with Vision-Language Reasoning",
+      "summary": "arXiv:2601.10477v2 Announce Type: replace-cross \nAbstract: As hubs of human activity, urban surfaces consist of a wealth of semantic entities. Segmenting these various entities from satellite imagery is crucial for a range of downstream applications. Current advanced segmentation models can reliably segment entities defined by physical attributes (e.g., buildings, water bodies) but still struggle with socially defined categories (e.g., schools, parks). In this work, we achieve socio-semantic segmentation by vision-language model reasoning. To facilitate this, we introduce the Urban Socio-Semantic Segmentation dataset named SocioSeg, a new resource comprising satellite imagery, digital maps, and pixel-level labels of social semantic entities organized in a hierarchical structure. Additionally, we propose a novel vision-language reasoning framework called SocioReasoner that simulates the human process of identifying and annotating social semantic entities via cross-modal recognition and multi-stage reasoning. We employ reinforcement learning to optimize this non-differentiable process and elicit the reasoning capabilities of the vision-language model. Experiments demonstrate our approach's gains over state-of-the-art models and strong zero-shot generalization. The dataset and code are open-sourced under the Apache License 2.0 at https://github.com/AMAP-ML/SocioReasoner.",
+      "link": "https://arxiv.org/abs/2601.10477",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.719430+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.02335v3",
+      "title": "Building a Correct-by-Design Lakehouse. Data Contracts, Versioning, and Transactional Pipelines for Humans and Agents",
+      "summary": "arXiv:2602.02335v3 Announce Type: replace-cross \nAbstract: Lakehouses are now the default substrate for analytics and AI, but they remain fragile under concurrent, untrusted change: schema mismatches often surface only at runtime, development and production easily diverge, and multi-table pipelines can expose partial results after failure. We present Bauplan, a code-first lakehouse that aims to eliminate a broad class of these failures by construction. Bauplan builds on a storage substrate that already provides atomic single-table snapshot evolution, and adds three pipeline-level correctness mechanisms: typed table contracts to make transformation boundaries checkable, Git-like data versioning to support reproducible collaboration and review, and transactional runs that guarantee atomic publication of an entire pipeline execution. We describe the system design, show how these abstractions fit together into a unified programming model for humans and agents, and report early results from a lightweight Alloy model that both validates key intuitions and exposes subtle counterexamples around transactional branch visibility. Our experience suggests that correctness in the lakehouse is best addressed not by patching failures after the fact, but by restricting the programming model so that many illegal states become unrepresentable.",
+      "link": "https://arxiv.org/abs/2602.02335",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "substrate"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.719484+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.22770v2",
+      "title": "Okara: Detection and Attribution of TLS Man-in-the-Middle Vulnerabilities in Android Apps with Foundation Models",
+      "summary": "arXiv:2601.22770v2 Announce Type: replace \nAbstract: Transport Layer Security (TLS) is fundamental to secure online communication, yet vulnerabilities in certificate validation that enable Man-in-the-Middle (MitM) attacks remain a pervasive threat in Android apps. Existing detection tools are hampered by low-coverage UI interaction, costly instrumentation, and a lack of scalable root-cause analysis. We present Okara, a framework that leverages foundation models to automate the detection and deep attribution of TLS MitM Vulnerabilities (TMVs). Okara's detection component, TMV-Hunter, employs foundation model-driven GUI agents to achieve high-coverage app interaction, enabling efficient vulnerability discovery at scale. Deploying TMV-Hunter on 37,349 apps from Google Play and a third-party store revealed 8,374 (22.42%) vulnerable apps. Our measurement shows these vulnerabilities are widespread across all popularity levels, affect critical functionalities like authentication and code delivery, and are highly persistent with a median vulnerable lifespan of over 1,300 days. Okara's attribution component, TMV-ORCA, combines dynamic instrumentation with a novel LLM-based classifier to locate and categorize vulnerable code according to a comprehensive new taxonomy. This analysis attributes 41% of vulnerabilities to third-party libraries and identifies recurring insecure patterns, such as empty trust managers and flawed hostname verification. We have initiated a large-scale responsible disclosure effort and will release our tools and datasets to support further research and mitigation.",
+      "link": "https://arxiv.org/abs/2601.22770",
+      "feed": "cs.CR",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.842087+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2507.15015v3",
+      "title": "MetaCrit: A Critical Thinking Framework for Self-Regulated LLM Reasoning",
+      "summary": "arXiv:2507.15015v3 Announce Type: replace \nAbstract: Large language models (LLMs) fail on over one-third of multi-hop questions with counterfactual premises and remain vulnerable to adversarial prompts that trigger biased or factually incorrect responses, which exposes a fundamental deficit in self-regulated reasoning. We propose \\textbf{MetaCrit}, a multi-agent framework grounded in Nelson and Narens' metacognitive regulation theory. MetaCrit decomposes reasoning regulation into four agents: object-level generation, a \\emph{monitoring} agent that assesses response validity, a \\emph{control} agent that critiques logical soundness, and a meta-level synthesizer that integrates all signals into a final response. Evaluation across eight benchmarks, four model backbones, and a college-level analytical writing study shows that MetaCrit significantly improves content truthfulness and logical soundness while eliminating toxic outputs. Its modular design allows individual agents to be integrated into existing frameworks as drop-in components without architectural modifications.",
+      "link": "https://arxiv.org/abs/2507.15015",
+      "feed": "cs.MA",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T16:02:18.936948+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Larg",
+      "paper_link": "https://arxiv.org/abs/2603.15714",
+      "paper_score": 16,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'How Vulnerable Are AI Agents to Indirect Prompt Injections? ' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Larg",
+      "paper_link": "https://arxiv.org/abs/2603.15714",
+      "paper_score": 16,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'How Vulnerable Are AI Agents to Indirect Prompt Injections? ' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Differential Harm Propensity in Personalized LLM Agents: The Curious Case of Men",
+      "paper_link": "https://arxiv.org/abs/2603.16734",
+      "paper_score": 8,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Differential Harm Propensity in Personalized LLM Agents: The' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Differential Harm Propensity in Personalized LLM Agents: The Curious Case of Men",
+      "paper_link": "https://arxiv.org/abs/2603.16734",
+      "paper_score": 8,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Differential Harm Propensity in Personalized LLM Agents: The' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Differential Harm Propensity in Personalized LLM Agents: The Curious Case of Men",
+      "paper_link": "https://arxiv.org/abs/2603.16734",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Differential Harm Propensity in Personalized LLM Agents: The' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical ",
+      "paper_link": "https://arxiv.org/abs/2511.15190",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Masked Auto-Regressive Variational Acceleration: Fast Infere' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical ",
+      "paper_link": "https://arxiv.org/abs/2511.15190",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Masked Auto-Regressive Variational Acceleration: Fast Infere' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical ",
+      "paper_link": "https://arxiv.org/abs/2511.15190",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Masked Auto-Regressive Variational Acceleration: Fast Infere' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical ",
+      "paper_link": "https://arxiv.org/abs/2511.15190",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Masked Auto-Regressive Variational Acceleration: Fast Infere' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Prompt Engineering for Scale Development in Generative Psychometrics",
+      "paper_link": "https://arxiv.org/abs/2603.15909",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Prompt Engineering for Scale Development in Generative Psych' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Automated Self-Testing as a Quality Gate: Evidence-Driven Release Management for",
+      "paper_link": "https://arxiv.org/abs/2603.15676",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Automated Self-Testing as a Quality Gate: Evidence-Driven Re' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview ",
+      "paper_link": "https://arxiv.org/abs/2603.16215",
+      "paper_score": 5,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'CoMAI: A Collaborative Multi-Agent Framework for Robust and ' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "CoMAI: A Collaborative Multi-Agent Framework for Robust and Equitable Interview ",
+      "paper_link": "https://arxiv.org/abs/2603.16215",
+      "paper_score": 5,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'CoMAI: A Collaborative Multi-Agent Framework for Robust and ' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Evolving Contextual Safety in Multi-Modal Large Language Models via Inference-Ti",
+      "paper_link": "https://arxiv.org/abs/2603.15800",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Evolving Contextual Safety in Multi-Modal Large Language Mod' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Evolving Contextual Safety in Multi-Modal Large Language Models via Inference-Ti",
+      "paper_link": "https://arxiv.org/abs/2603.15800",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Evolving Contextual Safety in Multi-Modal Large Language Mod' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "From Intuition to Calibrated Judgment: A Rubric-Based Expert-Panel Study of Huma",
+      "paper_link": "https://arxiv.org/abs/2601.19913",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'From Intuition to Calibrated Judgment: A Rubric-Based Expert' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic and Cultural Alignm",
+      "paper_link": "https://arxiv.org/abs/2603.15949",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic and Cultural Alignm",
+      "paper_link": "https://arxiv.org/abs/2603.15949",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic and Cultural Alignm",
+      "paper_link": "https://arxiv.org/abs/2603.15949",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic and Cultural Alignm",
+      "paper_link": "https://arxiv.org/abs/2603.15949",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'BANGLASOCIALBENCH: A Benchmark for Evaluating Sociopragmatic' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "From Passive to Persuasive: Localized Activation Injection for Empathy and Negot",
+      "paper_link": "https://arxiv.org/abs/2511.12832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'From Passive to Persuasive: Localized Activation Injection f' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "From Passive to Persuasive: Localized Activation Injection for Empathy and Negot",
+      "paper_link": "https://arxiv.org/abs/2511.12832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'From Passive to Persuasive: Localized Activation Injection f' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "From Passive to Persuasive: Localized Activation Injection for Empathy and Negot",
+      "paper_link": "https://arxiv.org/abs/2511.12832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'From Passive to Persuasive: Localized Activation Injection f' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "From Passive to Persuasive: Localized Activation Injection for Empathy and Negot",
+      "paper_link": "https://arxiv.org/abs/2511.12832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'From Passive to Persuasive: Localized Activation Injection f' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "From Passive to Persuasive: Localized Activation Injection for Empathy and Negot",
+      "paper_link": "https://arxiv.org/abs/2511.12832",
+      "paper_score": 3,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'From Passive to Persuasive: Localized Activation Injection f' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Diffusion Models for Joint Audio-Video Generation",
+      "paper_link": "https://arxiv.org/abs/2603.16093",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Diffusion Models for Joint Audio-Video Generation' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Language Models Don't Know What You Want: Evaluating Personalization in Deep Res",
+      "paper_link": "https://arxiv.org/abs/2603.16120",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Language Models Don't Know What You Want: Evaluating Persona' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "IdentityGuard: Context-Aware Restriction and Provenance for Personalized Synthes",
+      "paper_link": "https://arxiv.org/abs/2603.15679",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'IdentityGuard: Context-Aware Restriction and Provenance for ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "The Agentic Researcher: A Practical Guide to AI-Assisted Research in Mathematics",
+      "paper_link": "https://arxiv.org/abs/2603.15914",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'The Agentic Researcher: A Practical Guide to AI-Assisted Res' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "MARIS: Marine Open-Vocabulary Instance Segmentation with Geometric Enhancement a",
+      "paper_link": "https://arxiv.org/abs/2510.15398",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MARIS: Marine Open-Vocabulary Instance Segmentation with Geo' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MARIS: Marine Open-Vocabulary Instance Segmentation with Geometric Enhancement a",
+      "paper_link": "https://arxiv.org/abs/2510.15398",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MARIS: Marine Open-Vocabulary Instance Segmentation with Geo' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "MARIS: Marine Open-Vocabulary Instance Segmentation with Geometric Enhancement a",
+      "paper_link": "https://arxiv.org/abs/2510.15398",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MARIS: Marine Open-Vocabulary Instance Segmentation with Geo' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "MARIS: Marine Open-Vocabulary Instance Segmentation with Geometric Enhancement a",
+      "paper_link": "https://arxiv.org/abs/2510.15398",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'MARIS: Marine Open-Vocabulary Instance Segmentation with Geo' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    }
+  ]
+}
