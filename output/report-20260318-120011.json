@@ -1,0 +1,677 @@
+{
+  "run_at": "2026-03-18T12:00:11.236520+00:00",
+  "papers_found": 53,
+  "suggestions_generated": 44,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.15714v1",
+      "title": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Large-Scale Public Competition",
+      "summary": "arXiv:2603.15714v1 Announce Type: cross \nAbstract: LLM based agents are increasingly deployed in high stakes settings where they process external data sources such as emails, documents, and code repositories. This creates exposure to indirect prompt injection attacks, where adversarial instructions embedded in external content manipulate agent behavior without user awareness. A critical but underexplored dimension of this threat is concealment: since users tend to observe only an agent's final response, an attack can conceal its existence by presenting no clue of compromise in the final user facing response while successfully executing harmful actions. This leaves users unaware of the manipulation and likely to accept harmful outcomes as legitimate. We present findings from a large scale public red teaming competition evaluating this dual objective across three agent settings: tool calling, coding, and computer use. The competition attracted 464 participants who submitted 272000 attack attempts against 13 frontier models, yielding 8648 successful attacks across 41 scenarios. All models proved vulnerable, with attack success rates ranging from 0.5% (Claude Opus 4.5) to 8.5% (Gemini 2.5 Pro). We identify universal attack strategies that transfer across 21 of 41 behaviors and multiple model families, suggesting fundamental weaknesses in instruction following architectures. Capability and robustness showed weak correlation, with Gemini 2.5 Pro exhibiting both high capability and high vulnerability. To address benchmark saturation and obsoleteness, we will endeavor to deliver quarterly updates through continued red teaming competitions. We open source the competition environment for use in evaluations, along with 95 successful attacks against Qwen that did not transfer to any closed source model. We share model-specific attack data with respective frontier labs and the full dataset with the UK AISI and US CAISI to support robustness research.",
+      "link": "https://arxiv.org/abs/2603.15714",
+      "feed": "cs.AI",
+      "score": 16,
+      "matched_keywords": [
+        "+prompt injection",
+        "+manipulation",
+        "+red teaming",
+        "+adversarial",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.623750+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16448v1",
+      "title": "TRUST-SQL: Tool-Integrated Multi-Turn Reinforcement Learning for Text-to-SQL over Unknown Schemas",
+      "summary": "arXiv:2603.16448v1 Announce Type: new \nAbstract: Text-to-SQL parsing has achieved remarkable progress under the Full Schema Assumption. However, this premise fails in real-world enterprise environments where databases contain hundreds of tables with massive noisy metadata. Rather than injecting the full schema upfront, an agent must actively identify and verify only the relevant subset, giving rise to the Unknown Schema scenario we study in this work. To address this, we propose TRUST-SQL (Truthful Reasoning with Unknown Schema via Tools). We formulate the task as a Partially Observable Markov Decision Process where our autonomous agent employs a structured four-phase protocol to ground reasoning in verified metadata. Crucially, this protocol provides a structural boundary for our novel Dual-Track GRPO strategy. By applying token-level masked advantages, this strategy isolates exploration rewards from execution outcomes to resolve credit assignment, yielding a 9.9% relative improvement over standard GRPO. Extensive experiments across five benchmarks demonstrate that TRUST-SQL achieves an average absolute improvement of 30.6% and 16.6% for the 4B and 8B variants respectively over their base models. Remarkably, despite operating entirely without pre-loaded metadata, our framework consistently matches or surpasses strong baselines that rely on schema prefilling.",
+      "link": "https://arxiv.org/abs/2603.16448",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.623070+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16141v1",
+      "title": "Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment",
+      "summary": "arXiv:2603.16141v1 Announce Type: new \nAbstract: Autonomous Unmanned Aerial Vehicle (UAV) swarms are increasingly used as rapidly deployable aerial relays and sensing platforms, yet practical deployments must operate under partial observability and intermittent peer-to-peer links. We present a graph-based multi-agent reinforcement learning framework trained under centralized training with decentralized execution (CTDE): a centralized critic and global state are available only during training, while each UAV executes a shared policy using local observations and messages from nearby neighbors. Our architecture encodes local agent state and nearby entities with an agent-entity attention module, and aggregates inter-UAV messages with neighbor self-attention over a distance-limited communication graph. We evaluate primarily on a cooperative relay deployment task (DroneConnect) and secondarily on an adversarial engagement task (DroneCombat). In DroneConnect, the proposed method achieves high coverage under restricted communication and partial observation (e.g. 74% coverage with M = 5 UAVs and N = 10 nodes) while remaining competitive with a mixed-integer linear programming (MILP) optimization-based offline upper bound, and it generalizes to unseen team sizes without fine-tuning. In the adversarial setting, the same framework transfers without architectural changes and improves win rate over non-communicating baselines.",
+      "link": "https://arxiv.org/abs/2603.16141",
+      "feed": "cs.MA",
+      "score": 12,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial",
+        "multi-agent",
+        "swarm"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.828837+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16672v1",
+      "title": "CritiSense: Critical Digital Literacy and Resilience Against Misinformation",
+      "summary": "arXiv:2603.16672v1 Announce Type: cross \nAbstract: Misinformation on social media undermines informed decision-making and public trust. Prebunking offers a proactive complement by helping users recognize manipulation tactics before they encounter them in the wild. We present CritiSense, a mobile media-literacy app that builds these skills through short, interactive challenges with instant feedback. It is the first multilingual (supporting nine languages) and modular platform, designed for rapid updates across topics and domains. We report a usability study with 93 users: 83.9% expressed overall satisfaction and 90.1% rated the app as easy to use. Qualitative feedback indicates that CritiSense helps improve digital literacy skills. Overall, it provides a multilingual prebunking platform and a testbed for measuring the impact of microlearning on misinformation resilience. Over 3+ months, we have reached 300+ active users. It is freely available to all users on the Apple App Store (https://apps.apple.com/us/app/critisense/id6749675792) and Google Play Store (https://play.google.com/store/apps/details?id=com.critisense&amp;hl=en). Demo Video: https://shorturl.at/CDcdc",
+      "link": "https://arxiv.org/abs/2603.16672",
+      "feed": "cs.CL",
+      "score": 11,
+      "matched_keywords": [
+        "+decision-making",
+        "+manipulation",
+        "+trust",
+        "misinformation"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.381173+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16152v1",
+      "title": "HIPO: Instruction Hierarchy via Constrained Reinforcement Learning",
+      "summary": "arXiv:2603.16152v1 Announce Type: cross \nAbstract: Hierarchical Instruction Following (HIF) refers to the problem of prompting large language models with a priority-ordered stack of instructions. Standard methods like RLHF and DPO typically fail in this problem since they mainly optimize for a single objective, failing to explicitly enforce system prompt compliance. Meanwhile, supervised fine-tuning relies on mimicking filtered, compliant data, which fails to establish the priority asymmetry at the algorithmic level. In this paper, we introduce \\textsc{HIPO}, a novel alignment framework that formulates HIF as a Constrained Markov Decision Process. \\textsc{HIPO} elevates system prompts from mere input context to strict algorithmic boundaries. Using a primal-dual safe reinforcement learning approach, the algorithm dynamically enforces system prompt compliance as an explicit constraint, maximizing user utility strictly within this feasible region. Extensive evaluations across diverse model architectures (e.g., Qwen, Phi, Llama) demonstrate that \\textsc{HIPO} significantly improves both system compliance and user utility. Furthermore, mechanistic analysis reveals that this constrained optimization autonomously drives the model to shift its attention toward long-range system tokens, providing a principled foundation for reliable LLM deployment in complex workflows.",
+      "link": "https://arxiv.org/abs/2603.16152",
+      "feed": "cs.CL",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "system prompt",
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.380861+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15831v1",
+      "title": "Persona-Conditioned Risk Behavior in Large Language Models: A Simulated Gambling Study with GPT-4.1",
+      "summary": "arXiv:2603.15831v1 Announce Type: cross \nAbstract: Large language models (LLMs) are increasingly deployed as autonomous agents in uncertain, sequential decision-making contexts. Yet it remains poorly understood whether the behaviors they exhibit in such environments reflect principled cognitive patterns or simply surface-level prompt mimicry. This paper presents a controlled experiment in which GPT-4.1 was assigned one of three socioeconomic personas (Rich, Middle-income, and Poor) and placed in a structured slot-machine environment with three distinct machine configurations: Fair (50%), Biased Low (35%), and Streak (dynamic probability increasing after consecutive losses). Across 50 independent iterations per condition and 6,950 recorded decisions, we find that the model reproduces key behavioral signatures predicted by Kahneman and Tversky's Prospect Theory without being instructed to do so. The Poor persona played a mean of 37.4 rounds per session (SD=15.5) compared to 1.1 rounds for the Rich persona (SD=0.31), a difference that is highly significant (Kruskal-Wallis H=393.5, p<2.2e-16). Risk scores by persona show large effect sizes (Cohen's d=4.15 for Poor vs Rich). Emotional labels appear to function as post-hoc annotations rather than decision drivers (chi-square=3205.4, Cramer's V=0.39), and belief-updating across rounds is negligible (Spearman rho=0.032 for Poor persona, p=0.016). These findings carry implications for LLM agent design, interpretability research, and the broader question of whether classical cognitive economic biases are implicitly encoded in large-scale pretrained language models.",
+      "link": "https://arxiv.org/abs/2603.15831",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+decision-making",
+        "behavioral",
+        "persona",
+        "belief"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.380633+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15956v1",
+      "title": "ExpertGen: Scalable Sim-to-Real Expert Policy Learning from Imperfect Behavior Priors",
+      "summary": "arXiv:2603.15956v1 Announce Type: cross \nAbstract: Learning generalizable and robust behavior cloning policies requires large volumes of high-quality robotics data. While human demonstrations (e.g., through teleoperation) serve as the standard source for expert behaviors, acquiring such data at scale in the real world is prohibitively expensive. This paper introduces ExpertGen, a framework that automates expert policy learning in simulation to enable scalable sim-to-real transfer. ExpertGen first initializes a behavior prior using a diffusion policy trained on imperfect demonstrations, which may be synthesized by large language models or provided by humans. Reinforcement learning is then used to steer this prior toward high task success by optimizing the diffusion model's initial noise while keep original policy frozen. By keeping the pretrained diffusion policy frozen, ExpertGen regularizes exploration to remain within safe, human-like behavior manifolds, while also enabling effective learning with only sparse rewards. Empirical evaluations on challenging manipulation benchmarks demonstrate that ExpertGen reliably produces high-quality expert policies with no reward engineering. On industrial assembly tasks, ExpertGen achieves a 90.5% overall success rate, while on long-horizon manipulation tasks it attains 85% overall success, outperforming all baseline methods. The resulting policies exhibit dexterous control and remain robust across diverse initial configurations and failure states. To validate sim-to-real transfer, the learned state-based expert policies are further distilled into visuomotor policies via DAgger and successfully deployed on real robotic hardware.",
+      "link": "https://arxiv.org/abs/2603.15956",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation",
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.624172+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.13846v2",
+      "title": "Is Seeing Believing? Evaluating Human Sensitivity to Synthetic Video",
+      "summary": "arXiv:2603.13846v2 Announce Type: replace-cross \nAbstract: Advances in machine learning have enabled the creation of realistic synthetic videos known as deepfakes. As deepfakes proliferate, concerns about rapid spread of disinformation and manipulation of public perception are mounting. Despite the alarming implications, our understanding of how individuals perceive synthetic media remains limited, obstructing the development of effective mitigation strategies. This paper aims to narrow this gap by investigating human responses to visual and auditory distortions of videos and deepfake-generated visuals and narration. In two between-subjects experiments, we study whether audio-visual distortions affect cognitive processing, such as subjective credibility assessment and objective learning outcomes. A third study reveals that artifacts from deepfakes influence credibility. The three studies show that video distortions and deepfake artifacts can reduce credibility. Our research contributes to the ongoing exploration of the cognitive processes involved in the evaluation and perception of synthetic videos, and underscores the need for further theory development concerning deepfake exposure.",
+      "link": "https://arxiv.org/abs/2603.13846",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+disinformation",
+        "+manipulation",
+        "deepfake"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.627057+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15709v1",
+      "title": "Survey of Various Fuzzy and Uncertain Decision-Making Methods",
+      "summary": "arXiv:2603.15709v1 Announce Type: new \nAbstract: Decision-making in real applications is often affected by vagueness, incomplete information, heterogeneous data, and conflicting expert opinions. This survey reviews uncertainty-aware multi-criteria decision-making (MCDM) and organizes the field into a concise, task-oriented taxonomy. We summarize problem-level settings (discrete, group/consensus, dynamic, multi-stage, multi-level, multiagent, and multi-scenario), weight elicitation (subjective and objective schemes under fuzzy/linguistic inputs), and inter-criteria structure and causality modelling. For solution procedures, we contrast compensatory scoring methods, distance-to-reference and compromise approaches, and non-compensatory outranking frameworks for ranking or sorting. We also outline rule/evidence-based and sequential decision models that produce interpretable rules or policies. The survey highlights typical inputs, core computational steps, and primary outputs, and provides guidance on choosing methods according to robustness, interpretability, and data availability. It concludes with open directions on explainable uncertainty integration, stability, and scalability in large-scale and dynamic decision environments.",
+      "link": "https://arxiv.org/abs/2603.15709",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.622658+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15622v1",
+      "title": "SAC-NeRF: Adaptive Ray Sampling for Neural Radiance Fields via Soft Actor-Critic Reinforcement Learning",
+      "summary": "arXiv:2603.15622v1 Announce Type: cross \nAbstract: Neural Radiance Fields (NeRF) have achieved photorealistic novel view synthesis but suffer from computational inefficiency due to dense ray sampling during volume rendering. We propose SAC-NeRF, a reinforcement learning framework that learns adaptive sampling policies using Soft Actor-Critic (SAC). Our method formulates sampling as a Markov Decision Process where an RL agent learns to allocate samples based on scene characteristics. We introduce three technical components: (1) a Gaussian mixture distribution color model providing uncertainty estimates, (2) a multi-component reward function balancing quality, efficiency, and consistency, and (3) a two-stage training strategy addressing environment non-stationarity. Experiments on Synthetic-NeRF and LLFF datasets show that SAC-NeRF reduces sampling points by 35-48\\% while maintaining rendering quality within 0.3-0.8 dB PSNR of dense sampling baselines. While the learned policy is scene-specific and the RL framework adds complexity compared to simpler heuristics, our work demonstrates that data-driven sampling strategies can discover effective patterns that would be difficult to hand-design.",
+      "link": "https://arxiv.org/abs/2603.15622",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.623434+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15871v1",
+      "title": "Counteractive RL: Rethinking Core Principles for Efficient and Scalable Deep Reinforcement Learning",
+      "summary": "arXiv:2603.15871v1 Announce Type: cross \nAbstract: Following the pivotal success of learning strategies to win at tasks, solely by interacting with an environment without any supervision, agents have gained the ability to make sequential decisions in complex MDPs. Yet, reinforcement learning policies face exponentially growing state spaces in high dimensional MDPs resulting in a dichotomy between computational complexity and policy success. In our paper we focus on the agent's interaction with the environment in a high-dimensional MDP during the learning phase and we introduce a theoretically-founded novel paradigm based on experiences obtained through counteractive actions. Our analysis and method provide a theoretical basis for efficient, effective, scalable and accelerated learning, and further comes with zero additional computational complexity while leading to significant acceleration in training. We conduct extensive experiments in the Arcade Learning Environment with high-dimensional state representation MDPs. The experimental results further verify our theoretical analysis, and our method achieves significant performance increase with substantial sample-efficiency in high-dimensional environments.",
+      "link": "https://arxiv.org/abs/2603.15871",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.623931+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16086v1",
+      "title": "Towards the Vision-Sound-Language-Action Paradigm: The HEAR Framework for Sound-Centric Manipulation",
+      "summary": "arXiv:2603.16086v1 Announce Type: cross \nAbstract: While recent Vision-Language-Action (VLA) models have begun to incorporate audio, they typically treat sound as static pre-execution prompts or focus exclusively on human speech. This leaves a significant gap in real-time, sound-centric manipulation where fleeting environmental acoustics provide critical state verification during task execution. Consequently, key sounds are easily missed due to low-frequency updates or system latency. This problem is exacerbated by action chunking with open-loop execution, which creates a Blind Execution Interval where acoustic events are lost between discrete audio observation windows. Recognizing the necessity of continuous auditory awareness, we formalize Vision-Sound-Language-Action (VSLA) as a continuous control paradigm conditioned on vision, streaming audio, language, and proprioception under delayed decision loops. As an instantiation, we introduce HEAR, a VSLA framework integrating four components: (i) a streaming Historizer to maintain a compact, causal audio context across execution gaps; (ii) an Envisioner adapted from omni foundation models to reason over multi-sensory inputs; (iii) an Advancer, formulated as an audio world model, to learn temporal dynamics by predicting near-future audio codes; and (iv) a flow-matching Realizer policy to generate smooth action chunks. To address the scarcity of pretraining data and evaluations for VSLA, we construct OpenX-Sound for pretraining, alongside HEAR-Bench, the first sound-centric manipulation benchmark with strict causal timing rules. Our results suggest that robust sound-centric manipulation necessitates causal persistence and explicit temporal learning. This framework provides a practical step toward multi-sensory foundation models for embodied agents, enabling robots to perceive and interact with dynamic environments. Code and videos are available at https://hear.irmv.top.",
+      "link": "https://arxiv.org/abs/2603.16086",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.624316+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.20085v3",
+      "title": "Explanation User Interfaces: A Systematic Literature Review",
+      "summary": "arXiv:2505.20085v3 Announce Type: replace-cross \nAbstract: Artificial Intelligence (AI) is one of the major technological advancements of this century, bearing incredible potential for users through AI-powered applications and tools in numerous domains. Being often black-box (i.e., its decision-making process is unintelligible), developers typically resort to eXplainable Artificial Intelligence (XAI) techniques to interpret the behaviour of AI models to produce systems that are transparent, fair, reliable, and trustworthy. However, presenting explanations to the user is not trivial and is often left as a secondary aspect of the system's design process, leading to AI systems that are not useful to end-users. This paper presents a Systematic Literature Review on Explanation User Interfaces (XUIs) to gain a deeper understanding of the solutions and design guidelines employed in the academic literature to effectively present explanations to users. To improve the contribution and real-world impact of this survey, we also present a platform to support Human-cEnteRed developMent of Explainable user interfaceS (HERMES) and guide practitioners and scholars in the design and evaluation of XUIs.",
+      "link": "https://arxiv.org/abs/2505.20085",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.626451+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15940v1",
+      "title": "Do Not Leave a Gap: Hallucination-Free Object Concealment in Vision-Language Models",
+      "summary": "arXiv:2603.15940v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have recently shown remarkable capabilities in visual understanding and generation, but remain vulnerable to adversarial manipulations of visual content. Prior object-hiding attacks primarily rely on suppressing or blocking region-specific representations, often creating semantic gaps that inadvertently induce hallucination, where models invent plausible but incorrect objects. In this work, we demonstrate that hallucination arises not from object absence per se, but from semantic discontinuity introduced by such suppression-based attacks. We propose a new class of \\emph{background-consistent object concealment} attacks, which hide target objects by re-encoding their visual representations to be statistically and semantically consistent with surrounding background regions. Crucially, our approach preserves token structure and attention flow, avoiding representational voids that trigger hallucination. We present a pixel-level optimization framework that enforces background-consistent re-encoding across multiple transformer layers while preserving global scene semantics. Extensive experiments on state-of-the-art vision-language models show that our method effectively conceals target objects while preserving up to $86\\%$ of non-target objects and reducing grounded hallucination by up to $3\\times$ compared to attention-suppression-based attacks.",
+      "link": "https://arxiv.org/abs/2603.15940",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.752088+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15909v1",
+      "title": "Prompt Engineering for Scale Development in Generative Psychometrics",
+      "summary": "arXiv:2603.15909v1 Announce Type: cross \nAbstract: This Monte Carlo simulation examines how prompt engineering strategies shape the quality of large language model (LLM)--generated personality assessment items within the AI-GENIE framework for generative psychometrics. Item pools targeting the Big Five traits were generated using multiple prompting designs (zero-shot, few-shot, persona-based, and adaptive), model temperatures, and LLMs, then evaluated and reduced using network psychometric methods. Across all conditions, AI-GENIE reliably improved structural validity following reduction, with the magnitude of its incremental contribution inversely related to the quality of the incoming item pool. Prompt design exerted a substantial influence on both pre- and post-reduction item quality. Adaptive prompting consistently outperformed non-adaptive strategies by sharply reducing semantic redundancy, elevating pre-reduction structural validity, and preserving substantially larger item pool, particularly when paired with newer, higher-capacity models. These gains were robust across temperature settings for most models, indicating that adaptive prompting mitigates common trade-offs between creativity and psychometric coherence. An exception was observed for the GPT-4o model at high temperatures, suggesting model-specific sensitivity to adaptive constraints at elevated stochasticity. Overall, the findings demonstrate that adaptive prompting is the strongest approach in this context, and that its benefits scale with model capability, motivating continued investigation of model--prompt interactions in generative psychometric pipelines.",
+      "link": "https://arxiv.org/abs/2603.15909",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "prompt engineering",
+        "zero-shot",
+        "few-shot",
+        "persona"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.380697+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15968v1",
+      "title": "MAC: Multi-Agent Constitution Learning",
+      "summary": "arXiv:2603.15968v1 Announce Type: cross \nAbstract: Constitutional AI is a method to oversee and control LLMs based on a set of rules written in natural language. These rules are typically written by human experts, but could in principle be learned automatically given sufficient training data for the desired behavior. Existing LLM-based prompt optimizers attempt this but are ineffective at learning constitutions since (i) they require many labeled examples and (ii) lack structure in the optimized prompts, leading to diminishing improvements as prompt size grows. To address these limitations, we propose Multi-Agent Constitutional Learning (MAC), which optimizes over structured prompts represented as sets of rules using a network of agents with specialized tasks to accept, edit, or reject rule updates. We also present MAC+, which improves performance by training agents on successful trajectories to reinforce updates leading to higher reward. We evaluate MAC on tagging Personally Identifiable Information (PII), a classification task with limited labels where interpretability is critical, and demonstrate that it generalizes to other agentic tasks such as tool calling. MAC outperforms recent prompt optimization methods by over 50%, produces human-readable and auditable rule sets, and achieves performance comparable to supervised fine-tuning and GRPO without requiring parameter updates.",
+      "link": "https://arxiv.org/abs/2603.15968",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "constitutional AI",
+        "multi-agent",
+        "persona"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.380750+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.17325v2",
+      "title": "Generalizable End-to-End Tool-Use RL with Synthetic CodeGym",
+      "summary": "arXiv:2509.17325v2 Announce Type: replace-cross \nAbstract: Tool-augmented large language models (LLMs), hereafter LLM agents, leverage external tools to solve diverse tasks and interface with the real world. However, current training practices largely rely on supervised fine-tuning (SFT) over static trajectories or reinforcement learning (RL) on narrow tasks, which generalize poorly beyond development settings and lead to brittleness with new tools and unseen workflows. Because code execution reflects many structural patterns of real-world workflows, we use coding problems as a structured substrate to build tool-use agent training environments with diverse task configurations. To this end, we introduce CodeGym, a scalable framework that synthesizes diverse, verifiable, and controllable multi-turn tool-use environments for agent RL, enabling LLM agents to explore and master various workflows actively. CodeGym converts static coding problems into interactive environments by extracting atomic functions or logic into callable tools, yielding verifiable tasks that span various tool-execution workflows. Models of varying sizes and chain-of-thought configurations trained in CodeGym exhibit consistent out-of-distribution generalizability; for example, Qwen2.5-32B-Instruct achieves an absolute accuracy gain of 8.7 points on the OOD benchmark $\\tau$-Bench. These results highlight CodeGym as a step toward scalable general-purpose RL environments for training tool-use behaviors that align with real-world agent workflows.",
+      "link": "https://arxiv.org/abs/2509.17325",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "substrate"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.381678+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15634v1",
+      "title": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "summary": "arXiv:2603.15634v1 Announce Type: new \nAbstract: Memory is critical for LLM-based agents to preserve past observations for future decision-making, where factual memory serves as its foundational part. However, existing approaches to constructing factual memory face several limitations. Textual methods impose heavy context and indexing burdens, while parametric methods suffer from catastrophic forgetting and high costs. To address these challenges, we introduce NextMem, a latent factual memory framework that utilizes an autoregressive autoencoder to efficiently construct latent memory while ensuring accurate reconstruction. For better optimization, we propose a two-stage training process, including autoregressive reconstruction alignment and progressive latent substitution. We also incorporate quantization to reduce storage overhead. Extensive experiments demonstrate that NextMem achieves superior performance, and excels in retrieval, robustness, and extensibility properties. We release our code and model checkpoints at https://github.com/nuster1128/NextMem.",
+      "link": "https://arxiv.org/abs/2603.15634",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.622473+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16576v1",
+      "title": "REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlearning in Image Generation Models",
+      "summary": "arXiv:2603.16576v1 Announce Type: cross \nAbstract: Recent progress in image generation models (IGMs) enables high-fidelity content creation but also amplifies risks, including the reproduction of copyrighted content and the generation of offensive content. Image Generation Model Unlearning (IGMU) mitigates these risks by removing harmful concepts without full retraining. Despite growing attention, the robustness under adversarial inputs, particularly image-side threats in black-box settings, remains underexplored. To bridge this gap, we present REFORGE, a black-box red-teaming framework that evaluates IGMU robustness via adversarial image prompts. REFORGE initializes stroke-based images and optimizes perturbations with a cross-attention-guided masking strategy that allocates noise to concept-relevant regions, balancing attack efficacy and visual fidelity. Extensive experiments across representative unlearning tasks and defenses demonstrate that REFORGE significantly improves attack success rate while achieving stronger semantic alignment and higher efficiency than involved baselines. These results expose persistent vulnerabilities in current IGMU methods and highlight the need for robustness-aware unlearning against multi-modal adversarial attacks. Our code is at: https://github.com/Imfatnoily/REFORGE.",
+      "link": "https://arxiv.org/abs/2603.16576",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial attack",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.625142+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16850v1",
+      "title": "Unifying Optimization and Dynamics to Parallelize Sequential Computation: A Guide to Parallel Newton Methods for Breaking Sequential Bottlenecks",
+      "summary": "arXiv:2603.16850v1 Announce Type: cross \nAbstract: Massively parallel hardware (GPUs) and long sequence data have made parallel algorithms essential for machine learning at scale. Yet dynamical systems, like recurrent neural networks and Markov chain Monte Carlo, were thought to suffer from sequential bottlenecks. Recent work showed that dynamical systems can in fact be parallelized across the sequence length by reframing their evaluation as a system of nonlinear equations, which can be solved with Newton's method using a parallel associative scan. However, these parallel Newton methods struggled with limitations, primarily inefficiency, instability, and lack of convergence guarantees. This thesis addresses these limitations with methodological and theoretical contributions, drawing particularly from optimization. Methodologically, we develop scalable and stable parallel Newton methods, based on quasi-Newton and trust-region approaches. The quasi-Newton methods are faster and more memory efficient, while the trust-region approaches are significantly more stable. Theoretically, we unify many fixed-point methods into our parallel Newton framework, including Picard and Jacobi iterations. We establish a linear convergence rate for these techniques that depends on the method's approximation accuracy and stability. Moreover, we give a precise condition, rooted in dynamical stability, that characterizes when parallelization provably accelerates a dynamical system and when it cannot. Specifically, the sign of the Largest Lyapunov Exponent of a dynamical system determines whether or not parallel Newton methods converge quickly. In sum, this thesis unlocks scalable and stable methods for parallelizing sequential computation, and provides a firm theoretical basis for when such techniques will and will not work. This thesis also serves as a guide to parallel Newton methods for researchers who want to write the next chapter in this ongoing story.",
+      "link": "https://arxiv.org/abs/2603.16850",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "framing"
+      ],
+      "fetched_at": "2026-03-18T12:00:07.625725+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Larg",
+      "paper_link": "https://arxiv.org/abs/2603.15714",
+      "paper_score": 16,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'How Vulnerable Are AI Agents to Indirect Prompt Injections? ' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "How Vulnerable Are AI Agents to Indirect Prompt Injections? Insights from a Larg",
+      "paper_link": "https://arxiv.org/abs/2603.15714",
+      "paper_score": 16,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'How Vulnerable Are AI Agents to Indirect Prompt Injections? ' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "HIPO: Instruction Hierarchy via Constrained Reinforcement Learning",
+      "paper_link": "https://arxiv.org/abs/2603.16152",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'HIPO: Instruction Hierarchy via Constrained Reinforcement Le' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "HIPO: Instruction Hierarchy via Constrained Reinforcement Learning",
+      "paper_link": "https://arxiv.org/abs/2603.16152",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'HIPO: Instruction Hierarchy via Constrained Reinforcement Le' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "HIPO: Instruction Hierarchy via Constrained Reinforcement Learning",
+      "paper_link": "https://arxiv.org/abs/2603.16152",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HIPO: Instruction Hierarchy via Constrained Reinforcement Le' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HIPO: Instruction Hierarchy via Constrained Reinforcement Learning",
+      "paper_link": "https://arxiv.org/abs/2603.16152",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HIPO: Instruction Hierarchy via Constrained Reinforcement Le' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Persona-Conditioned Risk Behavior in Large Language Models: A Simulated Gambling",
+      "paper_link": "https://arxiv.org/abs/2603.15831",
+      "paper_score": 7,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Persona-Conditioned Risk Behavior in Large Language Models: ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Prompt Engineering for Scale Development in Generative Psychometrics",
+      "paper_link": "https://arxiv.org/abs/2603.15909",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Prompt Engineering for Scale Development in Generative Psych' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "MAC: Multi-Agent Constitution Learning",
+      "paper_link": "https://arxiv.org/abs/2603.15968",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MAC: Multi-Agent Constitution Learning' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "NextMem: Towards Latent Factual Memory for LLM-based Agents",
+      "paper_link": "https://arxiv.org/abs/2603.15634",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'NextMem: Towards Latent Factual Memory for LLM-based Agents' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlearning in Image Gener",
+      "paper_link": "https://arxiv.org/abs/2603.16576",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlea' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlearning in Image Gener",
+      "paper_link": "https://arxiv.org/abs/2603.16576",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlea' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlearning in Image Gener",
+      "paper_link": "https://arxiv.org/abs/2603.16576",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlea' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlearning in Image Gener",
+      "paper_link": "https://arxiv.org/abs/2603.16576",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'REFORGE: Multi-modal Attacks Reveal Vulnerable Concept Unlea' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "SpecSteer: Synergizing Local Context and Global Reasoning for Efficient Personal",
+      "paper_link": "https://arxiv.org/abs/2603.16219",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'SpecSteer: Synergizing Local Context and Global Reasoning fo' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "SpecSteer: Synergizing Local Context and Global Reasoning for Efficient Personal",
+      "paper_link": "https://arxiv.org/abs/2603.16219",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'SpecSteer: Synergizing Local Context and Global Reasoning fo' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "SpecSteer: Synergizing Local Context and Global Reasoning for Efficient Personal",
+      "paper_link": "https://arxiv.org/abs/2603.16219",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'SpecSteer: Synergizing Local Context and Global Reasoning fo' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "SpecSteer: Synergizing Local Context and Global Reasoning for Efficient Personal",
+      "paper_link": "https://arxiv.org/abs/2603.16219",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'SpecSteer: Synergizing Local Context and Global Reasoning fo' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "SpecSteer: Synergizing Local Context and Global Reasoning for Efficient Personal",
+      "paper_link": "https://arxiv.org/abs/2603.16219",
+      "paper_score": 3,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'SpecSteer: Synergizing Local Context and Global Reasoning fo' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cross-Embodiment Dexter",
+      "paper_link": "https://arxiv.org/abs/2603.16806",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DexGrasp-Zero: A Morphology-Aligned Policy for Zero-Shot Cro' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Language Models Don't Know What You Want: Evaluating Personalization in Deep Res",
+      "paper_link": "https://arxiv.org/abs/2603.16120",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Language Models Don't Know What You Want: Evaluating Persona' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Fanar 2.0: Arabic Generative AI Stack",
+      "paper_link": "https://arxiv.org/abs/2603.16397",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Fanar 2.0: Arabic Generative AI Stack' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of ",
+      "paper_link": "https://arxiv.org/abs/2603.16557",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'BenchPreS: A Benchmark for Context-Aware Personalized Prefer' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MOSAIC: Composable Safety Alignment with Modular Control Tokens",
+      "paper_link": "https://arxiv.org/abs/2603.16210",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MOSAIC: Composable Safety Alignment with Modular Control Tok' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DiFlowDubber: Discrete Flow Matching for Automated Video Dubbing via Cross-Modal",
+      "paper_link": "https://arxiv.org/abs/2603.14267",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DiFlowDubber: Discrete Flow Matching for Automated Video Dub' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "DiFlowDubber: Discrete Flow Matching for Automated Video Dubbing via Cross-Modal",
+      "paper_link": "https://arxiv.org/abs/2603.14267",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DiFlowDubber: Discrete Flow Matching for Automated Video Dub' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DiFlowDubber: Discrete Flow Matching for Automated Video Dubbing via Cross-Modal",
+      "paper_link": "https://arxiv.org/abs/2603.14267",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DiFlowDubber: Discrete Flow Matching for Automated Video Dub' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DiFlowDubber: Discrete Flow Matching for Automated Video Dubbing via Cross-Modal",
+      "paper_link": "https://arxiv.org/abs/2603.14267",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DiFlowDubber: Discrete Flow Matching for Automated Video Dub' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
