@@ -97,6 +97,14 @@ scoring:
   title_multiplier: 2
   min_score: 2
 
+# GitHub trending repo feed
+github:
+  enabled: true
+  min_stars: 5            # minimum stars to consider
+  min_velocity: 0.5       # minimum stars/day
+  velocity_weight: 2.0    # multiplier for velocity bonus in scoring
+  max_results: 50         # cap results per run
+
 llm:
   provider: "ollama"
   model: "qwen2.5:7b"
