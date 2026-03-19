@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 150 papers
-Suggestions generated: 142
+Matched filters: 81 papers
+Suggestions generated: 87
 
 Highest-signal item from this cycle:
 
-**[16] Beware Untrusted Simulators -- Reward-Free Backdoor Attacks in Reinforcement Learning**
-<https://arxiv.org/abs/2602.05089>
-→ High-signal scan hit across: +reinforcement learning, +adversarial, +trust, exploit
+**[12] REFINE-DP: Diffusion Policy Fine-tuning for Humanoid Loco-manipulation via Reinforcement Learning**
+<https://arxiv.org/abs/2603.13707>
+→ High-signal scan hit across: +reinforcement learning, +manipulation
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260319-040238.md`
-- json: `./output/report-20260319-040238.json`
+- diff: `./output/diff-20260319-040526.md`
+- json: `./output/report-20260319-040526.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
