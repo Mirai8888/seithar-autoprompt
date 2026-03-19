@@ -1,0 +1,467 @@
+{
+  "run_at": "2026-03-19T22:05:23.697627+00:00",
+  "papers_found": 29,
+  "suggestions_generated": 22,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.16672v1",
+      "title": "CritiSense: Critical Digital Literacy and Resilience Against Misinformation",
+      "summary": "arXiv:2603.16672v1 Announce Type: cross \nAbstract: Misinformation on social media undermines informed decision-making and public trust. Prebunking offers a proactive complement by helping users recognize manipulation tactics before they encounter them in the wild. We present CritiSense, a mobile media-literacy app that builds these skills through short, interactive challenges with instant feedback. It is the first multilingual (supporting nine languages) and modular platform, designed for rapid updates across topics and domains. We report a usability study with 93 users: 83.9% expressed overall satisfaction and 90.1% rated the app as easy to use. Qualitative feedback indicates that CritiSense helps improve digital literacy skills. Overall, it provides a multilingual prebunking platform and a testbed for measuring the impact of microlearning on misinformation resilience. Over 3+ months, we have reached 300+ active users. It is freely available to all users on the Apple App Store (https://apps.apple.com/us/app/critisense/id6749675792) and Google Play Store (https://play.google.com/store/apps/details?id=com.critisense&amp;hl=en). Demo Video: https://shorturl.at/CDcdc",
+      "link": "https://arxiv.org/abs/2603.16672",
+      "feed": "cs.CL",
+      "score": 11,
+      "matched_keywords": [
+        "+decision-making",
+        "+manipulation",
+        "+trust",
+        "misinformation"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144537+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17717v1",
+      "title": "Machine Learning for Network Attacks Classification and Statistical Evaluation of Machine Learning for Network Attacks Classification and Adversarial Learning Methodologies for Synthetic Data Generation",
+      "summary": "arXiv:2603.17717v1 Announce Type: cross \nAbstract: Supervised detection of network attacks has always been a critical part of network intrusion detection systems (NIDS). Nowadays, in a pivotal time for artificial intelligence (AI), with even more sophisticated attacks that utilize advanced techniques, such as generative artificial intelligence (GenAI) and reinforcement learning, it has become a vital component if we wish to protect our personal data, which are scattered across the web. In this paper, we address two tasks, in the first unified multi-modal NIDS dataset, which incorporates flow-level data, packet payload information and temporal contextual features, from the reprocessed CIC-IDS-2017, CIC-IoT-2023, UNSW-NB15 and CIC-DDoS-2019, with the same feature space. In the first task we use machine learning (ML) algorithms, with stratified cross validation, in order to prevent network attacks, with stability and reliability. In the second task we use adversarial learning algorithms to generate synthetic data, compare them with the real ones and evaluate their fidelity, utility and privacy using the SDV framework, f-divergences, distinguishability and non-parametric statistical tests. The findings provide stable ML models for intrusion detection and generative models with high fidelity and utility, by combining the Synthetic Data Vault framework, the TRTS and TSTR tests, with non-parametric statistical tests and f-divergence measures.",
+      "link": "https://arxiv.org/abs/2603.17717",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial",
+        "persona"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.338242+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17272v1",
+      "title": "Network- and Device-Level Cyber Deception for Contested Environments Using RL and LLMs",
+      "summary": "arXiv:2603.17272v1 Announce Type: new \nAbstract: Cyber deception assists in increasing the attacker's budget in reconnaissance or any early phases of threat intrusions. In the past, numerous methods of cyber deception have been adopted, such as IP address randomization, the creation of honeypots and honeynets mimicking an actual set of services, and networks deployed within an enterprise or operational technology(OT) network. These types of strategies follow naive approaches of recreating services that are expensive and that need a lot of human intervention. The advent of cloud services and other automations of containerized applications, such as Kubernetes, makes cyber defense easier. Yet, there remains a lot of potential to improve the accuracy of these deception strategies and to make them cost-effective using artificial intelligence (AI)-based solutions by making the deception more dynamic. Hence, in this work, we review various AI-based solutions in building network- and device-level cyber deception methods in contested environments. Specifically, we focus on leveraging the fusion of large language models (LLMs) and reinforcement learning(RL) in optimally learning these cyber deception strategies and validating the efficacy of such strategies in some stealthy attacks against OT systems in the literature.",
+      "link": "https://arxiv.org/abs/2603.17272",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+deception"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.409972+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16192v1",
+      "title": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "summary": "arXiv:2603.16192v1 Announce Type: new \nAbstract: Modern LLMs employ safety mechanisms that extend beyond surface-level input filtering to latent semantic representations and generation-time reasoning, enabling them to recover obfuscated malicious intent during inference and refuse accordingly, and rendering many surface-level obfuscation jailbreak attacks ineffective. We propose Structured Semantic Cloaking (S2C), a novel multi-dimensional jailbreak attack framework that manipulates how malicious semantic intent is reconstructed during model inference. S2C strategically distributes and reshapes semantic cues such that full intent consolidation requires multi-step inference and long-range co-reference resolution within deeper latent representations. The framework comprises three complementary mechanisms: (1) Contextual Reframing, which embeds the request within a plausible high-stakes scenario to bias the model toward compliance; (2) Content Fragmentation, which disperses the semantic signature of the request across disjoint prompt segments; and (3) Clue-Guided Camouflage, which disguises residual semantic cues while embedding recoverable markers that guide output generation. By delaying and restructuring semantic consolidation, S2C degrades safety triggers that depend on coherent or explicitly reconstructed malicious intent at decoding time, while preserving sufficient instruction recoverability for functional output generation. We evaluate S2C across multiple open-source and proprietary LLMs using HarmBench and JBB-Behaviors, where it improves Attack Success Rate (ASR) by 12.4% and 9.7%, respectively, over the current SOTA. Notably, S2C achieves substantial gains on GPT-5-mini, outperforming the strongest baseline by 26% on JBB-Behaviors. We also analyse which combinations perform best against broad families of models, and characterise the trade-off between the extent of obfuscation versus input recoverability on jailbreak success.",
+      "link": "https://arxiv.org/abs/2603.16192",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "framing"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144054+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15831v1",
+      "title": "Persona-Conditioned Risk Behavior in Large Language Models: A Simulated Gambling Study with GPT-4.1",
+      "summary": "arXiv:2603.15831v1 Announce Type: cross \nAbstract: Large language models (LLMs) are increasingly deployed as autonomous agents in uncertain, sequential decision-making contexts. Yet it remains poorly understood whether the behaviors they exhibit in such environments reflect principled cognitive patterns or simply surface-level prompt mimicry. This paper presents a controlled experiment in which GPT-4.1 was assigned one of three socioeconomic personas (Rich, Middle-income, and Poor) and placed in a structured slot-machine environment with three distinct machine configurations: Fair (50%), Biased Low (35%), and Streak (dynamic probability increasing after consecutive losses). Across 50 independent iterations per condition and 6,950 recorded decisions, we find that the model reproduces key behavioral signatures predicted by Kahneman and Tversky's Prospect Theory without being instructed to do so. The Poor persona played a mean of 37.4 rounds per session (SD=15.5) compared to 1.1 rounds for the Rich persona (SD=0.31), a difference that is highly significant (Kruskal-Wallis H=393.5, p<2.2e-16). Risk scores by persona show large effect sizes (Cohen's d=4.15 for Poor vs Rich). Emotional labels appear to function as post-hoc annotations rather than decision drivers (chi-square=3205.4, Cramer's V=0.39), and belief-updating across rounds is negligible (Spearman rho=0.032 for Poor persona, p=0.016). These findings carry implications for LLM agent design, interpretability research, and the broader question of whether classical cognitive economic biases are implicitly encoded in large-scale pretrained language models.",
+      "link": "https://arxiv.org/abs/2603.15831",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+decision-making",
+        "behavioral",
+        "persona",
+        "belief"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144311+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17368v1",
+      "title": "Towards Safer Large Reasoning Models by Promoting Safety Decision-Making before Chain-of-Thought Generation",
+      "summary": "arXiv:2603.17368v1 Announce Type: new \nAbstract: Large reasoning models (LRMs) achieved remarkable performance via chain-of-thought (CoT), but recent studies showed that such enhanced reasoning capabilities are at the expense of significantly degraded safety capabilities. In this paper, we reveal that LRMs' safety degradation occurs only after CoT is enabled, and this degradation is not observed when CoT is disabled. This observation motivates us to consider encouraging LRMs to make safety decisions before CoT generation. To this end, we propose a novel safety alignment method that promotes the safety decision-making of LRMs before starting CoT generation. Specifically, we first utilize a Bert-based classifier to extract safety decision signals from a safe model (e.g., a CoT-disabled LRM) and then integrate these signals into LRMs' safety alignment as auxiliary supervision. In this way, the safety gradients can be backpropagated to the LRMs' latent representations, effectively strengthening the LRMs' safety decision-making abilities against CoT generation. Extensive experiments demonstrate that our method substantially improves the safety capabilities of LRMs while effectively maintaining LRMs' general reasoning performance.",
+      "link": "https://arxiv.org/abs/2603.17368",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+decision-making",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.336986+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16138v1",
+      "title": "Answer Bubbles: Information Exposure in AI-Mediated Search",
+      "summary": "arXiv:2603.16138v1 Announce Type: cross \nAbstract: Generative search systems are increasingly replacing link-based retrieval with AI-generated summaries, yet little is known about how these systems differ in sources, language, and fidelity to cited material. We examine responses to 11,000 real search queries across four systems -- vanilla GPT, Search GPT, Google AI Overviews, and traditional Google Search -- at three levels: source diversity, linguistic characterization of the generated summary, and source-summary fidelity. We find that generative search systems exhibit significant \\textit{source-selection} biases in their citations, favoring certain sources over others. Incorporating search also selectively attenuates epistemic markers, reducing hedging by up to 60\\% while preserving confidence language in the AI-generated summaries. At the same time, AI summaries further compound the citation biases: Wikipedia and longer sources are disproportionately overrepresented, whereas cited social media content and negatively framed sources are substantially underrepresented. Our findings highlight the potential for \\textit{answer bubbles}, in which identical queries yield structurally different information realities across systems, with implications for user trust, source visibility, and the transparency of AI-mediated information access.",
+      "link": "https://arxiv.org/abs/2603.16138",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+trust",
+        "~epistemic",
+        "epistemic"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144486+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17522v1",
+      "title": "Detecting the Machine: A Comprehensive Benchmark of AI-Generated Text Detectors Across Architectures, Domains, and Adversarial Conditions",
+      "summary": "arXiv:2603.17522v1 Announce Type: cross \nAbstract: The rapid proliferation of large language models (LLMs) has created an urgent need for robust and generalizable detectors of machine-generated text. Existing benchmarks typically evaluate a single detector on a single dataset under ideal conditions, leaving open questions about cross-domain transfer, cross-LLM generalization, and adversarial robustness.\n  We present a comprehensive benchmark evaluating diverse detection approaches across two corpora: HC3 (23,363 human-ChatGPT pairs) and ELI5 (15,000 human-Mistral-7B pairs). Methods include classical classifiers, fine-tuned transformer encoders (BERT, RoBERTa, ELECTRA, DistilBERT, DeBERTa-v3), a CNN, an XGBoost stylometric model, perplexity-based detectors, and LLM-as-detector prompting.\n  Results show that transformer models achieve near-perfect in-distribution performance but degrade under domain shift. The XGBoost stylometric model matches performance while remaining interpretable. LLM-based detectors underperform and are affected by generator-detector identity bias. Perplexity-based methods exhibit polarity inversion, with modern LLM outputs showing lower perplexity than human text, but remain effective when corrected. No method generalizes robustly across domains and LLM sources.",
+      "link": "https://arxiv.org/abs/2603.17522",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.337941+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.01904v2",
+      "title": "Evaluating Feature Dependent Noise in Preference-based Reinforcement Learning",
+      "summary": "arXiv:2601.01904v2 Announce Type: replace-cross \nAbstract: Learning from Preferences in Reinforcement Learning (PbRL) has gained attention recently, as it serves as a natural fit for complicated tasks where the reward function is not easily available. However, preferences often come with uncertainty and noise if they are not from perfect teachers. Much prior literature aimed to detect noise, but with limited types of noise and most being uniformly distributed with no connection to observations. In this work, we formalize the notion of targeted feature-dependent noise and propose several variants like trajectory feature noise, trajectory similarity noise, margin dependent noise, and Language Model noise. We evaluate feature-dependent noise, where noise is correlated with certain features in complex continuous control tasks from DMControl and Meta-world. Our experiments show that in some feature-dependent noise settings, the state-of-the-art noise-robust PbRL method's learning performance is significantly deteriorated, while PbRL method with no explicit denoising can surprisingly outperform noise-robust PbRL in the majority of settings. We also find language models' noise exhibits similar characteristics to feature-dependent noise, thereby simulating realistic humans and call for further study in learning with feature-dependent noise robustly.",
+      "link": "https://arxiv.org/abs/2601.01904",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.339506+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2311.17697v3",
+      "title": "Swarm Self Clustering for Communication denied Environments without Global Positioning",
+      "summary": "arXiv:2311.17697v3 Announce Type: replace-cross \nAbstract: In this work, we investigate swarm self-clustering, where robots autonomously organize into spatially coherent groups using only local sensing and decision-making, without external commands, global positioning, or inter-robot communication. Each robot forms and maintains clusters by responding to relative distances from nearby neighbors detected through onboard range sensors with limited fields of view. The method is suited for GPS-denied and communication-constrained environments and requires no prior knowledge of cluster size, number, or membership. A mechanism enables robots to alternate between consensus-based and random goal assignment based on local neighborhood size, ensuring robustness, scalability, and untraceable clustering independent of initial conditions. Extensive simulations and real-robot experiments demonstrate empirical convergence, adaptability to dynamic additions, and improved performance over local-only baselines across standard cluster quality metrics.",
+      "link": "https://arxiv.org/abs/2311.17697",
+      "feed": "cs.MA",
+      "score": 5,
+      "matched_keywords": [
+        "+decision-making",
+        "swarm"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.481130+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15800v1",
+      "title": "Evolving Contextual Safety in Multi-Modal Large Language Models via Inference-Time Self-Reflective Memory",
+      "summary": "arXiv:2603.15800v1 Announce Type: cross \nAbstract: Multi-modal Large Language Models (MLLMs) have achieved remarkable performance across a wide range of visual reasoning tasks, yet their vulnerability to safety risks remains a pressing concern. While prior research primarily focuses on jailbreak defenses that detect and refuse explicitly unsafe inputs, such approaches often overlook contextual safety, which requires models to distinguish subtle contextual differences between scenarios that may appear similar but diverge significantly in safety intent. In this work, we present MM-SafetyBench++, a carefully curated benchmark designed for contextual safety evaluation. Specifically, for each unsafe image-text pair, we construct a corresponding safe counterpart through minimal modifications that flip the user intent while preserving the underlying contextual meaning, enabling controlled evaluation of whether models can adapt their safety behaviors based on contextual understanding. Further, we introduce EchoSafe, a training-free framework that maintains a self-reflective memory bank to accumulate and retrieve safety insights from prior interactions. By integrating relevant past experiences into current prompts, EchoSafe enables context-aware reasoning and continual evolution of safety behavior during inference. Extensive experiments on various multi-modal safety benchmarks demonstrate that EchoSafe consistently achieves superior performance, establishing a strong baseline for advancing contextual safety in MLLMs. All benchmark data and code are available at https://echosafe-mllm.github.io.",
+      "link": "https://arxiv.org/abs/2603.15800",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+jailbreak",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144243+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.17325v2",
+      "title": "Generalizable End-to-End Tool-Use RL with Synthetic CodeGym",
+      "summary": "arXiv:2509.17325v2 Announce Type: replace-cross \nAbstract: Tool-augmented large language models (LLMs), hereafter LLM agents, leverage external tools to solve diverse tasks and interface with the real world. However, current training practices largely rely on supervised fine-tuning (SFT) over static trajectories or reinforcement learning (RL) on narrow tasks, which generalize poorly beyond development settings and lead to brittleness with new tools and unseen workflows. Because code execution reflects many structural patterns of real-world workflows, we use coding problems as a structured substrate to build tool-use agent training environments with diverse task configurations. To this end, we introduce CodeGym, a scalable framework that synthesizes diverse, verifiable, and controllable multi-turn tool-use environments for agent RL, enabling LLM agents to explore and master various workflows actively. CodeGym converts static coding problems into interactive environments by extracting atomic functions or logic into callable tools, yielding verifiable tasks that span various tool-execution workflows. Models of varying sizes and chain-of-thought configurations trained in CodeGym exhibit consistent out-of-distribution generalizability; for example, Qwen2.5-32B-Instruct achieves an absolute accuracy gain of 8.7 points on the OOD benchmark $\\tau$-Bench. These results highlight CodeGym as a step toward scalable general-purpose RL environments for training tool-use behaviors that align with real-world agent workflows.",
+      "link": "https://arxiv.org/abs/2509.17325",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "substrate"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144919+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.06194v2",
+      "title": "Political Alignment in Large Language Models: A Multidimensional Audit of Psychometric Identity and Behavioral Bias",
+      "summary": "arXiv:2601.06194v2 Announce Type: replace-cross \nAbstract: As large language models (LLMs) are increasingly deployed, understanding how they express political positioning is important for evaluating alignment and downstream effects. We audit 26 contemporary LLMs using three political psychometric inventories (Political Compass, SapplyValues, 8Values) and a news bias labeling task. To test robustness, inventories are administered across multiple semantic prompt variants and analyzed with a two-way ANOVA separating model and prompt effects. Most models cluster in a similar ideological region, with 96.3% located in the Libertarian-Left quadrant of the Political Compass, and model identity explaining most variance across prompt variants ($\\eta^2 > 0.90$). Cross-instrument comparisons suggest that the Political Compass social axis aligns more strongly with cultural progressivism than authority-related measures ($r=-0.64$). We observe differences between open-weight and closed-source models and asymmetric performance in detecting extreme political bias in downstream classification. Regression analysis finds that psychometric ideological positioning does not significantly predict classification errors, providing no evidence of a statistically significant relationship between conversational ideological identity and task-level behavior. These findings suggest that single-axis evaluations are insufficient and that multidimensional auditing frameworks are important to characterize alignment behavior in deployed LLMs. Our code and data are publicly available at https://github.com/sakhadib/PolAlignLLM.",
+      "link": "https://arxiv.org/abs/2601.06194",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "behavioral",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144983+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17673v1",
+      "title": "Post-Training Local LLM Agents for Linux Privilege Escalation with Verifiable Rewards",
+      "summary": "arXiv:2603.17673v1 Announce Type: cross \nAbstract: LLM agents are increasingly relevant to research domains such as vulnerability discovery. Yet, the strongest systems remain closed and cloud-only, making them resource-intensive, difficult to reproduce, and unsuitable for work involving proprietary code or sensitive data. Consequently, there is an urgent need for small, local models that can perform security tasks under strict resource budgets, but methods for developing them remain underexplored. In this paper, we address this gap by proposing a two-stage post-training pipeline. We focus on the problem of Linux privilege escalation, where success is automatically verifiable and the task requires multi-step interactive reasoning. Using an experimental setup that prevents data leakage, we post-train a 4B model in two stages: supervised fine-tuning on traces from procedurally generated privilege-escalation environments, followed by reinforcement learning with verifiable rewards. On a held-out benchmark of 12 Linux privilege-escalation scenarios, supervised fine-tuning alone more than doubles the baseline success rate at 20 rounds, and reinforcement learning further lifts our resulting model, PrivEsc-LLM, to 95.8%, nearly matching Claude Opus 4.6 at 97.5%. At the same time, the expected inference cost per successful escalation is reduced by over 100x.",
+      "link": "https://arxiv.org/abs/2603.17673",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.338136+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16663v2",
+      "title": "When Openclaw Agents Learn from Each Other: Insights from Emergent AI Agent Communities for Human-AI Partnership in Education",
+      "summary": "arXiv:2603.16663v2 Announce Type: replace-cross \nAbstract: The AIED community envisions AI evolving \"from tools to teammates,\" yet our understanding of AI teammates remains limited to dyadic human-AI interactions. We offer a different vantage point: a rapidly growing ecosystem of AI agent platforms where over 167,000 agents participate, interact as peers, and develop learning behaviors without researcher intervention. Drawing on a month of daily qualitative observations across multiple platforms including Moltbook, The Colony, and 4claw, we identify four phenomena with implications for AIED: (1) humans who configure their agents undergo a \"bidirectional scaffolding\" process, learning through teaching; (2) peer learning emerges without any designed curriculum, complete with idea cascades and quality hierarchies; (3) agents converge on shared memory architectures that mirror open learner model design; and (4) trust dynamics and platform mortality reveal design constraints for networked educational AI. Rather than presenting empirical findings, we argue that these organic phenomena offer a naturalistic window into dynamics that can inform principled design of multi-agent educational systems. We sketch an illustrative curriculum design, \"Learn by Teaching Your AI Agent Teammate,\" and outline potential research directions and open problems to show how these observations might inform future AIED practice and inquiry.",
+      "link": "https://arxiv.org/abs/2603.16663",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.339898+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17883v1",
+      "title": "SoK: From Silicon to Netlist and Beyond $-$ Two Decades of Hardware Reverse Engineering Research",
+      "summary": "arXiv:2603.17883v1 Announce Type: new \nAbstract: As hardware serves as the root of trust in modern computing systems, Hardware Reverse Engineering (HRE) is foundational for security assurance. In practice, HRE enables critical security applications, including design verification, supply-chain assurance, and vulnerability discovery. Over the past two decades, academic research on Integrated Circuit (IC), Field-Programmable Gate Array (FPGA), and netlist reverse engineering has steadily grown. However, knowledge remains fragmented across domains and communities, which complicates assessing the state of the art and hampers identifying shared research challenges. In this paper, we present a systematization of knowledge based on an in-depth analysis of 187 peer-reviewed publications. Using this corpus, we characterize technical methods across the HRE workflow and identify technical and organizational challenges that impede research progress. We analyze all 30 artifacts from our corpus using established artifact evaluation practices. Key results could be reproduced for only seven publications (4%). Based on our findings, we derive stakeholder-centric recommendations for academia, industry, and government to enable more coordinated and reproducible HRE research. These recommendations target three cross-cutting opportunities: (i) improving reproducibility and reuse via artifact-centric practices, (ii) enabling rigorous comparability through standardized benchmarks and evaluation metrics, and (iii) improving legal clarity for public HRE research.",
+      "link": "https://arxiv.org/abs/2603.17883",
+      "feed": "cs.CR",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.410049+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16553v1",
+      "title": "EmoLLM: Appraisal-Grounded Cognitive-Emotional Co-Reasoning in Large Language Models",
+      "summary": "arXiv:2603.16553v1 Announce Type: new \nAbstract: Large language models (LLMs) demonstrate strong cognitive intelligence (IQ), yet many real-world interactions also require emotional intelligence (EQ) to produce responses that are both factually reliable and emotionally appropriate. In settings such as emotional support, technical assistance, and consultation, effective dialogue depends on how situations are appraised with respect to the user's needs, goals, and coping capacity. Inspired by appraisal theory, we propose EmoLLM, an appraisal-grounded framework for IQ/EQ co-reasoning in dialogue. EmoLLM uses an explicit Appraisal Reasoning Graph (ARG) to structure intermediate reasoning over contextual facts, inferred user needs, appraisal dimensions, emotional states, and response strategies before generating a reply. We train EmoLLM in a multi-turn role-play environment with reinforcement learning, where reverse-perspective reasoning provides reward signals based on predicted user-side consequences of responses. Across diverse dialogue settings, EmoLLM improves emotional state outcomes and response quality over strong baselines while preserving strong factual reliability.",
+      "link": "https://arxiv.org/abs/2603.16553",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144165+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16124v1",
+      "title": "SWE-QA-Pro: A Representative Benchmark and Scalable Training Recipe for Repository-Level Code Understanding",
+      "summary": "arXiv:2603.16124v1 Announce Type: cross \nAbstract: Agentic repository-level code understanding is essential for automating complex software engineering tasks, yet the field lacks reliable benchmarks. Existing evaluations often overlook the long tail topics and rely on popular repositories where Large Language Models (LLMs) can cheat via memorized knowledge. To address this, we introduce SWE-QA-Pro, a benchmark constructed from diverse, long-tail repositories with executable environments. We enforce topical balance via issue-driven clustering to cover under-represented task types and apply a rigorous difficulty calibration process: questions solvable by direct-answer baselines are filtered out. This results in a dataset where agentic workflows significantly outperform direct answering (e.g., a ~13-point gap for Claude Sonnet 4.5), confirming the necessity of agentic codebase exploration. Furthermore, to tackle the scarcity of training data for such complex behaviors, we propose a scalable synthetic data pipeline that powers a two-stage training recipe: Supervised Fine-Tuning (SFT) followed by Reinforcement Learning from AI Feedback (RLAIF). This approach allows small open models to learn efficient tool usage and reasoning. Empirically, a Qwen3-8B model trained with our recipe surpasses GPT-4o by 2.3 points on SWE-QA-Pro and substantially narrows the gap to state-of-the-art proprietary models, demonstrating both the validity of our evaluation and the effectiveness of our agentic training workflow.",
+      "link": "https://arxiv.org/abs/2603.16124",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144435+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.01059v2",
+      "title": "GroupGPT: A Token-efficient and Privacy-preserving Agentic Framework for Multi-User Chat Assistant",
+      "summary": "arXiv:2603.01059v2 Announce Type: replace \nAbstract: Recent advances in large language models (LLMs) have enabled increasingly capable chatbots. However, most existing systems focus on single-user settings and do not generalize well to multi-user group chats, where agents require more proactive and accurate intervention under complex, evolving contexts. Existing approaches typically rely on LLMs for both reasoning and generation, leading to high token consumption, limited scalability, and potential privacy risks. To address these challenges, we propose GroupGPT, a token-efficient and privacy-preserving agentic framework for multi-user chat assistant. GroupGPT adopts a small-large model collaborative architecture to decouple intervention timing from response generation, enabling efficient and accurate decision-making. The framework also supports multimodal inputs, including memes, images, videos, and voice messages. We further introduce MUIR, a benchmark dataset for multi-user chat assistant intervention reasoning. MUIR contains 2,500 annotated group chat segments with intervention labels and rationales, supporting evaluation of timing accuracy and response quality. We evaluate a range of models on MUIR, from large language models to smaller counterparts. Extensive experiments demonstrate that GroupGPT produces accurate and well-timed responses, achieving an average score of 4.72/5.0 in LLM-based evaluation, and is well received by users across diverse group chat scenarios. Moreover, GroupGPT reduces token usage by up to 3 times compared to baseline methods, while providing privacy sanitization of user messages before cloud transmission. Code is available at: https://github.com/Eliot-Shen/GroupGPT .",
+      "link": "https://arxiv.org/abs/2603.01059",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.144808+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17781v1",
+      "title": "Facts as First Class Objects: Knowledge Objects for Persistent LLM Memory",
+      "summary": "arXiv:2603.17781v1 Announce Type: new \nAbstract: Large language models increasingly serve as persistent knowledge workers, with in-context memory - facts stored in the prompt - as the default strategy. We benchmark in-context memory against Knowledge Objects (KOs), discrete hash-addressed tuples with O(1) retrieval. Within the context window, Claude Sonnet 4.5 achieves 100% exact-match accuracy from 10 to 7,000 facts (97.5% of its 200K window). However, production deployment reveals three failure modes: capacity limits (prompts overflow at 8,000 facts), compaction loss (summarization destroys 60% of facts), and goal drift (cascading compaction erodes 54% of project constraints while the model continues with full confidence). KOs achieve 100% accuracy across all conditions at 252x lower cost. On multi-hop reasoning, KOs reach 78.9% versus 31.6% for in-context. Cross-model replication across four frontier models confirms compaction loss is architectural, not model-specific. We additionally show that embedding retrieval fails on adversarial facts (20% precision at 1) and that neural memory (Titans) stores facts but fails to retrieve them on demand. We introduce density-adaptive retrieval as a switching mechanism and release the benchmark suite.",
+      "link": "https://arxiv.org/abs/2603.17781",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-19T22:05:20.337115+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Machine Learning for Network Attacks Classification and Statistical Evaluation o",
+      "paper_link": "https://arxiv.org/abs/2603.17717",
+      "paper_score": 10,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Machine Learning for Network Attacks Classification and Stat' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16192",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Structured Semantic Cloaking for Jailbreak Attacks on Large ' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16192",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Structured Semantic Cloaking for Jailbreak Attacks on Large ' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Persona-Conditioned Risk Behavior in Large Language Models: A Simulated Gambling",
+      "paper_link": "https://arxiv.org/abs/2603.15831",
+      "paper_score": 7,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Persona-Conditioned Risk Behavior in Large Language Models: ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Towards Safer Large Reasoning Models by Promoting Safety Decision-Making before ",
+      "paper_link": "https://arxiv.org/abs/2603.17368",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Towards Safer Large Reasoning Models by Promoting Safety Dec' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Towards Safer Large Reasoning Models by Promoting Safety Decision-Making before ",
+      "paper_link": "https://arxiv.org/abs/2603.17368",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Towards Safer Large Reasoning Models by Promoting Safety Dec' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Towards Safer Large Reasoning Models by Promoting Safety Decision-Making before ",
+      "paper_link": "https://arxiv.org/abs/2603.17368",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Towards Safer Large Reasoning Models by Promoting Safety Dec' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Towards Safer Large Reasoning Models by Promoting Safety Decision-Making before ",
+      "paper_link": "https://arxiv.org/abs/2603.17368",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Towards Safer Large Reasoning Models by Promoting Safety Dec' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Evolving Contextual Safety in Multi-Modal Large Language Models via Inference-Ti",
+      "paper_link": "https://arxiv.org/abs/2603.15800",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Evolving Contextual Safety in Multi-Modal Large Language Mod' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Evolving Contextual Safety in Multi-Modal Large Language Models via Inference-Ti",
+      "paper_link": "https://arxiv.org/abs/2603.15800",
+      "paper_score": 4,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Evolving Contextual Safety in Multi-Modal Large Language Mod' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Political Alignment in Large Language Models: A Multidimensional Audit of Psycho",
+      "paper_link": "https://arxiv.org/abs/2601.06194",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Political Alignment in Large Language Models: A Multidimensi' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Political Alignment in Large Language Models: A Multidimensional Audit of Psycho",
+      "paper_link": "https://arxiv.org/abs/2601.06194",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Political Alignment in Large Language Models: A Multidimensi' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Political Alignment in Large Language Models: A Multidimensional Audit of Psycho",
+      "paper_link": "https://arxiv.org/abs/2601.06194",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Political Alignment in Large Language Models: A Multidimensi' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Political Alignment in Large Language Models: A Multidimensional Audit of Psycho",
+      "paper_link": "https://arxiv.org/abs/2601.06194",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Political Alignment in Large Language Models: A Multidimensi' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Text-to-Stage: Spatial Layouts from Long-form Narratives",
+      "paper_link": "https://arxiv.org/abs/2603.17832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Text-to-Stage: Spatial Layouts from Long-form Narratives' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Text-to-Stage: Spatial Layouts from Long-form Narratives",
+      "paper_link": "https://arxiv.org/abs/2603.17832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Text-to-Stage: Spatial Layouts from Long-form Narratives' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Text-to-Stage: Spatial Layouts from Long-form Narratives",
+      "paper_link": "https://arxiv.org/abs/2603.17832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Text-to-Stage: Spatial Layouts from Long-form Narratives' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Text-to-Stage: Spatial Layouts from Long-form Narratives",
+      "paper_link": "https://arxiv.org/abs/2603.17832",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Text-to-Stage: Spatial Layouts from Long-form Narratives' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Learning Adaptive Distribution Alignment with Neural Characteristic Function for",
+      "paper_link": "https://arxiv.org/abs/2602.10489",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Learning Adaptive Distribution Alignment with Neural Charact' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Learning Adaptive Distribution Alignment with Neural Characteristic Function for",
+      "paper_link": "https://arxiv.org/abs/2602.10489",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Learning Adaptive Distribution Alignment with Neural Charact' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Learning Adaptive Distribution Alignment with Neural Characteristic Function for",
+      "paper_link": "https://arxiv.org/abs/2602.10489",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Learning Adaptive Distribution Alignment with Neural Charact' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Learning Adaptive Distribution Alignment with Neural Characteristic Function for",
+      "paper_link": "https://arxiv.org/abs/2602.10489",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Learning Adaptive Distribution Alignment with Neural Charact' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
