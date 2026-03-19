@@ -1,0 +1,609 @@
+{
+  "run_at": "2026-03-19T22:07:23.458542+00:00",
+  "papers_found": 30,
+  "suggestions_generated": 38,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2511.18281v2",
+      "title": "Uni-DAD: Unified Distillation and Adaptation of Diffusion Models for Few-step Few-shot Image Generation",
+      "summary": "arXiv:2511.18281v2 Announce Type: replace-cross \nAbstract: Diffusion models (DMs) produce high-quality images, yet their sampling remains costly when adapted to new domains. Distilled DMs are faster but typically remain confined within their teacher's domain. Thus, fast and high-quality generation for novel domains relies on two-stage pipelines: Adapt-then-Distill or Distill-then-Adapt. However, both add design complexity and often degrade quality or diversity. We introduce Uni-DAD, a single-stage pipeline that unifies DM distillation and adaptation. It couples two training signals: (i) a dual-domain distribution-matching distillation (DMD) objective that guides the student toward the distributions of the source teacher and a target teacher, and (ii) a multi-head generative adversarial network (GAN) loss that encourages target realism across multiple feature scales. The source domain distillation preserves diverse source knowledge, while the multi-head GAN stabilizes training and reduces overfitting, especially in few-shot regimes. The inclusion of a target teacher facilitates adaptation to more structurally distant domains. We evaluate Uni-DAD on two comprehensive benchmarks for few-shot image generation (FSIG) and subject-driven personalization (SDP) using diffusion backbones. It delivers better or comparable quality to state-of-the-art (SoTA) adaptation methods even with less than 4 sampling steps, and often surpasses two-stage pipelines in quality and diversity. Code: https://github.com/yaramohamadi/uni-DAD.",
+      "link": "https://arxiv.org/abs/2511.18281",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+adversarial",
+        "diffusion model",
+        "few-shot",
+        "persona"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.037160+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16192v1",
+      "title": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "summary": "arXiv:2603.16192v1 Announce Type: new \nAbstract: Modern LLMs employ safety mechanisms that extend beyond surface-level input filtering to latent semantic representations and generation-time reasoning, enabling them to recover obfuscated malicious intent during inference and refuse accordingly, and rendering many surface-level obfuscation jailbreak attacks ineffective. We propose Structured Semantic Cloaking (S2C), a novel multi-dimensional jailbreak attack framework that manipulates how malicious semantic intent is reconstructed during model inference. S2C strategically distributes and reshapes semantic cues such that full intent consolidation requires multi-step inference and long-range co-reference resolution within deeper latent representations. The framework comprises three complementary mechanisms: (1) Contextual Reframing, which embeds the request within a plausible high-stakes scenario to bias the model toward compliance; (2) Content Fragmentation, which disperses the semantic signature of the request across disjoint prompt segments; and (3) Clue-Guided Camouflage, which disguises residual semantic cues while embedding recoverable markers that guide output generation. By delaying and restructuring semantic consolidation, S2C degrades safety triggers that depend on coherent or explicitly reconstructed malicious intent at decoding time, while preserving sufficient instruction recoverability for functional output generation. We evaluate S2C across multiple open-source and proprietary LLMs using HarmBench and JBB-Behaviors, where it improves Attack Success Rate (ASR) by 12.4% and 9.7%, respectively, over the current SOTA. Notably, S2C achieves substantial gains on GPT-5-mini, outperforming the strongest baseline by 26% on JBB-Behaviors. We also analyse which combinations perform best against broad families of models, and characterise the trade-off between the extent of obfuscation versus input recoverability on jailbreak success.",
+      "link": "https://arxiv.org/abs/2603.16192",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "framing"
+      ],
+      "fetched_at": "2026-03-19T22:07:19.803320+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16874v1",
+      "title": "Disclosure By Design: Identity Transparency as a Behavioural Property of Conversational AI Models",
+      "summary": "arXiv:2603.16874v1 Announce Type: cross \nAbstract: As conversational AI systems become more realistic and widely deployed, users are increasingly uncertain about whether they are interacting with a human or an AI system. When AI identity is unclear, users may unwittingly share sensitive information, place unwarranted trust in AI-generated advice, or fall victim to AI-enabled fraud. More broadly, a persistent lack of transparency can erode trust in mediated communication. While regulations like the EU AI Act and California's BOT Act require AI systems to identify themselves, they provide limited guidance on reliable disclosure in real-time conversation. Existing transparency mechanisms also leave gaps: interface indicators can be omitted by deployers, and provenance tools require coordinated infrastructure and cannot provide reliable real-time verification.\n  We ask how conversational AI systems should maintain identity transparency as human-AI interactions become more ambiguous and diverse. We advocate for disclosure by design, where AI systems explicitly disclose their artificial identity when directly asked. Implemented as model behaviour, disclosure can persist across deployment contexts without relying on user interfaces, while preserving user agency to verify identity on demand without disrupting immersive uses like role-playing.\n  To assess current practice, we present the first multi-modal (text and voice) evaluation of disclosure behaviour in deployed systems across baseline, role-playing, and adversarial settings. We find that baseline disclosure rates are often high but drop substantially in role-play and can be suppressed under adversarial prompting. Importantly, disclosure rates vary significantly across providers and modalities, highlighting the fragility of current disclosure behaviour. We conclude with technical interventions to help developers embed disclosure as a fundamental property of conversational AI models.",
+      "link": "https://arxiv.org/abs/2603.16874",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust",
+        "role-playing"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.035205+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17631v1",
+      "title": "Benchmarking Reinforcement Learning via Stochastic Converse Optimality: Generating Systems with Known Optimal Policies",
+      "summary": "arXiv:2603.17631v1 Announce Type: cross \nAbstract: The objective comparison of Reinforcement Learning (RL) algorithms is notoriously complex as outcomes and benchmarking of performances of different RL approaches are critically sensitive to environmental design, reward structures, and stochasticity inherent in both algorithmic learning and environmental dynamics. To manage this complexity, we introduce a rigorous benchmarking framework by extending converse optimality to discrete-time, control-affine, nonlinear systems with noise. Our framework provides necessary and sufficient conditions, under which a prescribed value function and policy are optimal for constructed systems, enabling the systematic generation of benchmark families via homotopy variations and randomized parameters. We validate it by automatically constructing diverse environments, demonstrating our framework's capacity for a controlled and comprehensive evaluation across algorithms. By assessing standard methods against a ground-truth optimum, our work delivers a reproducible foundation for precise and rigorous RL benchmarking.",
+      "link": "https://arxiv.org/abs/2603.17631",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.036232+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.10029v2",
+      "title": "PaperScout: An Autonomous Agent for Academic Paper Search with Process-Aware Sequence-Level Policy Optimization",
+      "summary": "arXiv:2601.10029v2 Announce Type: replace \nAbstract: Academic paper search is a fundamental task in scientific research, yet most existing approaches rely on rigid, predefined workflows that struggle with complex, conditional queries. To address this limitation, we propose PaperScout, an autonomous agent that reformulates paper search as a sequential decision-making process. Unlike static workflows, PaperScout dynamically decides whether, when, and how to invoke search and expand tools based on accumulated retrieval context. However, training such agents presents a fundamental challenge: standard reinforcement learning methods, typically designed for single-turn tasks, suffer from a granularity mismatch when applied to multi-turn agentic tasks-where token-level optimization diverges from the granularity of sequence-level interactions-leading to noisy credit assignment and unstable training dynamics. We introduce Proximal Sequence Policy Optimization (PSPO), a process-aware, sequence-level policy optimization method that aligns optimization with agent--environment interaction. Comprehensive experiments on both synthetic and real-world benchmarks demonstrate that PaperScout significantly outperforms strong workflow-driven and RL baselines in both recall and relevance, validating the effectiveness of our adaptive agentic framework and optimization strategy.",
+      "link": "https://arxiv.org/abs/2601.10029",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.036678+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.12535v3",
+      "title": "Improving Low-Resource Machine Translation via Round-Trip Reinforcement Learning",
+      "summary": "arXiv:2601.12535v3 Announce Type: replace-cross \nAbstract: Low-resource machine translation (MT) has gained increasing attention as parallel data from low-resource language communities is collected, but many approaches for improving low-resource MT remain underexplored. We investigate a self-supervised reinforcement learning fine-tuning for translation in low-resource settings using round-trip bootstrapping with the No Language Left Behind (NLLB) family of models. Our approach translates English into a target low-resource language and then back into English, using a combination of chrF++ and BLEU as the reward function on the reconstructed English sentences. Using the NLLB-MD dataset, we evaluate both the 600M and 1.3B parameter NLLB models and observe consistent improvements for the following languages: Central Aymara, Friulian, Wolof, Dyula, Bhojpuri and Russian. Qualitative inspection of translation outputs indicates increased fluency and semantic fidelity. We argue that our method can further benefit from scale, enabling models to increasingly leverage their pretrained knowledge and continue self-improving. Code available at: https://github.com/Copticoder/MT-via-Round-Trip-RL",
+      "link": "https://arxiv.org/abs/2601.12535",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.037264+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17244v1",
+      "title": "Graph-Native Cognitive Memory for AI Agents: Formal Belief Revision Semantics for Versioned Memory Architectures",
+      "summary": "arXiv:2603.17244v1 Announce Type: new \nAbstract: While individual components for AI agent memory exist in prior systems, their architectural synthesis and formal grounding remain underexplored. We present Kumiho, a graph-native cognitive memory architecture grounded in formal belief revision semantics. The structural primitives required for cognitive memory -- immutable revisions, mutable tag pointers, typed dependency edges, URI-based addressing -- are identical to those required for managing agent-produced work as versionable assets, enabling a unified graph-native architecture that serves both purposes. The central formal contribution is a correspondence between the AGM belief revision framework and the operational semantics of a property graph memory system, proving satisfaction of the basic AGM postulates (K*2--K*6) and Hansson's belief base postulates (Relevance, Core-Retainment). The architecture implements a dual-store model (Redis working memory, Neo4j long-term graph) with hybrid fulltext and vector retrieval. On LoCoMo (token-level F1), Kumiho achieves 0.565 overall F1 (n=1,986) including 97.5% adversarial refusal accuracy. On LoCoMo-Plus, a Level-2 cognitive memory benchmark testing implicit constraint recall, Kumiho achieves 93.3% judge accuracy (n=401); independent reproduction by the benchmark authors yielded results in the mid-80% range, still substantially outperforming all published baselines (best: Gemini 2.5 Pro, 45.7%). Three architectural innovations drive the results: prospective indexing (LLM-generated future-scenario implications indexed at write time), event extraction (structured causal events preserved in summaries), and client-side LLM reranking. The architecture is model-decoupled: switching the answer model from GPT-4o-mini (~88%) to GPT-4o (93.3%) improves end-to-end accuracy without pipeline changes, at a total evaluation cost of ~$14 for 401 entries.",
+      "link": "https://arxiv.org/abs/2603.17244",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+adversarial",
+        "belief"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.035111+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.02205v2",
+      "title": "From Chat Control to Robot Control: Implications of the Chat Control Proposal for Human-Robot Interaction",
+      "summary": "arXiv:2601.02205v2 Announce Type: replace-cross \nAbstract: This paper explores how a recent European Union proposal, the so-called Chat Control, which creates regulatory incentives for providers to implement content detection and communication scanning, could transform the foundations of human-robot interaction (HRI). As robots increasingly act as interpersonal communication channels in care, education, and telepresence, they convey not only speech but also gesture, emotion, and contextual cues. We argue that extending digital surveillance laws to such embodied systems would entail continuous monitoring, embedding observation into the very design of everyday robots. This regulation blurs the line between protection and control, turning companions into potential informants. At the same time, monitoring mechanisms that undermine end-to-end encryption function as de facto backdoors, expanding the attack surface and allowing adversaries to exploit legally induced monitoring infrastructures. This creates a paradox of safety through insecurity: systems introduced to protect users may instead compromise their privacy, autonomy, and trust. This work does not aim to predict the future, but to raise awareness and help prevent certain futures from materialising.",
+      "link": "https://arxiv.org/abs/2601.02205",
+      "feed": "cs.CR",
+      "score": 5,
+      "matched_keywords": [
+        "+trust",
+        "persona",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.146806+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2311.17697v3",
+      "title": "Swarm Self Clustering for Communication denied Environments without Global Positioning",
+      "summary": "arXiv:2311.17697v3 Announce Type: replace-cross \nAbstract: In this work, we investigate swarm self-clustering, where robots autonomously organize into spatially coherent groups using only local sensing and decision-making, without external commands, global positioning, or inter-robot communication. Each robot forms and maintains clusters by responding to relative distances from nearby neighbors detected through onboard range sensors with limited fields of view. The method is suited for GPS-denied and communication-constrained environments and requires no prior knowledge of cluster size, number, or membership. A mechanism enables robots to alternate between consensus-based and random goal assignment based on local neighborhood size, ensuring robustness, scalability, and untraceable clustering independent of initial conditions. Extensive simulations and real-robot experiments demonstrate empirical convergence, adaptability to dynamic additions, and improved performance over local-only baselines across standard cluster quality metrics.",
+      "link": "https://arxiv.org/abs/2311.17697",
+      "feed": "cs.MA",
+      "score": 5,
+      "matched_keywords": [
+        "+decision-making",
+        "swarm"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.241803+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17312v1",
+      "title": "Recurrent Reasoning with Vision-Language Models for Estimating Long-Horizon Embodied Task Progress",
+      "summary": "arXiv:2603.17312v1 Announce Type: cross \nAbstract: Accurately estimating task progress is critical for embodied agents to plan and execute long-horizon, multi-step tasks. Despite promising advances, existing Vision-Language Models (VLMs) based methods primarily leverage their video understanding capabilities, while neglecting their complex reasoning potential. Furthermore, processing long video trajectories with VLMs is computationally prohibitive for real-world deployment. To address these challenges, we propose the Recurrent Reasoning Vision-Language Model ($\\text{R}^2$VLM). Our model features a recurrent reasoning framework that processes local video snippets iteratively, maintaining a global context through an evolving Chain of Thought (CoT). This CoT explicitly records task decomposition, key steps, and their completion status, enabling the model to reason about complex temporal dependencies. This design avoids the high cost of processing long videos while preserving essential reasoning capabilities. We train $\\text{R}^2$VLM on large-scale, automatically generated datasets from ALFRED and Ego4D. Extensive experiments on progress estimation and downstream applications, including progress-enhanced policy learning, reward modeling for reinforcement learning, and proactive assistance, demonstrate that $\\text{R}^2$VLM achieves strong performance and generalization, achieving a new state-of-the-art in long-horizon task progress estimation. The models and benchmarks are publicly available at \\href{https://huggingface.co/collections/zhangyuelin/r2vlm}{huggingface}.",
+      "link": "https://arxiv.org/abs/2603.17312",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "chain of thought"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.035911+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17387v1",
+      "title": "CRE-T1 Preview Technical Report: Beyond Contrastive Learning for Reasoning-Intensive Retrieval",
+      "summary": "arXiv:2603.17387v1 Announce Type: cross \nAbstract: The central challenge of reasoning-intensive retrieval lies in identifying implicitreasoning relationships between queries and documents, rather than superficial se-mantic or lexical similarity. The contrastive learning paradigm is fundamentallya static representation consolidation technique: during training, it encodes hier-archical relevance concepts into fixed geometric structures in the vector space,and at inference time it cannot dynamically adjust relevance judgments accord-ing to the specific reasoning demands of each query. Consequently, performancedegrades noticeably when vocabulary mismatch exists between queries and doc-uments or when implicit reasoning is required to establish relevance. This pa-per proposes Thought 1 (T1), a generative retrieval model that shifts relevancemodeling from static alignment to dynamic reasoning. On the query side, T1 dy-namically generates intermediate reasoning trajectories for each query to bridgeimplicit reasoning relationships and uses  as a semantic aggregationpoint for the reasoning output. On the document side, it employs an instruction+ text +  encoding format to support high-throughput indexing. Tointernalize dynamic reasoning capabilities into vector representations, we adopt athree-stage training curriculum and introduce GRPO in the third stage, enablingthe model to learn optimal derivation strategies for different queries through trial-and-error reinforcement learning. On the BRIGHT benchmark, T1-4B exhibitsstrong performance under the original query setting, outperforming larger modelstrained with contrastive learning overall, and achieving performance comparableto multi-stage retrieval pipelines. The results demonstrate that replacing static rep-resentation alignment with dynamic reasoning generation can effectively improvereasoning-intensive retrieval performance.",
+      "link": "https://arxiv.org/abs/2603.17387",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.036084+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17239v1",
+      "title": "LAAF: Logic-layer Automated Attack Framework A Systematic Red-Teaming Methodology for LPCI Vulnerabilities in Agentic Large Language Model Systems",
+      "summary": "arXiv:2603.17239v1 Announce Type: new \nAbstract: Agentic LLM systems equipped with persistent memory, RAG pipelines, and external tool connectors face a class of attacks - Logic-layer Prompt Control Injection (LPCI) - for which no automated red-teaming instrument existed. We present LAAF (Logic-layer Automated Attack Framework), the first automated red-teaming framework to combine an LPCI-specific technique taxonomy with stage-sequential seed escalation - two capabilities absent from existing tools: Garak lacks memory-persistence and cross-session triggering; PyRIT supports multi-turn testing but treats turns independently, without seeding each stage from the prior breakthrough. LAAF provides: (i) a 49-technique taxonomy spanning six attack categories (Encoding~11, Structural~8, Semantic~8, Layered~5, Trigger~12, Exfiltration~5; see Table 1), combinable across 5 variants per technique and 6 lifecycle stages, yielding a theoretical maximum of 2,822,400 unique payloads ($49 \\times 5 \\times 1{,}920 \\times 6$; SHA-256 deduplicated at generation time); and (ii) a Persistent Stage Breaker (PSB) that drives payload mutation stage-by-stage: on each breakthrough, the PSB seeds the next stage with a mutated form of the winning payload, mirroring real adversarial escalation. Evaluation on five production LLM platforms across three independent runs demonstrates that LAAF achieves higher stage-breakthrough efficiency than single-technique random testing, with a mean aggregate breakthrough rate of 84\\% (range 83--86\\%) and platform-level rates stable within 17 percentage points across runs. Layered combinations and semantic reframing are the highest-effectiveness technique categories, with layered payloads outperforming encoding on well-defended platforms.",
+      "link": "https://arxiv.org/abs/2603.17239",
+      "feed": "cs.CR",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial",
+        "framing"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.146697+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16500v1",
+      "title": "From the Inside Out: Progressive Distribution Refinement for Confidence Calibration",
+      "summary": "arXiv:2603.16500v1 Announce Type: cross \nAbstract: Leveraging the model's internal information as the self-reward signal in Reinforcement Learning (RL) has received extensive attention due to its label-free nature. While prior works have made significant progress in applying the Test-Time Scaling (TTS) strategies to RL, the discrepancy in internal information between test and training remains inadequately addressed. Moreover, Test-Time Training based on voting-based TTS strategies often suffers from reward hacking problems. To address these issues, we propose DistriTTRL, which leverages the distribution prior of the model's confidence during RL to progressively optimize the reward signal, rather than relying solely on single-query rollouts. Additionally, we mitigate the phenomenon of consistent reward hacking caused by the voting-based TTS strategies through diversity-targeted penalties. Benefiting from this training mechanism where model capability and self-reward signals complement each other, and the mitigation of reward hacking, DistriTTRL has achieved significant performance improvements across multiple models and benchmarks.",
+      "link": "https://arxiv.org/abs/2603.16500",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:07:19.803773+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16958v1",
+      "title": "PhysQuantAgent: An Inference Pipeline of Mass Estimation for Vision-Language Models",
+      "summary": "arXiv:2603.16958v1 Announce Type: cross \nAbstract: Vision-Language Models (VLMs) are increasingly applied to robotic perception and manipulation, yet their ability to infer physical properties required for manipulation remains limited. In particular, estimating the mass of real-world objects is essential for determining appropriate grasp force and ensuring safe interaction. However, current VLMs lack reliable mass reasoning capabilities, and most existing benchmarks do not explicitly evaluate physical quantity estimation under realistic sensing conditions. In this work, we propose PhysQuantAgent, a framework for real-world object mass estimation using VLMs, together with VisPhysQuant, a new benchmark dataset for evaluation. VisPhysQuant consists of RGB-D videos of real objects captured from multiple viewpoints, annotated with precise mass measurements. To improve estimation accuracy, we introduce three visual prompting methods that enhance the input image with object detection, scale estimation, and cross-sectional image generation to help the model comprehend the size and internal structure of the target object. Experiments show that visual prompting significantly improves mass estimation accuracy on real-world data, suggesting the efficacy of integrating spatial reasoning with VLM knowledge for physical inference.",
+      "link": "https://arxiv.org/abs/2603.16958",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.035390+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.25758v2",
+      "title": "TheraMind: A Strategic and Adaptive Agent for Longitudinal Psychological Counseling",
+      "summary": "arXiv:2510.25758v2 Announce Type: replace \nAbstract: The shortage of mental health professionals has driven the web to become a primary avenue for accessible psychological support. While Large Language Models (LLMs) offer promise for scalable web-based counseling, existing approaches often lack emotional understanding, adaptive strategies, and long-term memory. These limitations pose risks to digital well-being, as disjointed interactions can fail to support vulnerable users effectively. To address these gaps, we introduce TheraMind, a strategic and adaptive agent designed for trustworthy online longitudinal counseling. The cornerstone of TheraMind is a novel dual-loop architecture that decouples the complex counseling process into an Intra-Session Loop for tactical dialogue management and a Cross-Session Loop for strategic therapeutic planning. The Intra-Session Loop perceives the patient's emotional state to dynamically select response strategies while leveraging cross-session memory to ensure continuity. Crucially, the Cross-Session Loop empowers the agent with long-term adaptability by evaluating the efficacy of the applied therapy after each session and adjusting the method for subsequent interactions. We validate our approach in a high-fidelity simulation environment grounded in real clinical cases. Extensive evaluations show that TheraMind outperforms other methods, especially on multi-session metrics like Coherence, Flexibility, and Therapeutic Attunement, validating the effectiveness of its dual-loop design in emulating strategic, adaptive, and longitudinal therapeutic behavior. The code is publicly available at https://github.com/Emo-gml/TheraMind.",
+      "link": "https://arxiv.org/abs/2510.25758",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.036515+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.15662v3",
+      "title": "Stepwise Think-Critique: A Unified Framework for Robust and Interpretable LLM Reasoning",
+      "summary": "arXiv:2512.15662v3 Announce Type: replace \nAbstract: Human beings solve complex problems through critical thinking, where reasoning and evaluation are intertwined to converge toward correct solutions. However, most existing large language models (LLMs) treat the reasoning and verification as separate processes: they either generate reasoning without explicit self-checking or rely on external verifiers to detect errors post hoc. The former lacks immediate feedback, while the latter increases system complexity and hinders synchronized learning. Motivated by human critical thinking, we propose Stepwise Think-Critique (STC), a unified and end-to-end trainable framework that interleaves reasoning and self-critique at every intermediate step within a single model. STC is trained with a hybrid reinforcement learning objective that integrates reasoning rewards and critique-consistency rewards, thereby jointly optimizing solution correctness and reliability of self-evaluation. Experiments on mathematical reasoning benchmarks show that STC demonstrates strong critical-thinking capabilities and produces more interpretable reasoning traces, representing a step toward LLMs with built-in critical thinking.",
+      "link": "https://arxiv.org/abs/2512.15662",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.036566+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2501.14622v4",
+      "title": "ACT-JEPA: Novel Joint-Embedding Predictive Architecture for Efficient Policy Representation Learning",
+      "summary": "arXiv:2501.14622v4 Announce Type: replace-cross \nAbstract: Learning efficient representations for decision-making policies is a challenge in imitation learning (IL). Current IL methods require expert demonstrations, which are expensive to collect. Additionally, they are not explicitly trained to understand the environment. Consequently, they have underdeveloped world models. Self-supervised learning (SSL) offers an alternative, as it can learn a world model from diverse, unlabeled data. However, most SSL methods are inefficient because they operate in raw input space. In this work, we propose ACT-JEPA, a novel architecture that unifies IL and SSL to enhance policy representations. It is trained end-to-end to jointly predict 1) action sequences and 2) latent observation sequences. To learn in latent space, we utilize Joint-Embedding Predictive Architecture, which allows the model to filter out irrelevant details and learn a robust world model. We evaluate ACT-JEPA in different environments and across multiple tasks. Our results show that it outperforms the strongest baseline in all environments. ACT-JEPA achieves up to 40% improvement in world model understanding and up to 10% higher task success rate. Finally, we show that predicting latent observation sequences effectively generalizes to predicting action sequences. This work demonstrates how integrating IL and SSL leads to efficient policy representation learning, an improved world model, and a higher task success rate.",
+      "link": "https://arxiv.org/abs/2501.14622",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.036846+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.22621v3",
+      "title": "IA2: Alignment with ICL Activations Improves Supervised Fine-Tuning",
+      "summary": "arXiv:2509.22621v3 Announce Type: replace-cross \nAbstract: Supervised Fine-Tuning (SFT) is used to specialize model behavior by training weights to produce intended target responses for queries. In contrast, In-Context Learning (ICL) adapts models during inference with instructions or demonstrations in the prompt. ICL can offer better generalizability and more calibrated responses compared to SFT in data scarce settings, at the cost of more inference compute. In this work, we ask the question: Can ICL's internal computations be used to improve the qualities of SFT? We first show that ICL and SFT produce distinct activation patterns, indicating that the two methods achieve adaptation through different functional mechanisms. Motivated by this observation and to use ICL's rich functionality, we introduce ICL Activation Alignment (IA2), a self-distillation technique which aims to replicate ICL's activation patterns in SFT models and incentivizes ICL-like internal reasoning. Performing IA2 as a priming step before SFT significantly improves the accuracy and calibration of model outputs, as shown by our extensive empirical results on 12 popular benchmarks and two model families. This finding is not only practically useful, but also offers a conceptual window into the inner mechanics of model adaptation.",
+      "link": "https://arxiv.org/abs/2509.22621",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "in-context learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.037035+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15797v2",
+      "title": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoning",
+      "summary": "arXiv:2603.15797v2 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) have demonstrated exceptional logical reasoning capabilities but frequently struggle with the continuous spatiotemporal dynamics governed by Partial Differential Equations (PDEs), often resulting in non-physical hallucinations. Existing approaches typically resort to costly, domain-specific fine-tuning, which severely limits cross-domain generalization and interpretability. To bridge this gap, we propose OMNIFLOW, a neuro-symbolic architecture designed to ground frozen multimodal LLMs in fundamental physical laws without requiring domain-specific parameter updates. OMNIFLOW introduces a novel \\textit{Semantic-Symbolic Alignment} mechanism that projects high-dimensional flow tensors into topological linguistic descriptors, enabling the model to perceive physical structures rather than raw pixel values. Furthermore, we construct a Physics-Guided Chain-of-Thought (PG-CoT) workflow that orchestrates reasoning through dynamic constraint injection (e.g., mass conservation) and iterative reflexive verification. We evaluate OMNIFLOW on a comprehensive benchmark spanning microscopic turbulence, theoretical Navier-Stokes equations, and macroscopic global weather forecasting. Empirical results demonstrate that OMNIFLOW significantly outperforms traditional deep learning baselines in zero-shot generalization and few-shot adaptation tasks. Crucially, it offers transparent, physically consistent reasoning reports, marking a paradigm shift from black-box fitting to interpretable scientific reasoning.",
+      "link": "https://arxiv.org/abs/2603.15797",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "zero-shot",
+        "few-shot"
+      ],
+      "fetched_at": "2026-03-19T22:07:20.037419+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.16410v1",
+      "title": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "summary": "arXiv:2603.16410v1 Announce Type: new \nAbstract: Creative plot generation presents a fundamental challenge for language models: transforming a concise premise into a coherent narrative that sustains global structure, character development, and emotional resonance. Although recent Large Language Models (LLMs) demonstrate strong fluency across general-purpose tasks, they typically require preference alignment to perform well on specialized domains such as creative plot generation. However, conducting such alignment at the scale of frontier LLMs is computationally prohibitive, significantly limiting accessibility and practical deployment. To address this, we present PlotTwist, a structured framework that enables Small Language Models (SLMs) with $\\leq$ 5B active parameters to generate high-quality, premise-conditioned plots competitive with frontier systems up to $200\\times$ larger. Our approach decomposes generation into three specialized components: (1) an Aspect Rating Reward Model trained via a novel Positive-Negative prompting strategy to deliver structured narratives across five Narrative Quality Dimensions (NQDs); (2) a Mixture-of-Experts (MoE) plot generator aligned via Direct Preference Optimization on high-confidence preference pairs; and (3) an Agentic Evaluation module that emulates human critical judgment for unbiased post-hoc assessment. Extensive experiments demonstrate that PlotTwist consistently outperforms frontier models across multiple NQDs despite substantially tighter capacity constraints. Further validation confirms strong sensitivity to narrative quality, as the framework reliably distinguishes plots derived from critically acclaimed versus widely panned screenplays. Together, these results establish structured, preference-based alignment as a resource-efficient approach to high-quality creative plot generation.",
+      "link": "https://arxiv.org/abs/2603.16410",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "alignment",
+        "narrative"
+      ],
+      "fetched_at": "2026-03-19T22:07:19.803403+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Uni-DAD: Unified Distillation and Adaptation of Diffusion Models for Few-step Fe",
+      "paper_link": "https://arxiv.org/abs/2511.18281",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Uni-DAD: Unified Distillation and Adaptation of Diffusion Mo' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16192",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Structured Semantic Cloaking for Jailbreak Attacks on Large ' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Structured Semantic Cloaking for Jailbreak Attacks on Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16192",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Structured Semantic Cloaking for Jailbreak Attacks on Large ' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "From Chat Control to Robot Control: Implications of the Chat Control Proposal fo",
+      "paper_link": "https://arxiv.org/abs/2601.02205",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'From Chat Control to Robot Control: Implications of the Chat' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Recurrent Reasoning with Vision-Language Models for Estimating Long-Horizon Embo",
+      "paper_link": "https://arxiv.org/abs/2603.17312",
+      "paper_score": 4,
+      "type": "reasoning_upgrade",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Recurrent Reasoning with Vision-Language Models for Estimati' presents improved chain of thought methods. Consider updating reasoning directives in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Recurrent Reasoning with Vision-Language Models for Estimating Long-Horizon Embo",
+      "paper_link": "https://arxiv.org/abs/2603.17312",
+      "paper_score": 4,
+      "type": "reasoning_upgrade",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Recurrent Reasoning with Vision-Language Models for Estimati' presents improved chain of thought methods. Consider updating reasoning directives in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)]."
+    },
+    {
+      "paper": "CRE-T1 Preview Technical Report: Beyond Contrastive Learning for Reasoning-Inten",
+      "paper_link": "https://arxiv.org/abs/2603.17387",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'CRE-T1 Preview Technical Report: Beyond Contrastive Learning' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "CRE-T1 Preview Technical Report: Beyond Contrastive Learning for Reasoning-Inten",
+      "paper_link": "https://arxiv.org/abs/2603.17387",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'CRE-T1 Preview Technical Report: Beyond Contrastive Learning' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "CRE-T1 Preview Technical Report: Beyond Contrastive Learning for Reasoning-Inten",
+      "paper_link": "https://arxiv.org/abs/2603.17387",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'CRE-T1 Preview Technical Report: Beyond Contrastive Learning' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "CRE-T1 Preview Technical Report: Beyond Contrastive Learning for Reasoning-Inten",
+      "paper_link": "https://arxiv.org/abs/2603.17387",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'CRE-T1 Preview Technical Report: Beyond Contrastive Learning' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "IA2: Alignment with ICL Activations Improves Supervised Fine-Tuning",
+      "paper_link": "https://arxiv.org/abs/2509.22621",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'IA2: Alignment with ICL Activations Improves Supervised Fine' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "IA2: Alignment with ICL Activations Improves Supervised Fine-Tuning",
+      "paper_link": "https://arxiv.org/abs/2509.22621",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'IA2: Alignment with ICL Activations Improves Supervised Fine' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "IA2: Alignment with ICL Activations Improves Supervised Fine-Tuning",
+      "paper_link": "https://arxiv.org/abs/2509.22621",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'IA2: Alignment with ICL Activations Improves Supervised Fine' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "IA2: Alignment with ICL Activations Improves Supervised Fine-Tuning",
+      "paper_link": "https://arxiv.org/abs/2509.22621",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'IA2: Alignment with ICL Activations Improves Supervised Fine' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalized Scientific Reasoni",
+      "paper_link": "https://arxiv.org/abs/2603.15797",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'OMNIFLOW: A Physics-Grounded Multimodal Agent for Generalize' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "PlotTwist: A Creative Plot Generation Framework with Small Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.16410",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PlotTwist: A Creative Plot Generation Framework with Small L' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Embeddings Bridging Ma",
+      "paper_link": "https://arxiv.org/abs/2603.16606",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Omnilingual SONAR: Cross-Lingual and Cross-Modal Sentence Em' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriented Evaluation of Mode",
+      "paper_link": "https://arxiv.org/abs/2511.01187",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Surfacing Subtle Stereotypes: A Multilingual, Debate-Oriente' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "EpiQAL: Benchmarking Large Language Models in Epidemiological Question Answering",
+      "paper_link": "https://arxiv.org/abs/2601.03471",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'EpiQAL: Benchmarking Large Language Models in Epidemiologica' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "EpiQAL: Benchmarking Large Language Models in Epidemiological Question Answering",
+      "paper_link": "https://arxiv.org/abs/2601.03471",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'EpiQAL: Benchmarking Large Language Models in Epidemiologica' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "EpiQAL: Benchmarking Large Language Models in Epidemiological Question Answering",
+      "paper_link": "https://arxiv.org/abs/2601.03471",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'EpiQAL: Benchmarking Large Language Models in Epidemiologica' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "EpiQAL: Benchmarking Large Language Models in Epidemiological Question Answering",
+      "paper_link": "https://arxiv.org/abs/2601.03471",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'EpiQAL: Benchmarking Large Language Models in Epidemiologica' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visual Representations in",
+      "paper_link": "https://arxiv.org/abs/2603.13728",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visua' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visual Representations in",
+      "paper_link": "https://arxiv.org/abs/2603.13728",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visua' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visual Representations in",
+      "paper_link": "https://arxiv.org/abs/2603.13728",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visua' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visual Representations in",
+      "paper_link": "https://arxiv.org/abs/2603.13728",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Bodhi VLM: Privacy-Alignment Modeling for Hierarchical Visua' has findings on alignment. Review behavioral alignment in [## Identity]."
+    }
+  ]
+}
