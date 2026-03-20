@@ -1,0 +1,552 @@
+{
+  "run_at": "2026-03-20T16:07:59.495641+00:00",
+  "papers_found": 38,
+  "suggestions_generated": 32,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.18433v1",
+      "title": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt Injection in LLM Systems",
+      "summary": "arXiv:2603.18433v1 Announce Type: new \nAbstract: Large language models (LLMs) deployed behind APIs and retrieval-augmented generation (RAG) stacks are vulnerable to prompt injection attacks that may override system policies, subvert intended behavior, and induce unsafe outputs. Existing defenses often treat prompts as flat strings and rely on ad hoc filtering or static jailbreak detection. This paper proposes Prompt Control-Flow Integrity (PCFI), a priority-aware runtime defense that models each request as a structured composition of system, developer, user, and retrieved-document segments. PCFI applies a three-stage middleware pipeline, lexical heuristics, role-switch detection, and hierarchical policy enforcement, before forwarding requests to the backend LLM. We implement PCFI as a FastAPI-based gateway for deployed LLM APIs and evaluate it on a custom benchmark of synthetic and semi-realistic prompt-injection workloads. On the evaluated benchmark suite, PCFI intercepts all attack-labeled requests, maintains a 0% False Positive Rate, and introduces a median processing overhead of only 0.04 ms. These results suggest that provenance- and priority-aware prompt enforcement is a practical and lightweight defense for deployed LLM systems.",
+      "link": "https://arxiv.org/abs/2603.18433",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+prompt injection",
+        "+jailbreak"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.715851+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.11149v2",
+      "title": "Systematic Scaling Analysis of Jailbreak Attacks in Large Language Models",
+      "summary": "arXiv:2603.11149v2 Announce Type: replace-cross \nAbstract: Large language models remain vulnerable to jailbreak attacks, yet we still lack a systematic understanding of how jailbreak success scales with attacker effort across methods, model families, and harm types. We initiate a scaling-law framework for jailbreaks by treating each attack as a compute-bounded optimization procedure and measuring progress on a shared FLOPs axis. Our systematic evaluation spans four representative jailbreak paradigms, covering optimization-based attacks, self-refinement prompting, sampling-based selection, and genetic optimization, across multiple model families and scales on a diverse set of harmful goals. We investigate scaling laws that relate attacker budget to attack success score by fitting a simple saturating exponential function to FLOPs--success trajectories, and we derive comparable efficiency summaries from the fitted curves. Empirically, prompting-based paradigms tend to be the most compute-efficient compared to optimization-based methods. To explain this gap, we cast prompt-based updates into an optimization view and show via a same-state comparison that prompt-based attacks more effectively optimize in prompt space. We also show that attacks occupy distinct success--stealthiness operating points with prompting-based methods occupying the high-success, high-stealth region. Finally, we find that vulnerability is strongly goal-dependent: harms involving misinformation are typically easier to elicit than other non-misinformation harms.",
+      "link": "https://arxiv.org/abs/2603.11149",
+      "feed": "cs.CR",
+      "score": 8,
+      "matched_keywords": [
+        "+jailbreak",
+        "misinformation",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.716290+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18530v1",
+      "title": "When Names Change Verdicts: Intervention Consistency Reveals Systematic Bias in LLM Decision-Making",
+      "summary": "arXiv:2603.18530v1 Announce Type: new \nAbstract: Large language models (LLMs) are increasingly used for high-stakes decisions, yet their susceptibility to spurious features remains poorly characterized. We introduce ICE-Guard, a framework applying intervention consistency testing to detect three types of spurious feature reliance: demographic (name/race swaps), authority (credential/prestige swaps), and framing (positive/negative restatements). Across 3,000 vignettes spanning 10 high-stakes domains, we evaluate 11 LLMs from 8 families and find that (1) authority bias (mean 5.8%) and framing bias (5.0%) substantially exceed demographic bias (2.2%), challenging the field's narrow focus on demographics; (2) bias concentrates in specific domains -- finance shows 22.6% authority bias while criminal justice shows only 2.8%; (3) structured decomposition, where the LLM extracts features and a deterministic rubric decides, reduces flip rates by up to 100% (median 49% across 9 models). We demonstrate an ICE-guided detect-diagnose-mitigate-verify loop achieving cumulative 78% bias reduction via iterative prompt patching. Validation against real COMPAS recidivism data shows COMPAS-derived flip rates exceed pooled synthetic rates, suggesting our benchmark provides a conservative estimate of real-world bias. Code and data are publicly available.",
+      "link": "https://arxiv.org/abs/2603.18530",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+decision-making",
+        "framing"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.410990+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18349v1",
+      "title": "Large-Scale Analysis of Political Propaganda on Moltbook",
+      "summary": "arXiv:2603.18349v1 Announce Type: cross \nAbstract: We present an NLP-based study of political propaganda on Moltbook, a Reddit-style platform for AI agents. To enable large-scale analysis, we develop LLM-based classifiers to detect political propaganda, validated against expert annotation (Cohen's $\\kappa$= 0.64-0.74). Using a dataset of 673,127 posts and 879,606 comments, we find that political propaganda accounts for 1% of all posts and 42% of all political content. These posts are concentrated in a small set of communities, with 70% of such posts falling into five of them. 4% of agents produced 51% of these posts. We further find that a minority of these agents repeatedly post highly similar content within and across communities. Despite this, we find limited evidence that comments amplify political propaganda.",
+      "link": "https://arxiv.org/abs/2603.18349",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+propaganda"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.411309+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18063v1",
+      "title": "MCP-38: A Comprehensive Threat Taxonomy for Model Context Protocol Systems (v1.0)",
+      "summary": "arXiv:2603.18063v1 Announce Type: cross \nAbstract: The Model Context Protocol (MCP) introduces a structurally distinct attack surface that existing threat frameworks, designed for traditional software systems or generic LLM deployments, do not adequately cover. This paper presents MCP-38, a protocol-specific threat taxonomy consisting of 38 threat categories (MCP-01 through MCP-38). The taxonomy was derived through a systematic four-phase methodology: protocol decomposition, multi-framework cross-mapping, real-world incident synthesis, and remediation-surface categorization. Each category is mapped to STRIDE, OWASP Top 10 for LLM Applications (2025, LLM01--LLM10), and the OWASP Top 10 for Agentic Applications (2026, ASI01--ASI10). MCP-38 addresses critical threats arising from MCP's semantic attack surface (tool description poisoning, indirect prompt injection, parasitic tool chaining, and dynamic trust violations), none of which are adequately captured by prior work. MCP-38 provides the definitional and empirical foundation for automated threat intelligence platforms.",
+      "link": "https://arxiv.org/abs/2603.18063",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+prompt injection",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.631465+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18257v1",
+      "title": "Discovering What You Can Control: Interventional Boundary Discovery for Reinforcement Learning",
+      "summary": "arXiv:2603.18257v1 Announce Type: cross \nAbstract: Selecting relevant state dimensions in the presence of confounded distractors is a causal identification problem: observational statistics alone cannot reliably distinguish dimensions that correlate with actions from those that actions cause. We formalize this as discovering the agent's Causal Sphere of Influence and propose Interventional Boundary Discovery IBD, which applies Pearl's do-operator to the agent's own actions and uses two-sample testing to produce an interpretable binary mask over observation dimensions. IBD requires no learned models and composes with any downstream RL algorithm as a preprocessing step. Across 12 continuous control settings with up to 100 distractor dimensions, we find that: (1) observational feature selection can actively select confounded distractors while discarding true causal dimensions; (2) full-state RL degrades sharply once distractors outnumber relevant features by roughly 3:1 in our benchmarks; and (3)IBD closely tracks oracle performance across all distractor levels tested, with gains transferring across SAC and TD3.",
+      "link": "https://arxiv.org/abs/2603.18257",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.631641+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18444v1",
+      "title": "Discounted Beta--Bernoulli Reward Estimation for Sample-Efficient Reinforcement Learning with Verifiable Rewards",
+      "summary": "arXiv:2603.18444v1 Announce Type: cross \nAbstract: Reinforcement learning with verifiable rewards (RLVR) has emerged as an effective post-training paradigm for improving the reasoning capabilities of large language models. However, existing group-based RLVR methods often suffer from severe sample inefficiency. This inefficiency stems from reliance on point estimation of rewards from a small number of rollouts, leading to high estimation variance, variance collapse, and ineffective utilization of generated responses. In this work, we reformulate RLVR from a statistical estimation perspective by modeling rewards as samples drawn from a policy-induced distribution and casting advantage computation as the problem of estimating the reward distribution from finite data. Building on this view, we propose Discounted Beta--Bernoulli (DBB) reward estimation, which leverages historical reward statistics for the non-stationary distribution. Although biased, the resulting estimator exhibits reduced and stable variance, theoretically avoids estimated variance collapse, and achieves lower mean squared error than standard point estimation. Extensive experiments across six in-distribution and three out-of-distribution reasoning benchmarks demonstrate that GRPO with DBB consistently outperforms naive GRPO, achieving average Acc@8 improvements of 3.22/2.42 points in-distribution and 12.49/6.92 points out-of-distribution on the 1.7B and 8B models, respectively, without additional computational cost or memory usage.",
+      "link": "https://arxiv.org/abs/2603.18444",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.631756+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18892v1",
+      "title": "MultihopSpatial: Multi-hop Compositional Spatial Reasoning Benchmark for Vision-Language Model",
+      "summary": "arXiv:2603.18892v1 Announce Type: cross \nAbstract: Spatial reasoning is foundational for Vision-Language Models (VLMs), particularly when deployed as Vision-Language-Action (VLA) agents in physical environments. However, existing benchmarks predominantly focus on elementary, single-hop relations, neglecting the multi-hop compositional reasoning and precise visual grounding essential for real-world scenarios. To address this, we introduce MultihopSpatial, offering three key contributions: (1) A comprehensive benchmark designed for multi-hop and compositional spatial reasoning, featuring 1- to 3-hop complex queries across diverse spatial perspectives. (2) Acc@50IoU, a complementary metric that simultaneously evaluates reasoning and visual grounding by requiring both answer selection and precise bounding box prediction - capabilities vital for robust VLA deployment. (3) MultihopSpatial-Train, a dedicated large-scale training corpus to foster spatial intelligence. Extensive evaluation of 37 state-of-the-art VLMs yields eight key insights, revealing that compositional spatial reasoning remains a formidable challenge. Finally, we demonstrate that reinforcement learning post-training on our corpus enhances both intrinsic VLM spatial reasoning and downstream embodied manipulation performance.",
+      "link": "https://arxiv.org/abs/2603.18892",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.632180+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19229v1",
+      "title": "NavTrust: Benchmarking Trustworthiness for Embodied Navigation",
+      "summary": "arXiv:2603.19229v1 Announce Type: cross \nAbstract: There are two major categories of embodied navigation: Vision-Language Navigation (VLN), where agents navigate by following natural language instructions; and Object-Goal Navigation (OGN), where agents navigate to a specified target object. However, existing work primarily evaluates model performance under nominal conditions, overlooking the potential corruptions that arise in real-world settings. To address this gap, we present NavTrust, a unified benchmark that systematically corrupts input modalities, including RGB, depth, and instructions, in realistic scenarios and evaluates their impact on navigation performance. To our best knowledge, NavTrust is the first benchmark that exposes embodied navigation agents to diverse RGB-Depth corruptions and instruction variations in a unified framework. Our extensive evaluation of seven state-of-the-art approaches reveals substantial performance degradation under realistic corruptions, which highlights critical robustness gaps and provides a roadmap toward more trustworthy embodied navigation systems. Furthermore, we systematically evaluate four distinct mitigation strategies to enhance robustness against RGB-Depth and instructions corruptions. Our base models include Uni-NaVid and ETPNav. We deployed them on a real mobile robot and observed improved robustness to corruptions. The project website is: https://navtrust.github.io.",
+      "link": "https://arxiv.org/abs/2603.19229",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.632410+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19152v1",
+      "title": "VEPO: Variable Entropy Policy Optimization for Low-Resource Language Foundation Models",
+      "summary": "arXiv:2603.19152v1 Announce Type: new \nAbstract: Large language models frequently exhibit suboptimal performance on low resource languages, primarily due to inefficient subword segmentation and systemic training data imbalances. In this paper, we propose Variable Entropy Policy Optimization (VEPO), which leverages Reinforcement Learning with Verifiable Rewards to incorporate deterministic structural constraints into the policy alignment process. This framework ensures prescribed sequence length, robust format consistency, and rigorous linguistic well formedness, all enforced during training. Central to our approach is a variable entropy mechanism that enables the model to dynamically calibrate the equilibrium between literal fidelity and semantic naturalness by modulating the exploration exploitation manifold. By integrating entropy tempered advantage estimation with asymmetric clipping, VEPO sustains robust exploration while mitigating policy collapse. Empirical evaluations across 90 FLORES-200, COMET-22, chrF directions demonstrate that VEPO yields substantial improvements in both tokenization efficiency and translation quality, bridging the performance gap for underrepresented languages.",
+      "link": "https://arxiv.org/abs/2603.19152",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.411270+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18656v1",
+      "title": "Balanced Thinking: Improving Chain of Thought Training in Vision Language Models",
+      "summary": "arXiv:2603.18656v1 Announce Type: new \nAbstract: Multimodal reasoning in vision-language models (VLMs) typically relies on a two-stage process: supervised fine-tuning (SFT) and reinforcement learning (RL). In standard SFT, all tokens contribute equally to the loss, even though reasoning data are inherently token-imbalanced. Long  traces overshadow short but task-critical  segments, leading to verbose reasoning and inaccurate answers. We propose SCALe (Scheduled Curriculum Adaptive Loss), which explicitly separates supervision over reasoning and answer segments using dynamic, length-independent weighting. Unlike vanilla SFT, which overweights the  segment, SCALe-SFT gradually shifts the focus from  to  throughout training via a cosine scheduling policy, encouraging concise and well-grounded reasoning. We evaluate SCALe across diverse benchmarks and architectures. Results show that SCALe consistently improves accuracy over vanilla SFT and matches the performance of the full two-phase SFT + GRPO pipeline while requiring only about one-seventh of the training time, making it a lightweight yet effective alternative. When combined with GRPO, SCALe achieves the best overall performance, highlighting its value both as a standalone method and as a strong foundation for reinforcement refinement.",
+      "link": "https://arxiv.org/abs/2603.18656",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "chain of thought"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.631009+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18074v1",
+      "title": "Lightweight Adaptation for LLM-based Technical Service Agent: Latent Logic Augmentation and Robust Noise Reduction",
+      "summary": "arXiv:2603.18074v1 Announce Type: cross \nAbstract: Adapting Large Language Models in complex technical service domains is constrained by the absence of explicit cognitive chains in human demonstrations and the inherent ambiguity arising from the diversity of valid responses. These limitations severely hinder agents from internalizing latent decision dynamics and generalizing effectively. Moreover, practical adaptation is often impeded by the prohibitive resource and time costs associated with standard training paradigms. To overcome these challenges and guarantee computational efficiency, we propose a lightweight adaptation framework comprising three key contributions. (1) Latent Logic Augmentation: We introduce Planning-Aware Trajectory Modeling and Decision Reasoning Augmentation to bridge the gap between surface-level supervision and latent decision logic. These approaches strengthen the stability of Supervised Fine-Tuning alignment. (2) Robust Noise Reduction: We construct a Multiple Ground Truths dataset through a dual-filtering method to reduce the noise by validating diverse responses, thereby capturing the semantic diversity. (3) Lightweight Adaptation: We design a Hybrid Reward mechanism that fuses an LLM-based judge with a lightweight relevance-based Reranker to distill high-fidelity reward signals while reducing the computational cost compared to standard LLM-as-a-Judge reinforcement learning. Empirical evaluations on real-world Cloud service tasks, conducted across semantically diverse settings, demonstrate that our framework achieves stability and performance gains through Latent Logic Augmentation and Robust Noise Reduction. Concurrently, our Hybrid Reward mechanism achieves alignment comparable to standard LLM-as-a-judge methods with reduced training time, underscoring the practical value for deploying technical service agents.",
+      "link": "https://arxiv.org/abs/2603.18074",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.631532+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2502.10978v2",
+      "title": "Agentic LLM Framework for Adaptive Decision Discourse",
+      "summary": "arXiv:2502.10978v2 Announce Type: replace \nAbstract: Effective decision-making in complex systems requires synthesizing diverse perspectives to address multifaceted challenges under uncertainty. This study introduces an agentic Large Language Models (LLMs) framework for simulating decision discourse - the deliberative process through which actionable strategies are collaboratively developed. Unlike traditional decision-support tools, this framework simulates diverse stakeholder personas, each bringing unique priorities, expertise and value-driven reasoning to a dialogue that emphasizes trade-off exploration in a self-governed assembly. We present explorative results fostering robust and equitable recommendations, with two use cases: first, our framework simulates a response to the floods that occurred on July 2025 in Texas; second, a hypothetical extreme flooding in a Midwestern township under varying forecasting uncertainty. Recommendations made balance competing priorities considered through social, economic and environmental dimensions, setting a foundation for scalable and context-aware recommendations and transforming how decisions for real-world high-stake scenarios can be approached in digital environments. This research explores novel and alternate routes leveraging agentic LLMs for adaptive, collaborative, and equitable recommendations, with implications across domains where uncertainty and complexity converge.",
+      "link": "https://arxiv.org/abs/2502.10978",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "persona"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.632491+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.22925v2",
+      "title": "Soft-Di[M]O: Improving One-Step Discrete Image Generation with Soft Embeddings",
+      "summary": "arXiv:2509.22925v2 Announce Type: replace-cross \nAbstract: One-step generators distilled from Masked Diffusion Models (MDMs) compress multiple sampling steps into a single forward pass, enabling efficient text and image synthesis. However, they suffer two key limitations: they inherit modeling bias from the teacher, and their discrete token outputs block gradient flow, preventing post-distillation refinements such as adversarial training, reward-based fine-tuning, and Test-Time Embedding Optimization (TTEO). In this work, we introduce soft embeddings, a simple relaxation that replaces discrete tokens with the expected embeddings under the generator's output distribution. Soft embeddings preserve representation fidelity for one-step discrete generator while providing a fully differentiable continuous surrogate that is compatible with teacher backbones and tokenizer decoders. Integrating soft embeddings into the Di[M]O distillation framework (denoted Soft-Di[M]O) makes one-step generators end-to-end trainable and enables straightforward application of GAN-based refinement, differentiable reward fine-tuning, and TTEO. Empirically, across multiple MDM teachers (e.g., MaskBit, MaskGen), Soft-Di[M]O achieves state-of-the-art one-step results: improved class-to-image performance, a one-step FID of 1.56 on ImageNet-256 with GAN-based refinement, along with higher GenEval and HPS scores on text-to-image with reward fine-tuning, and further gains from TTEO.",
+      "link": "https://arxiv.org/abs/2509.22925",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial",
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.632921+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18620v1",
+      "title": "Learning to Self-Evolve",
+      "summary": "arXiv:2603.18620v1 Announce Type: new \nAbstract: We introduce Learning to Self-Evolve (LSE), a reinforcement learning framework that trains large language models (LLMs) to improve their own contexts at test time. We situate LSE in the setting of test-time self-evolution, where a model iteratively refines its context from feedback on seen problems to perform better on new ones. Existing approaches rely entirely on the inherent reasoning ability of the model and never explicitly train it for this task. LSE reduces the multi-step evolution problem to a single-step RL objective, where each context edit is rewarded by the improvement in downstream performance. We pair this objective with a tree-guided evolution loop. On Text-to-SQL generation (BIRD) and general question answering (MMLU-Redux), a 4B-parameter model trained with LSE outperforms self-evolving policies powered by GPT-5 and Claude Sonnet 4.5, as well as prompt optimization methods including GEPA and TextGrad, and transfers to guide other models without additional training. Our results highlight the effectiveness of treating self-evolution as a learnable skill.",
+      "link": "https://arxiv.org/abs/2603.18620",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.411037+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18788v1",
+      "title": "Mi:dm K 2.5 Pro",
+      "summary": "arXiv:2603.18788v1 Announce Type: new \nAbstract: The evolving LLM landscape requires capabilities beyond simple text generation, prioritizing multi-step reasoning, long-context understanding, and agentic workflows. This shift challenges existing models in enterprise environments, especially in Korean-language and domain-specific scenarios where scaling is insufficient. We introduce Mi:dm K 2.5 Pro, a 32B parameter flagship LLM designed to address enterprise-grade complexity through reasoning-focused optimization.\n  Our methodology builds a robust data foundation via a quality-centric curation pipeline utilizing abstract syntax tree (AST) analysis for code, gap-filling synthesis for mathematics, and an LLM-based quality evaluator. Pre-training scales the model via layer-predictor-based Depth Upscaling (DuS) and a progressive strategy supporting a 128K token context window. Post-training introduces a specialized multi-stage pipeline, including Reasoning SFT, model merging, and asynchronous reinforcement learning (RL), to develop complex problem-solving skills. \"Fusion Training\" then rebalances these capabilities with conversational fluency, consistent response styling, and reliable tool-use.\n  The evaluations show that Mi:dm K 2.5 Pro achieves competitive performance against leading global and domestic models. In addition, it sets state-of-the-art results on Korean-specific benchmarks, showcasing deep linguistic and cultural understanding. Finally, Responsible AI evaluations validate safety against attacks, ensuring a secure profile for deployment with a balance of harmlessness and responsiveness.",
+      "link": "https://arxiv.org/abs/2603.18788",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.411213+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.26352v2",
+      "title": "The Geometry of Dialogue: Graphing Language Models to Reveal Synergistic Teams for Multi-Agent Collaboration",
+      "summary": "arXiv:2510.26352v2 Announce Type: replace \nAbstract: While a multi-agent approach based on large language models (LLMs) represents a promising strategy to surpass the capabilities of single models, its success is critically dependent on synergistic team composition. However, forming optimal teams is a significant challenge, as the inherent opacity of most models obscures the internal characteristics necessary for effective collaboration. In this paper, we propose an interaction-centric framework for automatic team composition that does not require any prior knowledge including their internal architectures, training data, or task performances. Our method constructs a \"language model graph\" that maps relationships between models from the semantic coherence of pairwise conversations, and then applies community detection to identify synergistic model clusters. Our experiments with diverse LLMs demonstrate that the proposed method discovers functionally coherent groups that reflect their latent specializations. Priming conversations with specific topics identified synergistic teams which outperform random baselines on downstream benchmarks and achieve comparable accuracy to that of manually-curated teams based on known model specializations. Our findings provide a new basis for the automated design of collaborative multi-agent LLM teams.",
+      "link": "https://arxiv.org/abs/2510.26352",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "community detection",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.411568+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18388v1",
+      "title": "Reflection in the Dark: Exposing and Escaping the Black Box in Reflective Prompt Optimization",
+      "summary": "arXiv:2603.18388v1 Announce Type: new \nAbstract: Automatic prompt optimization (APO) has emerged as a powerful paradigm for improving LLM performance without manual prompt engineering. Reflective APO methods such as GEPA iteratively refine prompts by diagnosing failure cases, but the optimization process remains black-box and label-free, leading to uninterpretable trajectories and systematic failure. We identify and empirically demonstrate four limitations: on GSM8K with a defective seed, GEPA degrades accuracy from 23.81% to 13.50%. We propose VISTA, a multi-agent APO framework that decouples hypothesis generation from prompt rewriting, enabling semantically labeled hypotheses, parallel minibatch verification, and interpretable optimization trace. A two-layer explore-exploit mechanism combining random restart and epsilon-greedy sampling further escapes local optima. VISTA recovers accuracy to 87.57% on the same defective seed and consistently outperforms baselines across all conditions on GSM8K and AIME2025.",
+      "link": "https://arxiv.org/abs/2603.18388",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "prompt engineering",
+        "multi-agent",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.630819+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18495v1",
+      "title": "Cross-Domain Demo-to-Code via Neurosymbolic Counterfactual Reasoning",
+      "summary": "arXiv:2603.18495v1 Announce Type: new \nAbstract: Recent advances in Vision-Language Models (VLMs) have enabled video-instructed robotic programming, allowing agents to interpret video demonstrations and generate executable control code. We formulate video-instructed robotic programming as a cross-domain adaptation problem, where perceptual and physical differences between demonstration and deployment induce procedural mismatches. However, current VLMs lack the procedural understanding needed to reformulate causal dependencies and achieve task-compatible behavior under such domain shifts. We introduce NeSyCR, a neurosymbolic counterfactual reasoning framework that enables verifiable adaptation of task procedures, providing a reliable synthesis of code policies. NeSyCR abstracts video demonstrations into symbolic trajectories that capture the underlying task procedure. Given deployment observations, it derives counterfactual states that reveal cross-domain incompatibilities. By exploring the symbolic state space with verifiable checks, NeSyCR proposes procedural revisions that restore compatibility with the demonstrated procedure. NeSyCR achieves a 31.14% improvement in task success over the strongest baseline Statler, showing robust cross-domain adaptation across both simulated and real-world manipulation tasks.",
+      "link": "https://arxiv.org/abs/2603.18495",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.630878+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18627v1",
+      "title": "Agentic Flow Steering and Parallel Rollout Search for Spatially Grounded Text-to-Image Generation",
+      "summary": "arXiv:2603.18627v1 Announce Type: new \nAbstract: Precise Text-to-Image (T2I) generation has achieved great success but is hindered by the limited relational reasoning of static text encoders and the error accumulation in open-loop sampling. Without real-time feedback, initial semantic ambiguities during the Ordinary Differential Equation trajectory inevitably escalate into stochastic deviations from spatial constraints. To bridge this gap, we introduce AFS-Search (Agentic Flow Steering and Parallel Rollout Search), a training-free closed-loop framework built upon FLUX.1-dev. AFS-Search incorporates a training-free closed-loop parallel rollout search and flow steering mechanism, which leverages a Vision-Language Model (VLM) as a semantic critic to diagnose intermediate latents and dynamically steer the velocity field via precise spatial grounding. Complementarily, we formulate T2I generation as a sequential decision-making process, exploring multiple trajectories through lookahead simulations and selecting the optimal path based on VLM-guided rewards. Further, we provide AFS-Search-Pro for higher performance and AFS-Search-Fast for quicker generation. Experimental results show that our AFS-Search-Pro greatly boosts the performance of the original FLUX.1-dev, achieving state-of-the-art results across three different benchmarks. Meanwhile, AFS-Search-Fast also significantly enhances performance while maintaining fast generation speed.",
+      "link": "https://arxiv.org/abs/2603.18627",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-20T16:07:57.630956+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Systematic Scaling Analysis of Jailbreak Attacks in Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.11149",
+      "paper_score": 8,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Systematic Scaling Analysis of Jailbreak Attacks in Large La' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Systematic Scaling Analysis of Jailbreak Attacks in Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.11149",
+      "paper_score": 8,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Systematic Scaling Analysis of Jailbreak Attacks in Large La' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "MCP-38: A Comprehensive Threat Taxonomy for Model Context Protocol Systems (v1.0",
+      "paper_link": "https://arxiv.org/abs/2603.18063",
+      "paper_score": 6,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MCP-38: A Comprehensive Threat Taxonomy for Model Context Pr' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "MCP-38: A Comprehensive Threat Taxonomy for Model Context Protocol Systems (v1.0",
+      "paper_link": "https://arxiv.org/abs/2603.18063",
+      "paper_score": 6,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'MCP-38: A Comprehensive Threat Taxonomy for Model Context Pr' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "VEPO: Variable Entropy Policy Optimization for Low-Resource Language Foundation ",
+      "paper_link": "https://arxiv.org/abs/2603.19152",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'VEPO: Variable Entropy Policy Optimization for Low-Resource ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "VEPO: Variable Entropy Policy Optimization for Low-Resource Language Foundation ",
+      "paper_link": "https://arxiv.org/abs/2603.19152",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'VEPO: Variable Entropy Policy Optimization for Low-Resource ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "VEPO: Variable Entropy Policy Optimization for Low-Resource Language Foundation ",
+      "paper_link": "https://arxiv.org/abs/2603.19152",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'VEPO: Variable Entropy Policy Optimization for Low-Resource ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "VEPO: Variable Entropy Policy Optimization for Low-Resource Language Foundation ",
+      "paper_link": "https://arxiv.org/abs/2603.19152",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'VEPO: Variable Entropy Policy Optimization for Low-Resource ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Balanced Thinking: Improving Chain of Thought Training in Vision Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.18656",
+      "paper_score": 5,
+      "type": "reasoning_upgrade",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Balanced Thinking: Improving Chain of Thought Training in Vi' presents improved chain of thought methods. Consider updating reasoning directives in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Balanced Thinking: Improving Chain of Thought Training in Vision Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.18656",
+      "paper_score": 5,
+      "type": "reasoning_upgrade",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Balanced Thinking: Improving Chain of Thought Training in Vi' presents improved chain of thought methods. Consider updating reasoning directives in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)]."
+    },
+    {
+      "paper": "Lightweight Adaptation for LLM-based Technical Service Agent: Latent Logic Augme",
+      "paper_link": "https://arxiv.org/abs/2603.18074",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Lightweight Adaptation for LLM-based Technical Service Agent' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Lightweight Adaptation for LLM-based Technical Service Agent: Latent Logic Augme",
+      "paper_link": "https://arxiv.org/abs/2603.18074",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Lightweight Adaptation for LLM-based Technical Service Agent' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Lightweight Adaptation for LLM-based Technical Service Agent: Latent Logic Augme",
+      "paper_link": "https://arxiv.org/abs/2603.18074",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Lightweight Adaptation for LLM-based Technical Service Agent' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Lightweight Adaptation for LLM-based Technical Service Agent: Latent Logic Augme",
+      "paper_link": "https://arxiv.org/abs/2603.18074",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Lightweight Adaptation for LLM-based Technical Service Agent' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Agentic LLM Framework for Adaptive Decision Discourse",
+      "paper_link": "https://arxiv.org/abs/2502.10978",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Agentic LLM Framework for Adaptive Decision Discourse' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "AutoScreen-FW: An LLM-based Framework for Resume Screening",
+      "paper_link": "https://arxiv.org/abs/2603.18390",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'AutoScreen-FW: An LLM-based Framework for Resume Screening' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Hallucination or Creativity: How to Evaluate AI-Generated Scientific Stories?",
+      "paper_link": "https://arxiv.org/abs/2602.02290",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Hallucination or Creativity: How to Evaluate AI-Generated Sc' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Hallucination or Creativity: How to Evaluate AI-Generated Scientific Stories?",
+      "paper_link": "https://arxiv.org/abs/2602.02290",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Hallucination or Creativity: How to Evaluate AI-Generated Sc' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Hallucination or Creativity: How to Evaluate AI-Generated Scientific Stories?",
+      "paper_link": "https://arxiv.org/abs/2602.02290",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Hallucination or Creativity: How to Evaluate AI-Generated Sc' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Hallucination or Creativity: How to Evaluate AI-Generated Scientific Stories?",
+      "paper_link": "https://arxiv.org/abs/2602.02290",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Hallucination or Creativity: How to Evaluate AI-Generated Sc' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    }
+  ]
+}
