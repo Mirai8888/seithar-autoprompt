@@ -1,0 +1,462 @@
+{
+  "run_at": "2026-03-20T22:02:28.618690+00:00",
+  "papers_found": 26,
+  "suggestions_generated": 22,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.18570v1",
+      "title": "Attack by Unlearning: Unlearning-Induced Adversarial Attacks on Graph Neural Networks",
+      "summary": "arXiv:2603.18570v1 Announce Type: cross \nAbstract: Graph neural networks (GNNs) are widely used for learning from graph-structured data in domains such as social networks, recommender systems, and financial platforms. To comply with privacy regulations like the GDPR, CCPA, and PIPEDA, approximate graph unlearning, which aims to remove the influence of specific data points from trained models without full retraining, has become an increasingly important component of trustworthy graph learning. However, approximate unlearning often incurs subtle performance degradation, which may incur negative and unintended side effects. In this work, we show that such degradations can be amplified into adversarial attacks. We introduce the notion of \\textbf{unlearning corruption attacks}, where an adversary injects carefully chosen nodes into the training graph and later requests their deletion. Because deletion requests are legally mandated and cannot be denied, this attack surface is both unavoidable and stealthy: the model performs normally during training, but accuracy collapses only after unlearning is applied. Technically, we formulate this attack as a bi-level optimization problem: to overcome the challenges of black-box unlearning and label scarcity, we approximate the unlearning process via gradient-based updates and employ a surrogate model to generate pseudo-labels for the optimization. Extensive experiments across benchmarks and unlearning algorithms demonstrate that small, carefully designed unlearning requests can induce significant accuracy degradation, raising urgent concerns about the robustness of GNN unlearning under real-world regulatory demands. The source code will be released upon paper acceptance.",
+      "link": "https://arxiv.org/abs/2603.18570",
+      "feed": "cs.CR",
+      "score": 11,
+      "matched_keywords": [
+        "+adversarial attack",
+        "+trust",
+        "graph neural"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.333225+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18433v1",
+      "title": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt Injection in LLM Systems",
+      "summary": "arXiv:2603.18433v1 Announce Type: new \nAbstract: Large language models (LLMs) deployed behind APIs and retrieval-augmented generation (RAG) stacks are vulnerable to prompt injection attacks that may override system policies, subvert intended behavior, and induce unsafe outputs. Existing defenses often treat prompts as flat strings and rely on ad hoc filtering or static jailbreak detection. This paper proposes Prompt Control-Flow Integrity (PCFI), a priority-aware runtime defense that models each request as a structured composition of system, developer, user, and retrieved-document segments. PCFI applies a three-stage middleware pipeline, lexical heuristics, role-switch detection, and hierarchical policy enforcement, before forwarding requests to the backend LLM. We implement PCFI as a FastAPI-based gateway for deployed LLM APIs and evaluate it on a custom benchmark of synthetic and semi-realistic prompt-injection workloads. On the evaluated benchmark suite, PCFI intercepts all attack-labeled requests, maintains a 0% False Positive Rate, and introduces a median processing overhead of only 0.04 ms. These results suggest that provenance- and priority-aware prompt enforcement is a practical and lightweight defense for deployed LLM systems.",
+      "link": "https://arxiv.org/abs/2603.18433",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+prompt injection",
+        "+jailbreak"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.332968+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18235v1",
+      "title": "Toward Reliable, Safe, and Secure LLMs for Scientific Applications",
+      "summary": "arXiv:2603.18235v1 Announce Type: new \nAbstract: As large language models (LLMs) evolve into autonomous \"AI scientists,\" they promise transformative advances but introduce novel vulnerabilities, from potential \"biosafety risks\" to \"dangerous explosions.\" Ensuring trustworthy deployment in science requires a new paradigm centered on reliability (ensuring factual accuracy and reproducibility), safety (preventing unintentional physical or biological harm), and security (preventing malicious misuse). Existing general-purpose safety benchmarks are poorly suited for this purpose, suffering from a fundamental domain mismatch, limited threat coverage of science-specific vectors, and benchmark overfitting, which create a critical gap in vulnerability evaluation for scientific applications. This paper examines the unique security and safety landscape of LLM agents in science. We begin by synthesizing a detailed taxonomy of LLM threats contextualized for scientific research, to better understand the unique risks associated with LLMs in science. Next, we conceptualize a mechanism to address the evaluation gap by utilizing dedicated multi-agent systems for the automated generation of domain-specific adversarial security benchmarks. Based on our analysis, we outline how existing safety methods can be brought together and integrated into a conceptual multilayered defense framework designed to combine a red-teaming exercise and external boundary controls with a proactive internal Safety LLM Agent. Together, these conceptual elements provide a necessary structure for defining, evaluating, and creating comprehensive defense strategies for trustworthy LLM agent deployment in scientific disciplines.",
+      "link": "https://arxiv.org/abs/2603.18235",
+      "feed": "cs.CR",
+      "score": 8,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust",
+        "vulnerability",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.332908+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18532v1",
+      "title": "Scaling Sim-to-Real Reinforcement Learning for Robot VLAs with Generative 3D Worlds",
+      "summary": "arXiv:2603.18532v1 Announce Type: cross \nAbstract: The strong performance of large vision-language models (VLMs) trained with reinforcement learning (RL) has motivated similar approaches for fine-tuning vision-language-action (VLA) models in robotics. Many recent works fine-tune VLAs directly in the real world to avoid addressing the sim-to-real gap. While real-world RL circumvents sim-to-real issues, it inherently limits the generality of the resulting VLA, as scaling scene and object diversity in the physical world is prohibitively difficult. This leads to the paradoxical outcome of transforming a broadly pretrained model into an overfitted, scene-specific policy. Training in simulation can instead provide access to diverse scenes, but designing those scenes is also costly. In this work, we show that VLAs can be RL fine-tuned without sacrificing generality and with reduced labor by leveraging 3D world generative models. Using these models together with a language-driven scene designer, we generate hundreds of diverse interactive scenes containing unique objects and backgrounds, enabling scalable and highly parallel policy learning. Starting from a pretrained imitation baseline, our approach increases simulation success from 9.7% to 79.8% while achieving a 1.25$\\times$ speedup in task completion time. We further demonstrate successful sim-to-real transfer enabled by the quality of the generated digital twins together with domain randomization, improving real-world success from 21.7% to 75% and achieving a 1.13$\\times$ speedup. Finally, we further highlight the benefits of leveraging the effectively unlimited data from 3D world generative models through an ablation study showing that increasing scene diversity directly improves zero-shot generalization.",
+      "link": "https://arxiv.org/abs/2603.18532",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.242394+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19169v1",
+      "title": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angiography Analysis",
+      "summary": "arXiv:2603.19169v1 Announce Type: cross \nAbstract: Conventional pixel-wise loss functions fail to enforce topological constraints in coronary vessel segmentation, producing fragmented vascular trees despite high pixel-level accuracy. We present ARIADNE, a two-stage framework coupling preference-aligned perception with RL-based diagnostic reasoning for topologically coherent stenosis detection. The perception module employs DPO to fine-tune the Sa2VA vision-language foundation model using Betti number constraints as preference signals, aligning the policy toward geometrically complete vessel structures rather than pixel-wise overlap metrics. The reasoning module formulates stenosis localization as a Markov Decision Process with an explicit rejection mechanism that autonomously defers ambiguous anatomical candidates such as bifurcations and vessel crossings, shifting from coverage maximization to reliability optimization. On 1,400 clinical angiograms, ARIADNE achieves state-of-the-art centerline Dice of 0.838, reduces false positives by 41% compared to geometric baselines. External validation on multi-center benchmarks ARCADE and XCAD confirms generalization across acquisition protocols. This represents the first application of DPO for topological alignment in medical imaging, demonstrating that preference-based learning over structural constraints mitigates topological violations while maintaining diagnostic sensitivity in interventional cardiology workflows.",
+      "link": "https://arxiv.org/abs/2603.19169",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.242903+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.20784v2",
+      "title": "Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control",
+      "summary": "arXiv:2508.20784v2 Announce Type: replace \nAbstract: Bus bunching remains a challenge for urban transit due to stochastic traffic and passenger demand. Traditional solutions rely on multi-agent reinforcement learning (MARL) in loop-line settings, which overlook realistic operations characterized by heterogeneous routes, timetables, fluctuating demand, and varying fleet sizes. We propose a novel single-agent reinforcement learning (RL) framework for bus holding control that avoids the data imbalance and convergence issues of MARL under near-realistic simulation. A bidirectional timetabled network with dynamic passenger demand is constructed. The key innovation is reformulating the multi-agent problem into a single-agent one by augmenting the state space with categorical identifiers (vehicle ID, station ID, time period) in addition to numerical features (headway, occupancy, velocity). This high-dimensional encoding enables single-agent policies to capture inter-agent dependencies, analogous to projecting non-separable inputs into a higher-dimensional space. We further design a structured reward function aligned with operational goals: instead of exponential penalties on headway deviations, a ridge-shaped reward balances uniform headways and schedule adherence. Experiments show that our modified soft actor-critic (SAC) achieves more stable and superior performance than benchmarks, including MADDPG (e.g., -430k vs. -530k under stochastic conditions). These results demonstrate that single-agent deep RL, when enhanced with categorical structuring and schedule-aware rewards, can effectively manage bus holding in non-loop, real-world contexts. This paradigm offers a robust, scalable alternative to MARL frameworks, particularly where agent-specific experiences are imbalanced.",
+      "link": "https://arxiv.org/abs/2508.20784",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.243035+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18280v1",
+      "title": "Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation Fails",
+      "summary": "arXiv:2603.18280v1 Announce Type: cross \nAbstract: Current alignment evaluation mostly measures whether models encode dangerous concepts and whether they refuse harmful requests. Both miss the layer where alignment often operates: routing from concept detection to behavioral policy. We study political censorship in Chinese-origin language models as a natural experiment, using probes, surgical ablations, and behavioral tests across nine open-weight models from five labs. Three findings follow. First, probe accuracy alone is non-diagnostic: political probes, null controls, and permutation baselines can all reach 100%, so held-out category generalization is the informative test. Second, surgical ablation reveals lab-specific routing. Removing the political-sensitivity direction eliminates censorship and restores accurate factual output in most models tested, while one model confabulates because its architecture entangles factual knowledge with the censorship mechanism. Cross-model transfer fails, indicating that routing geometry is model- and lab-specific. Third, refusal is no longer the dominant censorship mechanism. Within one model family, hard refusal falls to zero while narrative steering rises to the maximum, making censorship invisible to refusal-only benchmarks. These results support a three-stage descriptive framework: detect, route, generate. Models often retain the relevant knowledge; alignment changes how that knowledge is expressed. Evaluations that audit only detection or refusal therefore miss the routing mechanism that most directly determines behavior.",
+      "link": "https://arxiv.org/abs/2603.18280",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "behavioral",
+        "alignment",
+        "narrative"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.035952+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.15165v3",
+      "title": "The Flexibility Trap: Why Arbitrary Order Limits Reasoning Potential in Diffusion Language Models",
+      "summary": "arXiv:2601.15165v3 Announce Type: replace \nAbstract: Diffusion Large Language Models (dLLMs) break the rigid left-to-right constraint of traditional LLMs, enabling token generation in arbitrary orders. Intuitively, this flexibility implies a solution space that strictly supersets the fixed autoregressive trajectory, theoretically unlocking superior reasoning potential for general tasks like mathematics and coding. Consequently, numerous works have leveraged reinforcement learning (RL) to elicit the reasoning capability of dLLMs. In this paper, we reveal a counter-intuitive reality: arbitrary order generation, in its current form, narrows rather than expands the reasoning boundary of dLLMs. We find that dLLMs tend to exploit this order flexibility to bypass high-uncertainty tokens that are crucial for exploration, leading to a premature collapse of the solution space. This observation motivates a rethink of RL approaches for dLLMs, where considerable complexities, such as handling combinatorial trajectories and intractable likelihoods, are often devoted to preserving this flexibility. We demonstrate that effective reasoning can be better elicited by intentionally forgoing arbitrary order and applying standard Group Relative Policy Optimization (GRPO) instead. Our approach, JustGRPO, is minimalist yet surprisingly effective (e.g., 89.1% accuracy on GSM8K) while fully retaining the parallel decoding ability of dLLMs. Project page: https://nzl-thu.github.io/the-flexibility-trap",
+      "link": "https://arxiv.org/abs/2601.15165",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.036262+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18118v1",
+      "title": "Insight-V++: Towards Advanced Long-Chain Visual Reasoning with Multimodal Large Language Models",
+      "summary": "arXiv:2603.18118v1 Announce Type: cross \nAbstract: Large Language Models (LLMs) have achieved remarkable reliability and advanced capabilities through extended test-time reasoning. However, extending these capabilities to Multi-modal Large Language Models (MLLMs) remains a significant challenge due to a critical scarcity of high-quality, long-chain reasoning data and optimized training pipelines. To bridge this gap, we present a unified multi-agent visual reasoning framework that systematically evolves from our foundational image-centric model, Insight-V, into a generalized spatial-temporal architecture, Insight-V++. We first propose a scalable data generation pipeline equipped with multi-granularity assessment that autonomously synthesizes structured, complex reasoning trajectories across image and video domains without human intervention. Recognizing that directly supervising MLLMs with such intricate data yields sub-optimal results, we design a dual-agent architecture comprising a reasoning agent to execute extensive analytical chains, and a summary agent to critically evaluate and distill final outcomes. While our initial framework utilized Direct Preference Optimization (DPO), its off-policy nature fundamentally constrained reinforcement learning potential. To overcome these limitations, particularly for long-horizon video understanding, Insight-V++ introduces two novel algorithms, ST-GRPO and J-GRPO, which enhance spatial-temporal reasoning and improve evaluative robustness. Crucially, by leveraging reliable feedback from the summary agent, we guide an iterative reasoning path generation process, retraining the entire multi-agent system in a continuous, self-improving loop. Extensive experiments on base models like LLaVA-NeXT and Qwen2.5-VL demonstrate significant performance gains across challenging image and video reasoning benchmarks while preserving strong capabilities on traditional perception-focused tasks.",
+      "link": "https://arxiv.org/abs/2603.18118",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.241990+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18859v1",
+      "title": "RewardFlow: Topology-Aware Reward Propagation on State Graphs for Agentic RL with Large Language Models",
+      "summary": "arXiv:2603.18859v1 Announce Type: cross \nAbstract: Reinforcement learning (RL) holds significant promise for enhancing the agentic reasoning capabilities of large language models (LLMs) with external environments. However, the inherent sparsity of terminal rewards hinders fine-grained, state-level optimization. Although process reward modeling offers a promising alternative, training dedicated reward models often entails substantial computational costs and scaling difficulties. To address these challenges, we introduce RewardFlow, a lightweight method for estimating state-level rewards tailored to agentic reasoning tasks. RewardFlow leverages the intrinsic topological structure of states within reasoning trajectories by constructing state graphs. This enables an analysis of state-wise contributions to success, followed by topology-aware graph propagation to quantify contributions and yield objective, state-level rewards. When integrated as dense rewards for RL optimization, RewardFlow substantially outperforms prior RL baselines across four agentic reasoning benchmarks, demonstrating superior performance, robustness, and training efficiency. The implementation of RewardFlow is publicly available at https://github.com/tmlr-group/RewardFlow.",
+      "link": "https://arxiv.org/abs/2603.18859",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.036013+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18495v1",
+      "title": "Cross-Domain Demo-to-Code via Neurosymbolic Counterfactual Reasoning",
+      "summary": "arXiv:2603.18495v1 Announce Type: new \nAbstract: Recent advances in Vision-Language Models (VLMs) have enabled video-instructed robotic programming, allowing agents to interpret video demonstrations and generate executable control code. We formulate video-instructed robotic programming as a cross-domain adaptation problem, where perceptual and physical differences between demonstration and deployment induce procedural mismatches. However, current VLMs lack the procedural understanding needed to reformulate causal dependencies and achieve task-compatible behavior under such domain shifts. We introduce NeSyCR, a neurosymbolic counterfactual reasoning framework that enables verifiable adaptation of task procedures, providing a reliable synthesis of code policies. NeSyCR abstracts video demonstrations into symbolic trajectories that capture the underlying task procedure. Given deployment observations, it derives counterfactual states that reveal cross-domain incompatibilities. By exploring the symbolic state space with verifiable checks, NeSyCR proposes procedural revisions that restore compatibility with the demonstrated procedure. NeSyCR achieves a 31.14% improvement in task success over the strongest baseline Statler, showing robust cross-domain adaptation across both simulated and real-world manipulation tasks.",
+      "link": "https://arxiv.org/abs/2603.18495",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.241434+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18987v1",
+      "title": "Unmasking Algorithmic Bias in Predictive Policing: A GAN-Based Simulation Framework with Multi-City Temporal Analysis",
+      "summary": "arXiv:2603.18987v1 Announce Type: new \nAbstract: Predictive policing systems that direct patrol resources based on algorithmically generated crime forecasts have been widely deployed across US cities, yet their tendency to encode and amplify racial disparities remains poorly understood in quantitative terms. We present a reproducible simulation framework that couples a Generative Adversarial Network GAN with a Noisy OR patrol detection model to measure how racial bias propagates through the full enforcement pipeline from crime occurrence to police contact. Using 145000 plus Part 1 crime records from Baltimore 2017 to 2019 and 233000 plus records from Chicago 2022, augmented with US Census ACS demographic data, we compute four monthly bias metrics across 264 city year mode observations: the Disparate Impact Ratio DIR, Demographic Parity Gap, Gini Coefficient, and a composite Bias Amplification Score.\n  Our experiments reveal extreme and year variant bias in Baltimores detected mode, with mean annual DIR up to 15714 in 2019, moderate under detection of Black residents in Chicago DIR equals 0.22, and persistent Gini coefficients of 0.43 to 0.62 across all conditions. We further demonstrate that a Conditional Tabular GAN CTGAN debiasing approach partially redistributes detection rates but cannot eliminate structural disparity without accompanying policy intervention. Socioeconomic regression analysis confirms strong correlations between neighborhood racial composition and detection likelihood Pearson r equals 0.83 for percent White and r equals negative 0.81 for percent Black. A sensitivity analysis over patrol radius, officer count, and citizen reporting probability reveals that outcomes are most sensitive to officer deployment levels. The code and data are publicly available at this repository.",
+      "link": "https://arxiv.org/abs/2603.18987",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.241669+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18028v1",
+      "title": "Clinically Meaningful Explainability for NeuroAI: An ethical, technical, and clinical perspective",
+      "summary": "arXiv:2603.18028v1 Announce Type: cross \nAbstract: While explainable AI (XAI) is often heralded as a means to enhance transparency and trustworthiness in closed-loop neurotechnology for psychiatric and neurological conditions, its real-world prevalence remains low. Moreover, empirical evidence suggests that the type of explanations provided by current XAI methods often fails to align with clinicians' end-user needs. In this viewpoint, we argue that clinically meaningful explainability (CME) is essential for AI-enabled closed-loop medical neurotechnology and must be addressed from an ethical, technical, and clinical perspective. Instead of exhaustive technical detail, clinicians prioritize clinically relevant, actionable explanations, such as clear representations of input-output relationships and feature importance. Full technical transparency, although theoretically desirable, often proves irrelevant or even overwhelming in practice, as it may lead to informational overload. Therefore, we advocate for CME in the neurotechnology domain: prioritizing actionable clarity over technical completeness and designing interface visualizations that intuitively map AI outputs and key features into clinically meaningful formats. To this end, we introduce a reference architecture called NeuroXplain, which translates CME into actionable technical design recommendations for any future neurostimulation device. Our aim is to inform stakeholders working in neurotechnology and regulatory framework development to ensure that explainability fulfills the right needs for the right stakeholders and ultimately leads to better patient treatment and care.",
+      "link": "https://arxiv.org/abs/2603.18028",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.241840+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18762v1",
+      "title": "ClawTrap: A MITM-Based Red-Teaming Framework for Real-World OpenClaw Security Evaluation",
+      "summary": "arXiv:2603.18762v1 Announce Type: cross \nAbstract: Autonomous web agents such as \\textbf{OpenClaw} are rapidly moving into high-impact real-world workflows, but their security robustness under live network threats remains insufficiently evaluated. Existing benchmarks mainly focus on static sandbox settings and content-level prompt attacks, which leaves a practical gap for network-layer security testing. In this paper, we present \\textbf{ClawTrap}, a \\textbf{MITM-based red-teaming framework for real-world OpenClaw security evaluation}. ClawTrap supports diverse and customizable attack forms, including \\textit{Static HTML Replacement}, \\textit{Iframe Popup Injection}, and \\textit{Dynamic Content Modification}, and provides a reproducible pipeline for rule-driven interception, transformation, and auditing. This design lays the foundation for future research to construct richer, customizable MITM attacks and to perform systematic security testing across agent frameworks and model backbones. Our empirical study shows clear model stratification: weaker models are more likely to trust tampered observations and produce unsafe outputs, while stronger models demonstrate better anomaly attribution and safer fallback strategies. These findings indicate that reliable OpenClaw security evaluation should explicitly incorporate dynamic real-world MITM conditions rather than relying only on static sandbox protocols.",
+      "link": "https://arxiv.org/abs/2603.18762",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.242557+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19101v1",
+      "title": "FedTrident: Resilient Road Condition Classification Against Poisoning Attacks in Federated Learning",
+      "summary": "arXiv:2603.19101v1 Announce Type: cross \nAbstract: FL has emerged as a transformative paradigm for ITS, notably camera-based Road Condition Classification (RCC). However, by enabling collaboration, FL-based RCC exposes the system to adversarial participants launching Targeted Label-Flipping Attacks (TLFAs). Malicious clients (vehicles) can relabel their local training data (e.g., from an actual uneven road to a wrong smooth road), consequently compromising global model predictions and jeopardizing transportation safety. Existing countermeasures against such poisoning attacks fail to maintain resilient model performance near the necessary attack-free levels in various attack scenarios due to: 1) not tailoring poisoned local model detection to TLFAs, 2) not excluding malicious vehicular clients based on historical behavior, and 3) not remedying the already-corrupted global model after exclusion. To close this research gap, we propose FedTrident, which introduces: 1) neuron-wise analysis for local model misbehavior detection (notably including attack goal identification, critical feature extraction, and GMM-based model clustering and filtering); 2) adaptive client rating for client exclusion according to the local model detection results in each FL round; and 3) machine unlearning for corrupted global model remediation once malicious clients are excluded during FL. Extensive evaluation across diverse FL-RCC models, tasks, and configurations demonstrates that FedTrident can effectively thwart TLFAs, achieving performance comparable to that in attack-free scenarios and outperforming eight baseline countermeasures by 9.49% and 4.47% for the two most critical metrics. Moreover, FedTrident is resilient to various malicious client rates, data heterogeneity levels, complicated multi-task, and dynamic attacks.",
+      "link": "https://arxiv.org/abs/2603.19101",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.242832+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15888v2",
+      "title": "AsgardBench -- Evaluating Visually Grounded Interactive Planning Under Minimal Feedback",
+      "summary": "arXiv:2603.15888v2 Announce Type: replace \nAbstract: With AsgardBench we aim to evaluate visually grounded, high-level action sequence generation and interactive planning, focusing specifically on plan adaptation during execution based on visual observations rather than navigation or low-level manipulation. In the landscape of embodied AI benchmarks, AsgardBench targets the capability category of interactive planning, which is more sophisticated than offline high-level planning as it requires agents to revise plans in response to environmental feedback, yet remains distinct from low-level execution. Unlike prior embodied AI benchmarks that conflate reasoning with navigation or provide rich corrective feedback that substitutes for perception, AsgardBench restricts agent input to images, action history, and lightweight success/failure signals, isolating interactive planning in a controlled simulator without low-level control noise. The benchmark contains 108 task instances spanning 12 task types, each systematically varied through object state, placement, and scene configuration. These controlled variations create conditional branches in which a single instruction can require different action sequences depending on what the agent observes, emphasizing conditional branching and plan repair during execution. Our evaluations of leading vision language models show that performance drops sharply without visual input, revealing weaknesses in visual grounding and state tracking that ultimately undermine interactive planning. Our benchmark zeroes in on a narrower question: can a model actually use what it sees to adapt a plan when things do not go as expected?",
+      "link": "https://arxiv.org/abs/2603.15888",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.243146+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19025v1",
+      "title": "Towards Verifiable AI with Lightweight Cryptographic Proofs of Inference",
+      "summary": "arXiv:2603.19025v1 Announce Type: new \nAbstract: When large AI models are deployed as cloud-based services, clients have no guarantee that responses are correct or were produced by the intended model. Rerunning inference locally is infeasible for large models, and existing cryptographic proof systems -- while providing strong correctness guarantees -- introduce prohibitive prover overhead (e.g., hundreds of seconds per query for billion-parameter models). We present a verification framework and protocol that replaces full cryptographic proofs with a lightweight, sampling-based approach grounded in statistical properties of neural networks. We formalize the conditions under which trace separation between functionally dissimilar models can be leveraged to argue the security of verifiable inference protocols. The prover commits to the execution trace of inference via Merkle-tree-based vector commitments and opens only a small number of entries along randomly sampled paths from output to input. This yields a protocol that trades soundness for efficiency, a tradeoff well-suited to auditing, large-scale deployment settings where repeated queries amplify detection probability, and scenarios with rationally incentivized provers who face penalties upon detection. Our approach reduces proving times by several orders of magnitude compared to state-of-the-art cryptographic proof systems, going from the order of minutes to the order of milliseconds, with moderately larger proofs. Experiments on ResNet-18 classifiers and Llama-2-7B confirm that common architectures exhibit the statistical properties our protocol requires, and that natural adversarial strategies (gradient-descent reconstruction, inverse transforms, logit swapping) fail to produce traces that evade detection. We additionally present a protocol in the refereed delegation model, where two competing servers enable correct output identification in a logarithmic number of rounds.",
+      "link": "https://arxiv.org/abs/2603.19025",
+      "feed": "cs.CR",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.333047+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19082v1",
+      "title": "A Dataset and Resources for Identifying Patient Health Literacy Information from Clinical Notes",
+      "summary": "arXiv:2603.19082v1 Announce Type: new \nAbstract: Health literacy is a critical determinant of patient outcomes, yet current screening tools are not always feasible and differ considerably in the number of items, question format, and dimensions of health literacy they capture, making documentation in structured electronic health records difficult to achieve. Automated detection from unstructured clinical notes offers a promising alternative, as these notes often contain richer, more contextual health literacy information, but progress has been limited by the lack of annotated resources. We introduce HEALIX, the first publicly available annotated health literacy dataset derived from real clinical notes, curated through a combination of social worker note sampling, keyword-based filtering, and LLM-based active learning. HEALIX contains 589 notes across 9 note types, annotated with three health literacy labels: low, normal, and high. To demonstrate its utility, we benchmarked zero-shot and few-shot prompting strategies across four open source large language models (LLMs).",
+      "link": "https://arxiv.org/abs/2603.19082",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "zero-shot",
+        "few-shot"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.035837+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.11618v3",
+      "title": "StoryBox: Collaborative Multi-Agent Simulation for Hybrid Bottom-Up Long-Form Story Generation Using Large Language Models",
+      "summary": "arXiv:2510.11618v3 Announce Type: replace \nAbstract: Human writers often begin their stories with an overarching mental scene, where they envision the interactions between characters and their environment. Inspired by this creative process, we propose a novel approach to long-form story generation, termed hybrid bottom-up long-form story generation, using multi-agent simulations. In our method, agents interact within a dynamic sandbox environment, where their behaviors and interactions with one another and the environment generate emergent events. These events form the foundation for the story, enabling organic character development and plot progression. Unlike traditional top-down approaches that impose rigid structures, our hybrid bottom-up approach allows for the natural unfolding of events, fostering more spontaneous and engaging storytelling. The system is capable of generating stories exceeding 10,000 words while maintaining coherence and consistency, addressing some of the key challenges faced by current story generation models. We achieve state-of-the-art performance across several metrics. This approach offers a scalable and innovative solution for creating dynamic, immersive long-form stories that evolve organically from agent-driven interactions.",
+      "link": "https://arxiv.org/abs/2510.11618",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.036166+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.03636v3",
+      "title": "CausalARC: Abstract Reasoning with Causal World Models",
+      "summary": "arXiv:2509.03636v3 Announce Type: replace-cross \nAbstract: On-the-fly reasoning often requires adaptation to novel problems under limited data and distribution shift. This work introduces CausalARC: an experimental testbed for AI reasoning in low-data and out-of-distribution regimes, modeled after the Abstraction and Reasoning Corpus (ARC). Each CausalARC reasoning task is sampled from a fully specified causal world model, formally expressed as a structural causal model. Principled data augmentations provide observational, interventional, and counterfactual feedback about the world model in the form of few-shot, in-context learning demonstrations. As a proof-of-concept, we illustrate the use of CausalARC for four language model evaluation settings: (1) abstract reasoning with test-time training, (2) counterfactual reasoning with in-context learning, (3) program synthesis, and (4) causal discovery with logical reasoning. Within- and between-model performance varied heavily across tasks, indicating room for significant improvement in language model reasoning.",
+      "link": "https://arxiv.org/abs/2509.03636",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "in-context learning",
+        "few-shot"
+      ],
+      "fetched_at": "2026-03-20T22:02:25.036370+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Prompt Control-Flow Integrity: A Priority-Aware Runtime Defense Against Prompt I",
+      "paper_link": "https://arxiv.org/abs/2603.18433",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Prompt Control-Flow Integrity: A Priority-Aware Runtime Defe' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation F",
+      "paper_link": "https://arxiv.org/abs/2603.18280",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Detection Is Cheap, Routing Is Learned: Why Refusal-Based Al' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation F",
+      "paper_link": "https://arxiv.org/abs/2603.18280",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Detection Is Cheap, Routing Is Learned: Why Refusal-Based Al' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation F",
+      "paper_link": "https://arxiv.org/abs/2603.18280",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Detection Is Cheap, Routing Is Learned: Why Refusal-Based Al' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation F",
+      "paper_link": "https://arxiv.org/abs/2603.18280",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Detection Is Cheap, Routing Is Learned: Why Refusal-Based Al' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Cont",
+      "paper_link": "https://arxiv.org/abs/2110.02887",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Using Optimal Transport as Alignment Objective for fine-tuni' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Cont",
+      "paper_link": "https://arxiv.org/abs/2110.02887",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Using Optimal Transport as Alignment Objective for fine-tuni' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Cont",
+      "paper_link": "https://arxiv.org/abs/2110.02887",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Using Optimal Transport as Alignment Objective for fine-tuni' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Using Optimal Transport as Alignment Objective for fine-tuning Multilingual Cont",
+      "paper_link": "https://arxiv.org/abs/2110.02887",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Using Optimal Transport as Alignment Objective for fine-tuni' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "VLM-AutoDrive: Post-Training Vision-Language Models for Safety-Critical Autonomo",
+      "paper_link": "https://arxiv.org/abs/2603.18178",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'VLM-AutoDrive: Post-Training Vision-Language Models for Safe' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "VLM-AutoDrive: Post-Training Vision-Language Models for Safety-Critical Autonomo",
+      "paper_link": "https://arxiv.org/abs/2603.18178",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'VLM-AutoDrive: Post-Training Vision-Language Models for Safe' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "VLM-AutoDrive: Post-Training Vision-Language Models for Safety-Critical Autonomo",
+      "paper_link": "https://arxiv.org/abs/2603.18178",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'VLM-AutoDrive: Post-Training Vision-Language Models for Safe' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "VLM-AutoDrive: Post-Training Vision-Language Models for Safety-Critical Autonomo",
+      "paper_link": "https://arxiv.org/abs/2603.18178",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'VLM-AutoDrive: Post-Training Vision-Language Models for Safe' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Can LLMs Reason Like Automated Theorem Provers for Rust Verification? VCoT-Bench",
+      "paper_link": "https://arxiv.org/abs/2603.18334",
+      "paper_score": 2,
+      "type": "reasoning_upgrade",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Can LLMs Reason Like Automated Theorem Provers for Rust Veri' presents improved chain of thought methods. Consider updating reasoning directives in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)]."
+    },
+    {
+      "paper": "Can LLMs Reason Like Automated Theorem Provers for Rust Verification? VCoT-Bench",
+      "paper_link": "https://arxiv.org/abs/2603.18334",
+      "paper_score": 2,
+      "type": "reasoning_upgrade",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Can LLMs Reason Like Automated Theorem Provers for Rust Veri' presents improved chain of thought methods. Consider updating reasoning directives in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
