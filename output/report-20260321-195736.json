@@ -1,0 +1,59 @@
+{
+  "run_at": "2026-03-21T19:57:36.344738+00:00",
+  "papers_found": 4,
+  "suggestions_generated": 0,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.18736v1",
+      "title": "CausalRM: Causal-Theoretic Reward Modeling for RLHF from Observational User Feedbacks",
+      "summary": "arXiv:2603.18736v1 Announce Type: cross \nAbstract: Despite the success of reinforcement learning from human feedback (RLHF) in aligning language models, current reward modeling heavily relies on experimental feedback data collected from human annotators under controlled and costly conditions. In this work, we introduce observational reward modeling -- learning reward models with observational user feedback (e.g., clicks, copies, and upvotes) -- as a scalable and cost-effective alternative. We identify two fundamental challenges in this setting: (1) observational feedback is noisy due to annotation errors, which deviates it from true user preference; (2) observational feedback is biased by user preference, where users preferentially provide feedback on responses they feel strongly about, which creats a distribution shift between training and inference data. To address these challenges, we propose CausalRM, a causal-theoretic reward modeling framework that aims to learn unbiased reward models from observational feedback. To tackle challenge (1), CausalRM introduces a noise-aware surrogate loss term that is provably equivalent to the primal loss under noise-free conditions by explicitly modeling the annotation error generation process. To tackle challenge (2), CausalRM uses propensity scores -- the probability of a user providing feedback for a given response -- to reweight training samples, yielding a loss function that eliminates user preference bias. Extensive experiments across diverse LLM backbones and benchmark datasets validate that CausalRM effectively learns accurate reward signals from noisy and biased observational feedback and delivers substantial performance improvements on downstream RLHF tasks -- including a 49.2% gain on WildGuardMix and a 32.7% improvement on HarmBench. Code is available on our project website.",
+      "link": "https://arxiv.org/abs/2603.18736",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-21T19:57:33.044533+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19092v1",
+      "title": "SAVeS: Steering Safety Judgments in Vision-Language Models via Semantic Cues",
+      "summary": "arXiv:2603.19092v1 Announce Type: cross \nAbstract: Vision-language models (VLMs) are increasingly deployed in real-world and embodied settings where safety decisions depend on visual context. However, it remains unclear which visual evidence drives these judgments. We study whether multimodal safety behavior in VLMs can be steered by simple semantic cues. We introduce a semantic steering framework that applies controlled textual, visual, and cognitive interventions without changing the underlying scene content. To evaluate these effects, we propose SAVeS, a benchmark for situational safety under semantic cues, together with an evaluation protocol that separates behavioral refusal, grounded safety reasoning, and false refusals. Experiments across multiple VLMs and an additional state-of-the-art benchmark show that safety decisions are highly sensitive to semantic cues, indicating reliance on learned visual-linguistic associations rather than grounded visual understanding. We further demonstrate that automated steering pipelines can exploit these mechanisms, highlighting a potential vulnerability in multimodal safety systems.",
+      "link": "https://arxiv.org/abs/2603.19092",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "vulnerability",
+        "behavioral",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-21T19:57:33.044620+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2407.17454v4",
+      "title": "Automated Explanation Selection for Scientific Discovery",
+      "summary": "arXiv:2407.17454v4 Announce Type: replace \nAbstract: Automated reasoning is a key technology in the young but rapidly growing field of Explainable Artificial Intelligence (XAI). Explanability helps build trust in artificial intelligence systems beyond their mere predictive accuracy and robustness. In this paper, we propose a cycle of scientific discovery that combines machine learning with automated reasoning for the generation and the selection of explanations. We present a taxonomy of explanation selection problems that draws on insights from sociology and cognitive science. These selection criteria subsume existing notions and extend them with new properties.",
+      "link": "https://arxiv.org/abs/2407.17454",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-21T19:57:33.044661+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.08905v3",
+      "title": "iSeal: Encrypted Fingerprinting for Reliable LLM Ownership Verification",
+      "summary": "arXiv:2511.08905v3 Announce Type: replace-cross \nAbstract: Given the high cost of large language model (LLM) training from scratch, safeguarding LLM intellectual property (IP) has become increasingly crucial. As the standard paradigm for IP ownership verification, LLM fingerprinting thus plays a vital role in addressing this challenge. Existing LLM fingerprinting methods verify ownership by extracting or injecting model-specific features. However, they overlook potential attacks during the verification process, leaving them ineffective when the model thief fully controls the LLM's inference process. In such settings, attackers may share prompt-response pairs to enable fingerprint unlearning or manipulate outputs to evade exact-match verification. We propose iSeal, the first fingerprinting method designed for reliable verification when the model thief controls the suspected LLM in an end-to-end manner. It injects unique features into both the model and an external module, reinforced by an error-correction mechanism and a similarity-based verification strategy. These components are resistant to verification-time attacks, including collusion-based fingerprint unlearning and response manipulation, backed by both theoretical analysis and empirical results. iSeal achieves 100 percent Fingerprint Success Rate (FSR) on 12 LLMs against more than 10 attacks, while baselines fail under unlearning and response manipulations.",
+      "link": "https://arxiv.org/abs/2511.08905",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-21T19:57:33.044853+00:00"
+    }
+  ],
+  "suggestions": []
+}
