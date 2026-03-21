@@ -1,0 +1,145 @@
+{
+  "run_at": "2026-03-21T12:00:11.369210+00:00",
+  "papers_found": 5,
+  "suggestions_generated": 8,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.18719v1",
+      "title": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "summary": "arXiv:2603.18719v1 Announce Type: cross \nAbstract: Bridging the simulation-to-reality (sim2real) gap remains challenging as labelled real-world data is scarce. Existing diffusion-based approaches rely on unstructured prompts or statistical alignment, which do not capture the structured factors that make images look real. We introduce Ontology- Guided Diffusion (OGD), a neuro-symbolic zero-shot sim2real image translation framework that represents realism as structured knowledge. OGD decomposes realism into an ontology of interpretable traits -- such as lighting and material properties -- and encodes their relationships in a knowledge graph. From a synthetic image, OGD infers trait activations and uses a graph neural network to produce a global embedding. In parallel, a symbolic planner uses the ontology traits to compute a consistent sequence of visual edits needed to narrow the realism gap. The graph embedding conditions a pretrained instruction-guided diffusion model via cross-attention, while the planned edits are converted into a structured instruction prompt. Across benchmarks, our graph-based embeddings better distinguish real from synthetic imagery than baselines, and OGD outperforms state-of-the-art diffusion methods in sim2real image translations. Overall, OGD shows that explicitly encoding realism structure enables interpretable, data-efficient, and generalisable zero-shot sim2real transfer.",
+      "link": "https://arxiv.org/abs/2603.18719",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "diffusion model",
+        "graph neural",
+        "alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-21T12:00:08.184267+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18202v1",
+      "title": "R2-Dreamer: Redundancy-Reduced World Models without Decoders or Augmentation",
+      "summary": "arXiv:2603.18202v1 Announce Type: cross \nAbstract: A central challenge in image-based Model-Based Reinforcement Learning (MBRL) is to learn representations that distill essential information from irrelevant visual details. While promising, reconstruction-based methods often waste capacity on large task-irrelevant regions. Decoder-free methods instead learn robust representations by leveraging Data Augmentation (DA), but reliance on such external regularizers limits versatility. We propose R2-Dreamer, a decoder-free MBRL framework with a self-supervised objective that serves as an internal regularizer, preventing representation collapse without resorting to DA. The core of our method is a redundancy-reduction objective inspired by Barlow Twins, which can be easily integrated into existing frameworks. On DeepMind Control Suite and Meta-World, R2-Dreamer is competitive with strong baselines such as DreamerV3 and TD-MPC2 while training 1.59x faster than DreamerV3, and yields substantial gains on DMC-Subtle with tiny task-relevant objects. These results suggest that an effective internal regularizer can enable versatile, high-performance decoder-free MBRL. Code is available at https://github.com/NM512/r2dreamer.",
+      "link": "https://arxiv.org/abs/2603.18202",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-21T12:00:08.184054+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.08898v3",
+      "title": "Preference-Driven Multi-Objective Combinatorial Optimization with Conditional Computation",
+      "summary": "arXiv:2506.08898v3 Announce Type: replace \nAbstract: Recent deep reinforcement learning methods have achieved remarkable success in solving multi-objective combinatorial optimization problems (MOCOPs) by decomposing them into multiple subproblems, each associated with a specific weight vector. However, these methods typically treat all subproblems equally and solve them using a single model, hindering the effective exploration of the solution space and thus leading to suboptimal performance. To overcome the limitation, we propose POCCO, a novel plug-and-play framework that enables adaptive selection of model structures for subproblems, which are subsequently optimized based on preference signals rather than explicit reward values. Specifically, we design a conditional computation block that routes subproblems to specialized neural architectures. Moreover, we propose a preference-driven optimization algorithm that learns pairwise preferences between winning and losing solutions. We evaluate the efficacy and versatility of POCCO by applying it to two state-of-the-art neural methods for MOCOPs. Experimental results across four classic MOCOP benchmarks demonstrate its significant superiority and strong generalization.",
+      "link": "https://arxiv.org/abs/2506.08898",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-21T12:00:08.184336+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.03686v2",
+      "title": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentiable Physics Alignment",
+      "summary": "arXiv:2603.03686v2 Announce Type: replace \nAbstract: Automated design of chemical formulations is a cornerstone of materials science, yet it requires navigating a high-dimensional combinatorial space involving discrete compositional choices and continuous geometric constraints. Existing Large Language Model (LLM) agents face significant challenges in this setting, including context window limitations during long-horizon reasoning and path-dependent exploration that may lead to mode collapse. To address these issues, we introduce AI4S-SDS, a closed-loop neuro-symbolic framework that integrates multi-agent collaboration with a tailored Monte Carlo Tree Search (MCTS) engine. We propose a Sparse State Storage mechanism with Dynamic Path Reconstruction, which decouples reasoning history from context length and enables arbitrarily deep exploration under fixed token budgets. To reduce local convergence and improve coverage, we implement a Global--Local Search Strategy: a memory-driven planning module adaptively reconfigures the search root based on historical feedback, while a Sibling-Aware Expansion mechanism promotes orthogonal exploration at the node level. Furthermore, we bridge symbolic reasoning and physical feasibility through a Differentiable Physics Engine, employing a hybrid normalized loss with sparsity-inducing regularization to optimize continuous mixing ratios under thermodynamic constraints. Empirical results show that AI4S-SDS achieves full validity under the adopted HSP-based physical constraints and substantially improves exploration diversity compared to baseline agents. In preliminary lithography experiments, the framework identifies a novel photoresist developer formulation that demonstrates competitive or superior performance relative to a commercial benchmark, highlighting the potential of diversity-driven neuro-symbolic search for scientific discovery.",
+      "link": "https://arxiv.org/abs/2603.03686",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "multi-agent",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-21T12:00:08.184407+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19022v1",
+      "title": "Behavioral Fingerprints for LLM Endpoint Stability and Identity",
+      "summary": "arXiv:2603.19022v1 Announce Type: new \nAbstract: The consistency of AI-native applications depends on the behavioral consistency of the model endpoints that power them. Traditional reliability metrics such as uptime, latency and throughput do not capture behavioral change, and an endpoint can remain \"healthy\" while its effective model identity changes due to updates to weights, tokenizers, quantization, inference engines, kernels, caching, routing, or hardware. We introduce Stability Monitor, a black-box stability monitoring system that periodically fingerprints an endpoint by sampling outputs from a fixed prompt set and comparing the resulting output distributions over time. Fingerprints are compared using a summed energy distance statistic across prompts, with permutation-test p-values as evidence of distribution shift aggregated sequentially to detect change events and define stability periods. In controlled validation, Stability Monitor detects changes to model family, version, inference stack, quantization, and behavioral parameters. In real-world monitoring of the same model hosted by multiple providers, we observe substantial provider-to-provider and within-provider stability differences.",
+      "link": "https://arxiv.org/abs/2603.19022",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-21T12:00:08.183852+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse MCTS and Differentia",
+      "paper_link": "https://arxiv.org/abs/2603.03686",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'AI4S-SDS: A Neuro-Symbolic Solvent Design System via Sparse ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    }
+  ]
+}
