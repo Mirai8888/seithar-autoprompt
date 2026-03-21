@@ -1,0 +1,456 @@
+{
+  "run_at": "2026-03-21T04:02:27.472867+00:00",
+  "papers_found": 24,
+  "suggestions_generated": 21,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.18895v1",
+      "title": "From Accuracy to Readiness: Metrics and Benchmarks for Human-AI Decision-Making",
+      "summary": "arXiv:2603.18895v1 Announce Type: cross \nAbstract: Artificial intelligence (AI) systems are deployed as collaborators in human decision-making. Yet, evaluation practices focus primarily on model accuracy rather than whether human-AI teams are prepared to collaborate safely and effectively. Empirical evidence shows that many failures arise from miscalibrated reliance, including overuse when AI is wrong and underuse when it is helpful.\n  This paper proposes a measurement framework for evaluating human-AI decision-making centered on team readiness. We introduce a four part taxonomy of evaluation metrics spanning outcomes, reliance behavior, safety signals, and learning over time, and connect these metrics to the Understand-Control-Improve (U-C-I) lifecycle of human-AI onboarding and collaboration.\n  By operationalizing evaluation through interaction traces rather than model properties or self-reported trust, our framework enables deployment-relevant assessment of calibration, error recovery, and governance. We aim to support more comparable benchmarks and cumulative research on human-AI readiness, advancing safer and more accountable human-AI collaboration.",
+      "link": "https://arxiv.org/abs/2603.18895",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.288909+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.07313v3",
+      "title": "Adversarial Latent-State Training for Robust Policies in Partially Observable Domains",
+      "summary": "arXiv:2603.07313v3 Announce Type: replace-cross \nAbstract: Robustness under latent distribution shift remains challenging in partially observable reinforcement learning. We formalize a focused setting where an adversary selects a hidden initial latent distribution before the episode, termed an adversarial latent-initial-state POMDP. Theoretically, we prove a latent minimax principle, characterize worst-case defender distributions, and derive approximate best-response inequalities with finite-sample concentration bounds that make the optimization and sampling terms explicit. Empirically, using a Battleship benchmark, we demonstrate that targeted exposure to shifted latent distributions reduces average robustness gaps between Spread and Uniform distributions from 10.3 to 3.1 shots at equal budget. Furthermore, iterative best-response training exhibits budget-sensitive behavior that is qualitatively consistent with the theorem-guided diagnostics once one accounts for discounted PPO surrogates and finite-sample noise. Ultimately, we show that for latent-initial-state problems, the framework yields a clean evaluation game and useful theorem-motivated diagnostics while also making clear where implementation-level surrogates and optimization limits enter.",
+      "link": "https://arxiv.org/abs/2603.07313",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.290042+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18740v1",
+      "title": "Measuring and Exploiting Confirmation Bias in LLM-Assisted Security Code Review",
+      "summary": "arXiv:2603.18740v1 Announce Type: cross \nAbstract: Security code reviews increasingly rely on systems integrating Large Language Models (LLMs), ranging from interactive assistants to autonomous agents in CI/CD pipelines. We study whether confirmation bias (i.e., the tendency to favor interpretations that align with prior expectations) affects LLM-based vulnerability detection, and whether this failure mode can be exploited in software supply-chain attacks. We conduct two complementary studies.\n  Study 1 quantifies confirmation bias through controlled experiments on 250 CVE vulnerability/patch pairs evaluated across four state-of-the-art models under five framing conditions for the review prompt. Framing a change as bug-free reduces vulnerability detection rates by 16-93%, with strongly asymmetric effects: false negatives increase sharply while false positive rates change little. Bias effects vary by vulnerability type, with injection flaws being more susceptible to them than memory corruption bugs.\n  Study 2 evaluates exploitability in practice mimicking adversarial pull requests that reintroduce known vulnerabilities while framed as security improvements or urgent functionality fixes via their pull request metadata. Adversarial framing succeeds in 35% of cases against GitHub Copilot (interactive assistant) under one-shot attacks and in 88% of cases against Claude Code (autonomous agent) in real project configurations where adversaries can iteratively refine their framing to increase attack success. Debiasing via metadata redaction and explicit instructions restores detection in all interactive cases and 94% of autonomous cases. Our results show that confirmation bias poses a weakness in LLM-based code review, with implications on how AI-assisted development tools are deployed.",
+      "link": "https://arxiv.org/abs/2603.18740",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "vulnerability",
+        "exploit",
+        "framing"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.288746+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19169v1",
+      "title": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angiography Analysis",
+      "summary": "arXiv:2603.19169v1 Announce Type: cross \nAbstract: Conventional pixel-wise loss functions fail to enforce topological constraints in coronary vessel segmentation, producing fragmented vascular trees despite high pixel-level accuracy. We present ARIADNE, a two-stage framework coupling preference-aligned perception with RL-based diagnostic reasoning for topologically coherent stenosis detection. The perception module employs DPO to fine-tune the Sa2VA vision-language foundation model using Betti number constraints as preference signals, aligning the policy toward geometrically complete vessel structures rather than pixel-wise overlap metrics. The reasoning module formulates stenosis localization as a Markov Decision Process with an explicit rejection mechanism that autonomously defers ambiguous anatomical candidates such as bifurcations and vessel crossings, shifting from coverage maximization to reliability optimization. On 1,400 clinical angiograms, ARIADNE achieves state-of-the-art centerline Dice of 0.838, reduces false positives by 41% compared to geometric baselines. External validation on multi-center benchmarks ARCADE and XCAD confirms generalization across acquisition protocols. This represents the first application of DPO for topological alignment in medical imaging, demonstrating that preference-based learning over structural constraints mitigates topological violations while maintaining diagnostic sensitivity in interventional cardiology workflows.",
+      "link": "https://arxiv.org/abs/2603.19169",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289253+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.20784v2",
+      "title": "Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control",
+      "summary": "arXiv:2508.20784v2 Announce Type: replace \nAbstract: Bus bunching remains a challenge for urban transit due to stochastic traffic and passenger demand. Traditional solutions rely on multi-agent reinforcement learning (MARL) in loop-line settings, which overlook realistic operations characterized by heterogeneous routes, timetables, fluctuating demand, and varying fleet sizes. We propose a novel single-agent reinforcement learning (RL) framework for bus holding control that avoids the data imbalance and convergence issues of MARL under near-realistic simulation. A bidirectional timetabled network with dynamic passenger demand is constructed. The key innovation is reformulating the multi-agent problem into a single-agent one by augmenting the state space with categorical identifiers (vehicle ID, station ID, time period) in addition to numerical features (headway, occupancy, velocity). This high-dimensional encoding enables single-agent policies to capture inter-agent dependencies, analogous to projecting non-separable inputs into a higher-dimensional space. We further design a structured reward function aligned with operational goals: instead of exponential penalties on headway deviations, a ridge-shaped reward balances uniform headways and schedule adherence. Experiments show that our modified soft actor-critic (SAC) achieves more stable and superior performance than benchmarks, including MADDPG (e.g., -430k vs. -530k under stochastic conditions). These results demonstrate that single-agent deep RL, when enhanced with categorical structuring and schedule-aware rewards, can effectively manage bus holding in non-loop, real-world contexts. This paradigm offers a robust, scalable alternative to MARL frameworks, particularly where agent-specific experiences are imbalanced.",
+      "link": "https://arxiv.org/abs/2508.20784",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289429+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18662v1",
+      "title": "Thinking with Constructions: A Benchmark and Policy Optimization for Visual-Text Interleaved Geometric Reasoning",
+      "summary": "arXiv:2603.18662v1 Announce Type: new \nAbstract: Geometric reasoning inherently requires \"thinking with constructions\" -- the dynamic manipulation of visual aids to bridge the gap between problem conditions and solutions. However, existing Multimodal Large Language Models (MLLMs) are largely confined to passive inference with static diagrams, lacking the strategic knowledge of when and how to construct effective visual aids. To address this, we present a framework for Visual-Text Interleaved Chain-of-Thought. We first introduce GeoAux-Bench, the first benchmark comprising 4,334 geometry problems that aligns textual construction steps with ground-truth visual updates. Our pilot study reveals two critical insights: (1) interleaved visual-textual aids outperform single-modality counterparts, which cannot losslessly capture geometric synergy; and (2) valid constructions act as entropy reducers, strongly correlating with reduced reasoning perplexity. Building on these findings, we propose Action Applicability Policy Optimization (A2PO), a reinforcement learning paradigm for mastering strategic construction. A2PO employs Adaptive Reward Shaping to regulate the timing and quality of visual aids via counterfactual sampling to distinguish necessary from redundant constructions. Experiments demonstrate our approach enables MLLMs to leverage selective auxiliary constructions, yielding a 3.51% gain over strong baselines. Code and data are available on GitHub.",
+      "link": "https://arxiv.org/abs/2603.18662",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.287325+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18257v1",
+      "title": "Discovering What You Can Control: Interventional Boundary Discovery for Reinforcement Learning",
+      "summary": "arXiv:2603.18257v1 Announce Type: cross \nAbstract: Selecting relevant state dimensions in the presence of confounded distractors is a causal identification problem: observational statistics alone cannot reliably distinguish dimensions that correlate with actions from those that actions cause. We formalize this as discovering the agent's Causal Sphere of Influence and propose Interventional Boundary Discovery IBD, which applies Pearl's do-operator to the agent's own actions and uses two-sample testing to produce an interpretable binary mask over observation dimensions. IBD requires no learned models and composes with any downstream RL algorithm as a preprocessing step. Across 12 continuous control settings with up to 100 distractor dimensions, we find that: (1) observational feature selection can actively select confounded distractors while discarding true causal dimensions; (2) full-state RL degrades sharply once distractors outnumber relevant features by roughly 3:1 in our benchmarks; and (3)IBD closely tracks oracle performance across all distractor levels tested, with gains transferring across SAC and TD3.",
+      "link": "https://arxiv.org/abs/2603.18257",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.287986+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18300v1",
+      "title": "Auditing Preferences for Brands and Cultures in LLMs",
+      "summary": "arXiv:2603.18300v1 Announce Type: cross \nAbstract: Large language models (LLMs) based AI systems increasingly mediate what billions of people see, choose and buy. This creates an urgent need to quantify the systemic risks of LLM-driven market intermediation, including its implications for market fairness, competition, and the diversity of information exposure.\n  This paper introduces ChoiceEval, a reproducible framework for auditing preferences for brands and cultures in large language models (LLMs) under realistic usage conditions. ChoiceEval addresses two core technical challenges: (i) generating realistic, persona-diverse evaluation queries and (ii) converting free-form outputs into comparable choice sets and quantitative preference metrics. For a given topic (e.g. running shoes, hotel chains, travel destinations), the framework segments users into psychographic profiles (e.g., budget-conscious, wellness-focused, convenience), and then derives diverse prompts that reflect real-world advice-seeking and decision-making behaviour. LLM responses are converted into normalised top-k choice sets. Preference and geographic bias are then quantified using comparable metrics across topics and personas. Thus, ChoiceEval provides a scalable audit pipeline for researchers, platforms, and regulators, linking model behaviour to real-world economic outcomes.\n  Applied to Gemini, GPT, and DeepSeek across 10 topics spanning commerce and culture and more than 2,000 questions, ChoiceEval reveals consistent preferences: U.S.-developed models Gemini and GPT show marked favouritism toward American entities, while China-developed DeepSeek exhibits more balanced yet still detectable geographic preferences. These patterns persist across user personas, suggesting systematic rather than incidental effects.",
+      "link": "https://arxiv.org/abs/2603.18300",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "~psychographic",
+        "persona"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.288183+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.19373v2",
+      "title": "Stable Deep Reinforcement Learning via Isotropic Gaussian Representations",
+      "summary": "arXiv:2602.19373v2 Announce Type: replace-cross \nAbstract: Deep reinforcement learning systems often suffer from unstable training dynamics due to non-stationarity, where learning objectives and data distributions evolve over time. We show that under non-stationary targets, isotropic Gaussian embeddings are provably advantageous. In particular, they induce stable tracking of time-varying targets for linear readouts, achieve maximal entropy under a fixed variance budget, and encourage a balanced use of all representational dimensions--all of which enable agents to be more adaptive and stable. Building on this insight, we propose the use of Sketched Isotropic Gaussian Regularization for shaping representations toward an isotropic Gaussian distribution during training. We demonstrate empirically, over a variety of domains, that this simple and computationally inexpensive method improves performance under non-stationarity while reducing representation collapse, neuron dormancy, and training instability.",
+      "link": "https://arxiv.org/abs/2602.19373",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289992+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18767v1",
+      "title": "A Concept is More Than a Word: Diversified Unlearning in Text-to-Image Diffusion Models",
+      "summary": "arXiv:2603.18767v1 Announce Type: new \nAbstract: Concept unlearning has emerged as a promising direction for reducing the risks of harmful content generation in text-to-image diffusion models by selectively erasing undesirable concepts from a model's parameters. Existing approaches typically rely on keywords to identify the target concept to be unlearned. However, we show that this keyword-based formulation is inherently limited: a visual concept is multi-dimensional, can be expressed in diverse textual forms, and often overlap with related concepts in the latent space, making keyword-only unlearning, which imprecisely indicate the target concept is brittle and prone to over-forgetting. This occurs because a single keyword represents only a narrow point estimate of the concept, failing to cover its full semantic distribution and entangled variations in the latent space. To address this limitation, we propose Diversified Unlearning, a distributional framework that represents a concept through a set of contextually diverse prompts rather than a single keyword. This richer representation enables more precise and robust unlearning. Through extensive experiments across multiple benchmarks and state-of-the-art baselines, we demonstrate that integrating Diversified Unlearning as an add-on component into existing unlearning pipelines consistently achieves stronger erasure, better retention of unrelated concepts, and improved robustness against adversarial recovery attacks.",
+      "link": "https://arxiv.org/abs/2603.18767",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+adversarial",
+        "diffusion model"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.287415+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18719v1",
+      "title": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "summary": "arXiv:2603.18719v1 Announce Type: cross \nAbstract: Bridging the simulation-to-reality (sim2real) gap remains challenging as labelled real-world data is scarce. Existing diffusion-based approaches rely on unstructured prompts or statistical alignment, which do not capture the structured factors that make images look real. We introduce Ontology- Guided Diffusion (OGD), a neuro-symbolic zero-shot sim2real image translation framework that represents realism as structured knowledge. OGD decomposes realism into an ontology of interpretable traits -- such as lighting and material properties -- and encodes their relationships in a knowledge graph. From a synthetic image, OGD infers trait activations and uses a graph neural network to produce a global embedding. In parallel, a symbolic planner uses the ontology traits to compute a consistent sequence of visual edits needed to narrow the realism gap. The graph embedding conditions a pretrained instruction-guided diffusion model via cross-attention, while the planned edits are converted into a structured instruction prompt. Across benchmarks, our graph-based embeddings better distinguish real from synthetic imagery than baselines, and OGD outperforms state-of-the-art diffusion methods in sim2real image translations. Overall, OGD shows that explicitly encoding realism structure enables interpretable, data-efficient, and generalisable zero-shot sim2real transfer.",
+      "link": "https://arxiv.org/abs/2603.18719",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "diffusion model",
+        "graph neural",
+        "alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.288543+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19225v1",
+      "title": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+      "summary": "arXiv:2603.19225v1 Announce Type: cross \nAbstract: Real-world financial decision-making is a challenging problem that requires reasoning over heterogeneous signals, including company fundamentals derived from regulatory filings and trading signals computed from price dynamics. Recently, with the advancement of Large Language Models (LLMs), financial analysts have begun to use them for financial decision-making tasks. However, existing financial question answering benchmarks for testing these models primarily focus on company balance sheet data and rarely evaluate reasoning over how company stocks trade in the market or their interactions with fundamentals. To take advantage of the strengths of both approaches, we introduce FinTradeBench, a benchmark for evaluating financial reasoning that integrates company fundamentals and trading signals. FinTradeBench contains 1,400 questions grounded in NASDAQ-100 companies over a ten-year historical window. The benchmark is organized into three reasoning categories: fundamentals-focused, trading-signal-focused, and hybrid questions requiring cross-signal reasoning. To ensure reliability at scale, we adopt a calibration-then-scaling framework that combines expert seed questions, multi-model response generation, intra-model self-filtering, numerical auditing, and human-LLM judge alignment. We evaluate 14 LLMs under zero-shot prompting and retrieval-augmented settings and witness a clear performance gap. Retrieval substantially improves reasoning over textual fundamentals, but provides limited benefit for trading-signal reasoning. These findings highlight fundamental challenges in the numerical and time-series reasoning for current LLMs and motivate future research in financial intelligence.",
+      "link": "https://arxiv.org/abs/2603.19225",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+decision-making",
+        "alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289319+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18911v1",
+      "title": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Hallucination to Zero in English-Hindi LLMs",
+      "summary": "arXiv:2603.18911v1 Announce Type: cross \nAbstract: Knowledge-grounded dialogue systems aim to generate informative, contextually relevant responses by conditioning on external knowledge sources. However, most existing approaches focus exclusively on English, lack explicit citation mechanisms for verifying factual claims, and offer limited transparency into model decision-making. We present XKD-Dial, a progressive four-stage training pipeline for explainable, knowledge-grounded dialogue generation in a bilingual (English-Hindi) setting, comprising: (1) multilingual adaptation, (2) English dialogue SFT with citation grounding, (3) bilingual dialogue SFT, and (4) GRPO alignment with citation-aware rewards. We evaluate six models spanning encoder-decoder (250M-3B) and decoder-only (1B-7B) architectures at every pipeline stage. Our key contributions are: (i) three post-hoc explainability analyses - cross-attention alignment, Integrated Gradients attribution, and occlusion-based causal grounding - applied systematically across the training trajectory to reveal how citation behaviour is learned, not only whether it is learned; (ii) citation-grounded SFT reduces hallucination to 0.0% for encoder-decoder models from Stage 2 onward; (iii) the progressive pipeline prevents catastrophic forgetting while improving Hindi capabilities; (iv) smaller models match larger models on English after SFT; and (v) GRPO provides marginal improvement over well-designed SFT for structured citation tasks. We evaluate across six automatic metrics (BLEU, ROUGE, BERTScore, FactScore, Citation-F1, and hallucination rate).",
+      "link": "https://arxiv.org/abs/2603.18911",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289006+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2410.13106v4",
+      "title": "Cliqueformer: Model-Based Optimization with Structured Transformers",
+      "summary": "arXiv:2410.13106v4 Announce Type: replace-cross \nAbstract: Large neural networks excel at prediction tasks, but their application to design problems, such as protein engineering or materials discovery, requires solving offline model-based optimization (MBO) problems. While predictive models may not directly translate to effective design, recent MBO algorithms incorporate reinforcement learning and generative modeling approaches. Meanwhile, theoretical work suggests that exploiting the target function's structure can enhance MBO performance. We present Cliqueformer, a transformer-based architecture that learns the black-box function's structure through functional graphical models (FGM), addressing distribution shift without relying on explicit conservative approaches. Across various domains, including chemical and genetic design tasks, Cliqueformer demonstrates superior performance compared to existing methods.",
+      "link": "https://arxiv.org/abs/2410.13106",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289601+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18987v1",
+      "title": "Unmasking Algorithmic Bias in Predictive Policing: A GAN-Based Simulation Framework with Multi-City Temporal Analysis",
+      "summary": "arXiv:2603.18987v1 Announce Type: new \nAbstract: Predictive policing systems that direct patrol resources based on algorithmically generated crime forecasts have been widely deployed across US cities, yet their tendency to encode and amplify racial disparities remains poorly understood in quantitative terms. We present a reproducible simulation framework that couples a Generative Adversarial Network GAN with a Noisy OR patrol detection model to measure how racial bias propagates through the full enforcement pipeline from crime occurrence to police contact. Using 145000 plus Part 1 crime records from Baltimore 2017 to 2019 and 233000 plus records from Chicago 2022, augmented with US Census ACS demographic data, we compute four monthly bias metrics across 264 city year mode observations: the Disparate Impact Ratio DIR, Demographic Parity Gap, Gini Coefficient, and a composite Bias Amplification Score.\n  Our experiments reveal extreme and year variant bias in Baltimores detected mode, with mean annual DIR up to 15714 in 2019, moderate under detection of Black residents in Chicago DIR equals 0.22, and persistent Gini coefficients of 0.43 to 0.62 across all conditions. We further demonstrate that a Conditional Tabular GAN CTGAN debiasing approach partially redistributes detection rates but cannot eliminate structural disparity without accompanying policy intervention. Socioeconomic regression analysis confirms strong correlations between neighborhood racial composition and detection likelihood Pearson r equals 0.83 for percent White and r equals negative 0.81 for percent Black. A sensitivity analysis over patrol radius, officer count, and citizen reporting probability reveals that outcomes are most sensitive to officer deployment levels. The code and data are publicly available at this repository.",
+      "link": "https://arxiv.org/abs/2603.18987",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.287489+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19042v1",
+      "title": "Man and machine: artificial intelligence and judicial decision making",
+      "summary": "arXiv:2603.19042v1 Announce Type: new \nAbstract: The integration of artificial intelligence (AI) technologies into judicial decision-making - particularly in pretrial, sentencing, and parole contexts - has generated substantial concerns about transparency, reliability, and accountability. At the same time, these developments have brought the limitations of human judgment into sharper relief and underscored the importance of understanding how judges interact with AI-based decision aids. Using criminal justice risk assessment as a focal case, we conduct a synthetic review connecting three intertwined aspects of AI's role in judicial decision-making: the performance and fairness of AI tools, the strengths and biases of human judges, and the nature of AI+human interactions. Across the fields of computer science, economics, law, criminology and psychology, researchers have made significant progress in evaluating the predictive validity of automated risk assessment instruments, documenting biases in judicial decision-making, and, to a more limited extent, examining how judges use algorithmic recommendations. While the existing empirical evidence indicates that the impact of AI decision aid tools on pretrial and sentencing decisions is modest or inexistent, our review also reveals important gaps in the canvassed literatures. Further research is needed to evaluate the performance of AI risk assessment instruments, understand how judges navigate noisy decision making environments and how individual characteristics influence judges' responses to AI advice. We argue that AI vs Human comparisons have the potential to yield new insights into both algorithmic tools and human decision-makers and advocate greater interdisciplinary integration and cross-fertilization in future research.",
+      "link": "https://arxiv.org/abs/2603.19042",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.287707+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18620v1",
+      "title": "Learning to Self-Evolve",
+      "summary": "arXiv:2603.18620v1 Announce Type: cross \nAbstract: We introduce Learning to Self-Evolve (LSE), a reinforcement learning framework that trains large language models (LLMs) to improve their own contexts at test time. We situate LSE in the setting of test-time self-evolution, where a model iteratively refines its context from feedback on seen problems to perform better on new ones. Existing approaches rely entirely on the inherent reasoning ability of the model and never explicitly train it for this task. LSE reduces the multi-step evolution problem to a single-step RL objective, where each context edit is rewarded by the improvement in downstream performance. We pair this objective with a tree-guided evolution loop. On Text-to-SQL generation (BIRD) and general question answering (MMLU-Redux), a 4B-parameter model trained with LSE outperforms self-evolving policies powered by GPT-5 and Claude Sonnet 4.5, as well as prompt optimization methods including GEPA and TextGrad, and transfers to guide other models without additional training. Our results highlight the effectiveness of treating self-evolution as a learnable skill.",
+      "link": "https://arxiv.org/abs/2603.18620",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.288431+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18762v1",
+      "title": "ClawTrap: A MITM-Based Red-Teaming Framework for Real-World OpenClaw Security Evaluation",
+      "summary": "arXiv:2603.18762v1 Announce Type: cross \nAbstract: Autonomous web agents such as \\textbf{OpenClaw} are rapidly moving into high-impact real-world workflows, but their security robustness under live network threats remains insufficiently evaluated. Existing benchmarks mainly focus on static sandbox settings and content-level prompt attacks, which leaves a practical gap for network-layer security testing. In this paper, we present \\textbf{ClawTrap}, a \\textbf{MITM-based red-teaming framework for real-world OpenClaw security evaluation}. ClawTrap supports diverse and customizable attack forms, including \\textit{Static HTML Replacement}, \\textit{Iframe Popup Injection}, and \\textit{Dynamic Content Modification}, and provides a reproducible pipeline for rule-driven interception, transformation, and auditing. This design lays the foundation for future research to construct richer, customizable MITM attacks and to perform systematic security testing across agent frameworks and model backbones. Our empirical study shows clear model stratification: weaker models are more likely to trust tampered observations and produce unsafe outputs, while stronger models demonstrate better anomaly attribution and safer fallback strategies. These findings indicate that reliable OpenClaw security evaluation should explicitly incorporate dynamic real-world MITM conditions rather than relying only on static sandbox protocols.",
+      "link": "https://arxiv.org/abs/2603.18762",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.288801+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18979v1",
+      "title": "PRIOR: Perceptive Learning for Humanoid Locomotion with Reference Gait Priors",
+      "summary": "arXiv:2603.18979v1 Announce Type: cross \nAbstract: Training perceptive humanoid locomotion policies that traverse complex terrains with natural gaits remains an open challenge, typically demanding multi-stage training pipelines, adversarial objectives, or extensive real-world calibration. We present PRIOR, an efficient and reproducible framework built on Isaac Lab that achieves robust terrain traversal with human-like gaits through a simple yet effective design: (i) a parametric gait generator that supplies stable reference trajectories derived from motion capture without adversarial training, (ii) a GRU-based state estimator that infers terrain geometry directly from egocentric depth images via self-supervised heightmap reconstruction, and (iii) terrain-adaptive footstep rewards that guide foot placement toward traversable regions. Through systematic analysis of depth image resolution trade-offs, we identify configurations that maximize terrain fidelity under real-time constraints, substantially reducing perceptual overhead without degrading traversal performance. Comprehensive experiments across terrains of varying difficulty-including stairs, boxes, and gaps-demonstrate that each component yields complementary and essential performance gains, with the full framework achieving a 100% traversal success rate. We will open-source the complete PRIOR framework, including the training pipeline, parametric gait generator, and evaluation benchmarks, to serve as a reproducible foundation for humanoid locomotion research on Isaac Lab.",
+      "link": "https://arxiv.org/abs/2603.18979",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289062+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.08898v3",
+      "title": "Preference-Driven Multi-Objective Combinatorial Optimization with Conditional Computation",
+      "summary": "arXiv:2506.08898v3 Announce Type: replace \nAbstract: Recent deep reinforcement learning methods have achieved remarkable success in solving multi-objective combinatorial optimization problems (MOCOPs) by decomposing them into multiple subproblems, each associated with a specific weight vector. However, these methods typically treat all subproblems equally and solve them using a single model, hindering the effective exploration of the solution space and thus leading to suboptimal performance. To overcome the limitation, we propose POCCO, a novel plug-and-play framework that enables adaptive selection of model structures for subproblems, which are subsequently optimized based on preference signals rather than explicit reward values. Specifically, we design a conditional computation block that routes subproblems to specialized neural architectures. Moreover, we propose a preference-driven optimization algorithm that learns pairwise preferences between winning and losing solutions. We evaluate the efficacy and versatility of POCCO by applying it to two state-of-the-art neural methods for MOCOPs. Experimental results across four classic MOCOP benchmarks demonstrate its significant superiority and strong generalization.",
+      "link": "https://arxiv.org/abs/2506.08898",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-21T04:02:24.289367+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "ARIADNE: A Perception-Reasoning Synergy Framework for Trustworthy Coronary Angio",
+      "paper_link": "https://arxiv.org/abs/2603.19169",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'ARIADNE: A Perception-Reasoning Synergy Framework for Trustw' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Auditing Preferences for Brands and Cultures in LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.18300",
+      "paper_score": 6,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Auditing Preferences for Brands and Cultures in LLMs' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Transfer",
+      "paper_link": "https://arxiv.org/abs/2603.18719",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Ontology-Guided Diffusion for Zero-Shot Visual Sim2Real Tran' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.19225",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'FinTradeBench: A Financial Reasoning Benchmark for LLMs' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.19225",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FinTradeBench: A Financial Reasoning Benchmark for LLMs' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.19225",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'FinTradeBench: A Financial Reasoning Benchmark for LLMs' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "FinTradeBench: A Financial Reasoning Benchmark for LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.19225",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'FinTradeBench: A Financial Reasoning Benchmark for LLMs' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Halluc",
+      "paper_link": "https://arxiv.org/abs/2603.18911",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Progressive Training for Explainable Citation-Grounded Dialo' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Halluc",
+      "paper_link": "https://arxiv.org/abs/2603.18911",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Progressive Training for Explainable Citation-Grounded Dialo' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Halluc",
+      "paper_link": "https://arxiv.org/abs/2603.18911",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Progressive Training for Explainable Citation-Grounded Dialo' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Progressive Training for Explainable Citation-Grounded Dialogue: Reducing Halluc",
+      "paper_link": "https://arxiv.org/abs/2603.18911",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Progressive Training for Explainable Citation-Grounded Dialo' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "TARo: Token-level Adaptive Routing for LLM Test-time Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.18411",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'TARo: Token-level Adaptive Routing for LLM Test-time Alignme' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "TARo: Token-level Adaptive Routing for LLM Test-time Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.18411",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'TARo: Token-level Adaptive Routing for LLM Test-time Alignme' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "TARo: Token-level Adaptive Routing for LLM Test-time Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.18411",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'TARo: Token-level Adaptive Routing for LLM Test-time Alignme' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "TARo: Token-level Adaptive Routing for LLM Test-time Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.18411",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'TARo: Token-level Adaptive Routing for LLM Test-time Alignme' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    }
+  ]
+}
