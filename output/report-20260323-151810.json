@@ -1,0 +1,543 @@
+{
+  "run_at": "2026-03-23T15:18:10.918185+00:00",
+  "papers_found": 22,
+  "suggestions_generated": 31,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.19741v1",
+      "title": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Language Model Alignment",
+      "summary": "arXiv:2603.19741v1 Announce Type: cross \nAbstract: Aligning large language models (LLMs) with human preferences in federated learning (FL) is challenging due to decentralized, privacy-sensitive, and highly non-IID preference data. Direct Preference Optimization (DPO) offers an efficient alternative to reinforcement learning with human feedback (RLHF), but its direct application in FL suffers from severe performance degradation under non-IID data and limited generalization of implicit rewards. To bridge this gap, we propose FedPDPO (Federated Personalized Direct Preference Optimization), a personalized federated framework for preference alignment of LLMs. It adopts a parameter-efficient fine-tuning architecture where each client maintains a frozen pretrained LLM backbone augmented with a Low-Rank Adaptation (LoRA) adapter, enabling communication-efficient aggregation. To address non-IID heterogeneity, we devise (1) the globally shared LoRA adapter with the personalized client-specific LLM head. Moreover, we introduce (2) a personalized DPO training strategy with a client-specific explicit reward head to complement implicit rewards and further alleviate non-IID heterogeneity, and (3) a bottleneck adapter to balance global and local features. We provide theoretical analysis establishing the probabilistic foundation and soundness. Extensive experiments on multiple preference datasets demonstrate state-of-the-art performance, achieving up to 4.80% average accuracy improvements in federated intra-domain and cross-domain settings.",
+      "link": "https://arxiv.org/abs/2603.19741",
+      "feed": "cs.CL",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment",
+        "persona",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.609085+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.15693v3",
+      "title": "Average Reward Reinforcement Learning for Omega-Regular and Mean-Payoff Objectives",
+      "summary": "arXiv:2505.15693v3 Announce Type: replace \nAbstract: Recent advances in reinforcement learning (RL) have renewed interest in reward design for shaping agent behavior, but manually crafting reward functions is tedious and error-prone. A principled alternative is to specify behavioral requirements in a formal, unambiguous language and automatically compile them into learning objectives. $\\omega$-regular languages are a natural fit, given their role in formal verification and synthesis. However, most existing $\\omega$-regular RL approaches operate in an episodic, discounted setting with periodic resets, which is misaligned with $\\omega$-regular semantics over infinite traces. For continuing tasks, where the agent interacts with the environment over a single uninterrupted lifetime, the average-reward criterion is more appropriate.\n  We focus on absolute liveness specifications, a subclass of $\\omega$-regular languages that cannot be violated by any finite prefix and thus aligns naturally with continuing interaction. We present the first model-free RL framework that translates absolute liveness specifications into average-reward objectives and enables learning in unknown communicating Markov decision processes (MDPs) without episodic resetting. We also introduce a reward structure for lexicographic multi-objective optimization: among policies that maximize the satisfaction probability of an absolute liveness specification, the agent maximizes an external average-reward objective. Our method guarantees convergence in unknown communicating MDPs and supports on-the-fly reductions that do not require full environment knowledge, enabling model-free learning. Experiments across several benchmarks show that the continuing, average-reward approach outperforms competing discount-based methods.",
+      "link": "https://arxiv.org/abs/2505.15693",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813597+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.15709v1",
+      "title": "Survey of Various Fuzzy and Uncertain Decision-Making Methods",
+      "summary": "arXiv:2603.15709v1 Announce Type: cross \nAbstract: Decision-making in real applications is often affected by vagueness, incomplete information, heterogeneous data, and conflicting expert opinions. This survey reviews uncertainty-aware multi-criteria decision-making (MCDM) and organizes the field into a concise, task-oriented taxonomy. We summarize problem-level settings (discrete, group/consensus, dynamic, multi-stage, multi-level, multiagent, and multi-scenario), weight elicitation (subjective and objective schemes under fuzzy/linguistic inputs), and inter-criteria structure and causality modelling. For solution procedures, we contrast compensatory scoring methods, distance-to-reference and compromise approaches, and non-compensatory outranking frameworks for ranking or sorting. We also outline rule/evidence-based and sequential decision models that produce interpretable rules or policies. The survey highlights typical inputs, core computational steps, and primary outputs, and provides guidance on choosing methods according to robustness, interpretability, and data availability. It concludes with open directions on explainable uncertainty integration, stability, and scalability in large-scale and dynamic decision environments.",
+      "link": "https://arxiv.org/abs/2603.15709",
+      "feed": "cs.CY",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-23T15:18:07.055210+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19248v1",
+      "title": "DuCCAE: A Hybrid Engine for Immersive Conversation via Collaboration, Augmentation, and Evolution",
+      "summary": "arXiv:2603.19248v1 Announce Type: new \nAbstract: Immersive conversational systems in production face a persistent trade-off between responsiveness and long-horizon task capability. Real-time interaction is achievable for lightweight turns, but requests involving planning and tool invocation (e.g., search and media generation) produce heavy-tail execution latency that degrades turn-taking, persona consistency, and user trust. To address this challenge, we propose DuCCAE (Conversation while Collaboration with Augmentation and Evolution), a hybrid engine for immersive conversation deployed within Baidu Search, serving millions of users. DuCCAE decouples real-time response generation from asynchronous agentic execution and synchronizes them via a shared state that maintains session context and execution traces, enabling asynchronous results to be integrated back into the ongoing dialogue. The system orchestrates five subsystems-Info, Conversation, Collaboration, Augmentation, and Evolution-to support multi-agent collaboration and continuous improvement. We evaluate DuCCAE through a comprehensive framework that combines offline benchmarking on the Du-Interact dataset and large-scale production evaluation within Baidu Search. Experimental results demonstrate that DuCCAE outperforms strong baselines in agentic execution reliability and dialogue quality while reducing latency to fit strict real-time budgets. Crucially, deployment metrics since June 2025 confirm substantial real-world effectiveness, evidenced by a tripling of Day-7 user retention to 34.2% and a surge in the complex task completion rate to 65.2%. Our hybrid architecture successfully preserves conversational continuity while enabling reliable agentic execution, offering practical guidelines for deploying scalable agentic systems in industrial settings.",
+      "link": "https://arxiv.org/abs/2603.19248",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+trust",
+        "multi-agent",
+        "persona"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.608208+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20112v1",
+      "title": "Demonstration of Adapt4Me: An Uncertainty-Aware Authoring Environment for Personalizing Automatic Speech Recognition to Non-normative Speech",
+      "summary": "arXiv:2603.20112v1 Announce Type: cross \nAbstract: Personalizing Automatic Speech Recognition (ASR) for non-normative speech remains challenging because data collection is labor-intensive and model training is technically complex. To address these limitations, we propose Adapt4Me, a web-based decentralized environment that operationalizes Bayesian active learning to enable end-to-end personalization without expert supervision. The app exposes data selection, adaptation, and validation to lay users through a three-stage human-in-the-loop workflow: (1) rapid profiling via greedy phoneme sampling to capture speaker-specific acoustics; (2) backend personalization using Variational Inference Low-Rank Adaptation (VI-LoRA) to enable fast, incremental updates; and (3) continuous improvement, where users guide model refinement by resolving visualized model uncertainty via low-friction top-k corrections. By making epistemic uncertainty explicit, Adapt4Me reframes data efficiency as an interactive design feature rather than a purely algorithmic concern. We show how this enables users to personalize robust ASR models, transforming them from passive data sources into active authors of their own assistive technology.",
+      "link": "https://arxiv.org/abs/2603.20112",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "~epistemic",
+        "epistemic",
+        "persona"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813338+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.17765v1",
+      "title": "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using Case-Based Similarity Search",
+      "summary": "arXiv:2603.17765v1 Announce Type: cross \nAbstract: Automated radiology report generation has gained increasing attention with the rise of deep learning and large language models. However, fully generative approaches often suffer from hallucinations and lack clinical grounding, limiting their reliability in real-world workflows. In this study, we propose a multimodal retrieval-augmented generation (RAG) system for grounded drafting of chest radiograph impressions. The system combines contrastive image-text embeddings, case-based similarity retrieval, and citation-constrained draft generation to ensure factual alignment with historical radiology reports. A curated subset of the MIMIC-CXR dataset was used to construct a multimodal retrieval database. Image embeddings were generated using CLIP encoders, while textual embeddings were derived from structured impression sections. A fusion similarity framework was implemented using FAISS indexing for scalable nearest-neighbor retrieval. Retrieved cases were used to construct grounded prompts for draft impression generation, with safety mechanisms enforcing citation coverage and confidence-based refusal. Experimental results demonstrate that multimodal fusion significantly improves retrieval performance compared to image-only retrieval, achieving Recall@5 above 0.95 on clinically relevant findings. The grounded drafting pipeline produces interpretable outputs with explicit citation traceability, enabling improved trustworthiness compared to conventional generative approaches. This work highlights the potential of retrieval-augmented multimodal systems for reliable clinical decision support and radiology workflow augmentation",
+      "link": "https://arxiv.org/abs/2603.17765",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.812355+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.21207v2",
+      "title": "A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and Attention Mechanisms in Graph Neural Models",
+      "summary": "arXiv:2601.21207v2 Announce Type: replace-cross \nAbstract: Combinatorial and topological structures, such as graphs, simplicial complexes, and cell complexes, form the foundation of geometric and topological deep learning (GDL and TDL) architectures. These models aggregate signals over such domains, integrate local features, and generate representations for diverse real-world applications. However, the distribution and diffusion behavior of GDL and TDL features during training remains an open and underexplored problem. Motivated by this gap, we introduce a cellular sheaf theoretic framework for modeling and analyzing the local consistency and harmonicity of node features and edge weights in graph-based architectures. By tracking local feature alignments and agreements through sheaf structures, the framework offers a topological perspective on feature diffusion and aggregation. Furthermore, a multiscale extension inspired by topological data analysis (TDA) is proposed to capture hierarchical feature interactions in graph models. This approach enables a joint characterization of GDL and TDL architectures based on their underlying geometric and topological structures and the learned signals defined on them, providing insights for future studies on conventional tasks such as node classification, substructure detection, and community detection.",
+      "link": "https://arxiv.org/abs/2601.21207",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "community detection",
+        "graph neural",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.814124+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19348v1",
+      "title": "Anatomical Heterogeneity in Transformer Language Models",
+      "summary": "arXiv:2603.19348v1 Announce Type: cross \nAbstract: Current transformer language models are trained with uniform computational budgets across all layers, implicitly assuming layer homogeneity. We challenge this assumption through empirical analysis of SmolLM2-135M, a 30-layer, 135M-parameter causal language model, using five diagnostic metrics: weight predictability (R2), ablation degradation, recovery speed, weight manipulation robustness, and structural analysis. We find profound anatomical heterogeneity: (1) Layer weights follow strong mathematical regularity (R2 = 0.91) with a universal oscillatory delta pattern (correlation ~= -0.50), yet predicted weights cause catastrophic failure due to nonlinear error accumulation. (2) Layer importance spans a 10^7 range, from a critical core (L8-11, up to +63,419% PPL degradation) to anti-layers (L14, L17) whose removal improves performance. (3) Recovery speed correlates with layer importance, indicating differential training requirements. (4) Only weight scaling (alpha = 0.9) preserves model quality among five tested manipulation strategies. (5) Growth Transformer Training, allocating budget by layer importance, achieves ~54% cost reduction. A proof-of-concept experiment confirms this: 4.7x lower validation loss than uniform training at identical parameter count, while being 13% faster.",
+      "link": "https://arxiv.org/abs/2603.19348",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.608933+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.11004v2",
+      "title": "NAACL: Noise-AwAre Verbal Confidence Calibration for Robust LLMs in RAG Systems",
+      "summary": "arXiv:2601.11004v2 Announce Type: replace \nAbstract: Accurately assessing model confidence is essential for deploying large language models (LLMs) in mission-critical factual domains. While retrieval-augmented generation (RAG) is widely adopted to improve grounding, confidence calibration in RAG settings remains poorly understood. We conduct a systematic study across four benchmarks, revealing that LLMs exhibit poor calibration performance due to noisy retrieved contexts. Specifically, contradictory or irrelevant evidence tends to inflate the model's false certainty, leading to severe overconfidence. To address this, we propose NAACL Rules (Noise-AwAre Confidence CaLibration Rules) to provide a principled foundation for resolving overconfidence under noise. We further design NAACL, a noise-aware calibration framework that synthesizes supervision from about 2K HotpotQA examples guided by these rules. By performing supervised fine-tuning (SFT) with this data, NAACL equips models with intrinsic noise awareness without relying on stronger teacher models. Empirical results show that NAACL yields substantial gains, improving ECE scores by 10.9% in-domain and 8.0% out-of-domain. By bridging the gap between retrieval noise and verbal calibration, NAACL paves the way for both accurate and epistemically reliable LLMs.",
+      "link": "https://arxiv.org/abs/2601.11004",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "~epistemic",
+        "epistemic"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.609323+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.20945v3",
+      "title": "The Art of Efficient Reasoning: Data, Reward, and Optimization",
+      "summary": "arXiv:2602.20945v3 Announce Type: replace \nAbstract: Large Language Models (LLMs) consistently benefit from scaled Chain-of-Thought (CoT) reasoning, but also suffer from heavy computational overhead. To address this issue, efficient reasoning aims to incentivize short yet accurate thinking trajectories, typically through reward shaping with Reinforcement Learning (RL). In this paper, we systematically investigate the mechanics of efficient reasoning for LLMs. For comprehensive evaluation, we advocate for more fine-grained metrics, including length distribution conditioned on correctness and performance across a wide spectrum of token budgets ranging from 2k to 32k. First, we reveal that the training process follows a two-stage paradigm: length adaptation and reasoning refinement. Through extensive experiments (about 0.2 million GPU hours) in a unified protocol, we deconstruct training prompts and rollouts, reward shaping, and optimization strategies. A central finding is to maintain a sufficient density of positive reward signals and avoid the short-is-correct trap. Moreover, the learned length bias generalizes across domains and difficulty levels. We distill these findings into valuable insights and practical guidelines, and validate them across the Qwen3 models ranging from 0.6B to 30B, demonstrating the robustness and generalization. Weights are available at https://wutaiqiang.github.io/project/Art",
+      "link": "https://arxiv.org/abs/2602.20945",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.609375+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19310v1",
+      "title": "MemReward: Graph-Based Experience Memory for LLM Reward Prediction with Limited Labels",
+      "summary": "arXiv:2603.19310v1 Announce Type: cross \nAbstract: Training large language models (LLMs) for complex reasoning via reinforcement learning requires reward labels that specify whether the generated rollouts are correct. However, obtaining reward labels at scale often requires expensive human labeling or time-consuming verification procedures; for instance, evaluating mathematical proofs demands expert review, while open-ended question answering lacks definitive ground truth. When reward labels are limited, the effectiveness of reinforcement learning fine-tuning is constrained by the scarcity of reward labels. We introduce MemReward, a graph-based experience memory framework: an initial LLM policy generates rollouts for each query, each comprising a thinking process and a final answer, and these rollouts are stored as experience memory. Queries, thinking processes, and answers form nodes in a heterogeneous graph with similarity and structural edges; a GNN trained on labeled nodes propagates rewards to unlabeled rollouts during online optimization. Experiments on Qwen2.5-3B and 1.5B across mathematics, question answering, and code generation demonstrate that MemReward, with only 20% labels, achieves 97.3% of Oracle performance on 3B and 96.6% on 1.5B, surpassing Oracle on out-of-domain tasks. Performance scales smoothly with label budget, reaching 99.4% of Oracle at 70% labels.",
+      "link": "https://arxiv.org/abs/2603.19310",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.812547+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19325v1",
+      "title": "Target Concept Tuning Improves Extreme Weather Forecasting",
+      "summary": "arXiv:2603.19325v1 Announce Type: cross \nAbstract: Deep learning models for meteorological forecasting often fail in rare but high-impact events such as typhoons, where relevant data is scarce. Existing fine-tuning methods typically face a trade-off between overlooking these extreme events and overfitting them at the expense of overall performance. We propose TaCT, an interpretable concept-gated fine-tuning framework that solves the aforementioned issue by selective model improvement: models are adapted specifically for failure cases while preserving performance in common scenarios. To this end, TaCT automatically discovers failure-related internal concepts using Sparse Autoencoders and counterfactual analysis, and updates parameters only when the corresponding concepts are activated, rather than applying uniform adaptation. Experiments show consistent improvements in typhoon forecasting across different regions without degrading other meteorological variables. The identified concepts correspond to physically meaningful circulation patterns, revealing model biases and supporting trustworthy adaptation in scientific forecasting tasks. The code is available at https://anonymous.4open.science/r/Concept-Gated-Fine-tune-62AC.",
+      "link": "https://arxiv.org/abs/2603.19325",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.812597+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2502.14400v5",
+      "title": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "summary": "arXiv:2502.14400v5 Announce Type: replace \nAbstract: Aligning Large Language Model (LLM) responses with human preferences is vital for building safe and controllable AI systems. While preference optimization methods based on Plackett-Luce (PL) and Bradley-Terry (BT) models have shown promise, they face challenges such as poor handling of harmful content, inefficient use of dispreferred responses, and, specifically for PL, high computational costs. To address these issues, we propose Hard Preference Sampling (HPS), a novel framework for robust and efficient human preference alignment. HPS introduces a training loss that prioritizes the most preferred response while rejecting all dispreferred and harmful ones. It emphasizes \"hard\" dispreferred responses -- those closely resembling preferred ones -- to enhance the model's rejection capabilities. By leveraging a single-sample Monte Carlo sampling strategy, HPS reduces computational overhead while maintaining alignment quality. Theoretically, HPS improves sample efficiency over existing PL methods and maximizes the reward margin between preferred and dispreferred responses, ensuring clearer distinctions. Experiments on HH-RLHF and PKU-Safety datasets validate HPS's effectiveness, achieving comparable BLEU and reward scores while greatly improving reward margins and thus reducing harmful content generation.",
+      "link": "https://arxiv.org/abs/2502.14400",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813501+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.08898v4",
+      "title": "Preference-Driven Multi-Objective Combinatorial Optimization with Conditional Computation",
+      "summary": "arXiv:2506.08898v4 Announce Type: replace \nAbstract: Recent deep reinforcement learning methods have achieved remarkable success in solving multi-objective combinatorial optimization problems (MOCOPs) by decomposing them into multiple subproblems, each associated with a specific weight vector. However, these methods typically treat all subproblems equally and solve them using a single model, hindering the effective exploration of the solution space and thus leading to suboptimal performance. To overcome the limitation, we propose POCCO, a novel plug-and-play framework that enables adaptive selection of model structures for subproblems, which are subsequently optimized based on preference signals rather than explicit reward values. Specifically, we design a conditional computation block that routes subproblems to specialized neural architectures. Moreover, we propose a preference-driven optimization algorithm that learns pairwise preferences between winning and losing solutions. We evaluate the efficacy and versatility of POCCO by applying it to two state-of-the-art neural methods for MOCOPs. Experimental results across four classic MOCOP benchmarks demonstrate its significant superiority and strong generalization.",
+      "link": "https://arxiv.org/abs/2506.08898",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813768+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.14052v3",
+      "title": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "summary": "arXiv:2603.14052v3 Announce Type: replace-cross \nAbstract: This paper presents a multi-agent perception-action exploration alliance, dubbed A4VL, for efficient long-video reasoning. A4VL operates in a multi-round perception-action exploration loop with a selection of VLM agents. In each round, the team of agents performs video question-answer (VideoQA) via perception exploration followed by action exploration. During perception exploration, each agent learns to extract query-specific perception clue(s) from a few sampled frames and performs clue-based alignment to find the video block(s) that are most relevant to the query-specific event. During action exploration, A4VL performs video reasoning in three steps: (1) each agent produces its initial answer with rational, (2) all agents collaboratively scores one another through cross-reviews and relevance ranking, and (3) based on whether a satisfactory consensus is reached, the decision is made either to start a new round of perception-action deliberation by pruning (e.g., filtering out the lowest performing agent) and re-staging (e.g., new-clue and matching block based perception-action exploration), or to conclude by producing its final answer. The integration of the multi-agent alliance through multi-round perception-action exploration, coupled with event-driven partitioning and cue-guided block alignment, enables A4VL to effectively scale to real world long videos while preserving high quality video reasoning. Evaluation Results on five popular VideoQA benchmarks show that A4VL outperforms 18 existing representative VLMs and 11 recent methods optimized for long-video reasoning, while achieving significantly lower inference latency. Our code is released at https://github.com/git-disl/A4VL.",
+      "link": "https://arxiv.org/abs/2603.14052",
+      "feed": "cs.MA",
+      "score": 3,
+      "matched_keywords": [
+        "multi-agent",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.970805+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19308v1",
+      "title": "GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Feature Space",
+      "summary": "arXiv:2603.19308v1 Announce Type: cross \nAbstract: In autonomous driving, multi-agent collaborative perception enhances sensing capabilities by enabling agents to share perceptual data. A key challenge lies in handling {\\em heterogeneous} features from agents equipped with different sensing modalities or model architectures, which complicates data fusion. Existing approaches often require retraining encoders or designing interpreter modules for pairwise feature alignment, but these solutions are not scalable in practice. To address this, we propose {\\em GT-Space}, a flexible and scalable collaborative perception framework for heterogeneous agents. GT-Space constructs a common feature space from ground-truth labels, providing a unified reference for feature alignment. With this shared space, agents only need a single adapter module to project their features, eliminating the need for pairwise interactions with other agents. Furthermore, we design a fusion network trained with contrastive losses across diverse modality combinations. Extensive experiments on simulation datasets (OPV2V and V2XSet) and a real-world dataset (RCooper) demonstrate that GT-Space consistently outperforms baselines in detection accuracy while delivering robust performance. Our code will be released at https://github.com/KingScar/GT-Space.",
+      "link": "https://arxiv.org/abs/2603.19308",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.812491+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19634v1",
+      "title": "MetaCues: Enabling Critical Engagement with Generative AI for Information Seeking and Sensemaking",
+      "summary": "arXiv:2603.19634v1 Announce Type: cross \nAbstract: Generative AI (GenAI) search tools are increasingly used for information seeking, yet their design tends to encourage cognitive offloading, which may lead to passive engagement, selective attention, and informational homogenization. Effective use requires metacognitive engagement to craft good prompts, verify AI outputs, and critically engage with information. We developed MetaCues, a novel GenAI-based interactive tool for information seeking that delivers metacognitive cues alongside AI responses and a note-taking interface to guide users' search and associated learning. Through an online study (N = 146), we compared MetaCues to a baseline tool without cues, across two broad search topics that required participants to explore diverse perspectives in order to make informed judgments. Preliminary findings regarding participants' search behavior show that MetaCues leads to increased confidence in attitudinal judgments about the search topic as well as broader inquiry, with the latter effect emerging primarily for the topic that was less controversial and with which participants had relatively less familiarity. Accordingly, we outline directions for future qualitative exploration of search interactions and inquiry patterns.",
+      "link": "https://arxiv.org/abs/2603.19634",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "sensemaking"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.812942+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19677v1",
+      "title": "GoAgent: Group-of-Agents Communication Topology Generation for LLM-based Multi-Agent Systems",
+      "summary": "arXiv:2603.19677v1 Announce Type: cross \nAbstract: Large language model (LLM)-based multi-agent systems (MAS) have demonstrated exceptional capabilities in solving complex tasks, yet their effectiveness depends heavily on the underlying communication topology that coordinates agent interactions. Within these systems, successful problem-solving often necessitates task-specific group structures to divide and conquer subtasks. However, most existing approaches generate communication topologies in a node-centric manner, leaving group structures to emerge implicitly from local connectivity decisions rather than modeling them explicitly, often leading to suboptimal coordination and unnecessary communication overhead. To address this limitation, we propose GoAgent (Group-of-Agents), a communication topology generation method that explicitly treats collaborative groups as the atomic units of MAS construction. Specifically, GoAgent first enumerates task-relevant candidate groups through an LLM and then autoregressively selects and connects these groups as atomic units to construct the final communication graph, jointly capturing intra-group cohesion and inter-group coordination. To mitigate communication redundancy and noise propagation inherent in expanding topologies, we further introduce a conditional information bottleneck (CIB) objective that compresses inter-group communication, preserving task-relevant signals while filtering out redundant historical noise. Extensive experiments on six benchmarks demonstrate the state-of-the-art performance of GoAgent with 93.84% average accuracy while reducing token consumption by about 17%.",
+      "link": "https://arxiv.org/abs/2603.19677",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813003+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19957v1",
+      "title": "HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report Prediction",
+      "summary": "arXiv:2603.19957v1 Announce Type: cross \nAbstract: Pathology reports are structured, multi-granular documents encoding diagnostic conclusions, histological grades, and ancillary test results across one or more anatomical sites; yet existing pathology vision-language models (VLMs) reduce this output to a flat label or free-form text. We present HiPath, a lightweight VLM framework built on frozen UNI2 and Qwen3 backbones that treats structured report prediction as its primary training objective. Three trainable modules totalling 15M parameters address complementary aspects of the problem: a Hierarchical Patch Aggregator (HiPA) for multi-image visual encoding, Hierarchical Contrastive Learning (HiCL) for cross-modal alignment via optimal transport, and Slot-based Masked Diagnosis Prediction (Slot-MDP) for structured diagnosis generation. Trained on 749K real-world Chinese pathology cases from three hospitals, HiPath achieves 68.9% strict and 74.7% clinically acceptable accuracy with a 97.3% safety rate, outperforming all baselines under the same frozen backbone. Cross-hospital evaluation confirms generalisation with only a 3.4pp drop in strict accuracy while maintaining 97.1% safety.",
+      "link": "https://arxiv.org/abs/2603.19957",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813172+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20131v1",
+      "title": "An Agentic Multi-Agent Architecture for Cybersecurity Risk Management",
+      "summary": "arXiv:2603.20131v1 Announce Type: cross \nAbstract: Getting a real cybersecurity risk assessment for a small organization is expensive -- a NIST CSF-aligned engagement runs $15,000 on the low end, takes weeks, and depends on practitioners who are genuinely scarce. Most small companies skip it entirely. We built a six-agent AI system where each agent handles one analytical stage: profiling the organization, mapping assets, analyzing threats, evaluating controls, scoring risks, and generating recommendations. Agents share a persistent context that grows as the assessment proceeds, so later agents build on what earlier ones concluded -- the mechanism that distinguishes this from standard sequential agent pipelines. We tested it on a 15-person HIPAA-covered healthcare company and compared outputs to independent assessments by three CISSP practitioners -- the system agreed with them 85% of the time on severity classifications, covered 92% of identified risks, and finished in under 15 minutes. We then ran 30 repeated single-agent assessments across five synthetic but sector-realistic organizational profiles in healthcare, fintech, manufacturing, retail, and SaaS, comparing a general-purpose Mistral-7B against a domain fine-tuned model. Both completed every run. The fine-tuned model flagged threats the baseline could not see at all: PHI exposure in healthcare, OT/IIoT vulnerabilities in manufacturing, platform-specific risks in retail. The full multi-agent pipeline, however, failed every one of 30 attempts on a Tesla T4 with its 4,096-token default context window -- context capacity, not model quality, turned out to be the binding constraint.",
+      "link": "https://arxiv.org/abs/2603.20131",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-23T15:18:06.813397+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "DuCCAE: A Hybrid Engine for Immersive Conversation via Collaboration, Augmentati",
+      "paper_link": "https://arxiv.org/abs/2603.19248",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DuCCAE: A Hybrid Engine for Immersive Conversation via Colla' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Demonstration of Adapt4Me: An Uncertainty-Aware Authoring Environment for Person",
+      "paper_link": "https://arxiv.org/abs/2603.20112",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Demonstration of Adapt4Me: An Uncertainty-Aware Authoring En' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using ",
+      "paper_link": "https://arxiv.org/abs/2603.17765",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Grounded Multimodal Retrieval-Augmented Drafting of Radiolog' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using ",
+      "paper_link": "https://arxiv.org/abs/2603.17765",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Grounded Multimodal Retrieval-Augmented Drafting of Radiolog' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using ",
+      "paper_link": "https://arxiv.org/abs/2603.17765",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Grounded Multimodal Retrieval-Augmented Drafting of Radiolog' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Grounded Multimodal Retrieval-Augmented Drafting of Radiology Impressions Using ",
+      "paper_link": "https://arxiv.org/abs/2603.17765",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Grounded Multimodal Retrieval-Augmented Drafting of Radiolog' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and At",
+      "paper_link": "https://arxiv.org/abs/2601.21207",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'A Sheaf-Theoretic and Topological Perspective on Complex Net' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and At",
+      "paper_link": "https://arxiv.org/abs/2601.21207",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'A Sheaf-Theoretic and Topological Perspective on Complex Net' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and At",
+      "paper_link": "https://arxiv.org/abs/2601.21207",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'A Sheaf-Theoretic and Topological Perspective on Complex Net' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "A Sheaf-Theoretic and Topological Perspective on Complex Network Modeling and At",
+      "paper_link": "https://arxiv.org/abs/2601.21207",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'A Sheaf-Theoretic and Topological Perspective on Complex Net' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "paper_link": "https://arxiv.org/abs/2502.14400",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'HPS: Hard Preference Sampling for Human Preference Alignment' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "paper_link": "https://arxiv.org/abs/2502.14400",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'HPS: Hard Preference Sampling for Human Preference Alignment' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "paper_link": "https://arxiv.org/abs/2502.14400",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HPS: Hard Preference Sampling for Human Preference Alignment' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "paper_link": "https://arxiv.org/abs/2502.14400",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HPS: Hard Preference Sampling for Human Preference Alignment' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+      "paper_link": "https://arxiv.org/abs/2603.14052",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'A Multi-Agent Perception-Action Alliance for Efficient Long ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Fea",
+      "paper_link": "https://arxiv.org/abs/2603.19308",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'GT-Space: Enhancing Heterogeneous Collaborative Perception w' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Fea",
+      "paper_link": "https://arxiv.org/abs/2603.19308",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'GT-Space: Enhancing Heterogeneous Collaborative Perception w' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Fea",
+      "paper_link": "https://arxiv.org/abs/2603.19308",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'GT-Space: Enhancing Heterogeneous Collaborative Perception w' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "GT-Space: Enhancing Heterogeneous Collaborative Perception with Ground Truth Fea",
+      "paper_link": "https://arxiv.org/abs/2603.19308",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'GT-Space: Enhancing Heterogeneous Collaborative Perception w' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report P",
+      "paper_link": "https://arxiv.org/abs/2603.19957",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'HiPath: Hierarchical Vision-Language Alignment for Structure' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report P",
+      "paper_link": "https://arxiv.org/abs/2603.19957",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'HiPath: Hierarchical Vision-Language Alignment for Structure' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report P",
+      "paper_link": "https://arxiv.org/abs/2603.19957",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HiPath: Hierarchical Vision-Language Alignment for Structure' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "HiPath: Hierarchical Vision-Language Alignment for Structured Pathology Report P",
+      "paper_link": "https://arxiv.org/abs/2603.19957",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HiPath: Hierarchical Vision-Language Alignment for Structure' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    }
+  ]
+}
