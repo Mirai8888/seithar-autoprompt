@@ -1,0 +1,280 @@
+{
+  "run_at": "2026-03-23T16:02:24.283135+00:00",
+  "papers_found": 14,
+  "suggestions_generated": 10,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.19453v1",
+      "title": "Cooperation and Exploitation in LLM Policy Synthesis for Sequential Social Dilemmas",
+      "summary": "arXiv:2603.19453v1 Announce Type: new \nAbstract: We study LLM policy synthesis: using a large language model to iteratively generate programmatic agent policies for multi-agent environments. Rather than training neural policies via reinforcement learning, our framework prompts an LLM to produce Python policy functions, evaluates them in self-play, and refines them using performance feedback across iterations. We investigate feedback engineering (the design of what evaluation information is shown to the LLM during refinement) comparing sparse feedback (scalar reward only) against dense feedback (reward plus social metrics: efficiency, equality, sustainability, peace). Across two canonical Sequential Social Dilemmas (Gathering and Cleanup) and two frontier LLMs (Claude Sonnet 4.6, Gemini 3.1 Pro), dense feedback consistently matches or exceeds sparse feedback on all metrics. The advantage is largest in the Cleanup public goods game, where providing social metrics helps the LLM calibrate the costly cleaning-harvesting tradeoff. Rather than triggering over-optimization of fairness, social metrics serve as a coordination signal that guides the LLM toward more effective cooperative strategies, including territory partitioning, adaptive role assignment, and the avoidance of wasteful aggression. We further perform an adversarial experiment to determine whether LLMs can reward hack these environments. We characterize five attack classes and discuss mitigations, highlighting an inherent tension in LLM policy synthesis between expressiveness and safety.\n  Code at https://github.com/vicgalle/llm-policies-social-dilemmas.",
+      "link": "https://arxiv.org/abs/2603.19453",
+      "feed": "cs.CL",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial",
+        "multi-agent",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.771938+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19579v1",
+      "title": "PA2D-MORL: Pareto Ascent Directional Decomposition based Multi-Objective Reinforcement Learning",
+      "summary": "arXiv:2603.19579v1 Announce Type: new \nAbstract: Multi-objective reinforcement learning (MORL) provides an effective solution for decision-making problems involving conflicting objectives. However, achieving high-quality approximations to the Pareto policy set remains challenging, especially in complex tasks with continuous or high-dimensional state-action space. In this paper, we propose the Pareto Ascent Directional Decomposition based Multi-Objective Reinforcement Learning (PA2D-MORL) method, which constructs an efficient scheme for multi-objective problem decomposition and policy improvement, leading to a superior approximation of Pareto policy set. The proposed method leverages Pareto ascent direction to select the scalarization weights and computes the multi-objective policy gradient, which determines the policy optimization direction and ensures joint improvement on all objectives. Meanwhile, multiple policies are selectively optimized under an evolutionary framework to approximate the Pareto frontier from different directions. Additionally, a Pareto adaptive fine-tuning approach is applied to enhance the density and spread of the Pareto frontier approximation. Experiments on various multi-objective robot control tasks show that the proposed method clearly outperforms the current state-of-the-art algorithm in terms of both quality and stability of the outcomes.",
+      "link": "https://arxiv.org/abs/2603.19579",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.944560+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19512v1",
+      "title": "FedAgain: A Trust-Based and Robust Federated Learning Strategy for an Automated Kidney Stone Identification in Ureteroscopy",
+      "summary": "arXiv:2603.19512v1 Announce Type: cross \nAbstract: The reliability of artificial intelligence (AI) in medical imaging critically depends on its robustness to heterogeneous and corrupted images acquired with diverse devices across different hospitals which is highly challenging. Therefore, this paper introduces FedAgain, a trust-based Federated Learning (Federated Learning) strategy designed to enhance robustness and generalization for automated kidney stone identification from endoscopic images. FedAgain integrates a dual trust mechanism that combines benchmark reliability and model divergence to dynamically weight client contributions, mitigating the impact of noisy or adversarial updates during aggregation. The framework enables the training of collaborative models across multiple institutions while preserving data privacy and promoting stable convergence under real-world conditions. Extensive experiments across five datasets, including two canonical benchmarks (MNIST and CIFAR-10), two private multi-institutional kidney stone datasets, and one public dataset (MyStone), demonstrate that FedAgain consistently outperforms standard Federated Learning baselines under non-identically and independently distributed (non-IID) data and corrupted-client scenarios. By maintaining diagnostic accuracy and performance stability under varying conditions, FedAgain represents a practical advance toward reliable, privacy-preserving, and clinically deployable federated AI for medical imaging.",
+      "link": "https://arxiv.org/abs/2603.19512",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.944977+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19781v1",
+      "title": "From Precise to Random: A Systematic Differential Fault Analysis of the Lightweight Block Cipher Lilliput",
+      "summary": "arXiv:2603.19781v1 Announce Type: new \nAbstract: At SAC 2013, Berger et al. first proposed the Extended Generalized Feistel Networks (EGFN) structure for the design of block ciphers with efficient diffusion. Later, based on the Type-2 EGFN, they instantiated a new lightweight block cipher named Lilliput (published in IEEE Transactions on Computers, Vol. 65, Issue 7, 2016). According to published cryptanalysis results, Lilliput is sufficiently secure against theoretical attacks such as differential, linear, boomerang, and integral attacks, which rely on the statistical properties of plaintext and ciphertext. However, there is a lack of analysis regarding its resistance to physical attacks in real-world scenarios, such as fault attacks. In this paper, we present the first systematic differential fault analysis (DFA) of Lilliput under three nibble-oriented fault models with progressively relaxed adversarial assumptions to comprehensively assess its fault resilience. In Model I (multi-round fixed-location), precise fault injections at specific rounds recover the master key with a 98% success rate using only 8 faults. Model II (single-round fixed-location) relaxes the multi-round requirement, demonstrating that 8 faults confined to a single round are still sufficient to achieve a 99% success rate by exploiting Lilliput's diffusion properties and DDT-based constraints. Model III (single-round random-location) further weakens the assumption by allowing faults to occur randomly among the eight rightmost branches of round 27. By uniquely identifying the fault location from ciphertext differences with high probability, the attack remains highly feasible, achieving over 99% success with 33 faults and exceeding 99.5% with 36 faults. Our findings reveal a significant vulnerability of Lilliput to practical fault attacks across different adversary capabilities in real-world scenarios, providing crucial insights for its secure implementation.",
+      "link": "https://arxiv.org/abs/2603.19781",
+      "feed": "cs.CR",
+      "score": 5,
+      "matched_keywords": [
+        "+adversarial",
+        "vulnerability",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-23T16:02:21.029474+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.04716v2",
+      "title": "Identifying and Mitigating Bottlenecks in Role-Playing Agents: A Systematic Study of Disentangling Character Profile Axes",
+      "summary": "arXiv:2601.04716v2 Announce Type: replace \nAbstract: Advancements in Large Language Model (LLM) Role-Playing Agents have focused on various construction methodologies, yet it remains unclear which aspects of character profiles genuinely drive role-playing quality. To bridge this gap, we introduce a systematic diagnostic framework that disentangles the impact of character profiles along three axes: Familiarity (Known vs. Unknown), Structure (Structured vs. Unstructured), and Disposition (Moral vs. Immoral). To investigate these axes, we design a unified hierarchical schema (5 dimensions, 28 fields) standardizing character attributes and construct a controlled dataset of 211 personas varying along these three axes. We evaluate five LLMs on single and multi-turn benchmarks. Our results reveal a striking asymmetry: Familiarity and Structure show negligible impact, while Valence produces large, consistent performance degradation for immoral characters across all conditions. This performance drop concentrates in motivation-related attributes, indicating that alignment priors actively suppress tokens needed for faithful immoral portrayal. To mitigate this alignment-induced bottleneck, we propose Field-Aware Contrastive Decoding (FACD), a training-free strategy that selectively amplizes suppressed immoral-field signals, significantly reducing the Moral-Immoral performance gap without sacrificing moral-character performance.",
+      "link": "https://arxiv.org/abs/2601.04716",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "role-playing",
+        "alignment",
+        "persona"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.772573+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19584v1",
+      "title": "PowerLens: Taming LLM Agents for Safe and Personalized Mobile Power Management",
+      "summary": "arXiv:2603.19584v1 Announce Type: new \nAbstract: Battery life remains a critical challenge for mobile devices, yet existing power management mechanisms rely on static rules or coarse-grained heuristics that ignore user activities and personal preferences. We present PowerLens, a system that tames the reasoning power of Large Language Models (LLMs) for safe and personalized mobile power management on Android devices. The key idea is that LLMs' commonsense reasoning can bridge the semantic gap between user activities and system parameters, enabling zero-shot, context-aware policy generation that adapts to individual preferences through implicit feedback. PowerLens employs a multi-agent architecture that recognizes user context from UI semantics and generates holistic power policies across 18 device parameters. A PDL-based constraint framework verifies every action before execution, while a two-tier memory system learns individualized preferences from implicit user overrides through confidence-based distillation, requiring no explicit configuration and converging within 3--5 days. Extensive experiments on a rooted Android device show that PowerLens achieves 81.7% action accuracy and 38.8% energy saving over stock Android, outperforming rule-based and LLM-based baselines, with high user satisfaction, fast preference convergence, and strong safety guarantees, with the system itself consuming only 0.5% of daily battery capacity.",
+      "link": "https://arxiv.org/abs/2603.19584",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "multi-agent",
+        "zero-shot",
+        "persona"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.944620+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19314v1",
+      "title": "DPxFin: Adaptive Differential Privacy for Anti-Money Laundering Detection via Reputation-Weighted Federated Learning",
+      "summary": "arXiv:2603.19314v1 Announce Type: cross \nAbstract: In the modern financial system, combating money laundering is a critical challenge complicated by data privacy concerns and increasingly complex fraud transaction patterns. Although federated learning (FL) is a promising problem-solving approach as it allows institutions to train their models without sharing their data, it has the drawback of being prone to privacy leakage, specifically in tabular data forms like financial data. To address this, we propose DPxFin, a novel federated framework that integrates reputation-guided adaptive differential privacy. Our approach computes client reputation by evaluating the alignment between locally trained models and the global model. Based on this reputation, we dynamically assign differential privacy noise to client updates, enhancing privacy while maintaining overall model utility. Clients with higher reputations receive lower noise to amplify their trustworthy contributions, while low-reputation clients are allocated stronger noise to mitigate risk. We validate DPxFin on the Anti-Money Laundering (AML) dataset under both IID and non-IID settings using Multi Layer Perceptron (MLP). Experimental analysis established that our approach has a more desirable trade-off between accuracy and privacy than those of traditional FL and fixed-noise Differential Privacy (DP) baselines, where performance improvements were consistent, even though on a modest scale. Moreover, DPxFin does withstand tabular data leakage attacks, proving its effectiveness under real-world financial conditions.",
+      "link": "https://arxiv.org/abs/2603.19314",
+      "feed": "cs.CR",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T16:02:21.029578+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19348v1",
+      "title": "Anatomical Heterogeneity in Transformer Language Models",
+      "summary": "arXiv:2603.19348v1 Announce Type: cross \nAbstract: Current transformer language models are trained with uniform computational budgets across all layers, implicitly assuming layer homogeneity. We challenge this assumption through empirical analysis of SmolLM2-135M, a 30-layer, 135M-parameter causal language model, using five diagnostic metrics: weight predictability (R2), ablation degradation, recovery speed, weight manipulation robustness, and structural analysis. We find profound anatomical heterogeneity: (1) Layer weights follow strong mathematical regularity (R2 = 0.91) with a universal oscillatory delta pattern (correlation ~= -0.50), yet predicted weights cause catastrophic failure due to nonlinear error accumulation. (2) Layer importance spans a 10^7 range, from a critical core (L8-11, up to +63,419% PPL degradation) to anti-layers (L14, L17) whose removal improves performance. (3) Recovery speed correlates with layer importance, indicating differential training requirements. (4) Only weight scaling (alpha = 0.9) preserves model quality among five tested manipulation strategies. (5) Growth Transformer Training, allocating budget by layer importance, achieves ~54% cost reduction. A proof-of-concept experiment confirms this: 4.7x lower validation loss than uniform training at identical parameter count, while being 13% faster.",
+      "link": "https://arxiv.org/abs/2603.19348",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.772279+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19500v1",
+      "title": "Teaching an Agent to Sketch One Part at a Time",
+      "summary": "arXiv:2603.19500v1 Announce Type: new \nAbstract: We develop a method for producing vector sketches one part at a time. To do this, we train a multi-modal language model-based agent using a novel multi-turn process-reward reinforcement learning following supervised fine-tuning. Our approach is enabled by a new dataset we call ControlSketch-Part, containing rich part-level annotations for sketches, obtained using a novel, generic automatic annotation pipeline that segments vector sketches into semantic parts and assigns paths to parts with a structured multi-stage labeling process. Our results indicate that incorporating structured part-level data and providing agent with the visual feedback through the process enables interpretable, controllable, and locally editable text-to-vector sketch generation.",
+      "link": "https://arxiv.org/abs/2603.19500",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.944489+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19470v1",
+      "title": "Adaptive Layerwise Perturbation: Unifying Off-Policy Corrections for LLM RL",
+      "summary": "arXiv:2603.19470v1 Announce Type: cross \nAbstract: Off-policy problems such as policy staleness and training-inference mismatch, has become a major bottleneck for training stability and further exploration for LLM RL. To enhance inference efficiency, the distribution gap between the inference and updated policy grows, leading to heavy-tailed importance ratios. Heavy-tailed ratios arise when the policy is locally sharp, which further inflates sharp gradients and can push updates outside the trust region. To address this, we propose Adaptive Layerwise Perturbation(ALP) by injecting small learnable perturbations into input hidden states of each layer during updates, which is used as the numerator of the importance ratio against the unchanged inference policy in the objective. Intuitively, by adding controlled noise to intermediate representations, ALP prevents the updated policy from deviating too sharply from the inference policy, and enlarges the policy family to cover the inference policy family with mismatch noises. Hence, the flattened distribution can naturally tighten the updated and inference policy gap and reduce the tail of importance ratios, thus maintaining training stability. This is further validated empirically. Experiments on single-turn math and multi-turn tool-integrated reasoning tasks show that ALP not only improves final performance, but also avoid blow up of importance ratio tail and KL spikes during iterative training, along with boosted exploration. Ablations show that representation-level perturbations across all layers are most effective, substantially outperforming partial-layer and logits-only variants.",
+      "link": "https://arxiv.org/abs/2603.19470",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.944869+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.08898v4",
+      "title": "Preference-Driven Multi-Objective Combinatorial Optimization with Conditional Computation",
+      "summary": "arXiv:2506.08898v4 Announce Type: replace \nAbstract: Recent deep reinforcement learning methods have achieved remarkable success in solving multi-objective combinatorial optimization problems (MOCOPs) by decomposing them into multiple subproblems, each associated with a specific weight vector. However, these methods typically treat all subproblems equally and solve them using a single model, hindering the effective exploration of the solution space and thus leading to suboptimal performance. To overcome the limitation, we propose POCCO, a novel plug-and-play framework that enables adaptive selection of model structures for subproblems, which are subsequently optimized based on preference signals rather than explicit reward values. Specifically, we design a conditional computation block that routes subproblems to specialized neural architectures. Moreover, we propose a preference-driven optimization algorithm that learns pairwise preferences between winning and losing solutions. We evaluate the efficacy and versatility of POCCO by applying it to two state-of-the-art neural methods for MOCOPs. Experimental results across four classic MOCOP benchmarks demonstrate its significant superiority and strong generalization.",
+      "link": "https://arxiv.org/abs/2506.08898",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.945417+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19270v1",
+      "title": "Autonoma: A Hierarchical Multi-Agent Framework for End-to-End Workflow Automation",
+      "summary": "arXiv:2603.19270v1 Announce Type: new \nAbstract: The increasing complexity of user demands necessitates automation frameworks that can reliably translate open-ended instructions into robust, multi-step workflows. Current monolithic agent architectures often struggle with the challenges of scalability, error propagation, and maintaining focus across diverse tasks. This paper introduces Autonoma, a structured, hierarchical multi-agent framework designed for end-to-end workflow automation from natural language prompts. Autonoma employs a principled, multi-tiered architecture where a high-level Coordinator validates user intent, a Planner generates structured workflows, and a Supervisor dynamically manages the execution by orchestrating a suite of modular, specialized agents (e.g., for web browsing, coding, file management). This clear separation between orchestration logic and specialized execution ensures robustness through active monitoring and error handling, while enabling extensibility by allowing new capabilities to be integrated as plug-and-play agents without modifying the core engine. Implemented as a fully functional system operating within a secure LAN environment, Autonoma addresses critical data privacy and reliability concerns. The system is further engineered for inclusivity, accepting multi-modal input (text, voice, image, files) and supporting both English and Arabic. Autonoma achieved a 97% task completion rate and a 98% successful agent handoff rate, confirming its operational reliability and efficient collaboration.",
+      "link": "https://arxiv.org/abs/2603.19270",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.771804+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19634v1",
+      "title": "MetaCues: Enabling Critical Engagement with Generative AI for Information Seeking and Sensemaking",
+      "summary": "arXiv:2603.19634v1 Announce Type: cross \nAbstract: Generative AI (GenAI) search tools are increasingly used for information seeking, yet their design tends to encourage cognitive offloading, which may lead to passive engagement, selective attention, and informational homogenization. Effective use requires metacognitive engagement to craft good prompts, verify AI outputs, and critically engage with information. We developed MetaCues, a novel GenAI-based interactive tool for information seeking that delivers metacognitive cues alongside AI responses and a note-taking interface to guide users' search and associated learning. Through an online study (N = 146), we compared MetaCues to a baseline tool without cues, across two broad search topics that required participants to explore diverse perspectives in order to make informed judgments. Preliminary findings regarding participants' search behavior show that MetaCues leads to increased confidence in attitudinal judgments about the search topic as well as broader inquiry, with the latter effect emerging primarily for the topic that was less controversial and with which participants had relatively less familiarity. Accordingly, we outline directions for future qualitative exploration of search interactions and inquiry patterns.",
+      "link": "https://arxiv.org/abs/2603.19634",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "sensemaking"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.945251+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2411.13207v3",
+      "title": "LISAA: A Framework for Large Language Model Information Security Awareness Assessment",
+      "summary": "arXiv:2411.13207v3 Announce Type: replace-cross \nAbstract: The popularity of large language models (LLMs) continues to grow, and LLM-based assistants have become ubiquitous. Information security awareness (ISA) is an important yet underexplored area of LLM safety. ISA encompasses LLMs' security knowledge, which has been explored in the past, as well as their attitudes and behaviors, which are crucial to LLMs' ability to understand implicit security context and reject unsafe requests that may cause an LLM to unintentionally fail the user. We introduce LISAA, a comprehensive framework to assess LLM ISA. The proposed framework applies an automated measurement method to a comprehensive set of 100 realistic scenarios covering all security topics in an ISA taxonomy. These scenarios create tension between implicit security implications and user satisfaction. Applying our LISAA framework to leading LLMs highlights a widespread vulnerability affecting current deployments: many popular models exhibit only medium to low ISA levels, exposing their users to cybersecurity threats, and models that rank highly in cybersecurity knowledge benchmarks sometimes achieve relatively low ISA ranking. In addition, we found that smaller variants of the same model family are significantly riskier. Furthermore, while newer model versions demonstrated notable improvements, meaningful gaps in their ISA persist, suggesting that there is room for improvement. We release an online tool that implements our framework and enables the evaluation of new models.",
+      "link": "https://arxiv.org/abs/2411.13207",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "vulnerability",
+        "LLM safety"
+      ],
+      "fetched_at": "2026-03-23T16:02:20.945536+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Identifying and Mitigating Bottlenecks in Role-Playing Agents: A Systematic Stud",
+      "paper_link": "https://arxiv.org/abs/2601.04716",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Identifying and Mitigating Bottlenecks in Role-Playing Agent' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Identifying and Mitigating Bottlenecks in Role-Playing Agents: A Systematic Stud",
+      "paper_link": "https://arxiv.org/abs/2601.04716",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Identifying and Mitigating Bottlenecks in Role-Playing Agent' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Identifying and Mitigating Bottlenecks in Role-Playing Agents: A Systematic Stud",
+      "paper_link": "https://arxiv.org/abs/2601.04716",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Identifying and Mitigating Bottlenecks in Role-Playing Agent' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Identifying and Mitigating Bottlenecks in Role-Playing Agents: A Systematic Stud",
+      "paper_link": "https://arxiv.org/abs/2601.04716",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Identifying and Mitigating Bottlenecks in Role-Playing Agent' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Identifying and Mitigating Bottlenecks in Role-Playing Agents: A Systematic Stud",
+      "paper_link": "https://arxiv.org/abs/2601.04716",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Identifying and Mitigating Bottlenecks in Role-Playing Agent' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "PowerLens: Taming LLM Agents for Safe and Personalized Mobile Power Management",
+      "paper_link": "https://arxiv.org/abs/2603.19584",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PowerLens: Taming LLM Agents for Safe and Personalized Mobil' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "DPxFin: Adaptive Differential Privacy for Anti-Money Laundering Detection via Re",
+      "paper_link": "https://arxiv.org/abs/2603.19314",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DPxFin: Adaptive Differential Privacy for Anti-Money Launder' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "DPxFin: Adaptive Differential Privacy for Anti-Money Laundering Detection via Re",
+      "paper_link": "https://arxiv.org/abs/2603.19314",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DPxFin: Adaptive Differential Privacy for Anti-Money Launder' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DPxFin: Adaptive Differential Privacy for Anti-Money Laundering Detection via Re",
+      "paper_link": "https://arxiv.org/abs/2603.19314",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DPxFin: Adaptive Differential Privacy for Anti-Money Launder' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DPxFin: Adaptive Differential Privacy for Anti-Money Laundering Detection via Re",
+      "paper_link": "https://arxiv.org/abs/2603.19314",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DPxFin: Adaptive Differential Privacy for Anti-Money Launder' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
