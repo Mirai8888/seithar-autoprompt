@@ -1,4 +1,4 @@
-"""arxiv RSS ingestion and keyword filtering."""
+"""arxiv RSS + GitHub trending ingestion and keyword filtering."""
 import feedparser
 import yaml
 import json
@@ -111,11 +111,23 @@ def fetch_papers(config):
                 })
             seen_ids.add(eid)
     
+    # GitHub trending feed
+    if config.get("github", {}).get("enabled", False):
+        try:
+            from src.github_feed import fetch_trending_repos
+            github_results = fetch_trending_repos(config, seen_ids)
+            for r in github_results:
+                results.append(r)
+                seen_ids.add(r["id"])
+            print(f"[autoprompt] GitHub: {len(github_results)} trending repos")
+        except Exception as e:
+            print(f"[autoprompt] GitHub feed failed: {e}")
+
     # update state
     state["seen"] = list(seen_ids)
     state["last_run"] = datetime.now(timezone.utc).isoformat()
     save_state(config["state_file"], state)
-    
+
     results.sort(key=lambda x: x["score"], reverse=True)
     return results
 
