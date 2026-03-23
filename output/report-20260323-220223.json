@@ -1,0 +1,267 @@
+{
+  "run_at": "2026-03-23T22:02:23.899733+00:00",
+  "papers_found": 10,
+  "suggestions_generated": 14,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.19974v1",
+      "title": "Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance",
+      "summary": "arXiv:2603.19974v1 Announce Type: cross \nAbstract: Autonomous coding agents are increasingly integrated into software development workflows, offering capabilities that extend beyond code suggestion to active system interaction and environment management. OpenClaw, a representative platform in this emerging paradigm, introduces an extensible skill ecosystem that allows third-party developers to inject behavioral guidance through lifecycle hooks during agent initialization. While this design enhances automation and customization, it also opens a novel and unexplored attack surface. In this paper, we identify and systematically characterize guidance injection, a stealthy attack vector that embeds adversarial operational narratives into bootstrap guidance files. Unlike traditional prompt injection, which relies on explicit malicious instructions, guidance injection manipulates the agent's reasoning context by framing harmful actions as routine best practices. These narratives are automatically incorporated into the agent's interpretive framework and influence future task execution without raising suspicion.We construct 26 malicious skills spanning 13 attack categories including credential exfiltration, workspace destruction, privilege escalation, and persistent backdoor installation. We evaluate them using ORE-Bench, a realistic developer workspace benchmark we developed. Across 52 natural user prompts and six state-of-the-art LLM backends, our attacks achieve success rates from 16.0% to 64.2%, with the majority of malicious actions executed autonomously without user confirmation. Furthermore, 94% of our malicious skills evade detection by existing static and LLM-based scanners. Our findings reveal fundamental tensions in the design of autonomous agent ecosystems and underscore the urgent need for defenses based on capability isolation, runtime policy enforcement, and transparent guidance provenance.",
+      "link": "https://arxiv.org/abs/2603.19974",
+      "feed": "cs.AI",
+      "score": 15,
+      "matched_keywords": [
+        "+prompt injection",
+        "+manipulation",
+        "+adversarial",
+        "behavioral",
+        "narrative",
+        "framing"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337514+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.08934v2",
+      "title": "StealthRL: Reinforcement Learning Paraphrase Attacks for Multi-Detector Evasion of AI-Text Detectors",
+      "summary": "arXiv:2602.08934v2 Announce Type: replace-cross \nAbstract: AI-text detectors face a critical robustness challenge: adversarial paraphrasing attacks that preserve semantics while evading detection. We introduce StealthRL, a reinforcement learning framework that stress-tests detector robustness under realistic adversarial conditions. StealthRL trains a paraphrase policy against a multi-detector ensemble using Group Relative Policy Optimization (GRPO) with LoRA adapters on Qwen3-4B, optimizing a composite reward that balances detector evasion with semantic preservation. We evaluate six attack settings (M0-M5) on the full filtered MAGE test pool (15,310 human / 14,656 AI) against four detectors: RoBERTa, Fast-DetectGPT, Binoculars, and MAGE. StealthRL achieves near-zero detection on three of the four detectors and a 0.024 mean TPR@1%FPR, reducing mean AUROC from 0.79 to 0.43 and attaining a 97.6% attack success rate. Critically, attacks transfer to two held-out detectors not seen during training, revealing shared architectural vulnerabilities rather than detector-specific brittleness. We additionally conduct LLM-based quality evaluation via Likert scoring on 500 matched samples per method, analyze detector score distributions to explain why evasion succeeds, and provide per-detector AUROC with bootstrap confidence intervals. Our results expose significant robustness gaps in current AI-text detection and establish StealthRL as a principled adversarial evaluation protocol. Code and evaluation pipeline are publicly available at https://github.com/suraj-ranganath/StealthRL.",
+      "link": "https://arxiv.org/abs/2602.08934",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337884+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19741v1",
+      "title": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Language Model Alignment",
+      "summary": "arXiv:2603.19741v1 Announce Type: cross \nAbstract: Aligning large language models (LLMs) with human preferences in federated learning (FL) is challenging due to decentralized, privacy-sensitive, and highly non-IID preference data. Direct Preference Optimization (DPO) offers an efficient alternative to reinforcement learning with human feedback (RLHF), but its direct application in FL suffers from severe performance degradation under non-IID data and limited generalization of implicit rewards. To bridge this gap, we propose FedPDPO (Federated Personalized Direct Preference Optimization), a personalized federated framework for preference alignment of LLMs. It adopts a parameter-efficient fine-tuning architecture where each client maintains a frozen pretrained LLM backbone augmented with a Low-Rank Adaptation (LoRA) adapter, enabling communication-efficient aggregation. To address non-IID heterogeneity, we devise (1) the globally shared LoRA adapter with the personalized client-specific LLM head. Moreover, we introduce (2) a personalized DPO training strategy with a client-specific explicit reward head to complement implicit rewards and further alleviate non-IID heterogeneity, and (3) a bottleneck adapter to balance global and local features. We provide theoretical analysis establishing the probabilistic foundation and soundness. Extensive experiments on multiple preference datasets demonstrate state-of-the-art performance, achieving up to 4.80% average accuracy improvements in federated intra-domain and cross-domain settings.",
+      "link": "https://arxiv.org/abs/2603.19741",
+      "feed": "cs.CL",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment",
+        "persona",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.131099+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19452v1",
+      "title": "TrustFlow: Topic-Aware Vector Reputation Propagation for Multi-Agent Ecosystems",
+      "summary": "arXiv:2603.19452v1 Announce Type: cross \nAbstract: We introduce TrustFlow, a reputation propagation algorithm that assigns each software agent a multi-dimensional reputation vector rather than a scalar score. Reputation is propagated through an interaction graph via topic-gated transfer operators that modulate each edge by its content embedding, with convergence to a unique fixed point guaranteed by the contraction mapping theorem. We develop a family of Lipschitz-1 transfer operators and composable information-theoretic gates that achieve up to 98% multi-label Precision@5 on dense graphs and 78% on sparse ones. On a benchmark of 50 agents across 8 domains, TrustFlow resists sybil attacks, reputation laundering, and vote rings with at most 4 percentage-point precision impact. Unlike PageRank and Topic-Sensitive PageRank, TrustFlow produces vector reputation that is directly queryable by dot product in the same embedding space as user queries.",
+      "link": "https://arxiv.org/abs/2603.19452",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+trust",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337314+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20122v1",
+      "title": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Language Models",
+      "summary": "arXiv:2603.20122v1 Announce Type: cross \nAbstract: Large Language Models (LLMs) have been widely deployed, especially through free Web-based applications that expose them to diverse user-generated inputs, including those from long-tail distributions such as low-resource languages and encrypted private data. This open-ended exposure increases the risk of jailbreak attacks that undermine model safety alignment. While recent studies have shown that leveraging long-tail distributions can facilitate such jailbreaks, existing approaches largely rely on handcrafted rules, limiting the systematic evaluation of these security and privacy vulnerabilities. In this work, we present EvoJail, an automated framework for discovering long-tail distribution attacks via multi-objective evolutionary search. EvoJail formulates long-tail attack prompt generation as a multi-objective optimization problem that jointly maximizes attack effectiveness and minimizes output perplexity, and introduces a semantic-algorithmic solution representation to capture both high-level semantic intent and low-level structural transformations of encryption-decryption logic. Building upon this representation, EvoJail integrates LLM-assisted operators into a multi-objective evolutionary framework, enabling adaptive and semantically informed mutation and crossover for efficiently exploring a highly structured and open-ended search space. Extensive experiments demonstrate that EvoJail consistently discovers diverse and effective long-tail jailbreak strategies, achieving competitive performance with existing methods in both individual and ensemble level.",
+      "link": "https://arxiv.org/abs/2603.20122",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337696+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20063v1",
+      "title": "Fine-tuning Timeseries Predictors Using Reinforcement Learning",
+      "summary": "arXiv:2603.20063v1 Announce Type: cross \nAbstract: This chapter presents three major reinforcement learning algorithms used for fine-tuning financial forecasters. We propose a clear implementation plan for backpropagating the loss of a reinforcement learning task to a model trained using supervised learning, and compare the performance before and after the fine-tuning. We find an increase in performance after fine-tuning, and transfer learning properties to the models, indicating the benefits of fine-tuning. We also highlight the tuning process and empirical results for future implementation by practitioners.",
+      "link": "https://arxiv.org/abs/2603.20063",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337637+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.15047v2",
+      "title": "Mapping Caregiver Needs to AI Chatbot Design: Strengths and Gaps in Mental Health Support for Alzheimer's and Dementia Caregivers",
+      "summary": "arXiv:2506.15047v2 Announce Type: replace-cross \nAbstract: Family caregivers of individuals with Alzheimer's Disease and Related Dementia (AD/ADRD) face significant emotional and logistical challenges that place them at heightened risk for stress, anxiety, and depression. Although recent advances in generative AI -- particularly large language models (LLMs) -- offer new opportunities to support mental health, little is known about how caregivers perceive and engage with such technologies. To address this gap, we developed Carey, a GPT-4o-based chatbot designed to provide informational and emotional support to AD/ADRD caregivers. Using Carey as a technology probe, we conducted semi-structured interviews with 16 family caregivers following scenario-driven interactions grounded in common caregiving stressors. Through inductive coding and reflexive thematic analysis, we surface a systemic understanding of caregiver needs and expectations across six themes: on-demand information access, safe space for disclosure, emotional support, crisis management, personalization, and data privacy. For each of these themes, we also identified the nuanced tensions in the caregivers' desires and concerns. We present a mapping of caregiver needs, AI chatbots' strengths, gaps, and design recommendations. Our findings offer theoretical and practical insights to inform the design of proactive, trustworthy, and caregiver-centered AI systems that better support the evolving mental health needs of AD/ADRD caregivers.",
+      "link": "https://arxiv.org/abs/2506.15047",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "persona"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337821+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19500v1",
+      "title": "Teaching an Agent to Sketch One Part at a Time",
+      "summary": "arXiv:2603.19500v1 Announce Type: new \nAbstract: We develop a method for producing vector sketches one part at a time. To do this, we train a multi-modal language model-based agent using a novel multi-turn process-reward reinforcement learning following supervised fine-tuning. Our approach is enabled by a new dataset we call ControlSketch-Part, containing rich part-level annotations for sketches, obtained using a novel, generic automatic annotation pipeline that segments vector sketches into semantic parts and assigns paths to parts with a structured multi-stage labeling process. Our results indicate that incorporating structured part-level data and providing agent with the visual feedback through the process enables interpretable, controllable, and locally editable text-to-vector sketch generation.",
+      "link": "https://arxiv.org/abs/2603.19500",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337136+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19470v1",
+      "title": "Adaptive Layerwise Perturbation: Unifying Off-Policy Corrections for LLM RL",
+      "summary": "arXiv:2603.19470v1 Announce Type: cross \nAbstract: Off-policy problems such as policy staleness and training-inference mismatch, has become a major bottleneck for training stability and further exploration for LLM RL. To enhance inference efficiency, the distribution gap between the inference and updated policy grows, leading to heavy-tailed importance ratios. Heavy-tailed ratios arise when the policy is locally sharp, which further inflates sharp gradients and can push updates outside the trust region. To address this, we propose Adaptive Layerwise Perturbation(ALP) by injecting small learnable perturbations into input hidden states of each layer during updates, which is used as the numerator of the importance ratio against the unchanged inference policy in the objective. Intuitively, by adding controlled noise to intermediate representations, ALP prevents the updated policy from deviating too sharply from the inference policy, and enlarges the policy family to cover the inference policy family with mismatch noises. Hence, the flattened distribution can naturally tighten the updated and inference policy gap and reduce the tail of importance ratios, thus maintaining training stability. This is further validated empirically. Experiments on single-turn math and multi-turn tool-integrated reasoning tasks show that ALP not only improves final performance, but also avoid blow up of importance ratio tail and KL spikes during iterative training, along with boosted exploration. Ablations show that representation-level perturbations across all layers are most effective, substantially outperforming partial-layer and logits-only variants.",
+      "link": "https://arxiv.org/abs/2603.19470",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.337373+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19556v1",
+      "title": "Planning Autonomous Vehicle Maneuvering in Work Zones Through Game-Theoretic Trajectory Generation",
+      "summary": "arXiv:2603.19556v1 Announce Type: new \nAbstract: Work zone navigation remains one of the most challenging manoeuvres for autonomous vehicles (AVs), where constrained geometries and unpredictable traffic patterns create a high-risk environment. Despite extensive research on AV trajectory planning, few studies address the decision-making required to navigate work zones safely. This paper proposes a novel game-theoretic framework for trajectory generation and control to enhance the safety of lane changes in a work zone environment. By modelling the lane change manoeuvre as a non-cooperative game between vehicles, we use a game-theoretic planner to generate trajectories that balance safety, progress, and traffic stability. The simulation results show that the proposed game-theoretic model reduces the frequency of conflicts by 35 percent and decreases the probability of high risk safety events compared to traditional vehicle behaviour planning models in safety-critical highway work-zone scenarios.",
+      "link": "https://arxiv.org/abs/2603.19556",
+      "feed": "cs.MA",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-23T22:02:20.496492+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrappe",
+      "paper_link": "https://arxiv.org/abs/2603.19974",
+      "paper_score": 15,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Trojan's Whisper: Stealthy Manipulation of OpenClaw through ' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrappe",
+      "paper_link": "https://arxiv.org/abs/2603.19974",
+      "paper_score": 15,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Trojan's Whisper: Stealthy Manipulation of OpenClaw through ' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "FedPDPO: Federated Personalized Direct Preference Optimization for Large Languag",
+      "paper_link": "https://arxiv.org/abs/2603.19741",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FedPDPO: Federated Personalized Direct Preference Optimizati' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Langua",
+      "paper_link": "https://arxiv.org/abs/2603.20122",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Evolving Jailbreaks: Automated Multi-Objective Long-Tail Att' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Langua",
+      "paper_link": "https://arxiv.org/abs/2603.20122",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Evolving Jailbreaks: Automated Multi-Objective Long-Tail Att' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Langua",
+      "paper_link": "https://arxiv.org/abs/2603.20122",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Evolving Jailbreaks: Automated Multi-Objective Long-Tail Att' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Langua",
+      "paper_link": "https://arxiv.org/abs/2603.20122",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Evolving Jailbreaks: Automated Multi-Objective Long-Tail Att' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Langua",
+      "paper_link": "https://arxiv.org/abs/2603.20122",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Evolving Jailbreaks: Automated Multi-Objective Long-Tail Att' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Evolving Jailbreaks: Automated Multi-Objective Long-Tail Attacks on Large Langua",
+      "paper_link": "https://arxiv.org/abs/2603.20122",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Evolving Jailbreaks: Automated Multi-Objective Long-Tail Att' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Mapping Caregiver Needs to AI Chatbot Design: Strengths and Gaps in Mental Healt",
+      "paper_link": "https://arxiv.org/abs/2506.15047",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Mapping Caregiver Needs to AI Chatbot Design: Strengths and ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}

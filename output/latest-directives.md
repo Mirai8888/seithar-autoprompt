@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 14 papers
-Suggestions generated: 10
+Matched filters: 10 papers
+Suggestions generated: 14
 
 Highest-signal item from this cycle:
 
-**[9] Cooperation and Exploitation in LLM Policy Synthesis for Sequential Social Dilemmas**
-<https://arxiv.org/abs/2603.19453>
-→ High-signal scan hit across: +reinforcement learning, +adversarial, multi-agent, exploit
+**[15] Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance**
+<https://arxiv.org/abs/2603.19974>
+→ High-signal scan hit across: +prompt injection, +manipulation, +adversarial, behavioral
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260323-160224.md`
-- json: `./output/report-20260323-160224.json`
+- diff: `./output/diff-20260323-220223.md`
+- json: `./output/report-20260323-220223.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
