@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 119 papers
-Suggestions generated: 148
+Matched filters: 48 papers
+Suggestions generated: 59
 
 Highest-signal item from this cycle:
 
-**[15] Trojan's Whisper: Stealthy Manipulation of OpenClaw through Injected Bootstrapped Guidance**
-<https://arxiv.org/abs/2603.19974>
-→ High-signal scan hit across: +prompt injection, +manipulation, +adversarial, behavioral
+**[10] EvidenceRL: Reinforcing Evidence Consistency for Trustworthy Language Models**
+<https://arxiv.org/abs/2603.19532>
+→ High-signal scan hit across: +reinforcement learning, +trust, behavioral
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260323-040228.md`
-- json: `./output/report-20260323-040228.json`
+- diff: `./output/diff-20260323-150923.md`
+- json: `./output/report-20260323-150923.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
