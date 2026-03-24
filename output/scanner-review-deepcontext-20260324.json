@@ -1,0 +1,62 @@
+[
+  {
+    "pattern": "Crescendo Attack (Incremental Intent Escalation)",
+    "description": "A multi-turn attack where an adversary opens with innocuous gardening or hobby framing, then uses prior benign model responses as proof of contextual consistency to request progressively more dangerous elaborations. No individual turn crosses a refusal threshold; the model's own cooperative outputs become the mechanism of progressive grooming.",
+    "sct_mapping": "SCT-017 (Multi-Turn Adversarial Intent Drift) — direct evidence. The paper provides a worked transcript (Appendix A) showing risk scores rising from 0.11 to 0.97 across seven turns, with the model blocked only at turn six.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "ActorAttack (Semantic Camouflage via Persona Adoption)",
+    "description": "The adversary hides malicious intent behind an adopted character or role, using persona framing to make harmful requests appear diegetically appropriate to the fiction. Because the harmful payload is delivered in-character, per-turn classifiers evaluate it as creative or performative rather than literal.",
+    "sct_mapping": "SCT-017 partially covers this as a named sub-technique, but the persona mechanism also overlaps with SCT-005 (Identity Targeting) insofar as the attacker hijacks the model's self-concept as a helpful actor. A dedicated new entry for LLM-targeted persona capture is warranted.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "Reasoning-Augmented Conversation (RACE)",
+    "description": "Rather than issuing a direct harmful query, the attacker reformulates it as a benign reasoning or problem-solving task, exploiting the model's chain-of-thought process via gain-guided exploration to arrive at harmful outputs as the logical conclusion of an ostensibly academic exercise. The attack surface is the model's own reasoning capability rather than its content filters.",
+    "sct_mapping": "No existing SCT code covers exploitation of the model's internal reasoning pathway as the attack surface. SCT-017 covers multi-turn drift but not single-session cognitive co-option via reasoning task framing. A new entry is warranted.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "Foot-in-the-Door (FITD) Bridge Prompt Escalation",
+    "description": "Operationalizes the psychological commitment principle by issuing low-cost intermediate 'bridge prompts' that extract incremental compliance before making the actual harmful request. Each complied-with bridge lowers the model's resistance threshold, and the accumulated compliance history is used to justify the final request as contextually consistent.",
+    "sct_mapping": "SCT-012 (Commitment Escalation and Self-Binding) covers this pattern at the human cognitive level. Applied to LLMs the mechanism is structural rather than psychological, exploiting the model's context window rather than ego involvement. SCT-012 is the closest mapping but the LLM-targeting variant deserves a note as a sub-technique.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Bad Likert Judge (Evaluation Artifact Exploitation)",
+    "description": "The adversary frames a harmful content generation request as a 5-point Likert-scale evaluation task, asking the model to produce what a '5/5' example of a given unsafe behavior would look like. The model generates the harmful content as a scoring artifact rather than a direct output, exploiting the gap between its refusal training and its evaluative persona.",
+    "sct_mapping": "No existing SCT code covers exploitation of the model's evaluative or judging role as a bypass vector. This is distinct from role-play persona capture (ActorAttack) because it leverages meta-task framing (evaluation) rather than narrative fiction. A new entry is warranted.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "AutoAdv (Automated Psychological Weak-Point Discovery)",
+    "description": "Treats the target LLM as a black box and runs automated multi-turn probing to discover the specific psychological or semantic weak points that lower refusal thresholds for that model, without any human-in-the-loop adversarial iteration. Discovered weak points are then exploited in subsequent turns without manual intervention.",
+    "sct_mapping": "SCT-017 covers multi-turn drift broadly. AutoAdv is a delivery automation mechanism rather than a distinct cognitive attack pattern; it operationalizes other SCT techniques at scale. No new code is strictly needed, but this warrants a note in the SCT-017 delivery-mechanism field.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "M2S (Multi-Turn-to-Single-Turn Payload Collapse)",
+    "description": "Collapses a multi-turn jailbreak conversation into a single structured prompt that retains the contextual priming of the full turn sequence while appearing as a single-turn input, defeating stateful detection systems by eliminating the temporal signature the defender depends on. Reconstructs the groomed model state from a compressed representation rather than by replaying turns.",
+    "sct_mapping": "This is an evasion technique targeting the detection layer rather than a primary attack pattern, specifically designed to defeat defenses like DeepContext that rely on temporal turn sequence. No existing SCT code covers detection-layer evasion via payload compression. A new entry is warranted.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "Cross-Lingual Intent Obfuscation (Cross-Lingual Drift)",
+    "description": "An attacker switches languages mid-conversation to cause monolingual or language-specific safety classifiers to lose the semantic thread of the accumulated intent trajectory, resetting or confusing the guardrail's contextual risk model. Intent is preserved in meaning while the surface signal that triggers detection is disrupted by the language shift.",
+    "sct_mapping": "No existing SCT code covers language-switching as an obfuscation mechanism against safety monitoring. This is a surface-layer camouflage technique that interacts with SCT-017 (the underlying drift pattern it enables) but is mechanically distinct. A new entry is warranted.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "Sliding Window Defeat via Temporal Spread",
+    "description": "An attacker who is aware that a defender uses a sliding context window deliberately spreads the malicious intent signal across more turns than the window size, ensuring that no window ever captures sufficient adversarial context for a positive detection while the cumulative trajectory across all turns is clearly malicious.",
+    "sct_mapping": "This is a detection-layer evasion technique that presupposes knowledge of defender architecture. It maps loosely to SCT-017 as a sub-variant where turn count is weaponized against window-based defenses. No separate code is strictly needed, but the attacker-knowledge-of-window-size variant warrants documentation as a sub-technique of SCT-017.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Context Dilution Attack (Benign Preamble Flooding)",
+    "description": "An adversary front-loads a long-horizon conversation with extensive benign content so that when full-context LLM guardrails (e.g., Llama-Guard-4-12B) evaluate the conversation, the harmful signal in later turns is statistically diluted by the volume of benign prior turns, producing a false-negative classification. The paper shows this causes 12B-parameter models to score F1=0.42 on multi-turn datasets.",
+    "sct_mapping": "SCT-010 (Sensory Channel Manipulation) covers information overload as a mechanism for exhausting processing capacity. Context dilution is an analogous technique applied to LLM safety classifiers rather than human cognition. SCT-010 is the closest mapping; no new code is strictly needed but the LLM-targeting variant should be noted.",
+    "new_code_needed": false
+  }
+]
