@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 57 papers
-Suggestions generated: 58
+Matched filters: 48 papers
+Suggestions generated: 68
 
 Highest-signal item from this cycle:
 
-**[15] TrustTrade: Human-Inspired Selective Consensus Reduces Decision Uncertainty in LLM Trading Agents**
-<https://arxiv.org/abs/2603.22567>
-→ High-signal scan hit across: +decision-making, +trust, ~epistemic, misinformation
+**[12] Energy-Aware Reinforcement Learning for Robotic Manipulation of Articulated Components in Infrastructure Operation and Maintenance**
+<https://arxiv.org/abs/2602.12288>
+→ High-signal scan hit across: +reinforcement learning, +manipulation
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260325-100526.md`
-- json: `./output/report-20260325-100526.json`
+- diff: `./output/diff-20260325-100822.md`
+- json: `./output/report-20260325-100822.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division

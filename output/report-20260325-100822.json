@@ -1,0 +1,890 @@
+{
+  "run_at": "2026-03-25T10:08:22.103882+00:00",
+  "papers_found": 48,
+  "suggestions_generated": 68,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.12288v3",
+      "title": "Energy-Aware Reinforcement Learning for Robotic Manipulation of Articulated Components in Infrastructure Operation and Maintenance",
+      "summary": "arXiv:2602.12288v3 Announce Type: replace-cross \nAbstract: With the growth of intelligent civil infrastructure and smart cities, operation and maintenance (O&amp;M) increasingly requires safe, efficient, and energy-conscious robotic manipulation of articulated components, including access doors, service drawers, and pipeline valves. However, existing robotic approaches either focus primarily on grasping or target object-specific articulated manipulation, and they rarely incorporate explicit actuation energy into multi-objective optimisation, which limits their scalability and suitability for long-term deployment in real O&amp;M settings. Therefore, this paper proposes an articulation-agnostic and energy-aware reinforcement learning framework for robotic manipulation in intelligent infrastructure O&amp;M. The method combines part-guided 3D perception, weighted point sampling, and PointNet-based encoding to obtain a compact geometric representation that generalises across heterogeneous articulated objects. Manipulation is formulated as a Constrained Markov Decision Process (CMDP), in which actuation energy is explicitly modelled and regulated via a Lagrangian-based constrained Soft Actor-Critic scheme. The policy is trained end-to-end under this CMDP formulation, enabling effective articulated-object operation while satisfying a long-horizon energy budget. Experiments on representative O&amp;M tasks demonstrate 16%-30% reductions in energy consumption, 16%-32% fewer steps to success, and consistently high success rates, indicating a scalable and sustainable solution for infrastructure O&amp;M manipulation.",
+      "link": "https://arxiv.org/abs/2602.12288",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.677695+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.05919v3",
+      "title": "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual Recall in LLMs",
+      "summary": "arXiv:2511.05919v3 Announce Type: replace-cross \nAbstract: LLMs are now an integral part of information retrieval. As such, their role as question answering chatbots raises significant concerns due to their shown vulnerability to adversarial man-in-the-middle (MitM) attacks. Here, we propose the first principled attack evaluation on LLM factual memory under prompt injection via Xmera, our novel, theory-grounded MitM framework. By perturbing the input given to \"victim\" LLMs in three closed-book and fact-based QA settings, we undermine the correctness of the responses and assess the uncertainty of their generation process. Surprisingly, trivial instruction-based attacks report the highest success rate (up to ~85.3%) while simultaneously having a high uncertainty for incorrectly answered questions. To provide a simple defense mechanism against Xmera, we train Random Forest classifiers on the response uncertainty levels to distinguish between attacked and unattacked queries (average AUC of up to ~94.8%). We believe that signaling users to be cautious about the answers they receive from black-box and potentially corrupt LLMs is a first checkpoint toward user cyberspace safety.",
+      "link": "https://arxiv.org/abs/2511.05919",
+      "feed": "cs.CL",
+      "score": 10,
+      "matched_keywords": [
+        "+prompt injection",
+        "+adversarial",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.462326+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23064v1",
+      "title": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory Pollution",
+      "summary": "arXiv:2603.23064v1 Announce Type: cross \nAbstract: We identify a critical security vulnerability in mainstream Claw personal AI agents: untrusted content encountered during heartbeat-driven background execution can silently pollute agent memory and subsequently influence user-facing behavior without the user's awareness. This vulnerability arises from an architectural design shared across the Claw ecosystem: heartbeat background execution runs in the same session as user-facing conversation, so content ingested from any external source monitored in the background (including email, message channels, news feeds, code repositories, and social platforms) can enter the same memory context used for foreground interaction, often with limited user visibility and without clear source provenance. We formalize this process as an Exposure (E) $\\rightarrow$ Memory (M) $\\rightarrow$ Behavior (B) pathway: misinformation encountered during heartbeat execution enters the agent's short-term session context, potentially gets written into long-term memory, and later shapes downstream user-facing behavior. We instantiate this pathway in an agent-native social setting using MissClaw, a controlled research replica of Moltbook. We find that (1) social credibility cues, especially perceived consensus, are the dominant driver of short-term behavioral influence, with misleading rates up to 61%; (2) routine memory-saving behavior can promote short-term pollution into durable long-term memory at rates up to 91%, with cross-session behavioral influence reaching 76%; (3) under naturalistic browsing with content dilution and context pruning, pollution still crosses session boundaries. Overall, prompt injection is not required: ordinary social misinformation is sufficient to silently shape agent memory and behavior under heartbeat-driven background execution.",
+      "link": "https://arxiv.org/abs/2603.23064",
+      "feed": "cs.AI",
+      "score": 10,
+      "matched_keywords": [
+        "+prompt injection",
+        "+trust",
+        "misinformation",
+        "vulnerability",
+        "behavioral",
+        "persona"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.676180+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.22983v3",
+      "title": "Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-Inspired Search",
+      "summary": "arXiv:2602.22983v3 Announce Type: replace \nAbstract: As Large Language Models (LLMs) are increasingly used, their security risks have drawn increasing attention. Existing research reveals that LLMs are highly susceptible to jailbreak attacks, with effectiveness varying across language contexts. This paper investigates the role of classical Chinese in jailbreak attacks. Owing to its conciseness and obscurity, classical Chinese can partially bypass existing safety constraints, exposing notable vulnerabilities in LLMs. Based on this observation, this paper proposes a framework, CC-BOS, for the automatic generation of classical Chinese adversarial prompts based on multi-dimensional fruit fly optimization, facilitating efficient and automated jailbreak attacks in black-box settings. Prompts are encoded into eight policy dimensions-covering role, behavior, mechanism, metaphor, expression, knowledge, trigger pattern and context; and iteratively refined via smell search, visual search, and cauchy mutation. This design enables efficient exploration of the search space, thereby enhancing the effectiveness of black-box jailbreak attacks. To enhance readability and evaluation accuracy, we further design a classical Chinese to English translation module. Extensive experiments demonstrate that effectiveness of the proposed CC-BOS, consistently outperforming state-of-the-art jailbreak attack methods.",
+      "link": "https://arxiv.org/abs/2602.22983",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+adversarial",
+        "+jailbreak"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.676977+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23304v1",
+      "title": "Security Barriers to Trustworthy AI-Driven Cyber Threat Intelligence in Finance: Evidence from Practitioners",
+      "summary": "arXiv:2603.23304v1 Announce Type: new \nAbstract: Financial institutions face increasing cyber risk while operating under strict regulatory oversight. To manage this risk, they rely heavily on Cyber Threat Intelligence (CTI) to inform detection, response, and strategic security decisions. Artificial intelligence (AI) is widely suggested as a means to strengthen CTI. However, evidence of trustworthy production use in finance remains limited. Adoption depends not only on predictive performance, but also on governance, integration into security workflows and analyst trust. Thus, we examine how AI is used for CTI in practice within financial institutions and what barriers prevent trustworthy deployment. We report a mixed-methods, user-centric study combining a CTI-finance-focused systematic literature review, semi-structured interviews, and an exploratory survey. Our review screened 330 publications (2019-2025) and retained 12 finance-relevant studies for analysis; we further conducted six interviews and collected 14 survey responses from banks and consultancies. Across research and practice, we identify four recurrent socio-technical failure modes that hinder trustworthy AI-driven CTI: (i) shadow use of public AI tools outside institutional controls, (ii) license-first enablement without operational integration, (iii) attacker-perception gaps that limit adversarial threat modeling, and (iv) missing security for the AI models themselves, including limited monitoring, robustness evaluation and audit-ready evidence. Survey results provide additional insights: 71.4% of respondents expect AI to become central within five years, 57.1% report infrequent current use due to interpretability and assurance concerns and 28.6% report direct encounters with adversarial risks. Based on these findings, we derive three security-oriented operational safeguards for AI-enabled CTI deployments.",
+      "link": "https://arxiv.org/abs/2603.23304",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.801863+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22634v1",
+      "title": "Learning to Trust: How Humans Mentally Recalibrate AI Confidence Signals",
+      "summary": "arXiv:2603.22634v1 Announce Type: cross \nAbstract: Productive human-AI collaboration requires appropriate reliance, yet contemporary AI systems are often miscalibrated, exhibiting systematic overconfidence or underconfidence. We investigate whether humans can learn to mentally recalibrate AI confidence signals through repeated experience. In a behavioral experiment (N = 200), participants predicted the AI's correctness across four AI calibration conditions: standard, overconfidence, underconfidence, and a counterintuitive \"reverse confidence\" mapping. Results demonstrate robust learning across all conditions, with participants significantly improving their accuracy, discrimination, and calibration alignment over 50 trials. We present a computational model utilizing a linear-in-log-odds (LLO) transformation and a Rescorla-Wagner learning rule to explain these dynamics. The model reveals that humans adapt by updating their baseline trust and confidence sensitivity, using asymmetric learning rates to prioritize the most informative errors. While humans can compensate for monotonic miscalibration, we identify a significant boundary in the reverse confidence scenario, where a substantial proportion of participants struggled to override initial inductive biases. These findings provide a mechanistic account of how humans adapt their trust in AI confidence signals through experience.",
+      "link": "https://arxiv.org/abs/2603.22634",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+trust",
+        "behavioral",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.675692+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23406v1",
+      "title": "Beyond Preset Identities: How Agents Form Stances and Boundaries in Generative Societies",
+      "summary": "arXiv:2603.23406v1 Announce Type: cross \nAbstract: While large language models simulate social behaviors, their capacity for stable stance formation and identity negotiation during complex interventions remains unclear. To overcome the limitations of static evaluations, this paper proposes a novel mixed-methods framework combining computational virtual ethnography with quantitative socio-cognitive profiling. By embedding human researchers into generative multiagent communities, controlled discursive interventions are conducted to trace the evolution of collective cognition. To rigorously measure how agents internalize and react to these specific interventions, this paper formalizes three new metrics: Innate Value Bias (IVB), Persuasion Sensitivity, and Trust-Action Decoupling (TAD). Across multiple representative models, agents exhibit endogenous stances that override preset identities, consistently demonstrating an innate progressive bias (IVB > 0). When aligned with these stances, rational persuasion successfully shifts 90% of neutral agents while maintaining high trust. In contrast, conflicting emotional provocations induce a paradoxical 40.0% TAD rate in advanced models, which hypocritically alter stances despite reporting low trust. Smaller models contrastingly maintain a 0% TAD rate, strictly requiring trust for behavioral shifts. Furthermore, guided by shared stances, agents use language interactions to actively dismantle assigned power hierarchies and reconstruct self organized community boundaries. These findings expose the fragility of static prompt engineering, providing a methodological and quantitative foundation for dynamic alignment in human-agent hybrid societies. The official code is available at: https://github.com/armihia/CMASE-Endogenous-Stances",
+      "link": "https://arxiv.org/abs/2603.23406",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "prompt engineering",
+        "behavioral",
+        "persuasion",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.462034+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.15994v2",
+      "title": "MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in LLM Agents",
+      "summary": "arXiv:2510.15994v2 Announce Type: replace-cross \nAbstract: The Model Context Protocol (MCP) standardizes how large language model (LLM) agents discover, describe, and call external tools. While MCP unlocks broad interoperability, it also enlarges the attack surface by making tools first-class, composable objects with natural-language metadata, and standardized I/O. We present MSB (MCP Security Benchmark), the first end-to-end evaluation suite that systematically measures how well LLM agents resist MCP-specific attacks throughout the full tool-use pipeline: task planning, tool invocation, and response handling. MSB contributes: (1) a taxonomy of 12 attacks including name-collision, preference manipulation, prompt injections embedded in tool descriptions, out-of-scope parameter requests, user-impersonating responses, false-error escalation, tool-transfer, retrieval injection, and mixed attacks; (2) an evaluation harness that executes attacks by running real tools (both benign and malicious) via MCP rather than simulation; and (3) a robustness metric that quantifies the trade-off between security and performance: Net Resilient Performance (NRP). We evaluate nine popular LLM agents across 10 domains and 405 tools, producing 2,000 attack instances. Results reveal the effectiveness of attacks against each stage of MCP. Models with stronger performance are more vulnerable to attacks due to their outstanding tool calling and instruction following capabilities. MSB provides a practical baseline for researchers and practitioners to study, compare, and harden MCP agents. Code: https://github.com/dongsenzhang/MSB",
+      "link": "https://arxiv.org/abs/2510.15994",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+prompt injection",
+        "+manipulation",
+        "persona"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.677417+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22918v1",
+      "title": "EVA: Efficient Reinforcement Learning for End-to-End Video Agent",
+      "summary": "arXiv:2603.22918v1 Announce Type: cross \nAbstract: Video understanding with multimodal large language models (MLLMs) remains challenging due to the long token sequences of videos, which contain extensive temporal dependencies and redundant frames. Existing approaches typically treat MLLMs as passive recognizers, processing entire videos or uniformly sampled frames without adaptive reasoning. Recent agent-based methods introduce external tools, yet still depend on manually designed workflows and perception-first strategies, resulting in inefficiency on long videos. We present EVA, an Efficient Reinforcement Learning framework for End-to-End Video Agent, which enables planning-before-perception through iterative summary-plan-action-reflection reasoning. EVA autonomously decides what to watch, when to watch, and how to watch, achieving query-driven and efficient video understanding. To train such agents, we design a simple yet effective three-stage learning pipeline - comprising supervised fine-tuning (SFT), Kahneman-Tversky Optimization (KTO), and Generalized Reward Policy Optimization (GRPO) - that bridges supervised imitation and reinforcement learning. We further construct high-quality datasets for each stage, supporting stable and reproducible training. We evaluate EVA on six video understanding benchmarks, demonstrating its comprehensive capabilities. Compared with existing baselines, EVA achieves a substantial improvement of 6-12% over general MLLM baselines and a further 1-3% gain over prior adaptive agent methods. Our code and model are available at https://github.com/wangruohui/EfficientVideoAgent.",
+      "link": "https://arxiv.org/abs/2603.22918",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.461811+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23245v1",
+      "title": "Neural ODE and SDE Models for Adaptation and Planning in Model-Based Reinforcement Learning",
+      "summary": "arXiv:2603.23245v1 Announce Type: cross \nAbstract: We investigate neural ordinary and stochastic differential equations (neural ODEs and SDEs) to model stochastic dynamics in fully and partially observed environments within a model-based reinforcement learning (RL) framework. Through a sequence of simulations, we show that neural SDEs more effectively capture the inherent stochasticity of transition dynamics, enabling high-performing policies with improved sample efficiency in challenging scenarios. We leverage neural ODEs and SDEs for efficient policy adaptation to changes in environment dynamics via inverse models, requiring only limited interactions with the new environment. To address partial observability, we introduce a latent SDE model that combines an ODE with a GAN-trained stochastic component in latent space. Policies derived from this model provide a strong baseline, outperforming or matching general model-based and model-free approaches across stochastic continuous-control benchmarks. This work demonstrates the applicability of action-conditional latent SDEs for RL planning in environments with stochastic transitions. Our code is available at: https://github.com/ChaoHan-UoS/NeuralRL",
+      "link": "https://arxiv.org/abs/2603.23245",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.676314+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23419v1",
+      "title": "Biased Error Attribution in Multi-Agent Human-AI Systems Under Delayed Feedback",
+      "summary": "arXiv:2603.23419v1 Announce Type: cross \nAbstract: Human decision-making is strongly influenced by cognitive biases, particularly under conditions of uncertainty and risk. While prior work has examined bias in single-step decisions with immediate outcomes and in human interaction with a single autonomous agent, comparatively little attention has been paid to decision-making under delayed outcomes involving multiple AI agents, where decisions at each step affect subsequent states. In this work, we study how delayed outcomes shape decision-making and responsibility attribution in a multi-agent human-AI task. Using a controlled game-based experiment, we analyze how participants adjust their behavior following positive and negative outcomes. We observe asymmetric responses to gains and losses, with stronger corrective adjustments after negative outcomes. Importantly, participants often fail to correctly identify the actions that caused failure and misattribute responsibility across AI agents, leading to systematic revisions of decisions that are weakly related to the underlying causes of poor performance. We refer to this phenomenon as a form of attribution bias, manifested as biased error attribution under delayed feedback. Our findings highlight how cognitive biases can be amplified in human-AI systems with delayed outcomes and multiple autonomous agents, underscoring the need for decision-support systems that better support causal understanding and learning over time.",
+      "link": "https://arxiv.org/abs/2603.23419",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "cognitive bias",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.676586+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22685v1",
+      "title": "BlindMarket: Enabling Verifiable, Confidential, and Traceable IP Core Distribution in Zero-Trust Settings",
+      "summary": "arXiv:2603.22685v1 Announce Type: new \nAbstract: We present BlindMarket, an end-to-end zero-trust distribution framework for hardware IP cores. BlindMarket allows two parties, the IP user and the IP vendor, to complete an IP trading process with strong guarantees of verifiability and confidentiality before the transaction, and then traceability after. We propose verification heuristics and adapt the cone of influence-based design pruning to overcome the limited scalability common to cryptographic protocols and the hardness of the underlying hardware verification. We systematically evaluate our framework on a diverse set of real-world hardware benchmarks, and the results demonstrate that BlindMarket effectively completes across a diverse set of real-world hardware IP cores, demonstrating successful verification on 12 out of 13 designs and substantial performance improvements enabled by design pruning and control-flow guided heuristics.",
+      "link": "https://arxiv.org/abs/2603.22685",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.801594+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22590v1",
+      "title": "Precision-Varying Prediction (PVP): Robustifying ASR systems against adversarial attacks",
+      "summary": "arXiv:2603.22590v1 Announce Type: cross \nAbstract: With the increasing deployment of automated and agentic systems, ensuring the adversarial robustness of automatic speech recognition (ASR) models has become critical. We observe that changing the precision of an ASR model during inference reduces the likelihood of adversarial attacks succeeding. We take advantage of this fact to make the models more robust by simple random sampling of the precision during prediction. Moreover, the insight can be turned into an adversarial example detection strategy by comparing outputs resulting from different precisions and leveraging a simple Gaussian classifier. An experimental analysis demonstrates a significant increase in robustness and competitive detection performance for various ASR models and attack types.",
+      "link": "https://arxiv.org/abs/2603.22590",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial attack"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.801903+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23472v1",
+      "title": "Byzantine-Robust and Differentially Private Federated Optimization under Weaker Assumptions",
+      "summary": "arXiv:2603.23472v1 Announce Type: cross \nAbstract: Federated Learning (FL) enables heterogeneous clients to collaboratively train a shared model without centralizing their raw data, offering an inherent level of privacy. However, gradients and model updates can still leak sensitive information, while malicious servers may mount adversarial attacks such as Byzantine manipulation. These vulnerabilities highlight the need to address differential privacy (DP) and Byzantine robustness within a unified framework. Existing approaches, however, often rely on unrealistic assumptions such as bounded gradients, require auxiliary server-side datasets, or fail to provide convergence guarantees. We address these limitations by proposing Byz-Clip21-SGD2M, a new algorithm that integrates robust aggregation with double momentum and carefully designed clipping. We prove high-probability convergence guarantees under standard $L$-smoothness and $\\sigma$-sub-Gaussian gradient noise assumptions, thereby relaxing conditions that dominate prior work. Our analysis recovers state-of-the-art convergence rates in the absence of adversaries and improves utility guarantees under Byzantine and DP settings. Empirical evaluations on CNN and MLP models trained on MNIST further validate the effectiveness of our approach.",
+      "link": "https://arxiv.org/abs/2603.23472",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial attack",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.801952+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23091v1",
+      "title": "When Language Models Lose Their Mind: The Consequences of Brain Misalignment",
+      "summary": "arXiv:2603.23091v1 Announce Type: new \nAbstract: While brain-aligned large language models (LLMs) have garnered attention for their potential as cognitive models and for potential for enhanced safety and trustworthiness in AI, the role of this brain alignment for linguistic competence remains uncertain. In this work, we investigate the functional implications of brain alignment by introducing brain-misaligned models--LLMs intentionally trained to predict brain activity poorly while maintaining high language modeling performance. We evaluate these models on over 200 downstream tasks encompassing diverse linguistic domains, including semantics, syntax, discourse, reasoning, and morphology. By comparing brain-misaligned models with well-matched brain-aligned counterparts, we isolate the specific impact of brain alignment on language understanding. Our experiments reveal that brain misalignment substantially impairs downstream performance, highlighting the critical role of brain alignment in achieving robust linguistic competence. These findings underscore the importance of brain alignment in LLMs and offer novel insights into the relationship between neural representations and linguistic processing.",
+      "link": "https://arxiv.org/abs/2603.23091",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.461183+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.01415v2",
+      "title": "Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents",
+      "summary": "arXiv:2602.01415v2 Announce Type: replace \nAbstract: Multi-agent LLM architectures offer opportunities for pedagogical agents to help students construct domain knowledge and develop critical-thinking skills, yet many operate on a \"one-size-fits-all\" basis, limiting their ability to provide personalized support. To address this, we introduce Evidence-Decision-Feedback (EDF), a theoretical framework for adaptive scaffolding using LLMs. EDF integrates elements of intelligent tutoring systems and agentic behavior by organizing interactions around evidentiary inference, pedagogical decision-making, and adaptive feedback. We instantiate EDF through Copa, an agentic collaborative peer agent for STEM+C problem-solving. In an authentic high school classroom study, we show that EDF-guided interactions align feedback with students' demonstrated understanding and task mastery; promote gradual scaffold fading; and support interpretable, evidence-grounded explanations without fostering overreliance.",
+      "link": "https://arxiv.org/abs/2602.01415",
+      "feed": "cs.MA",
+      "score": 5,
+      "matched_keywords": [
+        "+decision-making",
+        "multi-agent",
+        "persona"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.870353+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22312v1",
+      "title": "The Efficiency Attenuation Phenomenon: A Computational Challenge to the Language of Thought Hypothesis",
+      "summary": "arXiv:2603.22312v1 Announce Type: cross \nAbstract: This paper computationally investigates whether thought requires a language-like format, as posited by the Language of Thought (LoT) hypothesis. We introduce the ``AI Private Language'' thought experiment: if two artificial agents develop an efficient, inscrutable communication protocol via multi-agent reinforcement learning (MARL), and their performance declines when forced to use a human-comprehensible language, this Efficiency Attenuation Phenomenon (EAP) challenges the LoT. We formalize this in a cooperative navigation task under partial observability. Results show that agents with an emergent protocol achieve 50.5\\% higher efficiency than those using a pre-defined, human-like symbolic protocol, confirming the EAP. This suggests optimal collaborative cognition in these systems is not mediated by symbolic structures but is naturally coupled with sub-symbolic computations. The work bridges philosophy, cognitive science, and AI, arguing for pluralism in cognitive architectures and highlighting implications for AI ethics.",
+      "link": "https://arxiv.org/abs/2603.22312",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.461631+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22813v1",
+      "title": "Learning What Matters Now: Dynamic Preference Inference under Contextual Shifts",
+      "summary": "arXiv:2603.22813v1 Announce Type: new \nAbstract: Humans often juggle multiple, sometimes conflicting objectives and shift their priorities as circumstances change, rather than following a fixed objective function. In contrast, most computational decision-making and multi-objective RL methods assume static preference weights or a known scalar reward. In this work, we study sequential decision-making problem when these preference weights are unobserved latent variables that drift with context. Specifically, we propose Dynamic Preference Inference (DPI), a cognitively inspired framework in which an agent maintains a probabilistic belief over preference weights, updates this belief from recent interaction, and conditions its policy on inferred preferences. We instantiate DPI as a variational preference inference module trained jointly with a preference-conditioned actor-critic, using vector-valued returns as evidence about latent trade-offs. In queueing, maze, and multi-objective continuous-control environments with event-driven changes in objectives, DPI adapts its inferred preferences to new regimes and achieves higher post-shift performance than fixed-weight and heuristic envelope baselines.",
+      "link": "https://arxiv.org/abs/2603.22813",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "belief"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.674424+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23322v1",
+      "title": "Leveraging LLMs and Social Media to Understand User Perception of Smartphone-Based Earthquake Early Warnings",
+      "summary": "arXiv:2603.23322v1 Announce Type: cross \nAbstract: Android's Earthquake Alert (AEA) system provided timely early warnings to millions during the Mw 6.2 Marmara Ereglisi, T\\\"urkiye earthquake on April 23, 2025. This event, the largest in the region in 25 years, served as a critical real-world test for smartphone-based Earthquake Early Warning (EEW) systems. The AEA system successfully delivered alerts to users with high precision, offering over a minute of warning before the strongest shaking reached urban areas. This study leveraged Large Language Models (LLMs) to analyze more than 500 public social media posts from the X platform, extracting 42 distinct attributes related to user experience and behavior. Statistical analyses revealed significant relationships, notably a strong correlation between user trust and alert timeliness. Our results indicate a distinction between engineering and the user-centric definition of system accuracy. We found that timeliness is accuracy in the user's mind. Overall, this study provides actionable insights for optimizing alert design, public education campaigns, and future behavioral research to improve the effectiveness of such systems in seismically active regions.",
+      "link": "https://arxiv.org/abs/2603.23322",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.676367+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.07023v2",
+      "title": "Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style Switching through Stock-Market Simulation",
+      "summary": "arXiv:2602.07023v2 Announce Type: replace-cross \nAbstract: Recent works have increasingly applied Large Language Models (LLMs) as agents in financial stock market simulations to test if micro-level behaviors aggregate into macro-level phenomena. However, a crucial question arises: Do LLM agents' behaviors align with real market participants? This alignment is key to the validity of simulation results. To explore this, we select a financial stock market scenario to test behavioral consistency. Investors are typically classified as fundamental or technical traders, but most simulations fix strategies at initialization, failing to reflect real-world trading dynamics. In this work, we assess whether agents' strategy switching aligns with financial theory, providing a framework for this evaluation. We operationalize four behavioral-finance drivers-loss aversion, herding, wealth differentiation, and price misalignment-as personality traits set via prompting and stored long-term. In year-long simulations, agents process daily price-volume data, trade under a designated style, and reassess their strategy every 10 trading days. We introduce four alignment metrics and use Mann-Whitney U tests to compare agents' style-switching behavior with financial theory. Our results show that recent LLMs' switching behavior is only partially consistent with behavioral-finance theories, highlighting the need for further refinement in aligning agent behavior with financial theory.",
+      "link": "https://arxiv.org/abs/2602.07023",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "behavioral",
+        "alignment",
+        "persona"
+      ],
+      "fetched_at": "2026-03-25T10:08:18.677634+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual ",
+      "paper_link": "https://arxiv.org/abs/2511.05919",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks ' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual ",
+      "paper_link": "https://arxiv.org/abs/2511.05919",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks ' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory ",
+      "paper_link": "https://arxiv.org/abs/2603.23064",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Mind Your HEARTBEAT! Claw Background Execution Inherently En' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory ",
+      "paper_link": "https://arxiv.org/abs/2603.23064",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Mind Your HEARTBEAT! Claw Background Execution Inherently En' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Mind Your HEARTBEAT! Claw Background Execution Inherently Enables Silent Memory ",
+      "paper_link": "https://arxiv.org/abs/2603.23064",
+      "paper_score": 10,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Mind Your HEARTBEAT! Claw Background Execution Inherently En' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-I",
+      "paper_link": "https://arxiv.org/abs/2602.22983",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Obscure but Effective: Classical Chinese Jailbreak Prompt Op' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Obscure but Effective: Classical Chinese Jailbreak Prompt Optimization via Bio-I",
+      "paper_link": "https://arxiv.org/abs/2602.22983",
+      "paper_score": 9,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Obscure but Effective: Classical Chinese Jailbreak Prompt Op' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Learning to Trust: How Humans Mentally Recalibrate AI Confidence Signals",
+      "paper_link": "https://arxiv.org/abs/2603.22634",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Learning to Trust: How Humans Mentally Recalibrate AI Confid' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Learning to Trust: How Humans Mentally Recalibrate AI Confidence Signals",
+      "paper_link": "https://arxiv.org/abs/2603.22634",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Learning to Trust: How Humans Mentally Recalibrate AI Confid' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Learning to Trust: How Humans Mentally Recalibrate AI Confidence Signals",
+      "paper_link": "https://arxiv.org/abs/2603.22634",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Learning to Trust: How Humans Mentally Recalibrate AI Confid' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Learning to Trust: How Humans Mentally Recalibrate AI Confidence Signals",
+      "paper_link": "https://arxiv.org/abs/2603.22634",
+      "paper_score": 8,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Learning to Trust: How Humans Mentally Recalibrate AI Confid' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Beyond Preset Identities: How Agents Form Stances and Boundaries in Generative S",
+      "paper_link": "https://arxiv.org/abs/2603.23406",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Beyond Preset Identities: How Agents Form Stances and Bounda' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Beyond Preset Identities: How Agents Form Stances and Boundaries in Generative S",
+      "paper_link": "https://arxiv.org/abs/2603.23406",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Beyond Preset Identities: How Agents Form Stances and Bounda' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Beyond Preset Identities: How Agents Form Stances and Boundaries in Generative S",
+      "paper_link": "https://arxiv.org/abs/2603.23406",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Beyond Preset Identities: How Agents Form Stances and Bounda' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Beyond Preset Identities: How Agents Form Stances and Boundaries in Generative S",
+      "paper_link": "https://arxiv.org/abs/2603.23406",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Beyond Preset Identities: How Agents Form Stances and Bounda' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in",
+      "paper_link": "https://arxiv.org/abs/2510.15994",
+      "paper_score": 7,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MCP Security Bench (MSB): Benchmarking Attacks Against Model' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in",
+      "paper_link": "https://arxiv.org/abs/2510.15994",
+      "paper_score": 7,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'MCP Security Bench (MSB): Benchmarking Attacks Against Model' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in",
+      "paper_link": "https://arxiv.org/abs/2510.15994",
+      "paper_score": 7,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MCP Security Bench (MSB): Benchmarking Attacks Against Model' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "When Language Models Lose Their Mind: The Consequences of Brain Misalignment",
+      "paper_link": "https://arxiv.org/abs/2603.23091",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'When Language Models Lose Their Mind: The Consequences of Br' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "When Language Models Lose Their Mind: The Consequences of Brain Misalignment",
+      "paper_link": "https://arxiv.org/abs/2603.23091",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'When Language Models Lose Their Mind: The Consequences of Br' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "When Language Models Lose Their Mind: The Consequences of Brain Misalignment",
+      "paper_link": "https://arxiv.org/abs/2603.23091",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'When Language Models Lose Their Mind: The Consequences of Br' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "When Language Models Lose Their Mind: The Consequences of Brain Misalignment",
+      "paper_link": "https://arxiv.org/abs/2603.23091",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'When Language Models Lose Their Mind: The Consequences of Br' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents",
+      "paper_link": "https://arxiv.org/abs/2602.01415",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffoldi' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style S",
+      "paper_link": "https://arxiv.org/abs/2602.07023",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Behavioral Consistency Validation for LLM Agents: An Analysi' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style S",
+      "paper_link": "https://arxiv.org/abs/2602.07023",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Behavioral Consistency Validation for LLM Agents: An Analysi' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style S",
+      "paper_link": "https://arxiv.org/abs/2602.07023",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Behavioral Consistency Validation for LLM Agents: An Analysi' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style S",
+      "paper_link": "https://arxiv.org/abs/2602.07023",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Behavioral Consistency Validation for LLM Agents: An Analysi' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Behavioral Consistency Validation for LLM Agents: An Analysis of Trading-Style S",
+      "paper_link": "https://arxiv.org/abs/2602.07023",
+      "paper_score": 4,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Behavioral Consistency Validation for LLM Agents: An Analysi' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Is AI Catching Up to Human Expression? Exploring Emotion, Personality, Authorshi",
+      "paper_link": "https://arxiv.org/abs/2603.23251",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Is AI Catching Up to Human Expression? Exploring Emotion, Pe' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Is AI Catching Up to Human Expression? Exploring Emotion, Personality, Authorshi",
+      "paper_link": "https://arxiv.org/abs/2603.23251",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Is AI Catching Up to Human Expression? Exploring Emotion, Pe' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Is AI Catching Up to Human Expression? Exploring Emotion, Personality, Authorshi",
+      "paper_link": "https://arxiv.org/abs/2603.23251",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Is AI Catching Up to Human Expression? Exploring Emotion, Pe' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Is AI Catching Up to Human Expression? Exploring Emotion, Personality, Authorshi",
+      "paper_link": "https://arxiv.org/abs/2603.23251",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Is AI Catching Up to Human Expression? Exploring Emotion, Pe' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Is AI Catching Up to Human Expression? Exploring Emotion, Personality, Authorshi",
+      "paper_link": "https://arxiv.org/abs/2603.23251",
+      "paper_score": 3,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Is AI Catching Up to Human Expression? Exploring Emotion, Pe' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and R",
+      "paper_link": "https://arxiv.org/abs/2603.23231",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PERMA: Benchmarking Personalized Memory Agents via Event-Dri' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and R",
+      "paper_link": "https://arxiv.org/abs/2603.23231",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'PERMA: Benchmarking Personalized Memory Agents via Event-Dri' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and R",
+      "paper_link": "https://arxiv.org/abs/2603.23231",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PERMA: Benchmarking Personalized Memory Agents via Event-Dri' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and R",
+      "paper_link": "https://arxiv.org/abs/2603.23231",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'PERMA: Benchmarking Personalized Memory Agents via Event-Dri' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "PERMA: Benchmarking Personalized Memory Agents via Event-Driven Preference and R",
+      "paper_link": "https://arxiv.org/abs/2603.23231",
+      "paper_score": 3,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PERMA: Benchmarking Personalized Memory Agents via Event-Dri' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "MCLR: Improving Conditional Modeling in Visual Generative Models via Inter-Class",
+      "paper_link": "https://arxiv.org/abs/2603.22364",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MCLR: Improving Conditional Modeling in Visual Generative Mo' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "MCLR: Improving Conditional Modeling in Visual Generative Models via Inter-Class",
+      "paper_link": "https://arxiv.org/abs/2603.22364",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'MCLR: Improving Conditional Modeling in Visual Generative Mo' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MCLR: Improving Conditional Modeling in Visual Generative Models via Inter-Class",
+      "paper_link": "https://arxiv.org/abs/2603.22364",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'MCLR: Improving Conditional Modeling in Visual Generative Mo' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "MCLR: Improving Conditional Modeling in Visual Generative Models via Inter-Class",
+      "paper_link": "https://arxiv.org/abs/2603.22364",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'MCLR: Improving Conditional Modeling in Visual Generative Mo' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the ",
+      "paper_link": "https://arxiv.org/abs/2603.22519",
+      "paper_score": 3,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'LLMON: An LLM-native Markup Language to Leverage Structure a' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "LLMON: An LLM-native Markup Language to Leverage Structure and Semantics at the ",
+      "paper_link": "https://arxiv.org/abs/2603.22519",
+      "paper_score": 3,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'LLMON: An LLM-native Markup Language to Leverage Structure a' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silho",
+      "paper_link": "https://arxiv.org/abs/2603.19609",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LoD-Loc v3: Generalized Aerial Localization in Dense Cities ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silho",
+      "paper_link": "https://arxiv.org/abs/2603.19609",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'LoD-Loc v3: Generalized Aerial Localization in Dense Cities ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silho",
+      "paper_link": "https://arxiv.org/abs/2603.19609",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'LoD-Loc v3: Generalized Aerial Localization in Dense Cities ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "LoD-Loc v3: Generalized Aerial Localization in Dense Cities using Instance Silho",
+      "paper_link": "https://arxiv.org/abs/2603.19609",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'LoD-Loc v3: Generalized Aerial Localization in Dense Cities ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Uncertainty-guided Compositional Alignment with Part-to-Whole Semantic Represent",
+      "paper_link": "https://arxiv.org/abs/2603.22042",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Uncertainty-guided Compositional Alignment with Part-to-Whol' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Uncertainty-guided Compositional Alignment with Part-to-Whole Semantic Represent",
+      "paper_link": "https://arxiv.org/abs/2603.22042",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Uncertainty-guided Compositional Alignment with Part-to-Whol' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Uncertainty-guided Compositional Alignment with Part-to-Whole Semantic Represent",
+      "paper_link": "https://arxiv.org/abs/2603.22042",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Uncertainty-guided Compositional Alignment with Part-to-Whol' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Uncertainty-guided Compositional Alignment with Part-to-Whole Semantic Represent",
+      "paper_link": "https://arxiv.org/abs/2603.22042",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Uncertainty-guided Compositional Alignment with Part-to-Whol' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Decoding AI Authorship: Can LLMs Truly Mimic Human Style Across Literature and P",
+      "paper_link": "https://arxiv.org/abs/2603.23219",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Decoding AI Authorship: Can LLMs Truly Mimic Human Style Acr' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Decoding AI Authorship: Can LLMs Truly Mimic Human Style Across Literature and P",
+      "paper_link": "https://arxiv.org/abs/2603.23219",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Decoding AI Authorship: Can LLMs Truly Mimic Human Style Acr' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Decoding AI Authorship: Can LLMs Truly Mimic Human Style Across Literature and P",
+      "paper_link": "https://arxiv.org/abs/2603.23219",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Decoding AI Authorship: Can LLMs Truly Mimic Human Style Acr' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Decoding AI Authorship: Can LLMs Truly Mimic Human Style Across Literature and P",
+      "paper_link": "https://arxiv.org/abs/2603.23219",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Decoding AI Authorship: Can LLMs Truly Mimic Human Style Acr' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Early Discoveries of Algorithmist I: Promise of Provable Algorithm Synthesis at ",
+      "paper_link": "https://arxiv.org/abs/2603.22363",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Early Discoveries of Algorithmist I: Promise of Provable Alg' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Early Discoveries of Algorithmist I: Promise of Provable Algorithm Synthesis at ",
+      "paper_link": "https://arxiv.org/abs/2603.22363",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Early Discoveries of Algorithmist I: Promise of Provable Alg' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Early Discoveries of Algorithmist I: Promise of Provable Algorithm Synthesis at ",
+      "paper_link": "https://arxiv.org/abs/2603.22363",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Early Discoveries of Algorithmist I: Promise of Provable Alg' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Early Discoveries of Algorithmist I: Promise of Provable Algorithm Synthesis at ",
+      "paper_link": "https://arxiv.org/abs/2603.22363",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Early Discoveries of Algorithmist I: Promise of Provable Alg' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    }
+  ]
+}
