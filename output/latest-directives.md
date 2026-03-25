@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 16 papers
-Suggestions generated: 8
+Matched filters: 9 papers
+Suggestions generated: 5
 
 Highest-signal item from this cycle:
 
-**[10] Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual Recall in LLMs**
-<https://arxiv.org/abs/2511.05919>
-→ High-signal scan hit across: +prompt injection, +adversarial, vulnerability
+**[11] SAiW: Source-Attributable Invisible Watermarking for Proactive Deepfake Defense**
+<https://arxiv.org/abs/2603.23178>
+→ High-signal scan hit across: +manipulation, +adversarial, +trust, deepfake
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260325-120012.md`
-- json: `./output/report-20260325-120012.json`
+- diff: `./output/diff-20260325-120221.md`
+- json: `./output/report-20260325-120221.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
