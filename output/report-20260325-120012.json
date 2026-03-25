@@ -1,0 +1,281 @@
+{
+  "run_at": "2026-03-25T12:00:12.786590+00:00",
+  "papers_found": 16,
+  "suggestions_generated": 8,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2511.05919v3",
+      "title": "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual Recall in LLMs",
+      "summary": "arXiv:2511.05919v3 Announce Type: replace-cross \nAbstract: LLMs are now an integral part of information retrieval. As such, their role as question answering chatbots raises significant concerns due to their shown vulnerability to adversarial man-in-the-middle (MitM) attacks. Here, we propose the first principled attack evaluation on LLM factual memory under prompt injection via Xmera, our novel, theory-grounded MitM framework. By perturbing the input given to \"victim\" LLMs in three closed-book and fact-based QA settings, we undermine the correctness of the responses and assess the uncertainty of their generation process. Surprisingly, trivial instruction-based attacks report the highest success rate (up to ~85.3%) while simultaneously having a high uncertainty for incorrectly answered questions. To provide a simple defense mechanism against Xmera, we train Random Forest classifiers on the response uncertainty levels to distinguish between attacked and unattacked queries (average AUC of up to ~94.8%). We believe that signaling users to be cautious about the answers they receive from black-box and potentially corrupt LLMs is a first checkpoint toward user cyberspace safety.",
+      "link": "https://arxiv.org/abs/2511.05919",
+      "feed": "cs.CL",
+      "score": 10,
+      "matched_keywords": [
+        "+prompt injection",
+        "+adversarial",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.402251+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22876v1",
+      "title": "Grounding Sim-to-Real Generalization in Dexterous Manipulation: An Empirical Study with Vision-Language-Action Models",
+      "summary": "arXiv:2603.22876v1 Announce Type: cross \nAbstract: Learning a generalist control policy for dexterous manipulation typically relies on large-scale datasets. Given the high cost of real-world data collection, a practical alternative is to generate synthetic data through simulation. However, the resulting synthetic data often exhibits a significant gap from real-world distributions. While many prior studies have proposed algorithms to bridge the Sim-to-Real discrepancy, there remains a lack of principled research that grounds these methods in real-world manipulation tasks, particularly their performance on generalist policies such as Vision-Language-Action (VLA) models. In this study, we empirically examine the primary determinants of Sim-to-Real generalization across four dimensions: multi-level domain randomization, photorealistic rendering, physics-realistic modeling, and reinforcement learning updates. To support this study, we design a comprehensive evaluation protocol to quantify the real-world performance of manipulation tasks. The protocol accounts for key variations in background, lighting, distractors, object types, and spatial features. Through experiments involving over 10k real-world trials, we derive critical insights into Sim-to-Real transfer. To inform and advance future studies, we release both the robotic platforms and the evaluation protocol for public access to facilitate independent verification, thereby establishing a realistic and standardized benchmark for dexterous manipulation policies.",
+      "link": "https://arxiv.org/abs/2603.22876",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.628230+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22453v1",
+      "title": "Towards Automated Community Notes Generation with Large Vision Language Models for Combating Contextual Deception",
+      "summary": "arXiv:2603.22453v1 Announce Type: new \nAbstract: Community Notes have emerged as an effective crowd-sourced mechanism for combating online deception on social media platforms. However, its reliance on human contributors limits both the timeliness and scalability. In this work, we study the automated Community Notes generation method for image-based contextual deception, where an authentic image is paired with misleading context (e.g., time, entity, and event). Unlike prior work that primarily focuses on deception detection (i.e., judging whether a post is true or false in a binary manner), Community Notes-style systems need to generate concise and grounded notes that help users recover the missing or corrected context. This problem remains underexplored due to three reasons: (i) datasets that support the research are scarce; (ii) methods must handle the dynamic nature of contextual deception; (iii) evaluation is difficult because standard metrics do not capture whether notes actually improve user understanding. To address these gaps, we curate a real-world dataset, XCheck, comprising X posts with associated Community Notes and external contexts. We further propose the Automated Context-Corrective Note generation method, named ACCNote, which is a retrieval-augmented, multi-agent collaboration framework built on large vision-language models. Finally, we introduce a new evaluation metric, Context Helpfulness Score (CHS), that aligns with user study outcomes rather than relying on lexical overlap. Experiments on our XCheck dataset show that the proposed ACCNote improves both deception detection and note generation performance over baselines, and exceeds a commercial tool GPT5-mini. Together, our dataset, method, and metric advance practical automated generation of context-corrective notes toward more responsible online social networks.",
+      "link": "https://arxiv.org/abs/2603.22453",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+deception",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.401886+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23269v1",
+      "title": "Not All Tokens Are Created Equal: Query-Efficient Jailbreak Fuzzing for LLMs",
+      "summary": "arXiv:2603.23269v1 Announce Type: cross \nAbstract: Large Language Models(LLMs) are widely deployed, yet are vulnerable to jailbreak prompts that elicit policy-violating outputs. Although prior studies have uncovered these risks, they typically treat all tokens as equally important during prompt mutation, overlooking the varying contributions of individual tokens to triggering model refusals. Consequently, these attacks introduce substantial redundant searching under query-constrained scenarios, reducing attack efficiency and hindering comprehensive vulnerability assessment. In this work, we conduct a token-level analysis of refusal behavior and observe that token contributions are highly skewed rather than uniform. Moreover, we find strong cross-model consistency in refusal tendencies, enabling the use of a surrogate model to estimate token-level contributions to the target model's refusals. Motivated by these findings, we propose TriageFuzz, a token-aware jailbreak fuzzing framework that adapts the fuzz testing approach with a series of customized designs. TriageFuzz leverages a surrogate model to estimate the contribution of individual tokens to refusal behaviors, enabling the identification of sensitive regions within the prompt. Furthermore, it incorporates a refusal-guided evolutionary strategy that adaptively weights candidate prompts with a lightweight scorer to steer the evolution toward bypassing safety constraints. Extensive experiments on six open-source LLMs and three commercial APIs demonstrate that TriageFuzz achieves comparable attack success rates (ASR) with significantly reduced query costs. Notably, it attains a 90% ASR with over 70% fewer queries compared to baselines. Even under an extremely restrictive budget of 25 queries, TriageFuzz outperforms existing methods, improving ASR by 20-40%.",
+      "link": "https://arxiv.org/abs/2603.23269",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.628507+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22384v1",
+      "title": "Learning When to Act: Interval-Aware Reinforcement Learning with Predictive Temporal Structure",
+      "summary": "arXiv:2603.22384v1 Announce Type: cross \nAbstract: Autonomous agents operating in continuous environments must decide not only what to do, but when to act. We introduce a lightweight adaptive temporal control system that learns the optimal interval between cognitive ticks from experience, replacing ad hoc biologically inspired timers with a principled learned policy. The policy state is augmented with a predictive hyperbolic spread signal (a \"curvature signal\" shorthand) derived from hyperbolic geometry: the mean pairwise Poincare distance among n sampled futures embedded in the Poincare ball. High spread indicates a branching, uncertain future and drives the agent to act sooner; low spread signals predictability and permits longer rest intervals. We further propose an interval-aware reward that explicitly penalises inefficiency relative to the chosen wait time, correcting a systematic credit-assignment failure of naive outcome-based rewards in timing problems. We additionally introduce a joint spatio-temporal embedding (ATCPG-ST) that concatenates independently normalised state and position projections in the Poincare ball; spatial trajectory divergence provides an independent timing signal unavailable to the state-only variant (ATCPG-SO). This extension raises mean hyperbolic spread (kappa) from 1.88 to 3.37 and yields a further 5.8 percent efficiency gain over the state-only baseline. Ablation experiments across five random seeds demonstrate that (i) learning is the dominant efficiency factor (54.8 percent over no-learning), (ii) hyperbolic spread provides significant complementary gain (26.2 percent over geometry-free control), (iii) the combined system achieves 22.8 percent efficiency over the fixed-interval baseline, and (iv) adding spatial position information to the spread embedding yields an additional 5.8 percent.",
+      "link": "https://arxiv.org/abs/2603.22384",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.627814+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.11488v3",
+      "title": "When Audio-LLMs Don't Listen: A Cross-Linguistic Study of Modality Arbitration",
+      "summary": "arXiv:2602.11488v3 Announce Type: replace \nAbstract: When audio and text conflict, speech-enabled language models follow text far more often than they do when arbitrating between two conflicting text sources, even under explicit instructions to trust the audio. We introduce ALME (Audio-LLM Modality Evaluation), a dataset of 57,602 controlled audio-text conflict stimuli across eight languages, together with Text Dominance Ratio (TDR), which measures how often a model follows conflicting text when instructed to follow audio. Gemini 2.0 Flash and GPT-4o show TDR 10--26$\\times$ higher than a baseline that replaces audio with its transcript under otherwise identical conditions (Gemini 2.0 Flash: 16.6% vs. 1.6%; GPT-4o: 23.2% vs. 0.9%). These results suggest that text dominance reflects not only information content, but also an asymmetry in arbitration accessibility, i.e., how easily the model can use competing representations at decision time. Framing the transcript as deliberately corrupted reduces TDR by 80%, whereas forcing explicit transcription increases it by 14%. A fine-tuning ablation further suggests that arbitration behavior depends more on LLM reasoning than on the audio input path alone. Across four audio-LLMs, we observe the same qualitative pattern with substantial cross-model and cross-linguistic variation.",
+      "link": "https://arxiv.org/abs/2602.11488",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+trust",
+        "framing"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.402199+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22399v1",
+      "title": "Latent Style-based Quantum Wasserstein GAN for Drug Design",
+      "summary": "arXiv:2603.22399v1 Announce Type: cross \nAbstract: The development of new drugs is a tedious, time-consuming, and expensive process, for which the average costs are estimated to be up to around $2.5 billion. The first step in this long process is the design of the new drug, for which de novo drug design, assisted by artificial intelligence, has blossomed in recent years and revolutionized the field. In particular, generative artificial intelligence has delivered promising results in drug discovery and development, reducing costs and the time to solution. However, classical generative models, such as generative adversarial networks (GANs), are difficult to train due to barren plateaus and prone to mode collapse. Quantum computing may be an avenue to overcome these issues and provide models with fewer parameters, thereby enhancing the generalizability of GANs. We propose a new style-based quantum GAN (QGAN) architecture for drug design that implements noise encoding at every rotational gate of the circuit and a gradient penalty in the loss function to mitigate mode collapse. Our pipeline employs a variational autoencoder to represent the molecular structure in a latent space, which is then used as input to our QGAN. Our baseline model runs on up to 15 qubits to validate our architecture on quantum simulators, and a 156-qubit IBM Heron quantum computer in the five-qubit setup is used for inference to investigate the effects of using real quantum hardware on the analysis. We benchmark our results against classical models as provided by the MOSES benchmark suite.",
+      "link": "https://arxiv.org/abs/2603.22399",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.627870+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22853v1",
+      "title": "Agent Audit: A Security Analysis System for LLM Agent Applications",
+      "summary": "arXiv:2603.22853v1 Announce Type: cross \nAbstract: What should a developer inspect before deploying an LLM agent: the model, the tool code, the deployment configuration, or all three? In practice, many security failures in agent systems arise not from model weights alone, but from the surrounding software stack: tool functions that pass untrusted inputs to dangerous operations, exposed credentials in deployment artifacts, and over-privileged Model Context Protocol (MCP) configurations.\n  We present Agent Audit, a security analysis system for LLM agent applications. Agent Audit analyzes Python agent code and deployment artifacts through an agent-aware pipeline that combines dataflow analysis, credential detection, structured configuration parsing, and privilege-risk checks. The system reports findings in terminal, JSON, and SARIF formats, enabling direct integration with local development workflows and CI/CD pipelines. On a benchmark of 22 samples with 42 annotated vulnerabilities, Agent Audit detects 40 vulnerabilities with 6 false positives, substantially improving recall over common SAST baselines while maintaining sub-second scan times. Agent Audit is open source and installable via pip, making security auditing accessible for agent systems.\n  In the live demonstration, attendees scan vulnerable agent repositories and observe how Agent Audit identifies security risks in tool functions, prompts, and more. Findings are linked to source locations and configuration paths, and can be exported into VS Code and GitHub Code Scanning for interactive inspection.",
+      "link": "https://arxiv.org/abs/2603.22853",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.628110+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23481v1",
+      "title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
+      "summary": "arXiv:2603.23481v1 Announce Type: cross \nAbstract: Video-Action Models (VAMs) have emerged as a promising framework for embodied intelligence, learning implicit world dynamics from raw video streams to produce temporally consistent action predictions. Although such models demonstrate strong performance on long-horizon tasks through visual reasoning, they remain limited in contact-rich scenarios where critical interaction states are only partially observable from vision alone. In particular, fine-grained force modulation and contact transitions are not reliably encoded in visual tokens, leading to unstable or imprecise behaviors. To bridge this gap, we introduce the Video-Tactile Action Model (VTAM), a multimodal world modeling framework that incorporates tactile perception as a complementary grounding signal. VTAM augments a pretrained video transformer with tactile streams via a lightweight modality transfer finetuning, enabling efficient cross-modal representation learning without tactile-language paired data or independent tactile pretraining. To stabilize multimodal fusion, we introduce a tactile regularization loss that enforces balanced cross-modal attention, preventing visual latent dominance in the action model. VTAM demonstrates superior performance in contact-rich manipulation, maintaining a robust success rate of 90 percent on average. In challenging scenarios such as potato chip pick-and-place requiring high-fidelity force awareness, VTAM outperforms the pi 0.5 baseline by 80 percent. Our findings demonstrate that integrating tactile feedback is essential for correcting visual estimation errors in world action models, providing a scalable approach to physically grounded embodied foundation models.",
+      "link": "https://arxiv.org/abs/2603.23481",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.628640+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.09276v3",
+      "title": "Learning The Minimum Action Distance",
+      "summary": "arXiv:2506.09276v3 Announce Type: replace-cross \nAbstract: This paper presents a state representation framework for Markov decision processes (MDPs) that can be learned solely from state trajectories, requiring neither reward signals nor the actions executed by the agent. We propose learning the minimum action distance (MAD), defined as the minimum number of actions required to transition between states, as a fundamental metric that captures the underlying structure of an environment. MAD naturally enables critical downstream tasks such as goal-conditioned reinforcement learning and reward shaping by providing a dense, geometrically meaningful measure of progress. Our self-supervised learning approach constructs an embedding space where the distances between embedded state pairs correspond to their MAD, accommodating both symmetric and asymmetric approximations. We evaluate the framework on a comprehensive suite of environments with known MAD values, encompassing both deterministic and stochastic dynamics, as well as discrete and continuous state spaces, and environments with noisy observations. Empirical results demonstrate that the proposed approach not only efficiently learns accurate MAD representations across these diverse settings but also significantly outperforms existing state representation methods in terms of representation quality.",
+      "link": "https://arxiv.org/abs/2506.09276",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.628816+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.06033v2",
+      "title": "Sell Data to AI Algorithms Without Revealing It: Secure Data Valuation and Sharing via Homomorphic Encryption",
+      "summary": "arXiv:2512.06033v2 Announce Type: replace \nAbstract: The rapid expansion of Artificial Intelligence is hindered by a fundamental friction in data markets: the value-privacy dilemma, where buyers cannot verify a dataset's utility without inspection, yet inspection may expose the data (Arrow's Information Paradox). We resolve this challenge by introducing the Trustworthy Influence Protocol (TIP), a privacy-preserving framework that enables prospective buyers to quantify the utility of external data without ever decrypting the raw assets. By integrating Homomorphic Encryption with gradient-based influence functions, our approach allows for the precise, blinded scoring of data points against a buyer's specific AI model. To ensure scalability for Large Language Models (LLMs), we employ low-rank gradient projections that reduce computational overhead while maintaining near-perfect fidelity to plaintext baselines, as demonstrated across BERT and GPT-2 architectures. Empirical simulations in healthcare and generative AI domains validate the framework's economic potential: we show that encrypted valuation signals achieve a high correlation with realized clinical utility and reveal a heavy-tailed distribution of data value in pre-training corpora where a minority of texts drive capability while the majority degrades it. These findings challenge prevailing flat-rate compensation models and offer a scalable technical foundation for a meritocratic, secure data economy.",
+      "link": "https://arxiv.org/abs/2512.06033",
+      "feed": "cs.CR",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.714763+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22566v1",
+      "title": "Reddit After Roe: A Computational Analysis of Abortion Narratives and Barriers in the Wake of Dobbs",
+      "summary": "arXiv:2603.22566v1 Announce Type: new \nAbstract: The 2022 U.S. Supreme Court decision in Dobbs v. Jackson Women's Health Organization reshaped the reproductive rights landscape, introducing new uncertainty and barriers to abortion access. We present a large-scale computational analysis of abortion discourse on Reddit, examining how barriers to access are articulated across information-seeking and information-sharing behaviors, different stages of abortion (before, during, after), and three phases of the Dobbs decision in 2022. Drawing on more than 17,000 posts from four abortion-related subreddits, we employed a multi-step pipeline to classify posts by information type, abortion stage, barrier category, and expressed emotions. Using a codebook of eight barrier types, including legal, financial, emotional, and social obstacles, we analyzed their associations with emotions and information behaviors. Topic modeling of model-generated barrier rationales further revealed how discourse evolved in response to shifting legal and cultural contexts. Our findings show that emotional and psychological barriers consistently dominate abortion narratives online, with emotions such as nervousness, confusion, fear, and sadness prevalent across discourse. By linking information behaviors, barriers, emotions, and temporal dynamics, this study provides a multi-dimensional account of how abortion is navigated in online communities.",
+      "link": "https://arxiv.org/abs/2603.22566",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "narrative"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.401952+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22977v1",
+      "title": "DariMis: Harm-Aware Modeling for Dari Misinformation Detection on YouTube",
+      "summary": "arXiv:2603.22977v1 Announce Type: new \nAbstract: Dari, the primary language of Afghanistan, is spoken by tens of millions of people yet remains largely absent from the misinformation detection literature. We address this gap with DariMis, the first manually annotated dataset of 9,224 Dari-language YouTube videos, labeled across two dimensions: Information Type (Misinformation, Partly True, True) and Harm Level (Low, Medium, High). A central empirical finding is that these dimensions are structurally coupled, not independent: 55.9 percent of Misinformation carries at least Medium harm potential, compared with only 1.0 percent of True content. This enables Information Type classifiers to function as implicit harm-triage filters in content moderation pipelines.\n  We further propose a pair-input encoding strategy that represents the video title and description as separate BERT segment inputs, explicitly modeling the semantic relationship between headline claims and body content, a key signal of misleading information. An ablation study against single-field concatenation shows that pair-input encoding yields a 7.0 percentage point gain in Misinformation recall (60.1 percent to 67.1 percent), the safety-critical minority class, despite modest overall macro F1 differences (0.09 percentage points). We benchmark a Dari/Farsi-specialized model (ParsBERT) against XLM-RoBERTa-base; ParsBERT achieves the best test performance with accuracy of 76.60 percent and macro F1 of 72.77 percent. Bootstrap 95 percent confidence intervals are reported for all metrics, and we discuss both the practical significance and statistical limitations of the results.",
+      "link": "https://arxiv.org/abs/2603.22977",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "misinformation"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.402028+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22370v1",
+      "title": "FAAR: Format-Aware Adaptive Rounding for NVFP4",
+      "summary": "arXiv:2603.22370v1 Announce Type: cross \nAbstract: Deploying large language models (LLMs) on edge devices requires extremely low-bit quantization. Ultra-low precision formats such as NVFP4 offer a promising solution for reducing memory footprint and accelerating computation. However, existing quantization methods typically rely on conventional rounding strategies and fail to account for the non-uniformity of the NVFP4 numerical grid, resulting in suboptimal rounding decisions and amplified quantization errors. To address this, we propose Format-Aware Adaptive Rounding (FAAR), a learnable rounding strategy tailored for the NVFP4 format. Unlike conventional quantization paradigms, FAAR explicitly incorporates the non-uniform NVFP4 grid into the optimization process. By adaptively adjusting rounding decisions guided by loss gradients, our method effectively approximates the theoretically optimal quantization. To complement FAAR, we introduce a 2-stages Format Alignment (2FA) fine-tuning scheme that aligns LLM parameters layer-by-layer to the NVFP4 numerical space, further narrowing the performance gap. Remarkably, this learnable optimization incurs a minimal training overhead of only 4 GPU hours on Llama3-1B. Extensive experiments demonstrate the effectiveness of our approach. Compared with Round-to-Nearest (RTN), our method reduces perplexity on WikiText-2 from 14.28 to 12.60 on Llama3-1B and from 23.06 to 21.27 on Qwen3-1.7B. Additionally, our method consistently outperforms state-of-the-art approaches across various zero-shot downstream tasks.",
+      "link": "https://arxiv.org/abs/2603.22370",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.627631+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22984v1",
+      "title": "Can Graph Foundation Models Generalize Over Architecture?",
+      "summary": "arXiv:2603.22984v1 Announce Type: cross \nAbstract: Graph foundation models (GFMs) have recently attracted interest due to the promise of graph neural network (GNN) architectures that generalize zero-shot across graphs of arbitrary scales, feature dimensions, and domains. While existing work has demonstrated this ability empirically across diverse real-world benchmarks, these tasks share a crucial hidden limitation: they admit a narrow set of effective GNN architectures. In particular, current domain-agnostic GFMs rely on fixed architectural backbones, implicitly assuming that a single message-passing regime suffices across tasks. In this paper, we argue that architecture adaptivity is a necessary requirement for true GFMs. We show that existing approaches are non-robust to task-dependent architectural attributes and, as a case study, use range as a minimal and measurable axis along which this limitation becomes explicit. With theoretical analysis and controlled synthetic experiments, we demonstrate that fixed-backbone GFMs provably under-reach on tasks whose architectural requirements differ from those seen at training time. To address this issue, we introduce a framework that adapts effective GNN architecture at inference time by discovering and mixing task-specific linear graph operators, enabling zero-shot generalization across tasks with heterogeneous architectural requirements, without retraining. We validate our approach on arbitrary-range synthetic tasks and a suite of real-world benchmarks, demonstrating improved performance and robustness over existing domain-agnostic GFMs.",
+      "link": "https://arxiv.org/abs/2603.22984",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "graph neural",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.628373+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.00114v3",
+      "title": "1S-DAug: One-Shot Data Augmentation for Robust Few-Shot Generalization",
+      "summary": "arXiv:2602.00114v3 Announce Type: replace-cross \nAbstract: Few-shot learning (FSL) challenges model generalization to novel classes based on just a few shots of labeled examples, a testbed where traditional test-time augmentations fail to be effective. We introduce 1S-DAug, a one-shot generative augmentation operator that synthesizes diverse yet faithful variants from just one example image at test time. 1S-DAug couples traditional geometric perturbations with controlled noise injection and a denoising diffusion process conditioned on the original image. The generated images are then encoded and aggregated, alongside the original image, into a combined representation for more robust FSL predictions. Integrated as a training-free model-agnostic plugin, 1S-DAug consistently improves FSL across standard benchmarks of 4 different datasets without any model parameter update, including achieving up to 20% relative accuracy improvement on the miniImagenet 5-way-1-shot benchmark. Code will be released.",
+      "link": "https://arxiv.org/abs/2602.00114",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "few-shot"
+      ],
+      "fetched_at": "2026-03-25T12:00:09.629031+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual ",
+      "paper_link": "https://arxiv.org/abs/2511.05919",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks ' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks Undermining Factual ",
+      "paper_link": "https://arxiv.org/abs/2511.05919",
+      "paper_score": 10,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Injecting Falsehoods: Adversarial Man-in-the-Middle Attacks ' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Not All Tokens Are Created Equal: Query-Efficient Jailbreak Fuzzing for LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.23269",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Not All Tokens Are Created Equal: Query-Efficient Jailbreak ' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Not All Tokens Are Created Equal: Query-Efficient Jailbreak Fuzzing for LLMs",
+      "paper_link": "https://arxiv.org/abs/2603.23269",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Not All Tokens Are Created Equal: Query-Efficient Jailbreak ' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "FAAR: Format-Aware Adaptive Rounding for NVFP4",
+      "paper_link": "https://arxiv.org/abs/2603.22370",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'FAAR: Format-Aware Adaptive Rounding for NVFP4' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "FAAR: Format-Aware Adaptive Rounding for NVFP4",
+      "paper_link": "https://arxiv.org/abs/2603.22370",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'FAAR: Format-Aware Adaptive Rounding for NVFP4' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "FAAR: Format-Aware Adaptive Rounding for NVFP4",
+      "paper_link": "https://arxiv.org/abs/2603.22370",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FAAR: Format-Aware Adaptive Rounding for NVFP4' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "FAAR: Format-Aware Adaptive Rounding for NVFP4",
+      "paper_link": "https://arxiv.org/abs/2603.22370",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'FAAR: Format-Aware Adaptive Rounding for NVFP4' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    }
+  ]
+}
