@@ -1,0 +1,131 @@
+{
+  "run_at": "2026-03-25T22:02:48.679530+00:00",
+  "papers_found": 7,
+  "suggestions_generated": 4,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.22341v1",
+      "title": "T-MAP: Red-Teaming LLM Agents with Trajectory-aware Evolutionary Search",
+      "summary": "arXiv:2603.22341v1 Announce Type: cross \nAbstract: While prior red-teaming efforts have focused on eliciting harmful text outputs from large language models (LLMs), such approaches fail to capture agent-specific vulnerabilities that emerge through multi-step tool execution, particularly in rapidly growing ecosystems such as the Model Context Protocol (MCP). To address this gap, we propose a trajectory-aware evolutionary search method, T-MAP, which leverages execution trajectories to guide the discovery of adversarial prompts. Our approach enables the automatic generation of attacks that not only bypass safety guardrails but also reliably realize harmful objectives through actual tool interactions. Empirical evaluations across diverse MCP environments demonstrate that T-MAP substantially outperforms baselines in attack realization rate (ARR) and remains effective against frontier models, including GPT-5.2, Gemini-3-Pro, Qwen3.5, and GLM-5, thereby revealing previously underexplored vulnerabilities in autonomous LLM agents.",
+      "link": "https://arxiv.org/abs/2603.22341",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial",
+        "guardrail"
+      ],
+      "fetched_at": "2026-03-25T22:02:42.610870+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22721v1",
+      "title": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "summary": "arXiv:2603.22721v1 Announce Type: new \nAbstract: Recent progress in artificial intelligence has encouraged numerous attempts to understand and decode human visual system from brain signals. These prior works typically align neural activity independently with semantic and perceptual features extracted from images using pre-trained vision models. However, they fail to account for two key challenges: (1) the modality gap arising from the natural difference in the information level of representation between brain signals and images, and (2) the fact that semantic and perceptual features are highly entangled within neural activity. To address these issues, we utilize hyperbolic space, which is well-suited for considering differences in the amount of information and has the geometric property that geodesics between two points naturally bend toward the origin, where the representational capacity is lower. Leveraging these properties, we propose a novel framework, Hyperbolic Feature Interpolation (HyFI), which interpolates between semantic and perceptual visual features along hyperbolic geodesics. This enables both the fusion and compression of perceptual and semantic information, effectively reflecting the limited expressiveness of brain signals and the entangled nature of these features. As a result, it facilitates better alignment between brain and visual features. We demonstrate that HyFI achieves state-of-the-art performance in zero-shot brain-to-image retrieval, outperforming prior methods with Top-1 accuracy improvements of up to +17.3% on THINGS-EEG and +9.1% on THINGS-MEG.",
+      "link": "https://arxiv.org/abs/2603.22721",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-25T22:02:43.259416+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22399v1",
+      "title": "Latent Style-based Quantum Wasserstein GAN for Drug Design",
+      "summary": "arXiv:2603.22399v1 Announce Type: cross \nAbstract: The development of new drugs is a tedious, time-consuming, and expensive process, for which the average costs are estimated to be up to around $2.5 billion. The first step in this long process is the design of the new drug, for which de novo drug design, assisted by artificial intelligence, has blossomed in recent years and revolutionized the field. In particular, generative artificial intelligence has delivered promising results in drug discovery and development, reducing costs and the time to solution. However, classical generative models, such as generative adversarial networks (GANs), are difficult to train due to barren plateaus and prone to mode collapse. Quantum computing may be an avenue to overcome these issues and provide models with fewer parameters, thereby enhancing the generalizability of GANs. We propose a new style-based quantum GAN (QGAN) architecture for drug design that implements noise encoding at every rotational gate of the circuit and a gradient penalty in the loss function to mitigate mode collapse. Our pipeline employs a variational autoencoder to represent the molecular structure in a latent space, which is then used as input to our QGAN. Our baseline model runs on up to 15 qubits to validate our architecture on quantum simulators, and a 156-qubit IBM Heron quantum computer in the five-qubit setup is used for inference to investigate the effects of using real quantum hardware on the analysis. We benchmark our results against classical models as provided by the MOSES benchmark suite.",
+      "link": "https://arxiv.org/abs/2603.22399",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-25T22:02:43.259630+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23171v1",
+      "title": "Robust Safety Monitoring of Language Models via Activation Watermarking",
+      "summary": "arXiv:2603.23171v1 Announce Type: cross \nAbstract: Large language models (LLMs) can be misused to reveal sensitive information, such as weapon-making instructions or writing malware. LLM providers rely on $\\emph{monitoring}$ to detect and flag unsafe behavior during inference. An open security challenge is $\\emph{adaptive}$ adversaries who craft attacks that simultaneously (i) evade detection while (ii) eliciting unsafe behavior. Adaptive attackers are a major concern as LLM providers cannot patch their security mechanisms, since they are unaware of how their models are being misused. We cast $\\emph{robust}$ LLM monitoring as a security game, where adversaries who know about the monitor try to extract sensitive information, while a provider must accurately detect these adversarial queries at low false positive rates. Our work (i) shows that existing LLM monitors are vulnerable to adaptive attackers and (ii) designs improved defenses through $\\emph{activation watermarking}$ by carefully introducing uncertainty for the attacker during inference. We find that $\\emph{activation watermarking}$ outperforms guard baselines by up to $52\\%$ under adaptive attackers who know the monitoring algorithm but not the secret key.",
+      "link": "https://arxiv.org/abs/2603.23171",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-25T22:02:43.259874+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23481v1",
+      "title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
+      "summary": "arXiv:2603.23481v1 Announce Type: cross \nAbstract: Video-Action Models (VAMs) have emerged as a promising framework for embodied intelligence, learning implicit world dynamics from raw video streams to produce temporally consistent action predictions. Although such models demonstrate strong performance on long-horizon tasks through visual reasoning, they remain limited in contact-rich scenarios where critical interaction states are only partially observable from vision alone. In particular, fine-grained force modulation and contact transitions are not reliably encoded in visual tokens, leading to unstable or imprecise behaviors. To bridge this gap, we introduce the Video-Tactile Action Model (VTAM), a multimodal world modeling framework that incorporates tactile perception as a complementary grounding signal. VTAM augments a pretrained video transformer with tactile streams via a lightweight modality transfer finetuning, enabling efficient cross-modal representation learning without tactile-language paired data or independent tactile pretraining. To stabilize multimodal fusion, we introduce a tactile regularization loss that enforces balanced cross-modal attention, preventing visual latent dominance in the action model. VTAM demonstrates superior performance in contact-rich manipulation, maintaining a robust success rate of 90 percent on average. In challenging scenarios such as potato chip pick-and-place requiring high-fidelity force awareness, VTAM outperforms the pi 0.5 baseline by 80 percent. Our findings demonstrate that integrating tactile feedback is essential for correcting visual estimation errors in world action models, providing a scalable approach to physically grounded embodied foundation models.",
+      "link": "https://arxiv.org/abs/2603.23481",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T22:02:43.259954+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22977v1",
+      "title": "DariMis: Harm-Aware Modeling for Dari Misinformation Detection on YouTube",
+      "summary": "arXiv:2603.22977v1 Announce Type: new \nAbstract: Dari, the primary language of Afghanistan, is spoken by tens of millions of people yet remains largely absent from the misinformation detection literature. We address this gap with DariMis, the first manually annotated dataset of 9,224 Dari-language YouTube videos, labeled across two dimensions: Information Type (Misinformation, Partly True, True) and Harm Level (Low, Medium, High). A central empirical finding is that these dimensions are structurally coupled, not independent: 55.9 percent of Misinformation carries at least Medium harm potential, compared with only 1.0 percent of True content. This enables Information Type classifiers to function as implicit harm-triage filters in content moderation pipelines.\n  We further propose a pair-input encoding strategy that represents the video title and description as separate BERT segment inputs, explicitly modeling the semantic relationship between headline claims and body content, a key signal of misleading information. An ablation study against single-field concatenation shows that pair-input encoding yields a 7.0 percentage point gain in Misinformation recall (60.1 percent to 67.1 percent), the safety-critical minority class, despite modest overall macro F1 differences (0.09 percentage points). We benchmark a Dari/Farsi-specialized model (ParsBERT) against XLM-RoBERTa-base; ParsBERT achieves the best test performance with accuracy of 76.60 percent and macro F1 of 72.77 percent. Bootstrap 95 percent confidence intervals are reported for all metrics, and we discuss both the practical significance and statistical limitations of the results.",
+      "link": "https://arxiv.org/abs/2603.22977",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "misinformation"
+      ],
+      "fetched_at": "2026-03-25T22:02:42.610692+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.23421v2",
+      "title": "Quantifying Systemic Vulnerability in the Foundation Model Industry",
+      "summary": "arXiv:2510.23421v2 Announce Type: replace-cross \nAbstract: The foundation model industry exhibits unprecedented concentration in critical inputs: semiconductors, energy infrastructure, elite talent, capital, and training data. Despite extensive sectoral analyses, no comprehensive framework exists for assessing overall industrial vulnerability. We develop the Artificial Intelligence Industrial Vulnerability Index (AIIVI) grounded in O-Ring production theory, recognizing that foundation model production requires simultaneous availability of non-substitutable inputs. Given extreme data opacity and rapid technological evolution, we implement a validated human-in-the-loop methodology using large language models to systematically extract indicators from dispersed grey literature, with complete human verification of all outputs. Applied to six state-of-the-art foundation model developers, AIIVI equals 0.82, indicating extreme vulnerability driven by compute infrastructure (0.85) and energy systems (0.90). While industrial policy currently emphasizes semiconductor capacity, energy infrastructure represents the emerging binding constraint. This methodology proves applicable to other fast-evolving, opaque industries where traditional data sources are inadequate.",
+      "link": "https://arxiv.org/abs/2510.23421",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "vulnerability"
+      ],
+      "fetched_at": "2026-03-25T22:02:43.260268+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alignment",
+      "paper_link": "https://arxiv.org/abs/2603.22721",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'HyFI: Hyperbolic Feature Interpolation for Brain-Vision Alig' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    }
+  ]
+}

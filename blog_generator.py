@@ -13,6 +13,7 @@ Usage:
 """
 
 import json
+import logging
 import os
 import re
 import subprocess
@@ -21,6 +22,8 @@ import glob
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 # ── config ────────────────────────────────────────────────────────────────────
 SITE_DIR        = Path.home() / "seithar-site" / "2026ARG"
@@ -31,8 +34,13 @@ PAPERS_JSON     = SITE_DIR / "papers.json"
 STATE_FILE      = Path(__file__).parent / "state" / "blog_published.json"
 MIN_SCORE       = 5          # minimum autoprompt score to generate an article
 MAX_PER_RUN     = 3          # max articles generated in one run
-LLM_BASE        = "http://localhost:3456/v1"
-LLM_MODEL       = "claude-sonnet-4"
+LLM_BASE        = os.environ.get("SEITHAR_LLM_BASE_URL", "http://localhost:3456/v1")
+LLM_MODEL       = os.environ.get("SEITHAR_LLM_MODEL", "claude-sonnet-4")
+
+if "SEITHAR_LLM_BASE_URL" not in os.environ:
+    logger.warning("SEITHAR_LLM_BASE_URL not set, using default %s", LLM_BASE)
+if "SEITHAR_LLM_MODEL" not in os.environ:
+    logger.warning("SEITHAR_LLM_MODEL not set, using default %s", LLM_MODEL)
 
 MONTH_NAMES = {
     1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",
