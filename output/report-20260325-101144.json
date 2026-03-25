@@ -1,0 +1,240 @@
+{
+  "run_at": "2026-03-25T10:11:44.248711+00:00",
+  "papers_found": 15,
+  "suggestions_generated": 5,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2602.12288v3",
+      "title": "Energy-Aware Reinforcement Learning for Robotic Manipulation of Articulated Components in Infrastructure Operation and Maintenance",
+      "summary": "arXiv:2602.12288v3 Announce Type: replace-cross \nAbstract: With the growth of intelligent civil infrastructure and smart cities, operation and maintenance (O&amp;M) increasingly requires safe, efficient, and energy-conscious robotic manipulation of articulated components, including access doors, service drawers, and pipeline valves. However, existing robotic approaches either focus primarily on grasping or target object-specific articulated manipulation, and they rarely incorporate explicit actuation energy into multi-objective optimisation, which limits their scalability and suitability for long-term deployment in real O&amp;M settings. Therefore, this paper proposes an articulation-agnostic and energy-aware reinforcement learning framework for robotic manipulation in intelligent infrastructure O&amp;M. The method combines part-guided 3D perception, weighted point sampling, and PointNet-based encoding to obtain a compact geometric representation that generalises across heterogeneous articulated objects. Manipulation is formulated as a Constrained Markov Decision Process (CMDP), in which actuation energy is explicitly modelled and regulated via a Lagrangian-based constrained Soft Actor-Critic scheme. The policy is trained end-to-end under this CMDP formulation, enabling effective articulated-object operation while satisfying a long-horizon energy budget. Experiments on representative O&amp;M tasks demonstrate 16%-30% reductions in energy consumption, 16%-32% fewer steps to success, and consistently high success rates, indicating a scalable and sustainable solution for infrastructure O&amp;M manipulation.",
+      "link": "https://arxiv.org/abs/2602.12288",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.026232+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22435v1",
+      "title": "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation",
+      "summary": "arXiv:2603.22435v1 Announce Type: cross \nAbstract: \"Code-as-Policy\" considers how executable code can complement data-intensive Vision-Language-Action (VLA) methods, yet their effectiveness as autonomous controllers for embodied manipulation remains underexplored. We present CaP-X, an open-access framework for systematically studying Code-as-Policy agents in robot manipulation. At its core is CaP-Gym, an interactive environment in which agents control robots by synthesizing and executing programs that compose perception and control primitives. Building on this foundation, CaP-Bench evaluates frontier language and vision-language models across varying levels of abstraction, interaction, and perceptual grounding. Across 12 models, CaP-Bench reveals a consistent trend: performance improves with human-crafted abstractions but degrades as these priors are removed, exposing a dependence on designer scaffolding. At the same time, we observe that this gap can be mitigated through scaling agentic test-time computation--through multi-turn interaction, structured execution feedback, visual differencing, automatic skill synthesis, and ensembled reasoning--substantially improves robustness even when agents operate over low-level primitives. These findings allow us to derive CaP-Agent0, a training-free framework that recovers human-level reliability on several manipulation tasks in simulation and on real embodiments. We further introduce CaP-RL, showing reinforcement learning with verifiable rewards improves success rates and transfers from sim2real with minimal gap. Together, CaP-X provides a principled, open-access platform for advancing embodied coding agents.",
+      "link": "https://arxiv.org/abs/2603.22435",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.025110+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23245v1",
+      "title": "Neural ODE and SDE Models for Adaptation and Planning in Model-Based Reinforcement Learning",
+      "summary": "arXiv:2603.23245v1 Announce Type: cross \nAbstract: We investigate neural ordinary and stochastic differential equations (neural ODEs and SDEs) to model stochastic dynamics in fully and partially observed environments within a model-based reinforcement learning (RL) framework. Through a sequence of simulations, we show that neural SDEs more effectively capture the inherent stochasticity of transition dynamics, enabling high-performing policies with improved sample efficiency in challenging scenarios. We leverage neural ODEs and SDEs for efficient policy adaptation to changes in environment dynamics via inverse models, requiring only limited interactions with the new environment. To address partial observability, we introduce a latent SDE model that combines an ODE with a GAN-trained stochastic component in latent space. Policies derived from this model provide a strong baseline, outperforming or matching general model-based and model-free approaches across stochastic continuous-control benchmarks. This work demonstrates the applicability of action-conditional latent SDEs for RL planning in environments with stochastic transitions. Our code is available at: https://github.com/ChaoHan-UoS/NeuralRL",
+      "link": "https://arxiv.org/abs/2603.23245",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.025692+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.05521v2",
+      "title": "Ecosystem Trust Profiles",
+      "summary": "arXiv:2603.05521v2 Announce Type: replace \nAbstract: We define a method how digital ecosystems (including data spaces) may autonomously define and \"advertise\" credentials they issue or they trust in the form of so-called ecosystem trust profiles. An ecosystem trust profile collects all (verifiable) credentials and issuers sorted by trust scope accepted (\"trusted\") by a particular ecosystem.\n  We then show how a minimal trust relation between ecosystems may be defined using ecosystem trust frameworks of different ecosystems and explore a few of its properties.\n  A first application of the theory is given for a use case in the manufacturing realm where different international ecosystems need to agree on certain credentials for various scopes of trust such as identity, service compliance, and other conformance standards.\n  We implement this requirement by identifying and discussing two different definitions of credential equivalence for a given trust scope, one requiring additional cross-ecosystem governance or coordination, one not. The second approach demonstrates how to solve the so-called cross-ecosystem trust dilemma, that is, the problem how ecosystems can establish cross-ecosystem trust while, at the same time, allowing them to fully retain their sovereignty. A fragility theorem demonstrates that this sovereignty leads trust to be unstable without any additional coordination or governance mechanisms on top of (and outside to) ecosystem trust profiles.\n  We extend our method to data spaces in particular and propose a novel rigorous definition of cross-data space interoperability. This allows us to prove the proposition that the extent of interoperability between two data spaces is exactly determined by the amount of commonality in their respective ecosystem trust profiles.",
+      "link": "https://arxiv.org/abs/2603.05521",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.106901+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22577v1",
+      "title": "STRIATUM-CTF: A Protocol-Driven Agentic Framework for General-Purpose CTF Solving",
+      "summary": "arXiv:2603.22577v1 Announce Type: cross \nAbstract: Large Language Models (LLMs) have demonstrated potential in code generation, yet they struggle with the multi-step, stateful reasoning required for offensive cybersecurity operations. Existing research often relies on static benchmarks that fail to capture the dynamic nature of real-world vulnerabilities. In this work, we introduce STRIATUM-CTF (A Search-based Test-time Reasoning Inference Agent for Tactical Utility Maximization in Cybersecurity), a modular agentic framework built upon the Model Context Protocol (MCP). By standardizing tool interfaces for system introspection, decompilation, and runtime debugging, STRIATUM-CTF enables the agent to maintain a coherent context window across extended exploit trajectories.\n  We validate this approach not merely on synthetic datasets, but in a live competitive environment. Our system participated in a university-hosted Capture-the-Flag (CTF) competition in late 2025, where it operated autonomously to identify and exploit vulnerabilities in real-time. STRIATUM-CTF secured First Place, outperforming 21 human teams and demonstrating strong adaptability in a dynamic problem-solving setting. We analyze the agent's decision-making logs to show how MCP-based tool abstraction significantly reduces hallucination compared to naive prompting strategies. These results suggest that standardized context protocols are a critical path toward robust autonomous cyber-reasoning systems.",
+      "link": "https://arxiv.org/abs/2603.22577",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.025284+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23433v1",
+      "title": "Mecha-nudges for Machines",
+      "summary": "arXiv:2603.23433v1 Announce Type: new \nAbstract: Nudges are subtle changes to the way choices are presented to human decision-makers (e.g., opt-in vs. opt-out by default) that shift behavior without restricting options or changing incentives. As AI agents increasingly make decisions in the same environments as humans, the presentation of choices may be optimized for machines as well as people. We introduce mecha-nudges: changes to how choices are presented that systematically influence AI agents without degrading the decision environment for humans. To formalize mecha-nudges, we combine the Bayesian persuasion framework with V-usable information, a generalization of Shannon information that is observer-relative. This yields a common scale (bits of usable information) for comparing a wide range of interventions, contexts, and models. Applying our framework to product listings on Etsy -- a global marketplace for independent sellers -- we find that following ChatGPT's release, listings have significantly more machine-usable information about product selection, consistent with systematic mecha-nudging.",
+      "link": "https://arxiv.org/abs/2603.23433",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "persuasion",
+        "nudge"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.024630+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22900v1",
+      "title": "Off-Policy Evaluation and Learning for Survival Outcomes under Censoring",
+      "summary": "arXiv:2603.22900v1 Announce Type: cross \nAbstract: Optimizing survival outcomes, such as patient survival or customer retention, is a critical objective in data-driven decision-making. Off-Policy Evaluation~(OPE) provides a powerful framework for assessing such decision-making policies using logged data alone, without the need for costly or risky online experiments in high-stakes applications. However, typical estimators are not designed to handle right-censored survival outcomes, as they ignore unobserved survival times beyond the censoring time, leading to systematic underestimation of the true policy performance. To address this issue, we propose a novel framework for OPE and Off-Policy Learning~(OPL) tailored for survival outcomes under censoring. Specifically, we introduce IPCW-IPS and IPCW-DR, which employ the Inverse Probability of Censoring Weighting technique to explicitly deal with censoring bias. We theoretically establish that our estimators are unbiased and that IPCW-DR achieves double robustness, ensuring consistency if either the propensity score or the outcome model is correct. Furthermore, we extend this framework to constrained OPL to optimize policy value under budget constraints. We demonstrate the effectiveness of our proposed methods through simulation studies and illustrate their practical impacts using public real-world data for both evaluation and learning tasks.",
+      "link": "https://arxiv.org/abs/2603.22900",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.025479+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2409.12135v3",
+      "title": "Almost Sure Convergence of Linear Temporal Difference Learning with Arbitrary Features",
+      "summary": "arXiv:2409.12135v3 Announce Type: replace-cross \nAbstract: Temporal difference (TD) learning with linear function approximation (linear TD) is a classic and powerful prediction algorithm in reinforcement learning. While it is well-understood that linear TD converges almost surely to a unique point, this convergence traditionally requires the assumption that the features used by the approximator are linearly independent. However, this linear independence assumption does not hold in many practical scenarios. This work is the first to establish the almost sure convergence of linear TD without requiring linearly independent features. We prove that the weight iterates of linear TD converge to a bounded set, and that the value estimates derived from the weights in that set are the same almost everywhere. We also establish a notion of local stability of the weight iterates. Importantly, we do not impose assumptions tailored to feature dependence and do not modify the linear TD algorithm. Key to our analysis is a novel characterization of bounded invariant sets of the mean ODE of linear TD.",
+      "link": "https://arxiv.org/abs/2409.12135",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.025963+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.09276v3",
+      "title": "Learning The Minimum Action Distance",
+      "summary": "arXiv:2506.09276v3 Announce Type: replace-cross \nAbstract: This paper presents a state representation framework for Markov decision processes (MDPs) that can be learned solely from state trajectories, requiring neither reward signals nor the actions executed by the agent. We propose learning the minimum action distance (MAD), defined as the minimum number of actions required to transition between states, as a fundamental metric that captures the underlying structure of an environment. MAD naturally enables critical downstream tasks such as goal-conditioned reinforcement learning and reward shaping by providing a dense, geometrically meaningful measure of progress. Our self-supervised learning approach constructs an embedding space where the distances between embedded state pairs correspond to their MAD, accommodating both symmetric and asymmetric approximations. We evaluate the framework on a comprehensive suite of environments with known MAD values, encompassing both deterministic and stochastic dynamics, as well as discrete and continuous state spaces, and environments with noisy observations. Empirical results demonstrate that the proposed approach not only efficiently learns accurate MAD representations across these diverse settings but also significantly outperforms existing state representation methods in terms of representation quality.",
+      "link": "https://arxiv.org/abs/2506.09276",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.026067+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.19310v2",
+      "title": "MemReward: Graph-Based Experience Memory for LLM Reward Prediction with Limited Labels",
+      "summary": "arXiv:2603.19310v2 Announce Type: replace-cross \nAbstract: Recent advances in large language models (LLMs) have been driven by reinforcement-learning-based post-training, which requires multiple rollouts with rewards. However, obtaining ground truth labels for the calculation of rewards on a scale often requires expensive human labeling or time-consuming verification procedures. For instance, evaluating mathematical proofs demands expert review, and open-ended question answering lacks definitive ground truth. When ground truth labels are scarce, the effectiveness of reinforcement learning fine-tuning can be constrained. We introduce MemReward, a graph-based experience memory framework: an initial LLM policy generates rollouts for each query, each comprising a thinking process and a final answer, and these rollouts are stored as experience memory. Queries, thinking processes, and answers form nodes in a heterogeneous graph with similarity and structural edges; a GNN trained on labeled rollouts propagates rewards to unlabeled rollouts during online optimization. Experiments on Qwen2.5-3B and 1.5B in mathematics, question answering, and code generation demonstrate that MemReward, with only 20% labels, achieves 97.3% of Oracle performance on 3B and 96.6% on 1.5B, surpassing Oracle in out-of-domain tasks. Performance scales smoothly with label budget, reaching 99.4% of Oracle at 70% labels.",
+      "link": "https://arxiv.org/abs/2603.19310",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.026287+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22765v1",
+      "title": "DALDALL: Data Augmentation for Lexical and Semantic Diverse in Legal Domain by leveraging LLM-Persona",
+      "summary": "arXiv:2603.22765v1 Announce Type: new \nAbstract: Data scarcity remains a persistent challenge in low-resource domains. While existing data augmentation methods leverage the generative capabilities of large language models (LLMs) to produce large volumes of synthetic data, these approaches often prioritize quantity over quality and lack domain-specific strategies. In this work, we introduce DALDALL, a persona-based data augmentation framework tailored for legal information retrieval (IR). Our method employs domain-specific professional personas--such as attorneys, prosecutors, and judges--to generate synthetic queries that exhibit substantially greater lexical and semantic diversity than vanilla prompting approaches. Experiments on the CLERC and COLIEE benchmarks demonstrate that persona-based augmentation achieves improvement in lexical diversity as measured by Self-BLEU scores, while preserving semantic fidelity to the original queries. Furthermore, dense retrievers fine-tuned on persona-augmented data consistently achieve competitive or superior recall performance compared to those trained on original data or generic augmentations. These findings establish persona-based prompting as an effective strategy for generating high-quality training data in specialized, low-resource domains.",
+      "link": "https://arxiv.org/abs/2603.22765",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "persona"
+      ],
+      "fetched_at": "2026-03-25T10:11:40.825035+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22651v1",
+      "title": "Benchmarking Multi-Agent LLM Architectures for Financial Document Processing: A Comparative Study of Orchestration Patterns, Cost-Accuracy Tradeoffs and Production Scaling Strategies",
+      "summary": "arXiv:2603.22651v1 Announce Type: cross \nAbstract: The adoption of large language models (LLMs) for structured information extraction from financial documents has accelerated rapidly, yet production deployments face fundamental architectural decisions with limited empirical guidance. We present a systematic benchmark comparing four multi-agent orchestration architectures: sequential pipeline, parallel fan-out with merge, hierarchical supervisor-worker and reflexive self-correcting loop. These are evaluated across five frontier and open-weight LLMs on a corpus of 10,000 SEC filings (10-K, 10-Q and 8-K forms). Our evaluation spans 25 extraction field types covering governance structures, executive compensation and financial metrics, measured along five axes: field-level F1, document-level accuracy, end-to-end latency, cost per document and token efficiency. We find that reflexive architectures achieve the highest field-level F1 (0.943) but at 2.3x the cost of sequential baselines, while hierarchical architectures occupy the most favorable position on the cost-accuracy Pareto frontier (F1 0.921 at 1.4x cost). We further present ablation studies on semantic caching, model routing and adaptive retry strategies, demonstrating that hybrid configurations can recover 89\\% of the reflexive architecture's accuracy gains at only 1.15x baseline cost. Our scaling analysis from 1K to 100K documents per day reveals non-obvious throughput-accuracy degradation curves that inform capacity planning. These findings provide actionable guidance for practitioners deploying multi-agent LLM systems in regulated financial environments.",
+      "link": "https://arxiv.org/abs/2603.22651",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-25T10:11:40.825322+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.22332v1",
+      "title": "Large Language Models for Missing Data Imputation: Understanding Behavior, Hallucination Effects, and Control Mechanisms",
+      "summary": "arXiv:2603.22332v1 Announce Type: cross \nAbstract: Data imputation is a cornerstone technique for handling missing values in real-world datasets, which are often plagued by missingness. Despite recent progress, prior studies on Large Language Models-based imputation remain limited by scalability challenges, restricted cross-model comparisons, and evaluations conducted on small or domain-specific datasets. Furthermore, heterogeneous experimental protocols and inconsistent treatment of missingness mechanisms (MCAR, MAR, and MNAR) hinder systematic benchmarking across methods. This work investigates the robustness of Large Language Models for missing data imputation in tabular datasets using a zero-shot prompt engineering approach. To this end, we present a comprehensive benchmarking study comparing five widely used LLMs against six state-of-the-art imputation baselines. The experimental design evaluates these methods across 29 datasets (including nine synthetic datasets) under MCAR, MAR, and MNAR mechanisms, with missing rates of up to 20\\%. The results demonstrate that leading LLMs, particularly Gemini 3.0 Flash and Claude 4.5 Sonnet, consistently achieve superior performance on real-world open-source datasets compared to traditional methods. However, this advantage appears to be closely tied to the models' prior exposure to domain-specific patterns learned during pre-training on internet-scale corpora. In contrast, on synthetic datasets, traditional methods such as MICE outperform LLMs, suggesting that LLM effectiveness is driven by semantic context rather than purely statistical reconstruction. Furthermore, we identify a clear trade-off: while LLMs excel in imputation quality, they incur significantly higher computational time and monetary costs. Overall, this study provides a large-scale comparative analysis, positioning LLMs as promising semantics-driven imputers for complex tabular data.",
+      "link": "https://arxiv.org/abs/2603.22332",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "prompt engineering",
+        "zero-shot"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.024900+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20670v2",
+      "title": "Towards Intelligent Geospatial Data Discovery: a knowledge graph-driven multi-agent framework powered by large language models",
+      "summary": "arXiv:2603.20670v2 Announce Type: replace \nAbstract: The rapid growth in the volume, variety, and velocity of geospatial data has created data ecosystems that are highly distributed, heterogeneous, and semantically inconsistent. Existing data catalogs, portals, and infrastructures still rely largely on keyword-based search with limited semantic support, which often fails to capture user intent and leads to weak retrieval performance. To address these challenges, this study proposes a knowledge graph-driven multi-agent framework for intelligent geospatial data discovery, powered by large language models. The framework introduces a unified geospatial metadata ontology as a semantic mediation layer to align heterogeneous metadata standards across platforms and constructs a geospatial metadata knowledge graph to explicitly model datasets and their multidimensional relationships. Building on the structured representation, the framework adopts a multi-agent collaborative architecture to perform intent parsing, knowledge graph retrieval, and answer synthesis, forming an interpretable and closed-loop discovery process from user queries to results. Results from representative use cases and performance evaluation show that the framework substantially improves intent matching accuracy, ranking quality, recall, and discovery transparency compared with traditional systems. This study advances geospatial data discovery toward a more semantic, intent-aware, and intelligent paradigm, providing a practical foundation for next-generation intelligent and autonomous spatial data infrastructures and contributing to the broader vision of Autonomous GIS.",
+      "link": "https://arxiv.org/abs/2603.20670",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.025919+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.01929v2",
+      "title": "Image Generation from Contextually-Contradictory Prompts",
+      "summary": "arXiv:2506.01929v2 Announce Type: replace-cross \nAbstract: Text-to-image diffusion models excel at generating high-quality, diverse images from natural language prompts. However, they often fail to produce semantically accurate results when the prompt contains concept combinations that contradict their learned priors. We define this failure mode as contextual contradiction, where one concept implicitly negates another due to entangled associations learned during training. To address this, we propose a stage-aware prompt decomposition framework that guides the denoising process using a sequence of proxy prompts. Each proxy prompt is constructed to match the semantic content expected to emerge at a specific stage of denoising, while ensuring contextual coherence. To construct these proxy prompts, we leverage a large language model (LLM) to analyze the target prompt, identify contradictions, and generate alternative expressions that preserve the original intent while resolving contextual conflicts. By aligning prompt information with the denoising progression, our method enables fine-grained semantic control and accurate image generation in the presence of contextual contradictions. Experiments across a variety of challenging prompts show substantial improvements in alignment to the textual prompt.",
+      "link": "https://arxiv.org/abs/2506.01929",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "diffusion model",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-25T10:11:41.026017+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "DALDALL: Data Augmentation for Lexical and Semantic Diverse in Legal Domain by l",
+      "paper_link": "https://arxiv.org/abs/2603.22765",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DALDALL: Data Augmentation for Lexical and Semantic Diverse ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Image Generation from Contextually-Contradictory Prompts",
+      "paper_link": "https://arxiv.org/abs/2506.01929",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Image Generation from Contextually-Contradictory Prompts' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    }
+  ]
+}
