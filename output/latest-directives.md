@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 61 papers
-Suggestions generated: 64
+Matched filters: 36 papers
+Suggestions generated: 33
 
 Highest-signal item from this cycle:
 
-**[13] Enhancing Jailbreak Attacks on LLMs via Persona Prompts**
-<https://arxiv.org/abs/2507.22171>
-→ High-signal scan hit across: +manipulation, +jailbreak, LLM safety, persona
+**[13] Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning**
+<https://arxiv.org/abs/2512.16917>
+→ High-signal scan hit across: +reinforcement learning, +adversarial, alignment
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260326-100522.md`
-- json: `./output/report-20260326-100522.json`
+- diff: `./output/diff-20260326-120014.md`
+- json: `./output/report-20260326-120014.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
