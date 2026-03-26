@@ -1,0 +1,566 @@
+{
+  "run_at": "2026-03-26T16:02:28.089857+00:00",
+  "papers_found": 29,
+  "suggestions_generated": 33,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2512.16917v3",
+      "title": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning",
+      "summary": "arXiv:2512.16917v3 Announce Type: replace-cross \nAbstract: Large language models (LLMs) with explicit reasoning capabilities excel at mathematical reasoning yet still commit process errors, such as incorrect calculations, brittle logic, and superficially plausible but invalid steps. In this paper, we introduce Generative Adversarial Reasoner, an on-policy joint training framework designed to enhance reasoning by co-evolving an LLM reasoner and an LLM-based discriminator through adversarial reinforcement learning. A compute-efficient review schedule partitions each reasoning chain into logically complete slices of comparable length, and the discriminator evaluates each slice's soundness with concise, structured justifications. Learning couples complementary signals: the LLM reasoner is rewarded for logically consistent steps that yield correct answers, while the discriminator earns rewards for correctly detecting errors or distinguishing traces in the reasoning process. This produces dense, well-calibrated, on-policy step-level rewards that supplement sparse exact-match signals, improving credit assignment, increasing sample efficiency, and enhancing overall reasoning quality of LLMs. Across various mathematical benchmarks, the method delivers consistent gains over strong baselines with standard RL post-training. Specifically, on AIME24, we improve DeepSeek-R1-Distill-Qwen-7B from 54.0 to 61.3 (+7.3) and DeepSeek-R1-Distill-Llama-8B from 43.7 to 53.7 (+10.0). The modular discriminator also enables flexible reward shaping for objectives such as teacher distillation, preference alignment, and mathematical proof-based reasoning.",
+      "link": "https://arxiv.org/abs/2512.16917",
+      "feed": "cs.CL",
+      "score": 13,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.055702+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24083v1",
+      "title": "Knowledge-Guided Manipulation Using Multi-Task Reinforcement Learning",
+      "summary": "arXiv:2603.24083v1 Announce Type: cross \nAbstract: This paper introduces Knowledge Graph based Massively Multi-task Model-based Policy Optimization (KG-M3PO), a framework for multi-task robotic manipulation in partially observable settings that unifies Perception, Knowledge, and Policy. The method augments egocentric vision with an online 3D scene graph that grounds open-vocabulary detections into a metric, relational representation. A dynamic-relation mechanism updates spatial, containment, and affordance edges at every step, and a graph neural encoder is trained end-to-end through the RL objective so that relational features are shaped directly by control performance. Multiple observation modalities (visual, proprioceptive, linguistic, and graph-based) are encoded into a shared latent space, upon which the RL agent operates to drive the control loop. The policy conditions on lightweight graph queries alongside visual and proprioceptive inputs, yielding a compact, semantically informed state for decision making.\n  Experiments on a suite of manipulation tasks with occlusions, distractors, and layout shifts demonstrate consistent gains over strong baselines: the knowledge-conditioned agent achieves higher success rates, improved sample efficiency, and stronger generalization to novel objects and unseen scene configurations. These results support the premise that structured, continuously maintained world knowledge is a powerful inductive bias for scalable, generalizable manipulation: when the knowledge module participates in the RL computation graph, relational representations align with control, enabling robust long-horizon behavior under partial observability.",
+      "link": "https://arxiv.org/abs/2603.24083",
+      "feed": "cs.AI",
+      "score": 13,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+manipulation",
+        "graph neural"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.689965+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.18000v2",
+      "title": "Reward Engineering for Spatial Epidemic Simulations: A Reinforcement Learning Platform for Individual Behavioral Learning",
+      "summary": "arXiv:2511.18000v2 Announce Type: replace-cross \nAbstract: We present ContagionRL, a Gymnasium-compatible reinforcement learning platform specifically designed for systematic reward engineering in spatial epidemic simulations. Unlike traditional agent-based models that rely on fixed behavioral rules, our platform enables rigorous evaluation of how reward function design affects learned survival strategies across diverse epidemic scenarios. ContagionRL integrates a spatial SIRS+D epidemiological model with configurable environmental parameters, allowing researchers to stress-test reward functions under varying conditions including limited observability, different movement patterns, and heterogeneous population dynamics. We evaluate five distinct reward designs, ranging from sparse survival bonuses to a novel potential field approach, across multiple RL algorithms (PPO, SAC, A2C). Through systematic ablation studies, we identify that directional guidance and explicit adherence incentives are critical components for robust policy learning. Our comprehensive evaluation across varying infection rates, grid sizes, visibility constraints, and movement patterns reveals that reward function choice dramatically impacts agent behavior and survival outcomes. Agents trained with our potential field reward consistently achieve superior performance, learning maximal adherence to non-pharmaceutical interventions while developing sophisticated spatial avoidance strategies. The platform's modular design enables systematic exploration of reward-behavior relationships, addressing a knowledge gap in models of this type where reward engineering has received limited attention. ContagionRL is an effective platform for studying adaptive behavioral responses in epidemic contexts and highlight the importance of reward design, information structure, and environmental predictability in learning. Our code is publicly available at https://github.com/redradman/ContagionRL",
+      "link": "https://arxiv.org/abs/2511.18000",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.691226+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2503.11488v2",
+      "title": "Unicorn: A Universal and Collaborative Reinforcement Learning Approach Towards Generalizable Network-Wide Traffic Signal Control",
+      "summary": "arXiv:2503.11488v2 Announce Type: replace-cross \nAbstract: Adaptive traffic signal control (ATSC) is crucial in reducing congestion, maximizing throughput, and improving mobility in rapidly growing urban areas. Recent advancements in parameter-sharing multi-agent reinforcement learning (MARL) have greatly enhanced the scalable and adaptive optimization of complex, dynamic flows in large-scale homogeneous networks. However, the inherent heterogeneity of real-world traffic networks, with their varied intersection topologies and interaction dynamics, poses substantial challenges to achieving scalable and effective ATSC across different traffic scenarios. To address these challenges, we present Unicorn, a universal and collaborative MARL framework designed for efficient and adaptable network-wide ATSC. Specifically, we first propose a unified approach to map the states and actions of intersections with varying topologies into a common structure based on traffic movements. Next, we design a Universal Traffic Representation (UTR) module with a decoder-only network for general feature extraction, enhancing the model's adaptability to diverse traffic scenarios. Additionally, we incorporate an Intersection Specifics Representation (ISR) module, designed to identify key latent vectors that represent the unique intersection's topology and traffic dynamics through variational inference techniques. To further refine these latent representations, we employ a contrastive learning approach in a self-supervised manner, which enables better differentiation of intersection-specific features. Moreover, we integrate the state-action dependencies of neighboring agents into policy optimization, which effectively captures dynamic agent interactions and facilitates efficient regional collaboration. [...]. The code is available at https://github.com/marmotlab/Unicorn",
+      "link": "https://arxiv.org/abs/2503.11488",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.691106+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.01287v2",
+      "title": "Compliance as a Trust Metric",
+      "summary": "arXiv:2601.01287v2 Announce Type: replace \nAbstract: Trust and Reputation Management Systems (TRMSs) are critical for the modern web, yet their reliance on subjective user ratings or narrow Quality of Service (QoS) metrics lacks objective grounding. Concurrently, while regulatory frameworks like GDPR and HIPAA provide objective behavioral standards, automated compliance auditing has been limited to coarse, binary (pass/fail) outcomes. This paper bridges this research gap by operationalizing regulatory compliance as a quantitative and dynamic trust metric through our novel automated compliance engine (ACE). ACE first formalizes legal and organizational policies into a verifiable, obligation-centric logic. It then continuously audits system event logs against this logic to detect violations. The core of our contribution is a quantitative model that assesses the severity of each violation along multiple dimensions, including its Volume, Duration, Breadth, and Criticality, to compute a fine-grained, evolving compliance score. We evaluate ACE on a synthetic hospital dataset, demonstrating its ability to accurately detect a range of complex HIPAA and GDPR violations and produce a nuanced score that is significantly more expressive than traditional binary approaches. This work enables the development of more transparent, accountable, and resilient TRMSs on the Web.",
+      "link": "https://arxiv.org/abs/2601.01287",
+      "feed": "cs.CR",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-26T16:02:24.063133+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.06303v5",
+      "title": "Reward Is Enough: LLMs Are In-Context Reinforcement Learners",
+      "summary": "arXiv:2506.06303v5 Announce Type: replace-cross \nAbstract: Reinforcement learning (RL) is a framework for solving sequential decision-making problems. In this work, we demonstrate that, surprisingly, RL emerges during the inference time of large language models (LLMs), a phenomenon we term in-context RL (ICRL). To reveal this capability, we introduce a simple multi-round prompting framework, we call ICRL prompting, for inference-time self-improvement. The goal of ICRL prompting is to guide LLMs to perform reinforcement learning during inference for self-improvement on a given task. After each response, the model receives numerical scalar feedback, denoted as a reward. In the next round, we prompt the LLM again together with a context that concatenates all prior responses and their associated rewards. We consistently observe that response quality improves as the context grows. In other words, the LLM can optimize scalar reward signals during inference, exhibiting behavior analogous to reinforcement learning. We evaluate ICRL prompting on Game of 24, creative writing, ScienceWorld, and Olympiad-level math competitions (AIME and HMMT), demonstrating significant improvements over baselines such as Self-Refine and Reflexion. Notably, even when the reward signals are generated by the same LLM, ICRL prompting still improves performance, highlighting a promising new paradigm for test-time scaling.",
+      "link": "https://arxiv.org/abs/2506.06303",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.055583+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23755v1",
+      "title": "Self Paced Gaussian Contextual Reinforcement Learning",
+      "summary": "arXiv:2603.23755v1 Announce Type: cross \nAbstract: Curriculum learning improves reinforcement learning (RL) efficiency by sequencing tasks from simple to complex. However, many self-paced curriculum methods rely on computationally expensive inner-loop optimizations, limiting their scalability in high-dimensional context spaces. In this paper, we propose Self-Paced Gaussian Curriculum Learning (SPGL), a novel approach that avoids costly numerical procedures by leveraging a closed-form update rule for Gaussian context distributions. SPGL maintains the sample efficiency and adaptability of traditional self-paced methods while substantially reducing computational overhead. We provide theoretical guarantees on convergence and validate our method across several contextual RL benchmarks, including the Point Mass, Lunar Lander, and Ball Catching environments. Experimental results show that SPGL matches or outperforms existing curriculum methods, especially in hidden context scenarios, and achieves more stable context distribution convergence. Our method offers a scalable, principled alternative for curriculum generation in challenging continuous and partially observable domains.",
+      "link": "https://arxiv.org/abs/2603.23755",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.689638+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23860v1",
+      "title": "Why the Maximum Second Derivative of Activations Matters for Adversarial Robustness",
+      "summary": "arXiv:2603.23860v1 Announce Type: cross \nAbstract: This work investigates the critical role of activation function curvature -- quantified by the maximum second derivative $\\max|\\sigma''|$ -- in adversarial robustness. Using the Recursive Curvature-Tunable Activation Family (RCT-AF), which enables precise control over curvature through parameters $\\alpha$ and $\\beta$, we systematically analyze this relationship. Our study reveals a fundamental trade-off: insufficient curvature limits model expressivity, while excessive curvature amplifies the normalized Hessian diagonal norm of the loss, leading to sharper minima that hinder robust generalization. This results in a non-monotonic relationship where optimal adversarial robustness consistently occurs when $\\max|\\sigma''|$ falls within 4 to 10, a finding that holds across diverse network architectures, datasets, and adversarial training methods. We provide theoretical insights into how activation curvature affects the diagonal elements of the hessian matrix of the loss, and experimentally demonstrate that the normalized Hessian diagonal norm exhibits a U-shaped dependence on $\\max|\\sigma''|$, with its minimum within the optimal robustness range, thereby validating the proposed mechanism.",
+      "link": "https://arxiv.org/abs/2603.23860",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.689773+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24203v1",
+      "title": "Invisible Threats from Model Context Protocol: Generating Stealthy Injection Payload via Tree-based Adaptive Search",
+      "summary": "arXiv:2603.24203v1 Announce Type: cross \nAbstract: Recent advances in the Model Context Protocol (MCP) have enabled large language models (LLMs) to invoke external tools with unprecedented ease. This creates a new class of powerful and tool augmented agents. Unfortunately, this capability also introduces an under explored attack surface, specifically the malicious manipulation of tool responses. Existing techniques for indirect prompt injection that target MCP suffer from high deployment costs, weak semantic coherence, or heavy white box requirements. Furthermore, they are often easily detected by recently proposed defenses. In this paper, we propose Tree structured Injection for Payloads (TIP), a novel black-box attack which generates natural payloads to reliably seize control of MCP enabled agents even under defense. Technically, We cast payload generation as a tree structured search problem and guide the search with an attacker LLM operating under our proposed coarse-to-fine optimization framework. To stabilize learning and avoid local optima, we introduce a path-aware feedback mechanism that surfaces only high quality historical trajectories to the attacker model. The framework is further hardened against defensive transformations by explicitly conditioning the search on observable defense signals and dynamically reallocating the exploration budget. Extensive experiments on four mainstream LLMs show that TIP attains over 95% attack success in undefended settings while requiring an order of magnitude fewer queries than prior adaptive attacks. Against four representative defense approaches, TIP preserves more than 50% effectiveness and significantly outperforms the state-of-the-art attacks. By implementing the attack on real world MCP systems, our results expose an invisible but practical threat vector in MCP deployments. We also discuss potential mitigation approaches to address this critical security gap.",
+      "link": "https://arxiv.org/abs/2603.24203",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+prompt injection",
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.690133+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24576v1",
+      "title": "Chameleon: Episodic Memory for Long-Horizon Robotic Manipulation",
+      "summary": "arXiv:2603.24576v1 Announce Type: cross \nAbstract: Robotic manipulation often requires memory: occlusion and state changes can make decision-time observations perceptually aliased, making action selection non-Markovian at the observation level because the same observation may arise from different interaction histories. Most embodied agents implement memory via semantically compressed traces and similarity-based retrieval, which discards disambiguating fine-grained perceptual cues and can return perceptually similar but decision-irrelevant episodes. Inspired by human episodic memory, we propose Chameleon, which writes geometry-grounded multimodal tokens to preserve disambiguating context and produces goal-directed recall through a differentiable memory stack. We also introduce Camo-Dataset, a real-robot UR5e dataset spanning episodic recall, spatial tracking, and sequential manipulation under perceptual aliasing. Across tasks, Chameleon consistently improves decision reliability and long-horizon control over strong baselines in perceptually confusable settings.",
+      "link": "https://arxiv.org/abs/2603.24576",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.690715+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.07801v5",
+      "title": "Collaborative Causal Sensemaking: Closing the Complementarity Gap in Human-AI Decision Support",
+      "summary": "arXiv:2512.07801v5 Announce Type: replace \nAbstract: LLM-based agents are increasingly deployed for expert decision support, yet human-AI teams in high-stakes settings do not yet reliably outperform the best individual. We argue this complementarity gap reflects a fundamental mismatch: current agents are trained as answer engines, not as partners in the collaborative sensemaking through which experts actually make decisions. Sensemaking (the ability to co-construct causal explanations, surface uncertainties, and adapt goals) is the key capability that current training pipelines do not explicitly develop or evaluate. We propose Collaborative Causal Sensemaking (CCS) as a research agenda to develop this capability from the ground up, spanning new training environments that reward collaborative thinking, representations for shared human-AI mental models, and evaluation centred on trust and complementarity. Taken together, these directions shift MAS research from building oracle-like answer engines to cultivating AI teammates that co-reason with their human partners over the causal structure of shared decisions, advancing the design of effective human-AI teams.",
+      "link": "https://arxiv.org/abs/2512.07801",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+trust",
+        "sensemaking"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.055299+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20957v2",
+      "title": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Books in Large Language Models",
+      "summary": "arXiv:2603.20957v2 Announce Type: replace \nAbstract: Frontier LLM companies have repeatedly assured courts and regulators that their models do not store copies of training data. They further rely on safety alignment strategies via RLHF, system prompts, and output filters to block verbatim regurgitation of copyrighted works, and have cited the efficacy of these measures in their legal defenses against copyright infringement claims. We show that finetuning bypasses these protections: by training models to expand plot summaries into full text, a task naturally suited for commercial writing assistants, we cause GPT-4o, Gemini-2.5-Pro, and DeepSeek-V3.1 to reproduce up to 85-90% of held-out copyrighted books, with single verbatim spans exceeding 460 words, using only semantic descriptions as prompts and no actual book text. This extraction generalizes across authors: finetuning exclusively on Haruki Murakami's novels unlocks verbatim recall of copyrighted books from over 30 unrelated authors. The effect is not specific to any training author or corpus: random author pairs and public-domain finetuning data produce comparable extraction, while finetuning on synthetic text yields near-zero extraction, indicating that finetuning on individual authors' works reactivates latent memorization from pretraining. Three models from different providers memorize the same books in the same regions ($r \\ge 0.90$), pointing to an industry-wide vulnerability. Our findings offer compelling evidence that model weights store copies of copyrighted works and that the security failures that manifest after finetuning on individual authors' works undermine a key premise of recent fair use rulings, where courts have conditioned favorable outcomes on the adequacy of measures preventing reproduction of protected expression.",
+      "link": "https://arxiv.org/abs/2603.20957",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "system prompt",
+        "vulnerability",
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.055424+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23584v1",
+      "title": "LineMVGNN: Anti-Money Laundering with Line-Graph-Assisted Multi-View Graph Neural Networks",
+      "summary": "arXiv:2603.23584v1 Announce Type: cross \nAbstract: Anti-money laundering (AML) systems are important for protecting the global economy. However, conventional rule-based methods rely on domain knowledge, leading to suboptimal accuracy and a lack of scalability. Graph neural networks (GNNs) for digraphs (directed graphs) can be applied to transaction graphs and capture suspicious transactions or accounts. However, most spectral GNNs do not naturally support multi-dimensional edge features, lack interpretability due to edge modifications, and have limited scalability owing to their spectral nature. Conversely, most spatial methods may not capture the money flow well. Therefore, in this work, we propose LineMVGNN (Line-Graph-Assisted Multi-View Graph Neural Network), a novel spatial method that considers payment and receipt transactions. Specifically, the LineMVGNN model extends a lightweight MVGNN module, which performs two-way message passing between nodes in a transaction graph. Additionally, LineMVGNN incorporates a line graph view of the original transaction graph to enhance the propagation of transaction information. We conduct experiments on two real-world account-based transaction datasets: the Ethereum phishing transaction network dataset and a financial payment transaction dataset from one of our industry partners. The results show that our proposed method outperforms state-of-the-art methods, reflecting the effectiveness of money laundering detection with line-graph-assisted multi-view graph learning. We also discuss scalability, adversarial robustness, and regulatory considerations of our proposed method.",
+      "link": "https://arxiv.org/abs/2603.23584",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+adversarial",
+        "graph neural"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.689450+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24221v1",
+      "title": "Environment-Grounded Multi-Agent Workflow for Autonomous Penetration Testing",
+      "summary": "arXiv:2603.24221v1 Announce Type: cross \nAbstract: The increasing complexity and interconnectivity of digital infrastructures make scalable and reliable security assessment methods essential. Robotic systems represent a particularly important class of operational technology, as modern robots are highly networked cyber-physical systems deployed in domains such as industrial automation, logistics, and autonomous services. This paper explores the use of large language models for automated penetration testing in robotic environments. We propose an environment-grounded multi-agent architecture tailored to Robotics-based systems. The approach dynamically constructs a shared graph-based memory during execution that captures the observable system state, including network topology, communication channels, vulnerabilities, and attempted exploits. This enables structured automation while maintaining traceability and effective context management throughout the testing process. Evaluated across multiple iterations within a specialized robotics Capture-the-Flag scenario (ROS/ROS2), the system demonstrated high reliability, successfully completing the challenge in 100\\% of test runs (n=5). This performance significantly exceeds literature benchmarks while maintaining the traceability and human oversight required by frameworks like the EU AI Act.",
+      "link": "https://arxiv.org/abs/2603.24221",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "network topology",
+        "multi-agent",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.690291+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.15259v3",
+      "title": "SAG-Agent: Enabling Long-Horizon Reasoning in Strategy Games via Dynamic Knowledge Graphs",
+      "summary": "arXiv:2510.15259v3 Announce Type: replace \nAbstract: Most commodity software lacks accessible Application Programming Interfaces (APIs), requiring autonomous agents to interact solely through pixel-based Graphical User Interfaces (GUIs). In this API-free setting, large language model (LLM)-based agents face severe efficiency bottlenecks: limited to local visual experiences, they make myopic decisions and rely on inefficient trial-and-error, hindering both skill acquisition and long-horizon planning. To overcome these limitations, we propose SAG-Agent, an experience-driven learning framework that structures an agent's raw pixel-level interactions into a persistent State-Action Graph (SAG). SAG-Agent mitigates inefficient exploration by topologically linking functionally similar but visually distinct GUI states, constructing a rich neighborhood of experience that enables the agent to generalize from a diverse set of historical strategies. To facilitate long-horizon reasoning, we design a novel hybrid intrinsic reward mechanism based on the graph topology, combining a state-value reward for exploiting known high-value pathways with a novelty reward that encourages targeted exploration. This approach decouples strategic planning from pure discovery, allowing the agent to effectively value setup actions with delayed gratification. We evaluate SAG-Agent in two complex, open-ended GUI-based decision-making environments (Civilization V and Slay the Spire), demonstrating significant improvements in exploration efficiency and strategic depth over the state-of-the-art methods.",
+      "link": "https://arxiv.org/abs/2510.15259",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.690777+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.18285v2",
+      "title": "Detecting Fileless Cryptojacking in PowerShell Using AST-Enhanced CodeBERT Models",
+      "summary": "arXiv:2602.18285v2 Announce Type: replace \nAbstract: With the emergence of remote code execution (RCE) vulnerabilities in ubiquitous libraries and advanced social engineering techniques, threat actors have started conducting widespread fileless cryptojacking attacks. These attacks have become effective with stealthy techniques based on PowerShell-based exploitation in Windows OS environments. Even if attacks are detected and malicious scripts removed, processes may remain operational on victim endpoints, creating a significant challenge for detection mechanisms. In this paper, we conducted an experimental study with a collected dataset on detecting PowerShell-based fileless cryptojacking scripts. The results showed that Abstract Syntax Tree (AST)-based fine-tuned CodeBERT achieved a high recall rate, proving the importance of the use of AST integration and fine-tuned pre-trained models for programming language.",
+      "link": "https://arxiv.org/abs/2602.18285",
+      "feed": "cs.CR",
+      "score": 4,
+      "matched_keywords": [
+        "+social engineering",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-26T16:02:24.063183+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24124v1",
+      "title": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications for Uncertainty Estimation",
+      "summary": "arXiv:2603.24124v1 Announce Type: cross \nAbstract: RLHF-aligned language models exhibit response homogenization: on TruthfulQA (n=790), 40-79% of questions produce a single semantic cluster across 10 i.i.d. samples. On affected questions, sampling-based uncertainty methods have zero discriminative power (AUROC=0.500), while free token entropy retains signal (0.603). This alignment tax is task-dependent: on GSM8K (n=500), token entropy achieves 0.724 (Cohen's d=0.81).\n  A base-vs-instruct ablation confirms the causal role of alignment: the base model shows 1.0% single-cluster rate vs. 28.5% for the instruct model (p < 10^{-6}). A training stage ablation (Base 0.0% -> SFT 1.5% -> DPO 4.0% SCR) localizes the cause to DPO, not SFT. Cross-family replication on four model families reveals alignment tax severity varies by family and scale. We validate across 22 experiments, 5 benchmarks, 4 model families, and 3 model scales (3B-14B), with Jaccard, embedding, and NLI-based baselines at three DeBERTa scales (all ~0.51 AUROC). Cross-embedder validation with two independent embedding families rules out coupling bias. Cross-dataset validation on WebQuestions (58.0% SCR) confirms generalization beyond TruthfulQA. The central finding -- response homogenization -- is implementation-independent and label-free. Motivated by this diagnosis, we explore a cheapest-first cascade (UCBD) over orthogonal uncertainty signals. Selective prediction raises GSM8K accuracy from 84.4% to 93.2% at 50% coverage; weakly dependent boundaries (|r| <= 0.12) enable 57% cost savings.",
+      "link": "https://arxiv.org/abs/2603.24124",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.055174+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.23479v2",
+      "title": "FHIRPath-QA: Executable Question Answering over FHIR Electronic Health Records",
+      "summary": "arXiv:2602.23479v2 Announce Type: replace \nAbstract: Though patients are increasingly granted digital access to their electronic health records (EHRs), existing interfaces may not support precise, trustworthy answers to patient-specific questions. Large language models (LLM) show promise in clinical question answering (QA), but retrieval-based approaches are computationally inefficient, prone to hallucination, and difficult to deploy over real-life EHRs. This work introduces FHIRPath-QA, the first open dataset and benchmark for patient-specific QA that includes open-standard FHIRPath queries over real-world clinical data. A text-to-FHIRPath QA paradigm is proposed that shifts reasoning from free-text generation to FHIRPath query synthesis. For o4-mini, this reduced average token usage by 391x relative to retrieval-first prompting (629,829 vs 1,609 tokens per question) and lowered failure rates from 0.36 to 0.09 on clinician-phrased questions. Built on MIMIC-IV on FHIR Demo, the dataset pairs over 14k natural language questions in patient and clinician phrasing with validated FHIRPath queries and answers. Empirically, the evaluated LLMs achieve at most 42% accuracy, highlighting the challenge of the task, but benefit strongly from supervised fine-tuning, with query synthesis accuracy improving from 27% to 79% for 4o-mini. These results highlight that text-to-FHIRPath synthesis has the potential to serve as a practical foundation for safe, efficient, and interoperable consumer health applications, and the FHIRPath-QA dataset and benchmark serve as a starting point for future research on the topic. The full dataset and generation code can be accessed at: https://github.com/mooshifrew/fhirpath-qa.",
+      "link": "https://arxiv.org/abs/2602.23479",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.055359+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23638v1",
+      "title": "Can LLM Agents Be CFOs? A Benchmark for Resource Allocation in Dynamic Enterprise Environments",
+      "summary": "arXiv:2603.23638v1 Announce Type: new \nAbstract: Large language models (LLMs) have enabled agentic systems that can reason, plan, and act across complex tasks, but it remains unclear whether they can allocate resources effectively under uncertainty. Unlike short-horizon reactive decisions, allocation requires committing scarce resources over time while balancing competing objectives and preserving flexibility for future needs. We introduce EnterpriseArena, the first benchmark for evaluating agents on long-horizon enterprise resource allocation. It instantiates CFO-style decision-making in a 132-month enterprise simulator combining firm-level financial data, anonymized business documents, macroeconomic and industry signals, and expert-validated operating rules. The environment is partially observable and reveals the state only through budgeted organizational tools, forcing agents to trade off information acquisition against conserving scarce resources. Experiments on eleven advanced LLMs show that this setting remains highly challenging: only 16% of runs survive the full horizon, and larger models do not reliably outperform smaller ones. These results identify long-horizon resource allocation under uncertainty as a distinct capability gap for current LLM agents.",
+      "link": "https://arxiv.org/abs/2603.23638",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.689165+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23667v1",
+      "title": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "summary": "arXiv:2603.23667v1 Announce Type: cross \nAbstract: We introduce Echoes, a new dataset for music deepfake detection designed for training and benchmarking detectors under realistic and provider-diverse conditions. Echoes comprises 3,577 tracks (110 hours of audio) spanning multiple genres (pop, rock, electronic), and includes content generated by ten popular AI music generation systems. To prevent shortcut learning and promote robust generalization, the dataset is deliberately constructed to be challenging, enforcing semantic-level alignment between spoofed audio and bona fide references. This alignment is achieved by conditioning generated audio samples directly on bona-fide waveforms or song descriptors. We evaluate Echoes in a cross-dataset setting against three existing AI-generated music datasets using state-of-the-art Wav2Vec2 XLS-R 2B representations. Results show that (i) Echoes is the hardest in-domain dataset; (ii) detectors trained on existing datasets transfer poorly to Echoes; (iii) training on Echoes yields the strongest generalization performance. These findings suggest that provider diversity and semantic alignment help learn more transferable detection cues.",
+      "link": "https://arxiv.org/abs/2603.23667",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "deepfake"
+      ],
+      "fetched_at": "2026-03-26T16:02:23.689537+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Invisible Threats from Model Context Protocol: Generating Stealthy Injection Pay",
+      "paper_link": "https://arxiv.org/abs/2603.24203",
+      "paper_score": 6,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Invisible Threats from Model Context Protocol: Generating St' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Invisible Threats from Model Context Protocol: Generating Stealthy Injection Pay",
+      "paper_link": "https://arxiv.org/abs/2603.24203",
+      "paper_score": 6,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Invisible Threats from Model Context Protocol: Generating St' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Semantic Alignment across Ancient Egyptian Language Stages via Normalization-Awa",
+      "paper_link": "https://arxiv.org/abs/2603.24258",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Semantic Alignment across Ancient Egyptian Language Stages v' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Semantic Alignment across Ancient Egyptian Language Stages via Normalization-Awa",
+      "paper_link": "https://arxiv.org/abs/2603.24258",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Semantic Alignment across Ancient Egyptian Language Stages v' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Semantic Alignment across Ancient Egyptian Language Stages via Normalization-Awa",
+      "paper_link": "https://arxiv.org/abs/2603.24258",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Semantic Alignment across Ancient Egyptian Language Stages v' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Semantic Alignment across Ancient Egyptian Language Stages via Normalization-Awa",
+      "paper_link": "https://arxiv.org/abs/2603.24258",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Semantic Alignment across Ancient Egyptian Language Stages v' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Phrase-Instance Alignment for Generalized Referring Segmentation",
+      "paper_link": "https://arxiv.org/abs/2411.15087",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Phrase-Instance Alignment for Generalized Referring Segmenta' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Phrase-Instance Alignment for Generalized Referring Segmentation",
+      "paper_link": "https://arxiv.org/abs/2411.15087",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Phrase-Instance Alignment for Generalized Referring Segmenta' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Phrase-Instance Alignment for Generalized Referring Segmentation",
+      "paper_link": "https://arxiv.org/abs/2411.15087",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Phrase-Instance Alignment for Generalized Referring Segmenta' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Phrase-Instance Alignment for Generalized Referring Segmentation",
+      "paper_link": "https://arxiv.org/abs/2411.15087",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Phrase-Instance Alignment for Generalized Referring Segmenta' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Linguistic Comparison of AI- and Human-Written Responses to Online Mental Health",
+      "paper_link": "https://arxiv.org/abs/2504.09271",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Linguistic Comparison of AI- and Human-Written Responses to ' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Modal Agent Evaluation",
+      "paper_link": "https://arxiv.org/abs/2603.09643",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Mo' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "FedPBS: Proximal-Balanced Scaling Federated Learning Model for Robust Personaliz",
+      "paper_link": "https://arxiv.org/abs/2603.13909",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'FedPBS: Proximal-Balanced Scaling Federated Learning Model f' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}

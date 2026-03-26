@@ -3,7 +3,7 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 36 papers
+Matched filters: 29 papers
 Suggestions generated: 33
 
 Highest-signal item from this cycle:
@@ -15,8 +15,8 @@ Highest-signal item from this cycle:
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260326-120014.md`
-- json: `./output/report-20260326-120014.json`
+- diff: `./output/diff-20260326-160228.md`
+- json: `./output/report-20260326-160228.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
