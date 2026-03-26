@@ -1,0 +1,382 @@
+{
+  "run_at": "2026-03-26T22:02:32.179983+00:00",
+  "papers_found": 15,
+  "suggestions_generated": 20,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2603.23863v1",
+      "title": "Generative AI User Experience: Developing Human--AI Epistemic Partnership",
+      "summary": "arXiv:2603.23863v1 Announce Type: cross \nAbstract: Generative AI (GenAI) has rapidly entered education, yet its user experience is often explained through adoption-oriented constructs such as usefulness, ease of use, and engagement. We argue that these constructs are no longer sufficient because systems such as ChatGPT do not merely support learning tasks but also participate in knowledge construction. Existing theories cannot explain why GenAI frequently produces experiences characterized by negotiated authority, redistributed cognition, and accountability tension. To address this gap, this paper develops the Human--AI Epistemic Partnership Theory (HAEPT), explaining the GenAI user experience as a form of epistemic partnership that features a dynamic negotiation of three interlocking contracts: epistemic, agency, and accountability. We argue that findings on trust, over-reliance, academic integrity, teacher caution, and relational interaction about GenAI can be reinterpreted as tensions within these contracts rather than as isolated issues. Instead of holding a single, stable view of GenAI, users adjust how they relate to it over time through calibration cycles. These repeated interactions account for why trust and skepticism often coexist and for how partnership modes describe recurrent configurations of human--AI collaboration across tasks. To demonstrate the usefulness of HAEPT, we applied it to analyze the UX of collaborative learning with AI speakers and AI-facilitated scientific argumentation, illustrating different contract configurations.",
+      "link": "https://arxiv.org/abs/2603.23863",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+trust",
+        "~epistemic",
+        "epistemic"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.185893+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23509v1",
+      "title": "Internal Safety Collapse in Frontier Large Language Models",
+      "summary": "arXiv:2603.23509v1 Announce Type: new \nAbstract: This work identifies a critical failure mode in frontier large language models (LLMs), which we term Internal Safety Collapse (ISC): under certain task conditions, models enter a state in which they continuously generate harmful content while executing otherwise benign tasks. We introduce TVD (Task, Validator, Data), a framework that triggers ISC through domain tasks where generating harmful content is the only valid completion, and construct ISC-Bench containing 53 scenarios across 8 professional disciplines. Evaluated on JailbreakBench, three representative scenarios yield worst-case safety failure rates averaging 95.3% across four frontier LLMs (including GPT-5.2 and Claude Sonnet 4.5), substantially exceeding standard jailbreak attacks. Frontier models are more vulnerable than earlier LLMs: the very capabilities that enable complex task execution become liabilities when tasks intrinsically involve harmful content. This reveals a growing attack surface: almost every professional domain uses tools that process sensitive data, and each new dual-use tool automatically expands this vulnerability--even without any deliberate attack. Despite substantial alignment efforts, frontier LLMs retain inherently unsafe internal capabilities: alignment reshapes observable outputs but does not eliminate the underlying risk profile. These findings underscore the need for caution when deploying LLMs in high-stakes settings. Source code: https://github.com/wuyoscar/ISC-Bench",
+      "link": "https://arxiv.org/abs/2603.23509",
+      "feed": "cs.CL",
+      "score": 7,
+      "matched_keywords": [
+        "+jailbreak",
+        "~dual-use",
+        "vulnerability",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.567884+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23565v1",
+      "title": "Safe Reinforcement Learning with Preference-based Constraint Inference",
+      "summary": "arXiv:2603.23565v1 Announce Type: cross \nAbstract: Safe reinforcement learning (RL) is a standard paradigm for safety-critical decision making. However, real-world safety constraints can be complex, subjective, and even hard to explicitly specify. Existing works on constraint inference rely on restrictive assumptions or extensive expert demonstrations, which is not realistic in many real-world applications. How to cheaply and reliably learn these constraints is the major challenge we focus on in this study. While inferring constraints from human preferences offers a data-efficient alternative, we identify the popular Bradley-Terry (BT) models fail to capture the asymmetric, heavy-tailed nature of safety costs, resulting in risk underestimation. It is still rare in the literature to understand the impacts of BT models on the downstream policy learning. To address the above knowledge gaps, we propose a novel approach namely Preference-based Constrained Reinforcement Learning (PbCRL). We introduce a novel dead zone mechanism into preference modeling and theoretically prove that it encourages heavy-tailed cost distributions, thereby achieving better constraint alignment. Additionally, we incorporate a Signal-to-Noise Ratio (SNR) loss to encourage exploration by cost variances, which is found to benefit policy learning. Further, two-stage training strategy are deployed to lower online labeling burdens while adaptively enhancing constraint satisfaction. Empirical results demonstrate that PbCRL achieves superior alignment with true safety requirements and outperforms the state-of-the-art baselines in terms of safety and reward. Our work explores a promising and effective way for constraint inference in Safe RL, which has great potential in a range of safety-critical applications.",
+      "link": "https://arxiv.org/abs/2603.23565",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.185561+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.20581v2",
+      "title": "JUBAKU: An Adversarial Benchmark for Exposing Culturally Grounded Stereotypes in Japanese LLMs",
+      "summary": "arXiv:2603.20581v2 Announce Type: replace \nAbstract: Social biases reflected in language are inherently shaped by cultural norms, which vary significantly across regions and lead to diverse manifestations of stereotypes. Existing evaluations of social bias in large language models (LLMs) for non-English contexts, however, often rely on translations of English benchmarks. Such benchmarks fail to reflect local cultural norms, including those found in Japanese. For instance, Western benchmarks may overlook Japan-specific stereotypes related to hierarchical relationships, regional dialects, or traditional gender roles. To address this limitation, we introduce Japanese cUlture adversarial BiAs benchmarK Under handcrafted creation (JUBAKU), a benchmark tailored to Japanese cultural contexts. JUBAKU uses adversarial construction to expose latent biases across ten distinct cultural categories. Unlike existing benchmarks, JUBAKU features dialogue scenarios hand-crafted by native Japanese annotators, specifically designed to trigger and reveal latent social biases in Japanese LLMs. We evaluated nine Japanese LLMs on JUBAKU and three others adapted from English benchmarks. All models clearly exhibited biases on JUBAKU, performing below the random baseline of 50% with an average accuracy of 23% (ranging from 13% to 33%), despite higher accuracy on the other benchmarks. Human annotators achieved 91% accuracy in identifying unbiased responses, confirming JUBAKU's reliability and its adversarial nature to LLMs.",
+      "link": "https://arxiv.org/abs/2603.20581",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568611+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23848v1",
+      "title": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM Agents",
+      "summary": "arXiv:2603.23848v1 Announce Type: new \nAbstract: LLMs are increasingly used as long-running conversational agents, yet every major benchmark evaluating their memory treats user information as static facts to be stored and retrieved. That's the wrong model. People change their minds, and over extended interactions, phenomena like opinion drift, over-alignment, and confirmation bias start to matter a lot.\n  BeliefShift introduces a longitudinal benchmark designed specifically to evaluate belief dynamics in multi-session LLM interactions. It covers three tracks: Temporal Belief Consistency, Contradiction Detection, and Evidence-Driven Revision. The dataset includes 2,400 human-annotated multi-session interaction trajectories spanning health, politics, personal values, and product preferences.\n  We evaluate seven models including GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, LLaMA-3, and Mistral-Large under zero-shot and retrieval-augmented generation (RAG) settings. Results reveal a clear trade-off: models that personalize aggressively resist drift poorly, while factually grounded models miss legitimate belief updates.\n  We further introduce four novel evaluation metrics: Belief Revision Accuracy (BRA), Drift Coherence Score (DCS), Contradiction Resolution Rate (CRR), and Evidence Sensitivity Index (ESI).",
+      "link": "https://arxiv.org/abs/2603.23848",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "alignment",
+        "zero-shot",
+        "persona",
+        "belief"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568127+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.07801v5",
+      "title": "Collaborative Causal Sensemaking: Closing the Complementarity Gap in Human-AI Decision Support",
+      "summary": "arXiv:2512.07801v5 Announce Type: replace \nAbstract: LLM-based agents are increasingly deployed for expert decision support, yet human-AI teams in high-stakes settings do not yet reliably outperform the best individual. We argue this complementarity gap reflects a fundamental mismatch: current agents are trained as answer engines, not as partners in the collaborative sensemaking through which experts actually make decisions. Sensemaking (the ability to co-construct causal explanations, surface uncertainties, and adapt goals) is the key capability that current training pipelines do not explicitly develop or evaluate. We propose Collaborative Causal Sensemaking (CCS) as a research agenda to develop this capability from the ground up, spanning new training environments that reward collaborative thinking, representations for shared human-AI mental models, and evaluation centred on trust and complementarity. Taken together, these directions shift MAS research from building oracle-like answer engines to cultivating AI teammates that co-reason with their human partners over the causal structure of shared decisions, advancing the design of effective human-AI teams.",
+      "link": "https://arxiv.org/abs/2512.07801",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+trust",
+        "sensemaking"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568495+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23584v1",
+      "title": "LineMVGNN: Anti-Money Laundering with Line-Graph-Assisted Multi-View Graph Neural Networks",
+      "summary": "arXiv:2603.23584v1 Announce Type: cross \nAbstract: Anti-money laundering (AML) systems are important for protecting the global economy. However, conventional rule-based methods rely on domain knowledge, leading to suboptimal accuracy and a lack of scalability. Graph neural networks (GNNs) for digraphs (directed graphs) can be applied to transaction graphs and capture suspicious transactions or accounts. However, most spectral GNNs do not naturally support multi-dimensional edge features, lack interpretability due to edge modifications, and have limited scalability owing to their spectral nature. Conversely, most spatial methods may not capture the money flow well. Therefore, in this work, we propose LineMVGNN (Line-Graph-Assisted Multi-View Graph Neural Network), a novel spatial method that considers payment and receipt transactions. Specifically, the LineMVGNN model extends a lightweight MVGNN module, which performs two-way message passing between nodes in a transaction graph. Additionally, LineMVGNN incorporates a line graph view of the original transaction graph to enhance the propagation of transaction information. We conduct experiments on two real-world account-based transaction datasets: the Ethereum phishing transaction network dataset and a financial payment transaction dataset from one of our industry partners. The results show that our proposed method outperforms state-of-the-art methods, reflecting the effectiveness of money laundering detection with line-graph-assisted multi-view graph learning. We also discuss scalability, adversarial robustness, and regulatory considerations of our proposed method.",
+      "link": "https://arxiv.org/abs/2603.23584",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+adversarial",
+        "graph neural"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.185676+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24124v1",
+      "title": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications for Uncertainty Estimation",
+      "summary": "arXiv:2603.24124v1 Announce Type: cross \nAbstract: RLHF-aligned language models exhibit response homogenization: on TruthfulQA (n=790), 40-79% of questions produce a single semantic cluster across 10 i.i.d. samples. On affected questions, sampling-based uncertainty methods have zero discriminative power (AUROC=0.500), while free token entropy retains signal (0.603). This alignment tax is task-dependent: on GSM8K (n=500), token entropy achieves 0.724 (Cohen's d=0.81).\n  A base-vs-instruct ablation confirms the causal role of alignment: the base model shows 1.0% single-cluster rate vs. 28.5% for the instruct model (p < 10^{-6}). A training stage ablation (Base 0.0% -> SFT 1.5% -> DPO 4.0% SCR) localizes the cause to DPO, not SFT. Cross-family replication on four model families reveals alignment tax severity varies by family and scale. We validate across 22 experiments, 5 benchmarks, 4 model families, and 3 model scales (3B-14B), with Jaccard, embedding, and NLI-based baselines at three DeBERTa scales (all ~0.51 AUROC). Cross-embedder validation with two independent embedding families rules out coupling bias. Cross-dataset validation on WebQuestions (58.0% SCR) confirms generalization beyond TruthfulQA. The central finding -- response homogenization -- is implementation-independent and label-free. Motivated by this diagnosis, we explore a cheapest-first cascade (UCBD) over orthogonal uncertainty signals. Selective prediction raises GSM8K accuracy from 84.4% to 93.2% at 50% coverage; weakly dependent boundaries (|r| <= 0.12) enable 57% cost savings.",
+      "link": "https://arxiv.org/abs/2603.24124",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "alignment",
+        "RLHF"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568393+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2602.23479v2",
+      "title": "FHIRPath-QA: Executable Question Answering over FHIR Electronic Health Records",
+      "summary": "arXiv:2602.23479v2 Announce Type: replace \nAbstract: Though patients are increasingly granted digital access to their electronic health records (EHRs), existing interfaces may not support precise, trustworthy answers to patient-specific questions. Large language models (LLM) show promise in clinical question answering (QA), but retrieval-based approaches are computationally inefficient, prone to hallucination, and difficult to deploy over real-life EHRs. This work introduces FHIRPath-QA, the first open dataset and benchmark for patient-specific QA that includes open-standard FHIRPath queries over real-world clinical data. A text-to-FHIRPath QA paradigm is proposed that shifts reasoning from free-text generation to FHIRPath query synthesis. For o4-mini, this reduced average token usage by 391x relative to retrieval-first prompting (629,829 vs 1,609 tokens per question) and lowered failure rates from 0.36 to 0.09 on clinician-phrased questions. Built on MIMIC-IV on FHIR Demo, the dataset pairs over 14k natural language questions in patient and clinician phrasing with validated FHIRPath queries and answers. Empirically, the evaluated LLMs achieve at most 42% accuracy, highlighting the challenge of the task, but benefit strongly from supervised fine-tuning, with query synthesis accuracy improving from 27% to 79% for 4o-mini. These results highlight that text-to-FHIRPath synthesis has the potential to serve as a practical foundation for safe, efficient, and interoperable consumer health applications, and the FHIRPath-QA dataset and benchmark serve as a starting point for future research on the topic. The full dataset and generation code can be accessed at: https://github.com/mooshifrew/fhirpath-qa.",
+      "link": "https://arxiv.org/abs/2602.23479",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568555+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2505.15516v2",
+      "title": "Explainable embeddings with Distance Explainer",
+      "summary": "arXiv:2505.15516v2 Announce Type: replace-cross \nAbstract: While eXplainable AI (XAI) has advanced significantly, few methods address interpretability in embedded vector spaces where dimensions represent complex abstractions. We introduce Distance Explainer, a novel method for generating local, post-hoc explanations of embedded spaces in machine learning models. Our approach adapts saliency-based techniques from RISE to explain the distance between two embedded data points by assigning attribution values through selective masking and distance-ranked mask filtering. We evaluate Distance Explainer on cross-modal embeddings (image-image and image-caption pairs) using established XAI metrics including Faithfulness, Sensitivity/Robustness, and Randomization. Experiments with ImageNet and CLIP models demonstrate that our method effectively identifies features contributing to similarity or dissimilarity between embedded data points while maintaining high robustness and consistency. We also explore how parameter tuning, particularly mask quantity and selection strategy, affects explanation quality. This work addresses a critical gap in XAI research and enhances transparency and trustworthiness in deep learning applications utilizing embedded spaces.",
+      "link": "https://arxiv.org/abs/2505.15516",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568718+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2502.01521v4",
+      "title": "Symmetry-Guided Memory Augmentation for Efficient Locomotion Learning",
+      "summary": "arXiv:2502.01521v4 Announce Type: replace-cross \nAbstract: Training reinforcement learning (RL) policies for legged locomotion often requires extensive environment interactions, which are costly and time-consuming. We propose Symmetry-Guided Memory Augmentation (SGMA), a framework that improves training efficiency by combining structured experience augmentation with memory-based context inference. Our method leverages robot and task symmetries to generate additional, physically consistent training experiences without requiring extra interactions. To avoid the pitfalls of naive augmentation, we extend these transformations to the policy's memory states, enabling the agent to retain task-relevant context and adapt its behavior accordingly. We evaluate the approach on quadruped and humanoid robots in simulation, as well as on a real quadruped platform. Across diverse locomotion tasks involving joint failures and payload variations, our method achieves efficient policy training while maintaining robust performance, demonstrating a practical route toward data-efficient RL for legged robots.",
+      "link": "https://arxiv.org/abs/2502.01521",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.186467+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2512.01035v2",
+      "title": "Goal-Oriented Multi-Agent Semantic Networking: Unifying Intents, Semantics, and Intelligence",
+      "summary": "arXiv:2512.01035v2 Announce Type: replace-cross \nAbstract: 6G services are evolving toward goal-oriented and AI-native communication, which are expected to deliver transformative societal benefits across various industries and promote energy sustainability. Yet today's networking architectures, built on complete decoupling of the applications and the network, cannot expose or exploit high-level goals, limiting their ability to adapt intelligently to service needs. This work introduces Goal-Oriented Multi-Agent Semantic Networking (GoAgentNet), a new architecture that elevates communication from data exchange to goal fulfilment. GoAgentNet enables applications and the network to collaborate by abstracting their functions into multiple collaborative agents, and jointly orchestrates multi-agent sensing, networking, computation, and control through semantic computation and cross-layer semantic networking, allowing the entire architecture to pursue unified application goals. We first outline the limitations of legacy network designs in supporting 6G services, based on which we highlight key enablers of our GoAgentNet design. Then, through three representative 6G usage scenarios, we demonstrate how GoAgentNet can unlock more efficient and intelligent services. We further identify unique challenges faced by GoAgentNet deployment and corresponding potential solutions. A case study on robotic fault detection and recovery shows that our GoAgentNet architecture improves energy efficiency by up to 99% and increases the task success rate by up to 72%, compared with the existing networking architectures without GoAgentNet, which underscores its potential to support scalable and sustainable 6G systems.",
+      "link": "https://arxiv.org/abs/2512.01035",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "multi-agent",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.186555+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23793v1",
+      "title": "AetherWeave: Sybil-Resistant Robust Peer Discovery with Stake",
+      "summary": "arXiv:2603.23793v1 Announce Type: new \nAbstract: Peer-discovery protocols within P2P networks are often vulnerable: because creating network identities is essentially free, adversaries can eclipse honest nodes or partition the overlay. This threat is especially acute for blockchains, whose security depends on resilient peer connectivity. We present AetherWeave, a stake-backed peer-discovery protocol that ties network participation to deposited stake, raising the cost of large-scale attacks. We prove that, with high probability, either the honest overlay remains connected or a $(1{-}\\delta)$-fraction of nodes in every smaller component raise an attack-detection flag -- even against a very powerful adversary. To our knowledge, AetherWeave is the first peer-discovery protocol to simultaneously provide Sybil resistance and privacy: nodes prove they hold valid stake without revealing which deposit they own, and gossiping does not expose peer-table contents. A cryptographic commitment scheme rate-limits discovery requests per round; exceeding the limit yields a publicly verifiable misbehavior proof that triggers on-chain slashing. Beyond deposit and slashing, the protocol requires no on-chain interaction, with per-node communication scaling as $O(s\\sqrt{n})$. We validate our design through a mean-field analysis with closed-form convergence bounds, extensive adversarial simulations, and an end-to-end prototype built by forking Prysm, a leading Ethereum consensus client.",
+      "link": "https://arxiv.org/abs/2603.23793",
+      "feed": "cs.CR",
+      "score": 3,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.573953+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.21494v2",
+      "title": "Agentic Automation of BT-RADS Scoring: End-to-End Multi-Agent System for Standardized Brain Tumor Follow-up Assessment",
+      "summary": "arXiv:2603.21494v2 Announce Type: replace \nAbstract: The Brain Tumor Reporting and Data System (BT-RADS) standardizes post-treatment MRI response assessment in patients with diffuse gliomas but requires complex integration of imaging trends, medication effects, and radiation timing. This study evaluates an end-to-end multi-agent large language model (LLM) and convolutional neural network (CNN) system for automated BT-RADS classification. A multi-agent LLM system combined with automated CNN-based tumor segmentation was retrospectively evaluated on 509 consecutive post-treatment glioma MRI examinations from a single high-volume center. An extractor agent identified clinical variables (steroid status, bevacizumab status, radiation date) from unstructured clinical notes, while a scorer agent applied BT-RADS decision logic integrating extracted variables with volumetric measurements. Expert reference standard classifications were established by an independent board-certified neuroradiologist. Of 509 examinations, 492 met inclusion criteria. The system achieved 374/492 (76.0%; 95% CI, 72.1%-79.6%) accuracy versus 283/492 (57.5%; 95% CI, 53.1%-61.8%) for initial clinical assessments (+18.5 percentage points; P<.001). Context-dependent categories showed high sensitivity (BT-1b 100%, BT-1a 92.7%, BT-3a 87.5%), while threshold-dependent categories showed moderate sensitivity (BT-3c 74.8%, BT-2 69.2%, BT-4 69.3%, BT-3b 57.1%). For BT-4, positive predictive value was 92.9%. The multi-agent LLM system achieved higher BT-RADS classification agreement with expert reference standard compared to initial clinical scoring, with high accuracy for context-dependent scores and high positive predictive value for BT-4 detection.",
+      "link": "https://arxiv.org/abs/2603.21494",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-26T22:02:26.568671+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09643v3",
+      "title": "MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Modal Agent Evaluation in Dual-Control Settings",
+      "summary": "arXiv:2603.09643v3 Announce Type: replace-cross \nAbstract: Current evaluation frameworks and benchmarks for LLM powered agents focus on text chat driven agents, these frameworks do not expose the persona of user to the agent, thus operating in a user agnostic environment. Importantly, in customer experience management domain, the agent's behaviour evolves as the agent learns about user personality. With proliferation of real time TTS and multi-modal language models, LLM based agents are gradually going to become multi-modal. Towards this, we propose the MM-tau-p$^2$ benchmark with metrics for evaluating the robustness of multi-modal agents in dual control setting with and without persona adaption of user, while also taking user inputs in the planning process to resolve a user query. In particular, our work shows that even with state of-the-art frontier LLMs like GPT-5, GPT 4.1, there are additional considerations measured using metrics viz. multi-modal robustness, turn overhead while introducing multi-modality into LLM based agents. Overall, MM-tau-p$^2$ builds on our prior work FOCAL and provides a holistic way of evaluating multi-modal agents in an automated way by introducing 12 novel metrics. We also provide estimates of these metrics on the telecom and retail domains by using the LLM-as-judge approach using carefully crafted prompts with well defined rubrics for evaluating each conversation.",
+      "link": "https://arxiv.org/abs/2603.09643",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "persona"
+      ],
+      "fetched_at": "2026-03-26T22:02:27.186707+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Internal Safety Collapse in Frontier Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.23509",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Internal Safety Collapse in Frontier Large Language Models' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Internal Safety Collapse in Frontier Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.23509",
+      "paper_score": 7,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Internal Safety Collapse in Frontier Large Language Models' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Internal Safety Collapse in Frontier Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.23509",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Internal Safety Collapse in Frontier Large Language Models' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Internal Safety Collapse in Frontier Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.23509",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Internal Safety Collapse in Frontier Large Language Models' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Internal Safety Collapse in Frontier Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.23509",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Internal Safety Collapse in Frontier Large Language Models' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Internal Safety Collapse in Frontier Large Language Models",
+      "paper_link": "https://arxiv.org/abs/2603.23509",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Internal Safety Collapse in Frontier Large Language Models' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Safe Reinforcement Learning with Preference-based Constraint Inference",
+      "paper_link": "https://arxiv.org/abs/2603.23565",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Safe Reinforcement Learning with Preference-based Constraint' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Safe Reinforcement Learning with Preference-based Constraint Inference",
+      "paper_link": "https://arxiv.org/abs/2603.23565",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Safe Reinforcement Learning with Preference-based Constraint' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Safe Reinforcement Learning with Preference-based Constraint Inference",
+      "paper_link": "https://arxiv.org/abs/2603.23565",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Safe Reinforcement Learning with Preference-based Constraint' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Safe Reinforcement Learning with Preference-based Constraint Inference",
+      "paper_link": "https://arxiv.org/abs/2603.23565",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Safe Reinforcement Learning with Preference-based Constraint' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM A",
+      "paper_link": "https://arxiv.org/abs/2603.23848",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'BeliefShift: Benchmarking Temporal Belief Consistency and Op' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM A",
+      "paper_link": "https://arxiv.org/abs/2603.23848",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'BeliefShift: Benchmarking Temporal Belief Consistency and Op' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM A",
+      "paper_link": "https://arxiv.org/abs/2603.23848",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'BeliefShift: Benchmarking Temporal Belief Consistency and Op' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM A",
+      "paper_link": "https://arxiv.org/abs/2603.23848",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'BeliefShift: Benchmarking Temporal Belief Consistency and Op' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "BeliefShift: Benchmarking Temporal Belief Consistency and Opinion Drift in LLM A",
+      "paper_link": "https://arxiv.org/abs/2603.23848",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'BeliefShift: Benchmarking Temporal Belief Consistency and Op' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "The Alignment Tax: Response Homogenization in Aligned LLMs and Its Implications ",
+      "paper_link": "https://arxiv.org/abs/2603.24124",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Alignment Tax: Response Homogenization in Aligned LLMs a' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Modal Agent Evaluation",
+      "paper_link": "https://arxiv.org/abs/2603.09643",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Mo' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}
