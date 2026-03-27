@@ -1,6 +1,6 @@
 {
-  "timestamp": "20260320-040259",
-  "payload_path": "output/directives-20260320-040259.md",
+  "timestamp": "20260327-120129",
+  "payload_path": "output/directives-20260327-120129.md",
   "sent": false,
   "verified": false,
   "detail": "Discord delivery not executed by repo-local autoprompt runner. External verified delivery required."
