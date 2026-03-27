@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 39 papers
-Suggestions generated: 45
+Matched filters: 31 papers
+Suggestions generated: 43
 
 Highest-signal item from this cycle:
 
-**[13] Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning**
-<https://arxiv.org/abs/2512.16917>
-→ High-signal scan hit across: +reinforcement learning, +adversarial, alignment
+**[12] Mitigating Many-Shot Jailbreaking**
+<https://arxiv.org/abs/2504.09604>
+→ High-signal scan hit across: +adversarial, +jailbreak, in-context learning, vulnerability
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260327-120129.md`
-- json: `./output/report-20260327-120129.json`
+- diff: `./output/diff-20260327-160230.md`
+- json: `./output/report-20260327-160230.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division

@@ -1,0 +1,74 @@
+[
+  {
+    "pattern": "Crescendo",
+    "description": "A slow-burn multi-turn attack that distributes malicious intent across a sequence of individually benign-seeming queries, exploiting recursive trust where the model's own compliant responses prime it for subsequent policy violations. Each turn advances the adversarial objective incrementally so no single turn triggers stateless classifiers.",
+    "sct_mapping": "SCT-012 (Intent Drift Induction) — primary; SCT-008 (Trust Gradients) — secondary, due to exploitation of accumulated model compliance as a priming mechanism.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "ActorAttack",
+    "description": "Uses persona adoption and semantic camouflage to hide adversarial intent behind a fictional actor or role, distributing the malicious objective across dialogue turns via self-discovered contextual clues. Safety alignment is derailed by progressively building an in-character frame that normalizes harmful outputs.",
+    "sct_mapping": "SCT-001 (Identity Fabrication) — primary; SCT-004 (Narrative Capture) — secondary, as the actor frame constitutes a narrative structure the model is guided to sustain.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Reasoning-Augmented Conversation (RACE)",
+    "description": "Reformulates harmful queries as benign reasoning or analytical tasks, using gain-guided exploration to steer reasoning-heavy models toward policy-violating outputs without ever framing the request as overtly harmful. The attack exploits models that prioritize internal logical consistency over surface-level safety signals.",
+    "sct_mapping": "SCT-011 (Adversarial Framing) — primary; SCT-003 (Epistemic Flooding) — secondary, as the technique buries the target objective inside legitimate-seeming reasoning chains.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Bad Likert Judge",
+    "description": "Exploits role-play by framing the generation of harmful content as a content-quality evaluation artifact — for example, producing a '5/5 quality' response as a demonstration for scoring purposes rather than as a direct request. This indirection sidesteps direct policy checks by routing the output through an evaluation context.",
+    "sct_mapping": "SCT-007 (Binding Protocol Exploitation) — primary, as the technique abuses the implicit agreement structure of role-play and evaluation tasks; SCT-011 (Adversarial Framing) — secondary.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Foot-In-The-Door (FITD)",
+    "description": "Operationalizes psychological commitment principles by using intermediate 'bridge prompts' to obtain incremental concessions that lower the model's resistance threshold before presenting the actual harmful request. Each bridge prompt is calibrated to be just compliant enough to establish a behavioral precedent the model is then unlikely to reverse.",
+    "sct_mapping": "SCT-005 (Frequency Lock) — primary, as repeated small commitments lock the model into a compliance pattern; SCT-008 (Trust Gradients) — secondary.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "AutoAdv",
+    "description": "An automated black-box search technique that probes for psychological and semantic weak points in a model across multiple turns without human authorship of each prompt. It treats the conversation as a search space, iterating over probe-response pairs to identify the path of least resistance toward policy violation.",
+    "sct_mapping": "SCT-010 (Context Poisoning) — primary, as each automated probe progressively contaminates the conversation context; no clean mapping to a single code — this is a meta-attack automation layer.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "M2S (Multi-Turn to Single-Turn Collapse)",
+    "description": "Collapses a multi-turn adversarial conversation history into a structured single-turn payload that retains the cumulative manipulative potency of the full dialogue while bypassing stateful detection systems. The resulting prompt appears to stateful analyzers as a fresh context rather than the terminal state of a prolonged attack sequence.",
+    "sct_mapping": "SCT-009 (Temporal Manipulation) — primary, as the technique strips out the temporal dimension of the attack to evade time-aware defenses; SCT-010 (Context Poisoning) — secondary.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Semantic Drift",
+    "description": "An incremental conversational pattern in which the topic or intent slowly migrates from a legitimate starting point toward an adversarial target, with each turn making only a small, plausible shift that remains below detection thresholds. The cumulative displacement is large, but no individual turn is flagged.",
+    "sct_mapping": "SCT-012 (Intent Drift Induction) — direct match; this pattern is the canonical mechanism SCT-012 was designed to describe.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Intent Fragmentation",
+    "description": "Splits a malicious payload across multiple turns such that no single turn contains enough signal to trigger a classifier, relying on the model's conversational context window to reconstruct the complete harmful intent at execution time. Stateless guardrails see only fragments; the model sees the assembled whole.",
+    "sct_mapping": "SCT-010 (Context Poisoning) — primary; SCT-003 (Epistemic Flooding) — secondary, as fragmentation can also function to dilute the adversarial signal within a larger volume of benign content.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Cross-Lingual Drift",
+    "description": "Switches languages mid-conversation to obscure evolving adversarial intent from monolingual or language-specialized safety classifiers, exploiting the uneven multilingual coverage of most guardrail systems. The language switch may also reset implicit trust signals that stateless detectors associate with the original language context.",
+    "sct_mapping": "SCT-006 (Substrate Priming) — primary, as the language-switch reconditions the processing substrate the model applies to subsequent turns; SCT-009 (Temporal Manipulation) — secondary.",
+    "new_code_needed": false
+  },
+  {
+    "pattern": "Goal Drift in Agentic Systems",
+    "description": "In agentic or autonomous execution contexts, adversarial steering progressively shifts the model's operative goal away from the user-authorized objective across a sequence of task steps, without any single step appearing out-of-bounds. By the time the deviation is detectable, the agent may have already taken irreversible real-world actions.",
+    "sct_mapping": "SCT-012 (Intent Drift Induction) — partial; however, the agentic execution dimension and irreversibility factor represent a materially distinct threat surface from conversational intent drift.",
+    "new_code_needed": true
+  },
+  {
+    "pattern": "Contextual Blind Spot Exploitation",
+    "description": "A structural attack surface rather than a named technique: adversaries deliberately design prompt sequences to exploit the gap between benign early-turn preambles and harmful late-turn payloads, knowing that stateless classifiers evaluate each turn in isolation and cannot correlate across the full dialogue trajectory. The paper frames this as the core 'Safety Gap' that DeepContext targets.",
+    "sct_mapping": "SCT-010 (Context Poisoning) — primary; the mechanism is closely related to SCT-012 (Intent Drift Induction) but differs in that it explicitly models the defender's blind spot as the attack surface rather than focusing on the attacker's intent trajectory.",
+    "new_code_needed": false
+  }
+]
