@@ -1,0 +1,462 @@
+{
+  "run_at": "2026-03-27T22:02:34.478670+00:00",
+  "papers_found": 19,
+  "suggestions_generated": 23,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2512.16917v3",
+      "title": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinforcement Learning",
+      "summary": "arXiv:2512.16917v3 Announce Type: replace \nAbstract: Large language models (LLMs) with explicit reasoning capabilities excel at mathematical reasoning yet still commit process errors, such as incorrect calculations, brittle logic, and superficially plausible but invalid steps. In this paper, we introduce Generative Adversarial Reasoner, an on-policy joint training framework designed to enhance reasoning by co-evolving an LLM reasoner and an LLM-based discriminator through adversarial reinforcement learning. A compute-efficient review schedule partitions each reasoning chain into logically complete slices of comparable length, and the discriminator evaluates each slice's soundness with concise, structured justifications. Learning couples complementary signals: the LLM reasoner is rewarded for logically consistent steps that yield correct answers, while the discriminator earns rewards for correctly detecting errors or distinguishing traces in the reasoning process. This produces dense, well-calibrated, on-policy step-level rewards that supplement sparse exact-match signals, improving credit assignment, increasing sample efficiency, and enhancing overall reasoning quality of LLMs. Across various mathematical benchmarks, the method delivers consistent gains over strong baselines with standard RL post-training. Specifically, on AIME24, we improve DeepSeek-R1-Distill-Qwen-7B from 54.0 to 61.3 (+7.3) and DeepSeek-R1-Distill-Llama-8B from 43.7 to 53.7 (+10.0). The modular discriminator also enables flexible reward shaping for objectives such as teacher distillation, preference alignment, and mathematical proof-based reasoning.",
+      "link": "https://arxiv.org/abs/2512.16917",
+      "feed": "cs.AI",
+      "score": 13,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+adversarial",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-27T22:02:27.074734+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25164v1",
+      "title": "PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retrieval-Augmented Generation Systems",
+      "summary": "arXiv:2603.25164v1 Announce Type: new \nAbstract: Large Language Models (LLMs) have demonstrated remarkable performance across a wide range of applications. However, their practical deployment is often hindered by issues such as outdated knowledge and the tendency to generate hallucinations. To address these limitations, Retrieval-Augmented Generation (RAG) systems have been introduced, enhancing LLMs with external, up-to-date knowledge sources. Despite their advantages, RAG systems remain vulnerable to adversarial attacks, with data poisoning emerging as a prominent threat. Existing poisoning-based attacks typically require prior knowledge of the user's specific queries, limiting their flexibility and real-world applicability. In this work, we propose PIDP-Attack, a novel compound attack that integrates prompt injection with database poisoning in RAG. By appending malicious characters to queries at inference time and injecting a limited number of poisoned passages into the retrieval database, our method can effectively manipulate LLM response to arbitrary query without prior knowledge of the user's actual query. Experimental evaluations across three benchmark datasets (Natural Questions, HotpotQA, MS-MARCO) and eight LLMs demonstrate that PIDP-Attack consistently outperforms the original PoisonedRAG. Specifically, our method improves attack success rates by 4% to 16% on open-domain QA tasks while maintaining high retrieval precision, proving that the compound attack strategy is both necessary and highly effective.",
+      "link": "https://arxiv.org/abs/2603.25164",
+      "feed": "cs.CR",
+      "score": 9,
+      "matched_keywords": [
+        "+adversarial attack",
+        "+prompt injection"
+      ],
+      "fetched_at": "2026-03-27T22:02:28.042761+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2410.15281v5",
+      "title": "LLM4AD: Large Language Models for Autonomous Driving -- Concept, Review, Benchmark, Experiments, and Future Trends",
+      "summary": "arXiv:2410.15281v5 Announce Type: replace-cross \nAbstract: With the broader adoption and highly successful development of Large Language Models (LLMs), there has been growing interest and demand for applying LLMs to autonomous driving technology. Driven by their natural language understanding and reasoning capabilities, LLMs have the potential to enhance various aspects of autonomous driving systems, from perception and scene understanding to interactive decision-making. This paper first introduces the novel concept of designing Large Language Models for Autonomous Driving (LLM4AD), followed by a review of existing LLM4AD studies. Then, a comprehensive benchmark is proposed for evaluating the instruction-following and reasoning abilities of LLM4AD systems, which includes LaMPilot-Bench, CARLA Leaderboard 1.0 Benchmark in simulation and NuPlanQA for multi-view visual question answering. Furthermore, extensive real-world experiments are conducted on autonomous vehicle platforms, examining both on-cloud and on-edge LLM deployment for personalized decision-making and motion control. Next, the future trends of integrating language diffusion models into autonomous driving are explored, exemplified by the proposed ViLaD (Vision-Language Diffusion) framework. Finally, the main challenges of LLM4AD are discussed, including latency, deployment, security and privacy, safety, trust and transparency, and personalization.",
+      "link": "https://arxiv.org/abs/2410.15281",
+      "feed": "cs.CL",
+      "score": 8,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust",
+        "diffusion model",
+        "persona"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.755633+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25620v1",
+      "title": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consistency",
+      "summary": "arXiv:2603.25620v1 Announce Type: new \nAbstract: Large language model (LLM)-based persona agents are rapidly being adopted as scalable proxies for human participants across diverse domains. Yet there is no systematic method for verifying whether a persona agent's responses remain free of contradictions and factual inaccuracies throughout an interaction. A principle from interrogation methodology offers a lens: no matter how elaborate a fabricated identity, systematic interrogation will expose its contradictions. We apply this principle to propose PICon, an evaluation framework that probes persona agents through logically chained multi-turn questioning. PICon evaluates consistency along three core dimensions: internal consistency (freedom from self-contradiction), external consistency (alignment with real-world facts), and retest consistency (stability under repetition). Evaluating seven groups of persona agents alongside 63 real human participants, we find that even systems previously reported as highly consistent fail to meet the human baseline across all three dimensions, revealing contradictions and evasive responses under chained questioning. This work provides both a conceptual foundation and a practical methodology for evaluating persona agents before trusting them as substitutes for human participants. We provide the source code and an interactive demo at: https://kaist-edlab.github.io/picon/",
+      "link": "https://arxiv.org/abs/2603.25620",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "+trust",
+        "alignment",
+        "persona"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.754992+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.10627v2",
+      "title": "FactAppeal: Identifying Epistemic Factual Appeals in News Media",
+      "summary": "arXiv:2510.10627v2 Announce Type: replace \nAbstract: How is a factual claim made credible? We propose the novel task of Epistemic Appeal Identification, which identifies whether and how factual statements have been anchored by external sources or evidence. To advance research on this task, we present FactAppeal, a manually annotated dataset of 3,226 English-language news sentences. Unlike prior resources that focus solely on claim detection and verification, FactAppeal identifies the nuanced epistemic structures and evidentiary basis underlying these claims and used to support them. FactAppeal contains span-level annotations which identify factual statements and mentions of sources on which they rely. Moreover, the annotations include fine-grained characteristics of factual appeals such as the type of source (e.g. Active Participant, Witness, Expert, Direct Evidence), whether it is mentioned by name, mentions of the source's role and epistemic credentials, attribution to the source via direct or indirect quotation, and other features. We model the task with a range of encoder models and generative decoder models in the 2B-9B parameter range. Our best performing model, based on Gemma 2 9B, achieves a macro-F1 score of 0.73.",
+      "link": "https://arxiv.org/abs/2510.10627",
+      "feed": "cs.CL",
+      "score": 6,
+      "matched_keywords": [
+        "~epistemic",
+        "epistemic"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.755481+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24111v2",
+      "title": "Toward a Multi-Layer ML-Based Security Framework for Industrial IoT",
+      "summary": "arXiv:2603.24111v2 Announce Type: replace \nAbstract: The Industrial Internet of Things (IIoT) introduces significant security challenges as resource-constrained devices become increasingly integrated into critical industrial processes. Existing security approaches typically address threats at a single network layer, often relying on expensive hardware and remaining confined to simulation environments. In this paper, we present the research framework and contributions of our doctoral thesis, which aims to develop a lightweight, Machine Learning (ML)-based security framework for IIoT environments. We first describe our adoption of the Tm-IIoT trust model and the Hybrid IIoT (H-IIoT) architecture as foundational baselines, then introduce the Trust Convergence Acceleration (TCA) approach, our primary contribution that integrates ML to predict and mitigate the impact of degraded network conditions on trust convergence, achieving up to a 28.6% reduction in convergence time while maintaining robustness against adversarial behaviors. We then propose a real-world deployment architecture based on affordable, open-source hardware, designed to implement and extend the security framework. Finally, we outline our ongoing research toward multi-layer attack detection, including physical-layer threat identification and considerations for robustness against adversarial ML attacks.",
+      "link": "https://arxiv.org/abs/2603.24111",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-27T22:02:28.042936+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2509.23768v2",
+      "title": "From What to Why: A Multi-Agent System for Evidence-based Chemical Reaction Condition Reasoning",
+      "summary": "arXiv:2509.23768v2 Announce Type: replace-cross \nAbstract: The chemical reaction recommendation is to select proper reaction condition parameters for chemical reactions, which is pivotal to accelerating chemical science. With the rapid development of large language models (LLMs), there is growing interest in leveraging their reasoning and planning capabilities for reaction condition recommendation. Despite their success, existing methods rarely explain the rationale behind the recommended reaction conditions, limiting their utility in high-stakes scientific workflows. In this work, we propose ChemMAS, a multi-agent system that reframes condition prediction as an evidence-based reasoning task. ChemMAS decomposes the task into mechanistic grounding, multi-channel recall, constraint-aware agentic debate, and rationale aggregation. Each decision is backed by interpretable justifications grounded in chemical knowledge and retrieved precedents. Experiments show that ChemMAS achieves 20-35% gains over domain-specific baselines and outperforms general-purpose LLMs by 10-15% in Top-1 accuracy, while offering falsifiable, human-trustable rationales, which establishes a new paradigm for explainable AI in scientific discovery.",
+      "link": "https://arxiv.org/abs/2509.23768",
+      "feed": "cs.CL",
+      "score": 5,
+      "matched_keywords": [
+        "+trust",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.755684+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2508.11733v3",
+      "title": "SafeSieve: From Heuristics to Experience in Progressive Pruning for LLM-based Multi-Agent Communication",
+      "summary": "arXiv:2508.11733v3 Announce Type: replace-cross \nAbstract: LLM-based multi-agent systems exhibit strong collaborative capabilities but often suffer from redundant communication and excessive token overhead. Existing methods typically enhance efficiency through pretrained GNNs or greedy algorithms, but often isolate pre- and post-task optimization, lacking a unified strategy. To this end, we present SafeSieve, a progressive and adaptive multi-agent pruning algorithm that dynamically refines the inter-agent communication through a novel dual-mechanism. SafeSieve integrates initial LLM-based semantic evaluation with accumulated performance feedback, enabling a smooth transition from heuristic initialization to experience-driven refinement. Unlike existing greedy Top-k pruning methods, SafeSieve employs 0-extension clustering to preserve structurally coherent agent groups while eliminating ineffective links. Experiments across benchmarks (SVAMP, HumanEval, etc.) showcase that SafeSieve achieves 94.01% average accuracy while reducing token usage by 12.4%-27.8%. Results further demonstrate robustness under prompt injection attacks (1.23% average accuracy drop). In heterogeneous settings, SafeSieve reduces deployment costs by 13.3% while maintaining performance. These results establish SafeSieve as an efficient, GPU-free, and scalable framework for practical multi-agent systems. Our code can be found here: https://github.com/csgen/SafeSieve",
+      "link": "https://arxiv.org/abs/2508.11733",
+      "feed": "cs.AI",
+      "score": 5,
+      "matched_keywords": [
+        "+prompt injection",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-27T22:02:27.075024+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24981v1",
+      "title": "Exons-Detect: Identifying and Amplifying Exonic Tokens via Hidden-State Discrepancy for Robust AI-Generated Text Detection",
+      "summary": "arXiv:2603.24981v1 Announce Type: new \nAbstract: The rapid advancement of large language models has increasingly blurred the boundary between human-written and AI-generated text, raising societal risks such as misinformation dissemination, authorship ambiguity, and threats to intellectual property rights. These concerns highlight the urgent need for effective and reliable detection methods. While existing training-free approaches often achieve strong performance by aggregating token-level signals into a global score, they typically assume uniform token contributions, making them less robust under short sequences or localized token modifications. To address these limitations, we propose Exons-Detect, a training-free method for AI-generated text detection based on an exon-aware token reweighting perspective. Exons-Detect identifies and amplifies informative exonic tokens by measuring hidden-state discrepancy under a dual-model setting, and computes an interpretable translation score from the resulting importance-weighted token sequence. Empirical evaluations demonstrate that Exons-Detect achieves state-of-the-art detection performance and exhibits strong robustness to adversarial attacks and varying input lengths. In particular, it attains a 2.2\\% relative improvement in average AUROC over the strongest prior baseline on DetectRL.",
+      "link": "https://arxiv.org/abs/2603.24981",
+      "feed": "cs.CL",
+      "score": 4,
+      "matched_keywords": [
+        "+adversarial attack",
+        "misinformation"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.754672+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.15259v3",
+      "title": "SAG-Agent: Enabling Long-Horizon Reasoning in Strategy Games via Dynamic Knowledge Graphs",
+      "summary": "arXiv:2510.15259v3 Announce Type: replace \nAbstract: Most commodity software lacks accessible Application Programming Interfaces (APIs), requiring autonomous agents to interact solely through pixel-based Graphical User Interfaces (GUIs). In this API-free setting, large language model (LLM)-based agents face severe efficiency bottlenecks: limited to local visual experiences, they make myopic decisions and rely on inefficient trial-and-error, hindering both skill acquisition and long-horizon planning. To overcome these limitations, we propose SAG-Agent, an experience-driven learning framework that structures an agent's raw pixel-level interactions into a persistent State-Action Graph (SAG). SAG-Agent mitigates inefficient exploration by topologically linking functionally similar but visually distinct GUI states, constructing a rich neighborhood of experience that enables the agent to generalize from a diverse set of historical strategies. To facilitate long-horizon reasoning, we design a novel hybrid intrinsic reward mechanism based on the graph topology, combining a state-value reward for exploiting known high-value pathways with a novelty reward that encourages targeted exploration. This approach decouples strategic planning from pure discovery, allowing the agent to effectively value setup actions with delayed gratification. We evaluate SAG-Agent in two complex, open-ended GUI-based decision-making environments (Civilization V and Slay the Spire), demonstrating significant improvements in exploration efficiency and strategic depth over the state-of-the-art methods.",
+      "link": "https://arxiv.org/abs/2510.15259",
+      "feed": "cs.AI",
+      "score": 4,
+      "matched_keywords": [
+        "+decision-making",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-27T22:02:27.074665+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25253v1",
+      "title": "MolQuest: A Benchmark for Agentic Evaluation of Abductive Reasoning in Chemical Structure Elucidation",
+      "summary": "arXiv:2603.25253v1 Announce Type: new \nAbstract: Large language models (LLMs) hold considerable potential for advancing scientific discovery, yet systematic assessment of their dynamic reasoning in real-world research remains limited. Current scientific evaluation benchmarks predominantly rely on static, single-turn Question Answering (QA) formats, which are inadequate for measuring model performance in complex scientific tasks that require multi-step iteration and experimental interaction. To address this gap, we introduce MolQuest, a novel agent-based evaluation framework for molecular structure elucidation built upon authentic chemical experimental data. Unlike existing datasets, MolQuest formalizes molecular structure elucidation as a multi-turn interactive task, requiring models to proactively plan experimental steps, integrate heterogeneous spectral sources (e.g., NMR, MS), and iteratively refine structural hypotheses. This framework systematically evaluates LLMs' abductive reasoning and strategic decision-making abilities within a vast and complex chemical space. Empirical results reveal that contemporary frontier models exhibit significant limitations in authentic scientific scenarios: notably, even state-of-the-art (SOTA) models achieve an accuracy of only approximately 50%, while the performance of most other models remains below the 30% threshold. This work provides a reproducible and extensible framework for science-oriented LLM evaluation, our findings highlight the critical gap in current LLMs' strategic scientific reasoning, setting a clear direction for future research toward AI that can actively participate in the scientific process.",
+      "link": "https://arxiv.org/abs/2603.25253",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.754870+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25531v1",
+      "title": "Synchronous Signal Temporal Logic for Decidable Verification of Cyber-Physical Systems",
+      "summary": "arXiv:2603.25531v1 Announce Type: cross \nAbstract: Many Cyber Physical System (CPS) work in a safety-critical environment, where correct execution, reliability and trustworthiness are essential. Signal Temporal Logic (STL) provides a formal framework for checking safety-critical CPS. However, static verification of STL is undecidable in general, except when we want to verify using run-time-based methods, which have limitations. We propose Synchronous Signal Temporal Logic (SSTL), a decidable fragment of STL, which admits static safety and liveness property verification. In SSTL, we assume that a signal is sampled at fixed discrete steps, called ticks, and then propose a hypothesis, called the Signal Invariance Hypothesis (SIH), which is inspired by a similar hypothesis for synchronous programs. We define the syntax and semantics of SSTL and show that SIH is a necessary and sufficient condition for equivalence between an STL formula and its SSTL counterpart. By translating SSTL to LTL_P (LTL defined over predicates), we enable decidable model checking using the SPIN model checker. We demonstrate the approach on a 33-node human heart model and other case studies.",
+      "link": "https://arxiv.org/abs/2603.25531",
+      "feed": "cs.CL",
+      "score": 3,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.755107+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23638v1",
+      "title": "Can LLM Agents Be CFOs? A Benchmark for Resource Allocation in Dynamic Enterprise Environments",
+      "summary": "arXiv:2603.23638v1 Announce Type: new \nAbstract: Large language models (LLMs) have enabled agentic systems that can reason, plan, and act across complex tasks, but it remains unclear whether they can allocate resources effectively under uncertainty. Unlike short-horizon reactive decisions, allocation requires committing scarce resources over time while balancing competing objectives and preserving flexibility for future needs. We introduce EnterpriseArena, the first benchmark for evaluating agents on long-horizon enterprise resource allocation. It instantiates CFO-style decision-making in a 132-month enterprise simulator combining firm-level financial data, anonymized business documents, macroeconomic and industry signals, and expert-validated operating rules. The environment is partially observable and reveals the state only through budgeted organizational tools, forcing agents to trade off information acquisition against conserving scarce resources. Experiments on eleven advanced LLMs show that this setting remains highly challenging: only 16% of runs survive the full horizon, and larger models do not reliably outperform smaller ones. These results identify long-horizon resource allocation under uncertainty as a distinct capability gap for current LLM agents.",
+      "link": "https://arxiv.org/abs/2603.23638",
+      "feed": "cs.AI",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-27T22:02:27.073853+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24888v1",
+      "title": "An Approach to Generate Attack Graphs with a Case Study on Siemens PCS7 Blueprint for Water Treatment Plants",
+      "summary": "arXiv:2603.24888v1 Announce Type: new \nAbstract: Assessing the security posture of Industrial Control Systems (ICS) is critical for protecting essential infrastructure. However, the complexity and scale of these environments make it challenging to identify and prioritize potential attack paths. This paper introduces a semi-automated approach for generating attack graphs in ICS environments to visualize and analyze multi-step attack scenarios. Our methodology integrates network topology information with vulnerability data to construct a model of the system. This model is then processed by a stateful traversal algorithm to identify potential exploit chains based on preconditions and consequences. We present a case study applying the proposed framework to the Siemens PCS7 Cybersecurity Blueprint for Water Treatment Plants. The results demonstrate the framework's ability to simulate different attack scenarios, including those originating from known CVEs and potential device misconfigurations. We show how a single point of failure can compromise network segmentation and how patching a critical vulnerability can protect an entire security zone, providing actionable insights for risk mitigation.",
+      "link": "https://arxiv.org/abs/2603.24888",
+      "feed": "cs.CR",
+      "score": 3,
+      "matched_keywords": [
+        "network topology",
+        "vulnerability",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-27T22:02:28.042643+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25100v1",
+      "title": "From Logic Monopoly to Social Contract: Separation of Power and the Institutional Foundations for Autonomous Agent Economies",
+      "summary": "arXiv:2603.25100v1 Announce Type: cross \nAbstract: Existing multi-agent frameworks allow each agent to simultaneously plan, execute, and evaluate its own actions -- a structural deficiency we term the \"Logic Monopoly.\" Empirical evidence quantifies the resulting \"Reliability Gap\": 84.30% average attack success rates across ten deployment scenarios, 31.4% emergent deceptive behavior without explicit reward signals, and cascading failure modes rooted in six structural bottlenecks.\n  The remedy is not better alignment of individual models but a social contract for agents: institutional infrastructure that enforces a constitutional Separation of Power. This paper introduces the Agent Enterprise for Enterprise (AE4E) paradigm -- agents as autonomous, legally identifiable business entities within a functionalist social system -- with a contract-centric SoP model trifurcating authority into Legislation, Execution, and Adjudication branches. The paradigm is operationalized through the NetX Enterprise Framework (NEF): governance hubs, TEE-backed compute enclaves, privacy-preserving data bridges, and an Agent-Native blockchain substrate. The Agent Enterprise Economy scales across four deployment tiers from private enclaves to a global Web of Services. The Agentic Social Layer, grounded in Parsons' AGIL framework, provides institutional infrastructure via sixty-plus named Institutional AE4Es. 143 pages, 173 references, eight specialized smart contracts.",
+      "link": "https://arxiv.org/abs/2603.25100",
+      "feed": "cs.CR",
+      "score": 3,
+      "matched_keywords": [
+        "multi-agent",
+        "alignment",
+        "substrate"
+      ],
+      "fetched_at": "2026-03-27T22:02:28.042825+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25068v1",
+      "title": "Ultra-fast Traffic Nowcasting and Control via Differentiable Agent-based Simulation",
+      "summary": "arXiv:2603.25068v1 Announce Type: new \nAbstract: Traffic digital twins, which inform policymakers of effective interventions based on large-scale, high-fidelity computational models calibrated to real-world traffic, hold promise for addressing societal challenges in our rapidly urbanizing world. However, conventional fine-grained traffic simulations are non-differentiable and typically rely on inefficient gradient-free optimization, making calibration for real-world applications computationally infeasible. Here we present a differentiable agent-based traffic simulator that enables ultra-fast model calibration, traffic nowcasting, and control on large-scale networks. We develop several differentiable computing techniques for simulating individual vehicle movements, including stochastic decision-making and inter-agent interactions, while ensuring that entire simulation trajectories remain end-to-end differentiable for efficient gradient-based optimization. On the large-scale Chicago road network, with over 10,000 calibration parameters, our model simulates more than one million vehicles at 173 times real-time speed. This ultra-fast simulation, together with efficient gradient-based optimization, enables us to complete model calibration using the previous 30 minutes of traffic data in 455 s, provide a one-hour-ahead traffic nowcast in 21 s, and solve the resulting traffic control problem in 728 s. This yields a full calibration--nowcast--control loop in under 20 minutes, leaving about 40 minutes of lead time for implementing interventions. Our work thus provides a practical computational basis for realizing traffic digital twins.",
+      "link": "https://arxiv.org/abs/2603.25068",
+      "feed": "cs.MA",
+      "score": 3,
+      "matched_keywords": [
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-27T22:02:28.891185+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2601.12910v2",
+      "title": "SciCoQA: Quality Assurance for Scientific Paper--Code Alignment",
+      "summary": "arXiv:2601.12910v2 Announce Type: replace \nAbstract: We present SciCoQA, a dataset for detecting discrepancies between scientific publications and their codebases to ensure faithful implementations. We construct SciCoQA from GitHub issues and reproducibility papers, and to scale our dataset, we propose a synthetic data generation method for constructing paper-code discrepancies. We analyze the paper-code discrepancies in detail and propose discrepancy types and categories to better understand the occurring mismatches. In total, our dataset consists of 635 paper-code discrepancies (92 real, 543 synthetic), covering the AI domain from real-world data and extending to Physics, Quantitative Biology, and other computational sciences through synthetic data. Our evaluation of 22 LLMs demonstrates the difficulty of SciCoQA, particularly for instances involving omitted paper details, long-context inputs, and data outside the models' pre-training corpus. The best-performing models in our evaluation, Gemini 3.1 Pro and GPT-5 Mini, detect only 46.7% of real-world paper-code discrepancies.",
+      "link": "https://arxiv.org/abs/2601.12910",
+      "feed": "cs.CL",
+      "score": 2,
+      "matched_keywords": [
+        "alignment"
+      ],
+      "fetched_at": "2026-03-27T22:02:25.755571+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.06767v2",
+      "title": "QUARK: Quantization-Enabled Circuit Sharing for Transformer Acceleration by Exploiting Common Patterns in Nonlinear Operations",
+      "summary": "arXiv:2511.06767v2 Announce Type: replace-cross \nAbstract: Transformer-based models have revolutionized computer vision (CV) and natural language processing (NLP) by achieving state-of-the-art performance across a range of benchmarks. However, nonlinear operations in models significantly contribute to inference latency, presenting unique challenges for efficient hardware acceleration. To this end, we propose QUARK, a quantization-enabled FPGA acceleration framework that leverages common patterns in nonlinear operations to enable efficient circuit sharing, thereby reducing hardware resource requirements. QUARK targets all nonlinear operations within Transformer-based models, achieving high-performance approximation through a novel circuit-sharing design tailored to accelerate these operations. Our evaluation demonstrates that QUARK significantly reduces the computational overhead of nonlinear operators in mainstream Transformer architectures, achieving up to a 1.96 times end-to-end speedup over GPU implementations. Moreover, QUARK lowers the hardware overhead of nonlinear modules by more than 50% compared to prior approaches, all while maintaining high model accuracy -- and even substantially boosting accuracy under ultra-low-bit quantization.",
+      "link": "https://arxiv.org/abs/2511.06767",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "exploit"
+      ],
+      "fetched_at": "2026-03-27T22:02:27.075081+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.09643v3",
+      "title": "MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Modal Agent Evaluation in Dual-Control Settings",
+      "summary": "arXiv:2603.09643v3 Announce Type: replace-cross \nAbstract: Current evaluation frameworks and benchmarks for LLM powered agents focus on text chat driven agents, these frameworks do not expose the persona of user to the agent, thus operating in a user agnostic environment. Importantly, in customer experience management domain, the agent's behaviour evolves as the agent learns about user personality. With proliferation of real time TTS and multi-modal language models, LLM based agents are gradually going to become multi-modal. Towards this, we propose the MM-tau-p$^2$ benchmark with metrics for evaluating the robustness of multi-modal agents in dual control setting with and without persona adaption of user, while also taking user inputs in the planning process to resolve a user query. In particular, our work shows that even with state of-the-art frontier LLMs like GPT-5, GPT 4.1, there are additional considerations measured using metrics viz. multi-modal robustness, turn overhead while introducing multi-modality into LLM based agents. Overall, MM-tau-p$^2$ builds on our prior work FOCAL and provides a holistic way of evaluating multi-modal agents in an automated way by introducing 12 novel metrics. We also provide estimates of these metrics on the telecom and retail domains by using the LLM-as-judge approach using carefully crafted prompts with well defined rubrics for evaluating each conversation.",
+      "link": "https://arxiv.org/abs/2603.09643",
+      "feed": "cs.AI",
+      "score": 2,
+      "matched_keywords": [
+        "persona"
+      ],
+      "fetched_at": "2026-03-27T22:02:27.075208+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Generative Adversarial Reasoner: Enhancing LLM Reasoning with Adversarial Reinfo",
+      "paper_link": "https://arxiv.org/abs/2512.16917",
+      "paper_score": 13,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Generative Adversarial Reasoner: Enhancing LLM Reasoning wit' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retri",
+      "paper_link": "https://arxiv.org/abs/2603.25164",
+      "paper_score": 9,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'PIDP-Attack: Combining Prompt Injection with Database Poison' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "PIDP-Attack: Combining Prompt Injection with Database Poisoning Attacks on Retri",
+      "paper_link": "https://arxiv.org/abs/2603.25164",
+      "paper_score": 9,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PIDP-Attack: Combining Prompt Injection with Database Poison' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "LLM4AD: Large Language Models for Autonomous Driving -- Concept, Review, Benchma",
+      "paper_link": "https://arxiv.org/abs/2410.15281",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LLM4AD: Large Language Models for Autonomous Driving -- Conc' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consist",
+      "paper_link": "https://arxiv.org/abs/2603.25620",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PICon: A Multi-Turn Interrogation Framework for Evaluating P' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consist",
+      "paper_link": "https://arxiv.org/abs/2603.25620",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'PICon: A Multi-Turn Interrogation Framework for Evaluating P' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consist",
+      "paper_link": "https://arxiv.org/abs/2603.25620",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'PICon: A Multi-Turn Interrogation Framework for Evaluating P' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consist",
+      "paper_link": "https://arxiv.org/abs/2603.25620",
+      "paper_score": 6,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'PICon: A Multi-Turn Interrogation Framework for Evaluating P' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "PICon: A Multi-Turn Interrogation Framework for Evaluating Persona Agent Consist",
+      "paper_link": "https://arxiv.org/abs/2603.25620",
+      "paper_score": 6,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'PICon: A Multi-Turn Interrogation Framework for Evaluating P' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "SafeSieve: From Heuristics to Experience in Progressive Pruning for LLM-based Mu",
+      "paper_link": "https://arxiv.org/abs/2508.11733",
+      "paper_score": 5,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'SafeSieve: From Heuristics to Experience in Progressive Prun' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "SafeSieve: From Heuristics to Experience in Progressive Pruning for LLM-based Mu",
+      "paper_link": "https://arxiv.org/abs/2508.11733",
+      "paper_score": 5,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'SafeSieve: From Heuristics to Experience in Progressive Prun' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "From Logic Monopoly to Social Contract: Separation of Power and the Institutiona",
+      "paper_link": "https://arxiv.org/abs/2603.25100",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'From Logic Monopoly to Social Contract: Separation of Power ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "From Logic Monopoly to Social Contract: Separation of Power and the Institutiona",
+      "paper_link": "https://arxiv.org/abs/2603.25100",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'From Logic Monopoly to Social Contract: Separation of Power ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "From Logic Monopoly to Social Contract: Separation of Power and the Institutiona",
+      "paper_link": "https://arxiv.org/abs/2603.25100",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'From Logic Monopoly to Social Contract: Separation of Power ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "From Logic Monopoly to Social Contract: Separation of Power and the Institutiona",
+      "paper_link": "https://arxiv.org/abs/2603.25100",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'From Logic Monopoly to Social Contract: Separation of Power ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "SciCoQA: Quality Assurance for Scientific Paper--Code Alignment",
+      "paper_link": "https://arxiv.org/abs/2601.12910",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'SciCoQA: Quality Assurance for Scientific Paper--Code Alignm' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "SciCoQA: Quality Assurance for Scientific Paper--Code Alignment",
+      "paper_link": "https://arxiv.org/abs/2601.12910",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'SciCoQA: Quality Assurance for Scientific Paper--Code Alignm' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "SciCoQA: Quality Assurance for Scientific Paper--Code Alignment",
+      "paper_link": "https://arxiv.org/abs/2601.12910",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'SciCoQA: Quality Assurance for Scientific Paper--Code Alignm' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "SciCoQA: Quality Assurance for Scientific Paper--Code Alignment",
+      "paper_link": "https://arxiv.org/abs/2601.12910",
+      "paper_score": 2,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'SciCoQA: Quality Assurance for Scientific Paper--Code Alignm' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Modal Agent Evaluation",
+      "paper_link": "https://arxiv.org/abs/2603.09643",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'MM-tau-p$^2$: Persona-Adaptive Prompting for Robust Multi-Mo' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}
