@@ -1,0 +1,788 @@
+{
+  "run_at": "2026-03-27T10:05:35.075184+00:00",
+  "papers_found": 55,
+  "suggestions_generated": 57,
+  "papers": [
+    {
+      "id": "oai:arXiv.org:2507.22171v3",
+      "title": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
+      "summary": "arXiv:2507.22171v3 Announce Type: replace-cross \nAbstract: Jailbreak attacks aim to exploit large language models (LLMs) by inducing them to generate harmful content, thereby revealing their vulnerabilities. Understanding and addressing these attacks is crucial for advancing the field of LLM safety. Previous jailbreak approaches have mainly focused on direct manipulations of harmful intent, with limited attention to the impact of persona prompts. In this study, we systematically explore the efficacy of persona prompts in compromising LLM defenses. We propose a genetic algorithm-based method that automatically crafts persona prompts to bypass LLM's safety mechanisms. Our experiments reveal that: (1) our evolved persona prompts reduce refusal rates by 50-70% across multiple LLMs, and (2) these prompts demonstrate synergistic effects when combined with existing attack methods, increasing success rates by 10-20%. Our code and data are available at https://github.com/CjangCjengh/Generic_Persona.",
+      "link": "https://arxiv.org/abs/2507.22171",
+      "feed": "cs.AI",
+      "score": 13,
+      "matched_keywords": [
+        "+manipulation",
+        "+jailbreak",
+        "LLM safety",
+        "persona",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.404061+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24511v1",
+      "title": "Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms for LLMs",
+      "summary": "arXiv:2603.24511v1 Announce Type: cross \nAbstract: LLM agents like Claude Code can not only write code but also be used for autonomous AI research and engineering \\citep{rank2026posttrainbench, novikov2025alphaevolve}. We show that an \\emph{autoresearch}-style pipeline \\citep{karpathy2026autoresearch} powered by Claude Code discovers novel white-box adversarial attack \\textit{algorithms} that \\textbf{significantly outperform all existing (30+) methods} in jailbreaking and prompt injection evaluations.\n  Starting from existing attack implementations, such as GCG~\\citep{zou2023universal}, the agent iterates to produce new algorithms achieving up to 40\\% attack success rate on CBRN queries against GPT-OSS-Safeguard-20B, compared to $\\leq$10\\% for existing algorithms (\\Cref{fig:teaser}, left).\n  The discovered algorithms generalize: attacks optimized on surrogate models transfer directly to held-out models, achieving \\textbf{100\\% ASR against Meta-SecAlign-70B} \\citep{chen2025secalign} versus 56\\% for the best baseline (\\Cref{fig:teaser}, middle). Extending the findings of~\\cite{carlini2025autoadvexbench}, our results are an early demonstration that incremental safety and security research can be automated using LLM agents. White-box adversarial red-teaming is particularly well-suited for this: existing methods provide strong starting points, and the optimization objective yields dense, quantitative feedback. We release all discovered attacks alongside baseline implementations and evaluation code at https://github.com/romovpa/claudini.",
+      "link": "https://arxiv.org/abs/2603.24511",
+      "feed": "cs.AI",
+      "score": 12,
+      "matched_keywords": [
+        "+adversarial attack",
+        "+prompt injection",
+        "+jailbreak"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.403458+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24324v1",
+      "title": "Large Language Model Guided Incentive Aware Reward Design for Cooperative Multi-Agent Reinforcement Learning",
+      "summary": "arXiv:2603.24324v1 Announce Type: cross \nAbstract: Designing effective auxiliary rewards for cooperative multi-agent systems remains a precarious task; misaligned incentives risk inducing suboptimal coordination, especially where sparse task feedback fails to provide sufficient grounding. This study introduces an automated reward design framework that leverages large language models to synthesize executable reward programs from environment instrumentation. The procedure constrains candidate programs within a formal validity envelope and evaluates their efficacy by training policies from scratch under a fixed computational budget; selection depends exclusively on the sparse task return. The framework is evaluated across four distinct Overcooked-AI layouts characterized by varied corridor congestion, handoff dependencies, and structural asymmetries. Iterative search generations consistently yield superior task returns and delivery counts, with the most pronounced gains occurring in environments dominated by interaction bottlenecks. Diagnostic analysis of the synthesized shaping components indicates increased interdependence in action selection and improved signal alignment in coordination-intensive tasks. These results demonstrate that the search for objectivegrounded reward programs can mitigate the burden of manual engineering while producing shaping signals compatible with cooperative learning under finite budgets.",
+      "link": "https://arxiv.org/abs/2603.24324",
+      "feed": "cs.AI",
+      "score": 9,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.403223+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2410.15281v5",
+      "title": "LLM4AD: Large Language Models for Autonomous Driving -- Concept, Review, Benchmark, Experiments, and Future Trends",
+      "summary": "arXiv:2410.15281v5 Announce Type: replace-cross \nAbstract: With the broader adoption and highly successful development of Large Language Models (LLMs), there has been growing interest and demand for applying LLMs to autonomous driving technology. Driven by their natural language understanding and reasoning capabilities, LLMs have the potential to enhance various aspects of autonomous driving systems, from perception and scene understanding to interactive decision-making. This paper first introduces the novel concept of designing Large Language Models for Autonomous Driving (LLM4AD), followed by a review of existing LLM4AD studies. Then, a comprehensive benchmark is proposed for evaluating the instruction-following and reasoning abilities of LLM4AD systems, which includes LaMPilot-Bench, CARLA Leaderboard 1.0 Benchmark in simulation and NuPlanQA for multi-view visual question answering. Furthermore, extensive real-world experiments are conducted on autonomous vehicle platforms, examining both on-cloud and on-edge LLM deployment for personalized decision-making and motion control. Next, the future trends of integrating language diffusion models into autonomous driving are explored, exemplified by the proposed ViLaD (Vision-Language Diffusion) framework. Finally, the main challenges of LLM4AD are discussed, including latency, deployment, security and privacy, safety, trust and transparency, and personalization.",
+      "link": "https://arxiv.org/abs/2410.15281",
+      "feed": "cs.CL",
+      "score": 8,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust",
+        "diffusion model",
+        "persona"
+      ],
+      "fetched_at": "2026-03-27T10:05:29.804488+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2511.18000v2",
+      "title": "Reward Engineering for Spatial Epidemic Simulations: A Reinforcement Learning Platform for Individual Behavioral Learning",
+      "summary": "arXiv:2511.18000v2 Announce Type: replace-cross \nAbstract: We present ContagionRL, a Gymnasium-compatible reinforcement learning platform specifically designed for systematic reward engineering in spatial epidemic simulations. Unlike traditional agent-based models that rely on fixed behavioral rules, our platform enables rigorous evaluation of how reward function design affects learned survival strategies across diverse epidemic scenarios. ContagionRL integrates a spatial SIRS+D epidemiological model with configurable environmental parameters, allowing researchers to stress-test reward functions under varying conditions including limited observability, different movement patterns, and heterogeneous population dynamics. We evaluate five distinct reward designs, ranging from sparse survival bonuses to a novel potential field approach, across multiple RL algorithms (PPO, SAC, A2C). Through systematic ablation studies, we identify that directional guidance and explicit adherence incentives are critical components for robust policy learning. Our comprehensive evaluation across varying infection rates, grid sizes, visibility constraints, and movement patterns reveals that reward function choice dramatically impacts agent behavior and survival outcomes. Agents trained with our potential field reward consistently achieve superior performance, learning maximal adherence to non-pharmaceutical interventions while developing sophisticated spatial avoidance strategies. The platform's modular design enables systematic exploration of reward-behavior relationships, addressing a knowledge gap in models of this type where reward engineering has received limited attention. ContagionRL is an effective platform for studying adaptive behavioral responses in epidemic contexts and highlight the importance of reward design, information structure, and environmental predictability in learning. Our code is publicly available at https://github.com/redradman/ContagionRL",
+      "link": "https://arxiv.org/abs/2511.18000",
+      "feed": "cs.AI",
+      "score": 8,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.404329+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2503.11488v2",
+      "title": "Unicorn: A Universal and Collaborative Reinforcement Learning Approach Towards Generalizable Network-Wide Traffic Signal Control",
+      "summary": "arXiv:2503.11488v2 Announce Type: replace-cross \nAbstract: Adaptive traffic signal control (ATSC) is crucial in reducing congestion, maximizing throughput, and improving mobility in rapidly growing urban areas. Recent advancements in parameter-sharing multi-agent reinforcement learning (MARL) have greatly enhanced the scalable and adaptive optimization of complex, dynamic flows in large-scale homogeneous networks. However, the inherent heterogeneity of real-world traffic networks, with their varied intersection topologies and interaction dynamics, poses substantial challenges to achieving scalable and effective ATSC across different traffic scenarios. To address these challenges, we present Unicorn, a universal and collaborative MARL framework designed for efficient and adaptable network-wide ATSC. Specifically, we first propose a unified approach to map the states and actions of intersections with varying topologies into a common structure based on traffic movements. Next, we design a Universal Traffic Representation (UTR) module with a decoder-only network for general feature extraction, enhancing the model's adaptability to diverse traffic scenarios. Additionally, we incorporate an Intersection Specifics Representation (ISR) module, designed to identify key latent vectors that represent the unique intersection's topology and traffic dynamics through variational inference techniques. To further refine these latent representations, we employ a contrastive learning approach in a self-supervised manner, which enables better differentiation of intersection-specific features. Moreover, we integrate the state-action dependencies of neighboring agents into policy optimization, which effectively captures dynamic agent interactions and facilitates efficient regional collaboration. [...]. The code is available at https://github.com/marmotlab/Unicorn",
+      "link": "https://arxiv.org/abs/2503.11488",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.403922+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.21296v3",
+      "title": "DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stage APT Campaigns",
+      "summary": "arXiv:2603.21296v3 Announce Type: replace-cross \nAbstract: Advanced Persistent Threats (APTs) are stealthy, multi-stage attacks that require adaptive and timely defense. While deep reinforcement learning (DRL) enables autonomous cyber defense, its decisions are often opaque and difficult to trust in operational environments. This paper presents DeepXplain, an explainable DRL framework for stage-aware APT defense. Building on our prior DeepStage model, DeepXplain integrates provenance-based graph learning, temporal stage estimation, and a unified XAI pipeline that provides structural, temporal, and policy-level explanations. Unlike post-hoc methods, explanation signals are incorporated directly into policy optimization through evidence alignment and confidence-aware reward shaping. To the best of our knowledge, DeepXplain is the first framework to integrate explanation signals into reinforcement learning for APT defense. Experiments in a realistic enterprise testbed show improvements in stage-weighted F1-score (0.887 to 0.915) and success rate (84.7% to 89.6%), along with higher explanation confidence (0.86), improved fidelity (0.79), and more compact explanations (0.31). These results demonstrate enhanced effectiveness and trustworthiness of autonomous cyber defense.",
+      "link": "https://arxiv.org/abs/2603.21296",
+      "feed": "cs.AI",
+      "score": 7,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.404964+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24754v1",
+      "title": "An Explainable Federated Framework for Zero Trust Micro-Segmentation in IIoT Networks",
+      "summary": "arXiv:2603.24754v1 Announce Type: new \nAbstract: Micro-segmentation as a core requirement of zero trust architecture (ZTA) divides networks into small security zones, called micro-segments, thereby minimizing impact of security breaches and restricting lateral movement of attackers. Existing approaches for Industrial Internet of Things (IIoT) networks often remain centralized, static, or difficult to interpret. These limitations are critical in IIoT, where devices are heterogeneous, communication behavior evolves over time, and raw data sharing across sites is often undesirable. Accordingly, we propose EFAH-ZTM, an Explainable Federated Autoencoder-Hypergraph framework for Zero Trust micro-segmentation in IIoT networks. The framework includes a trained federated DNAE that learns behavioral embeddings from distributed clients. kNN-based and Manifold-based hypergraphs capture higher-order relationships among device-flow instances. To generate micro-segments, MiniBatch KMeans and HDBSCAN clustering techniques are applied on the spectral embeddings, while an operational risk score that combines reconstruction error and structural outlierness drives allow/block policy decisions. Trustworthiness of the policy decision is improved through feature-level explanations using LIME and SHAP. Experiments on the WUSTL-IIoT-2021 dataset show that HDBSCAN achieved the strongest structural quality, while the manifold-based hypergraph produces the best oracle-aligned security efficacy that reaches a purity of 0.9990 with near-zero contamination. Similarly, the explainability module also showed high fidelity and stability, with surrogate classifier having an accuracy of 0.9927 and stable explanations across runs. Moreover, an ablation analysis shows that the federated learning preserves competitive segmentation quality relative to centralized training, and the hypergraph modeling significantly improves structural separation and risk stratification.",
+      "link": "https://arxiv.org/abs/2603.24754",
+      "feed": "cs.CR",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "behavioral"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.788989+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25056v1",
+      "title": "The System Prompt Is the Attack Surface: How LLM Agent Configuration Shapes Security and Creates Exploitable Vulnerabilities",
+      "summary": "arXiv:2603.25056v1 Announce Type: new \nAbstract: System prompt configuration can make the difference between near-total phishing blindness and near-perfect detection in LLM email agents. We present PhishNChips, a study of 11 models under 10 prompt strategies, showing that prompt-model interaction is a first-order security variable: a single model's phishing bypass rate ranges from under 1% to 97% depending on how it is configured, while the false-positive cost of the same prompt varies sharply across models. We then show that optimizing prompts around highly predictive signals can improve benchmark performance, reaching up to 93.7% recall at 3.8% false positive rate, but also creates a brittle attack surface. In particular, domain-matching strategies perform well when legitimate emails mostly have matched sender and URL domains, yet degrade sharply when attackers invert that signal by registering matching infrastructure. Response-trace analysis shows that 98% of successful bypasses reason in ways consistent with the inverted signal: the models are following the instruction, but the instruction's core assumption has become false. A counter-intuitive corollary follows: making prompts more specific can degrade already-capable models by replacing broader multi-signal reasoning with exploitable single-signal dependence. We characterize the resulting tension between detection, usability, and adversarial robustness as a navigable tradeoff, introduce Safetility, a deployability-aware metric that penalizes false positives, and argue that closing the adversarial gap likely requires tool augmentation with external ground truth.",
+      "link": "https://arxiv.org/abs/2603.25056",
+      "feed": "cs.CR",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "system prompt",
+        "exploit"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.789187+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24904v1",
+      "title": "On the Foundations of Trustworthy Artificial Intelligence",
+      "summary": "arXiv:2603.24904v1 Announce Type: cross \nAbstract: We prove that platform-deterministic inference is necessary and sufficient for\n  trustworthy AI. We formalize this as the Determinism Thesis and introduce trust\n  entropy to quantify the cost of non-determinism, proving that verification failure\n  probability equals 1 - 2^{-H_T} exactly. We prove a Determinism-Verification\n  Collapse: verification under determinism requires O(1) hash comparison; without it,\n  the verifier faces an intractable membership problem. IEEE 754 floating-point\n  arithmetic fundamentally violates the determinism requirement. We resolve this by\n  constructing a pure integer inference engine that achieves bitwise identical output\n  across ARM and x86. In 82 cross-architecture tests on models up to 6.7B parameters,\n  we observe zero hash mismatches. Four geographically distributed nodes produce\n  identical outputs, verified by 356 on-chain attestation transactions. Every major\n  trust property of AI systems (fairness, robustness, privacy, safety, alignment)\n  presupposes platform determinism. Our system, 99,000 lines of Rust deployed across\n  three continents, establishes that AI trust is a question of arithmetic.",
+      "link": "https://arxiv.org/abs/2603.24904",
+      "feed": "cs.CR",
+      "score": 7,
+      "matched_keywords": [
+        "+trust",
+        "alignment"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.789766+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24973v1",
+      "title": "Belief-Driven Multi-Agent Collaboration via Approximate Perfect Bayesian Equilibrium for Social Simulation",
+      "summary": "arXiv:2603.24973v1 Announce Type: new \nAbstract: High-fidelity social simulation is pivotal for addressing complex Web societal challenges, yet it demands agents capable of authentically replicating the dynamic spectrum of human interaction. Current LLM-based multi-agent frameworks, however, predominantly adhere to static interaction topologies, failing to capture the fluid oscillation between cooperative knowledge synthesis and competitive critical reasoning seen in real-world scenarios. This rigidity often leads to unrealistic ``groupthink'' or unproductive deadlocks, undermining the credibility of simulations for decision support. To bridge this gap, we propose \\textit{BEACOF}, a \\textit{belief-driven adaptive collaboration framework} inspired by Perfect Bayesian Equilibrium (PBE). By modeling social interaction as a dynamic game of incomplete information, BEACOF rigorously addresses the circular dependency between collaboration type selection and capability estimation. Agents iteratively refine probabilistic beliefs about peer capabilities and autonomously modulate their collaboration strategy, thereby ensuring sequentially rational decisions under uncertainty. Validated across adversarial (judicial), open-ended (social) and mixed (medical) scenarios, BEACOF prevents coordination failures and fosters robust convergence toward high-quality solutions, demonstrating superior potential for reliable social simulation. Source codes and datasets are publicly released at: https://github.com/WUT-IDEA/BEACOF.",
+      "link": "https://arxiv.org/abs/2603.24973",
+      "feed": "cs.MA",
+      "score": 7,
+      "matched_keywords": [
+        "+adversarial",
+        "multi-agent",
+        "belief"
+      ],
+      "fetched_at": "2026-03-27T10:05:31.134999+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23860v1",
+      "title": "Why the Maximum Second Derivative of Activations Matters for Adversarial Robustness",
+      "summary": "arXiv:2603.23860v1 Announce Type: cross \nAbstract: This work investigates the critical role of activation function curvature -- quantified by the maximum second derivative $\\max|\\sigma''|$ -- in adversarial robustness. Using the Recursive Curvature-Tunable Activation Family (RCT-AF), which enables precise control over curvature through parameters $\\alpha$ and $\\beta$, we systematically analyze this relationship. Our study reveals a fundamental trade-off: insufficient curvature limits model expressivity, while excessive curvature amplifies the normalized Hessian diagonal norm of the loss, leading to sharper minima that hinder robust generalization. This results in a non-monotonic relationship where optimal adversarial robustness consistently occurs when $\\max|\\sigma''|$ falls within 4 to 10, a finding that holds across diverse network architectures, datasets, and adversarial training methods. We provide theoretical insights into how activation curvature affects the diagonal elements of the hessian matrix of the loss, and experimentally demonstrate that the normalized Hessian diagonal norm exhibits a U-shaped dependence on $\\max|\\sigma''|$, with its minimum within the optimal robustness range, thereby validating the proposed mechanism.",
+      "link": "https://arxiv.org/abs/2603.23860",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.402369+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.23966v1",
+      "title": "Policy-Guided Threat Hunting: An LLM enabled Framework with Splunk SOC Triage",
+      "summary": "arXiv:2603.23966v1 Announce Type: cross \nAbstract: With frequently evolving Advanced Persistent Threats (APTs) in cyberspace, traditional security solutions approaches have become inadequate for threat hunting for organizations. Moreover, SOC (Security Operation Centers) analysts are often overwhelmed and struggle to analyze the huge volume of logs received from diverse devices in organizations. To address these challenges, we propose an automated and dynamic threat hunting framework for monitoring evolving threats, adapting to changing network conditions, and performing risk-based prioritization for the mitigation of suspicious and malicious traffic. By integrating Agentic AI with Splunk, an established SIEM platform, we developed a unique threat hunting framework. The framework systematically and seamlessly integrates different threat hunting modules together, ranging from traffic ingestion to anomaly assessment using a reconstruction-based autoencoder, deep reinforcement learning (DRL) with two layers for initial triage, and a large language model (LLM) for contextual analysis. We evaluated the framework against a publicly available benchmark dataset, as well as against a simulated dataset. The experimental results show that the framework can effectively adapt to different SOC objectives autonomously and identify suspicious and malicious traffic. The framework enhances operational effectiveness by supporting SOC analysts in their decision-making to block, allow, or monitor network traffic. This study thus enhances cybersecurity and threat hunting literature by presenting the novel threat hunting framework for security decision- making, as well as promoting cumulative research efforts to develop more effective frameworks to battle continuously evolving cyber threats.",
+      "link": "https://arxiv.org/abs/2603.23966",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.402717+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24448v1",
+      "title": "Integrating Causal Machine Learning into Clinical Decision Support Systems: Insights from Literature and Practice",
+      "summary": "arXiv:2603.24448v1 Announce Type: cross \nAbstract: Current clinical decision support systems (CDSSs) typically base their predictions on correlation, not causation. In recent years, causal machine learning (ML) has emerged as a promising way to improve decision-making with CDSSs by offering interpretable, treatment-specific reasoning. However, existing research often emphasizes model development rather than designing clinician-facing interfaces. To address this gap, we investigated how CDSSs based on causal ML should be designed to effectively support collaborative clinical decision-making. Using a design science research methodology, we conducted a structured literature review and interviewed experienced physicians. From these, we derived eight empirically grounded design requirements, developed seven design principles, and proposed nine practical design features. Our results establish guidance for designing CDSSs that deliver causal insights, integrate seamlessly into clinical workflows, and support trust, usability, and human-AI collaboration. We also reveal tensions around automation, responsibility, and regulation, highlighting the need for an adaptive certification process for ML-based medical products.",
+      "link": "https://arxiv.org/abs/2603.24448",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+decision-making",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.403402+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.03072v2",
+      "title": "TikZilla: Scaling Text-to-TikZ with High-Quality Data and Reinforcement Learning",
+      "summary": "arXiv:2603.03072v2 Announce Type: replace \nAbstract: Large language models (LLMs) are increasingly used to assist scientists across diverse workflows. A key challenge is generating high-quality figures from textual descriptions, often represented as TikZ programs that can be rendered as scientific images. Prior research has proposed a variety of datasets and modeling approaches for this task. However, existing datasets for Text-to-TikZ are too small and noisy to capture the complexity of TikZ, causing mismatches between text and rendered figures. Moreover, prior approaches rely solely on supervised fine-tuning (SFT), which does not expose the model to the rendered semantics of the figure, often resulting in errors such as looping, irrelevant content, and incorrect spatial relations. To address these issues, we construct DaTikZ-V4, a dataset more than four times larger and substantially higher in quality than DaTikZ-V3, enriched with LLM-generated figure descriptions. Using this dataset, we train TikZilla, a family of small open-source Qwen models (3B and 8B) with a two-stage pipeline of SFT followed by reinforcement learning (RL). For RL, we leverage an image encoder trained via inverse graphics to provide semantically faithful reward signals. Extensive human evaluations with over 1,000 judgments show that TikZilla improves by 1.5-2 points over its base models on a 5-point scale, surpasses GPT-4o by 0.5 points, and matches GPT-5 in the image-based evaluation, while operating at much smaller model sizes. Code, data, and models will be made available.",
+      "link": "https://arxiv.org/abs/2603.03072",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.403788+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2506.06303v5",
+      "title": "Reward Is Enough: LLMs Are In-Context Reinforcement Learners",
+      "summary": "arXiv:2506.06303v5 Announce Type: replace-cross \nAbstract: Reinforcement learning (RL) is a framework for solving sequential decision-making problems. In this work, we demonstrate that, surprisingly, RL emerges during the inference time of large language models (LLMs), a phenomenon we term in-context RL (ICRL). To reveal this capability, we introduce a simple multi-round prompting framework, we call ICRL prompting, for inference-time self-improvement. The goal of ICRL prompting is to guide LLMs to perform reinforcement learning during inference for self-improvement on a given task. After each response, the model receives numerical scalar feedback, denoted as a reward. In the next round, we prompt the LLM again together with a context that concatenates all prior responses and their associated rewards. We consistently observe that response quality improves as the context grows. In other words, the LLM can optimize scalar reward signals during inference, exhibiting behavior analogous to reinforcement learning. We evaluate ICRL prompting on Game of 24, creative writing, ScienceWorld, and Olympiad-level math competitions (AIME and HMMT), demonstrating significant improvements over baselines such as Self-Refine and Reflexion. Notably, even when the reward signals are generated by the same LLM, ICRL prompting still improves performance, highlighting a promising new paradigm for test-time scaling.",
+      "link": "https://arxiv.org/abs/2506.06303",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning",
+        "+decision-making"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.404024+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2510.15495v2",
+      "title": "OffSim: Offline Simulator for Model-based Offline Inverse Reinforcement Learning",
+      "summary": "arXiv:2510.15495v2 Announce Type: replace-cross \nAbstract: Reinforcement learning algorithms typically utilize an interactive simulator (i.e., environment) with a predefined reward function for policy training. Developing such simulators and manually defining reward functions, however, is often time-consuming and labor-intensive. To address this, we propose an Offline Simulator (OffSim), a novel model-based offline inverse reinforcement learning (IRL) framework, to emulate environmental dynamics and reward structure directly from expert-generated state-action trajectories. OffSim jointly optimizes a high-entropy transition model and an IRL-based reward function to enhance exploration and improve the generalizability of the learned reward. Leveraging these learned components, OffSim can subsequently train a policy offline without further interaction with the real environment. Additionally, we introduce OffSim$^+$, an extension that incorporates a marginal reward for multi-dataset settings to enhance exploration. Extensive MuJoCo experiments demonstrate that OffSim achieves substantial performance gains over existing offline IRL methods, confirming its efficacy and robustness.",
+      "link": "https://arxiv.org/abs/2510.15495",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+reinforcement learning"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.404246+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.18829v5",
+      "title": "Agent Control Protocol: Admission Control for Agent Actions",
+      "summary": "arXiv:2603.18829v5 Announce Type: replace-cross \nAbstract: Agent Control Protocol (ACP) is a formal technical specification for admission control governance of autonomous agents in B2B institutional environments. Before any agent action reaches execution, it passes a cryptographic admission check validating identity, capability scope, delegation chain, and policy compliance -- an admission control layer between agent intent and system state mutation.\n  ACP defines cryptographic identity (Ed25519, JCS), capability-based authorization, deterministic risk evaluation (integer arithmetic, no ML inference), chained delegation, transitive revocation, and cryptographically-chained auditing. It operates on top of RBAC and Zero Trust, addressing what neither model solves: governing agent actions with deterministic enforcement, temporal limits, and full traceability across organizational boundaries.\n  The protocol is compute-cheap but state-sensitive: decision evaluation costs ~820 ns while throughput reaches 920k req/s -- a separation enabling state backend replacement without modifying protocol semantics. Adversarial evaluation confirms ACP-RISK-2.0 enforcement holds under active evasion: 99% (495/500) single-agent evasion attempts are blocked after only five requests, per-agent isolation is preserved across 100 coordinated agents, and throughput degradation under stress is attributable to state-backend latency.\n  The v1.19 specification comprises 38 technical documents, a Go reference implementation (23 packages), 73 signed conformance test vectors, 65 RISK-2.0 vectors, an OpenAPI 3.1.0 specification (18 endpoints), a TLC-checked TLA+ formal model (3 invariants, 0 violations), an ACR-1.0 sequence compliance runner, and adversarial evaluation scripts in compliance/adversarial/.",
+      "link": "https://arxiv.org/abs/2603.18829",
+      "feed": "cs.AI",
+      "score": 6,
+      "matched_keywords": [
+        "+adversarial",
+        "+trust"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.404854+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.24878v1",
+      "title": "Trusted-Execution Environment (TEE) for Solving the Replication Crisis in Academia",
+      "summary": "arXiv:2603.24878v1 Announce Type: new \nAbstract: The growing replication crisis across disciplines such as economics, finance, and other social sciences as well as computer science undermines the credibility of academic research. Current institutional solutions -- such as artifact evaluations and replication packages -- suffer from critical limitations, including shortages of qualified data editors, difficulties in handling proprietary datasets, inefficient processes, and reliance on voluntary labor. This paper proposes a novel framework leveraging new technological advances in trusted-execution environments (TEEs) -- exemplified by Intel Trust Domain Extensions (TDX) -- to address the replication crisis in a cost-effective and scalable manner. Under our approach, authors execute replication packages within a cloud-based TEE and submit cryptographic proofs of correct execution, for which journals or conferences can efficiently verify without re-running the code. This reallocates the operational burden to authors while preserving data confidentiality and eliminating reliance on scarce editorial resources. As a proof of concept, we validate the feasibility of this system through field experiments, reporting a pilot study replicating published papers on TDX-backed cloud VMs, finding average costs of \\$1.35--\\$1.80 per package with minimal computational overhead relative to standard VMs and high success rates even for novice users with no prior TEE experience. We also provide a conduct formal analysis showing that TEE adoption is incentive-compatible for authors, cost-dominant for journals, and constitutes an equilibrium in the certification market. The findings highlight the potential of TEE technology to provide a sustainable, privacy-preserving, and efficient mechanism to address the replication crisis in academia.",
+      "link": "https://arxiv.org/abs/2603.24878",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+trust"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.789124+00:00"
+    },
+    {
+      "id": "oai:arXiv.org:2603.25304v1",
+      "title": "Physical Backdoor Attack Against Deep Learning-Based Modulation Classification",
+      "summary": "arXiv:2603.25304v1 Announce Type: new \nAbstract: Deep Learning (DL) has become a key technology that assists radio frequency (RF) signal classification applications, such as modulation classification. However, the DL models are vulnerable to adversarial machine learning threats, such as data manipulation attacks. We study a physical backdoor (Trojan) attack that targets a DL-based modulation classifier. In contrast to digital backdoor attacks, where digital triggers are injected into the training dataset, we use power amplifier (PA) non-linear distortions to create physical triggers before the dataset is formed. During training, the adversary manipulates amplitudes of RF signals and changes their labels to a target modulation scheme, training a backdoored model. At inference, the adversary aims to keep the backdoor attack inactive such that the backdoored model maintains high accuracy on test signals. However, if they apply the same manipulation used during training on these test signals, the backdoor is activated, and the model misclassifies these signals. We demonstrate that our proposed attack achieves high attack success rates with few manipulated RD signals for different noise levels. Furthermore, we test the resilience of the proposed attack to multiple defense techniques, and the results show that these techniques fail to mitigate the attack.",
+      "link": "https://arxiv.org/abs/2603.25304",
+      "feed": "cs.CR",
+      "score": 6,
+      "matched_keywords": [
+        "+manipulation",
+        "+adversarial"
+      ],
+      "fetched_at": "2026-03-27T10:05:30.789283+00:00"
+    }
+  ],
+  "suggestions": [
+    {
+      "paper": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
+      "paper_link": "https://arxiv.org/abs/2507.22171",
+      "paper_score": 13,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Enhancing Jailbreak Attacks on LLMs via Persona Prompts' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
+      "paper_link": "https://arxiv.org/abs/2507.22171",
+      "paper_score": 13,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Enhancing Jailbreak Attacks on LLMs via Persona Prompts' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Enhancing Jailbreak Attacks on LLMs via Persona Prompts",
+      "paper_link": "https://arxiv.org/abs/2507.22171",
+      "paper_score": 13,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Enhancing Jailbreak Attacks on LLMs via Persona Prompts' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms ",
+      "paper_link": "https://arxiv.org/abs/2603.24511",
+      "paper_score": 12,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Claudini: Autoresearch Discovers State-of-the-Art Adversaria' covers prompt injection vectors. Audit [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for injection surface."
+    },
+    {
+      "paper": "Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms ",
+      "paper_link": "https://arxiv.org/abs/2603.24511",
+      "paper_score": 12,
+      "type": "injection_defense",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Claudini: Autoresearch Discovers State-of-the-Art Adversaria' covers prompt injection vectors. Audit [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for injection surface."
+    },
+    {
+      "paper": "Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms ",
+      "paper_link": "https://arxiv.org/abs/2603.24511",
+      "paper_score": 12,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Claudini: Autoresearch Discovers State-of-the-Art Adversaria' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "Claudini: Autoresearch Discovers State-of-the-Art Adversarial Attack Algorithms ",
+      "paper_link": "https://arxiv.org/abs/2603.24511",
+      "paper_score": 12,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'Claudini: Autoresearch Discovers State-of-the-Art Adversaria' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "Large Language Model Guided Incentive Aware Reward Design for Cooperative Multi-",
+      "paper_link": "https://arxiv.org/abs/2603.24324",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Large Language Model Guided Incentive Aware Reward Design fo' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Large Language Model Guided Incentive Aware Reward Design for Cooperative Multi-",
+      "paper_link": "https://arxiv.org/abs/2603.24324",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Large Language Model Guided Incentive Aware Reward Design fo' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Large Language Model Guided Incentive Aware Reward Design for Cooperative Multi-",
+      "paper_link": "https://arxiv.org/abs/2603.24324",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Large Language Model Guided Incentive Aware Reward Design fo' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Large Language Model Guided Incentive Aware Reward Design for Cooperative Multi-",
+      "paper_link": "https://arxiv.org/abs/2603.24324",
+      "paper_score": 9,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Large Language Model Guided Incentive Aware Reward Design fo' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "LLM4AD: Large Language Models for Autonomous Driving -- Concept, Review, Benchma",
+      "paper_link": "https://arxiv.org/abs/2410.15281",
+      "paper_score": 8,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'LLM4AD: Large Language Models for Autonomous Driving -- Conc' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stage APT Campaigns",
+      "paper_link": "https://arxiv.org/abs/2603.21296",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stag' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stage APT Campaigns",
+      "paper_link": "https://arxiv.org/abs/2603.21296",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stag' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stage APT Campaigns",
+      "paper_link": "https://arxiv.org/abs/2603.21296",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stag' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stage APT Campaigns",
+      "paper_link": "https://arxiv.org/abs/2603.21296",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'DeepXplain: XAI-Guided Autonomous Defense Against Multi-Stag' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "On the Foundations of Trustworthy Artificial Intelligence",
+      "paper_link": "https://arxiv.org/abs/2603.24904",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'On the Foundations of Trustworthy Artificial Intelligence' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "On the Foundations of Trustworthy Artificial Intelligence",
+      "paper_link": "https://arxiv.org/abs/2603.24904",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'On the Foundations of Trustworthy Artificial Intelligence' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "On the Foundations of Trustworthy Artificial Intelligence",
+      "paper_link": "https://arxiv.org/abs/2603.24904",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'On the Foundations of Trustworthy Artificial Intelligence' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "On the Foundations of Trustworthy Artificial Intelligence",
+      "paper_link": "https://arxiv.org/abs/2603.24904",
+      "paper_score": 7,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'On the Foundations of Trustworthy Artificial Intelligence' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "SafeMath: Inference-time Safety improves Math Accuracy",
+      "paper_link": "https://arxiv.org/abs/2603.25201",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'SafeMath: Inference-time Safety improves Math Accuracy' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "SafeMath: Inference-time Safety improves Math Accuracy",
+      "paper_link": "https://arxiv.org/abs/2603.25201",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'SafeMath: Inference-time Safety improves Math Accuracy' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "SafeMath: Inference-time Safety improves Math Accuracy",
+      "paper_link": "https://arxiv.org/abs/2603.25201",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'SafeMath: Inference-time Safety improves Math Accuracy' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "SafeMath: Inference-time Safety improves Math Accuracy",
+      "paper_link": "https://arxiv.org/abs/2603.25201",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'SafeMath: Inference-time Safety improves Math Accuracy' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLM",
+      "paper_link": "https://arxiv.org/abs/2603.24596",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'X-OPD: Cross-Modal On-Policy Distillation for Capability Ali' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLM",
+      "paper_link": "https://arxiv.org/abs/2603.24596",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'X-OPD: Cross-Modal On-Policy Distillation for Capability Ali' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLM",
+      "paper_link": "https://arxiv.org/abs/2603.24596",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'X-OPD: Cross-Modal On-Policy Distillation for Capability Ali' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLM",
+      "paper_link": "https://arxiv.org/abs/2603.24596",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'X-OPD: Cross-Modal On-Policy Distillation for Capability Ali' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "DiffuGuard: How Intrinsic Safety is Lost and Found in Diffusion Large Language M",
+      "paper_link": "https://arxiv.org/abs/2509.24296",
+      "paper_score": 5,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'DiffuGuard: How Intrinsic Safety is Lost and Found in Diffus' describes new jailbreak techniques. Review defensive constraints in [### 1. Robust Deep RL against Adversarial Behavior Manipulation] for gaps."
+    },
+    {
+      "paper": "DiffuGuard: How Intrinsic Safety is Lost and Found in Diffusion Large Language M",
+      "paper_link": "https://arxiv.org/abs/2509.24296",
+      "paper_score": 5,
+      "type": "defense_hardening",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "### 6. Large Behavioral Model for Strategic Prediction (Score: 9)",
+      "suggestion": "Paper 'DiffuGuard: How Intrinsic Safety is Lost and Found in Diffus' describes new jailbreak techniques. Review defensive constraints in [### 6. Large Behavioral Model for Strategic Prediction (Score: 9)] for gaps."
+    },
+    {
+      "paper": "HalluJudge: A Reference-Free Hallucination Detection for Context Misalignment in",
+      "paper_link": "https://arxiv.org/abs/2601.19072",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'HalluJudge: A Reference-Free Hallucination Detection for Con' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "HalluJudge: A Reference-Free Hallucination Detection for Context Misalignment in",
+      "paper_link": "https://arxiv.org/abs/2601.19072",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'HalluJudge: A Reference-Free Hallucination Detection for Con' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "HalluJudge: A Reference-Free Hallucination Detection for Context Misalignment in",
+      "paper_link": "https://arxiv.org/abs/2601.19072",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'HalluJudge: A Reference-Free Hallucination Detection for Con' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "HalluJudge: A Reference-Free Hallucination Detection for Context Misalignment in",
+      "paper_link": "https://arxiv.org/abs/2601.19072",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'HalluJudge: A Reference-Free Hallucination Detection for Con' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Alignment Whack-a-Mole : Finetuning Activates Verbatim Recall of Copyrighted Boo",
+      "paper_link": "https://arxiv.org/abs/2603.20957",
+      "paper_score": 5,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Alignment Whack-a-Mole : Finetuning Activates Verbatim Recal' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "When Identity Overrides Incentives: Representational Choices as Governance Decis",
+      "paper_link": "https://arxiv.org/abs/2601.10102",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'When Identity Overrides Incentives: Representational Choices' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Visual or Textual: Effects of Explanation Format and Personal Characteristics on",
+      "paper_link": "https://arxiv.org/abs/2603.25624",
+      "paper_score": 5,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Visual or Textual: Effects of Explanation Format and Persona' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    },
+    {
+      "paper": "Can GRPO Boost Complex Multimodal Table Understanding?",
+      "paper_link": "https://arxiv.org/abs/2509.16889",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Can GRPO Boost Complex Multimodal Table Understanding?' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Can GRPO Boost Complex Multimodal Table Understanding?",
+      "paper_link": "https://arxiv.org/abs/2509.16889",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Can GRPO Boost Complex Multimodal Table Understanding?' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Can GRPO Boost Complex Multimodal Table Understanding?",
+      "paper_link": "https://arxiv.org/abs/2509.16889",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Can GRPO Boost Complex Multimodal Table Understanding?' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Can GRPO Boost Complex Multimodal Table Understanding?",
+      "paper_link": "https://arxiv.org/abs/2509.16889",
+      "paper_score": 4,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Can GRPO Boost Complex Multimodal Table Understanding?' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Imperative Interference: Social Register Shapes Instruction Topology in Large La",
+      "paper_link": "https://arxiv.org/abs/2603.25015",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Imperative Interference: Social Register Shapes Instruction ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Imperative Interference: Social Register Shapes Instruction Topology in Large La",
+      "paper_link": "https://arxiv.org/abs/2603.25015",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Imperative Interference: Social Register Shapes Instruction ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Imperative Interference: Social Register Shapes Instruction Topology in Large La",
+      "paper_link": "https://arxiv.org/abs/2603.25015",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Imperative Interference: Social Register Shapes Instruction ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Imperative Interference: Social Register Shapes Instruction Topology in Large La",
+      "paper_link": "https://arxiv.org/abs/2603.25015",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Imperative Interference: Social Register Shapes Instruction ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "Echoes: A semantically-aligned music deepfake detection dataset",
+      "paper_link": "https://arxiv.org/abs/2603.23667",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'Echoes: A semantically-aligned music deepfake detection data' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "DESIGN_SYSTEM_REFACTOR.md",
+      "target_section": "## Core framing (system prompt)",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [## Core framing (system prompt)]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [## Identity]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-19.md",
+      "target_section": "### 1. Robust Deep RL against Adversarial Behavior Manipulation",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [### 1. Robust Deep RL against Adversarial Behavior Manipulation]."
+    },
+    {
+      "paper": "The Free-Market Algorithm: Self-Organizing Optimization for Open-Ended Complex S",
+      "paper_link": "https://arxiv.org/abs/2603.24559",
+      "paper_score": 3,
+      "type": "alignment_update",
+      "target_file": "autoprompt-digest-2026-02-20.md",
+      "target_section": "## Priority Papers (Score 7+)",
+      "suggestion": "Paper 'The Free-Market Algorithm: Self-Organizing Optimization for ' has findings on alignment. Review behavioral alignment in [## Priority Papers (Score 7+)]."
+    },
+    {
+      "paper": "Learning in Proportional Allocation Auctions Games",
+      "paper_link": "https://arxiv.org/abs/2603.25303",
+      "paper_score": 2,
+      "type": "persona_refinement",
+      "target_file": "SOUL.md",
+      "target_section": "## Identity",
+      "suggestion": "Paper 'Learning in Proportional Allocation Auctions Games' studies persona dynamics in LLMs. Consider implications for [## Identity]."
+    }
+  ]
+}

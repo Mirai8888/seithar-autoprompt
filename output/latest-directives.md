@@ -3,20 +3,20 @@
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 98 papers
-Suggestions generated: 91
+Matched filters: 55 papers
+Suggestions generated: 57
 
 Highest-signal item from this cycle:
 
-**[13] Prompt Attack Detection with LLM-as-a-Judge and Mixture-of-Models**
-<https://arxiv.org/abs/2603.25176>
-→ High-signal scan hit across: +prompt injection, +red teaming, +adversarial, +jailbreak
+**[13] Enhancing Jailbreak Attacks on LLMs via Persona Prompts**
+<https://arxiv.org/abs/2507.22171>
+→ High-signal scan hit across: +manipulation, +jailbreak, LLM safety, persona
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260327-040233.md`
-- json: `./output/report-20260327-040233.json`
+- diff: `./output/diff-20260327-100535.md`
+- json: `./output/report-20260327-100535.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
