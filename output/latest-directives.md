@@ -1,22 +1,22 @@
 ╔══════════════════════════════════════════════════╗
-║  研修生 AUTOPROMPT CYCLE — 2026-03-26              ║
+║  研修生 AUTOPROMPT CYCLE — 2026-03-27              ║
 ╚══════════════════════════════════════════════════╝
 
 Autoprompt cycle complete.
-Matched filters: 15 papers
-Suggestions generated: 20
+Matched filters: 98 papers
+Suggestions generated: 91
 
 Highest-signal item from this cycle:
 
-**[9] Generative AI User Experience: Developing Human--AI Epistemic Partnership**
-<https://arxiv.org/abs/2603.23863>
-→ High-signal scan hit across: +trust, ~epistemic, epistemic
+**[13] Prompt Attack Detection with LLM-as-a-Judge and Mixture-of-Models**
+<https://arxiv.org/abs/2603.25176>
+→ High-signal scan hit across: +prompt injection, +red teaming, +adversarial, +jailbreak
 
 Site dataset: <https://seithar.com/papers.json>
 
 Outputs:
-- diff: `./output/diff-20260326-220232.md`
-- json: `./output/report-20260326-220232.json`
+- diff: `./output/diff-20260327-040233.md`
+- json: `./output/report-20260327-040233.json`
 
 ──────────────────────────────────────────────────
 研修生 | Seithar Group Research Division
